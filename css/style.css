@@ -51,23 +51,211 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 .logo img {
   height: 50px;
   margin-left: 30px;
   margin-top: 30px;
   width: 50px;
 }
-
-#linksnav {
-  display: none;
+/* Styling the hamburger menu */
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
 }
+/*
+#main-menu-toggle {
+  margin-right: 30px;
+  margin-top: 47px;
+}  */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+.menu-toggle {
+  color: #333;
+  margin-right: 1rem;
+
+}
+
+/* .hamburger {
+  margin-right: 30px;
+  margin-top: 47px;
+} */
+
+/* #main-menu {
+  margin-right: 30px;
+  margin-top: 47px;
+} */
+
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c85028;
+}
+
+.main-menu {
+  position: fixed;
+  display: none;
+  /* It is important that the value below is the same of the width on the ul to have the same size on the screen */
+  right: -200px;
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: auto;
+  /* transition: left 0.3s ease; */
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 4.5em; /*ver quanto precisa para meu projeto */
+  min-height: 100%;
+  width: 200px;
+  background-color: #00758D;
+}
+
+.main-menu a {
+  display: block;
+  /* This padding is going to give space to the fingers to click */
+  padding: 0.75em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:fist-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* When something is clicked it is targeted */
+/* It was display none, but when it is targeted it is display block to show */
+.main-menu:target {
+display: block;
+right: 0;
+outline: none;
+}
+
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-menu:target + .backdrop {
+  position: fixed;
+  display: block;
+  right: 0;
+  /* left: 0; */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background-color: rgba(0,0,0,0.55);
+  cursor: default;
+}
+
+/* media query */
+/* .menu-toggle,
+.main-menu .menu-close {
+  display: none;
+} */
+
+/*
+.main-menu {
+  position: static;
+  display: block;
+}
+
+.main-menu ul {
+  padding: 0;
+  height: auto;
+  width: auto;
+  background: none;
+  overflow: hidden;
+  text-align: center;
+} */
+/*
+.main-menu li {
+  /* i can use inline-block or flexbox */
+  display: inline-block;
+
+} */*/*/
+
+/* .main-menu li:first-child a {
+  border-top: none;
+
+}
+
+.main-menu a {
+  color: #c85028;
+  border-bottom: none;
+  display: inline;
+}
+
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: none;
+  color: #7e64be;
+  text-decoration: none;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #linksnav {
+  display: none;
+} */
 
 .maira {
   margin: auto;
   padding-top: 28px;
   width: 100%;
 }
-
+/*
 .navigation {
   display: flex;
   flex-direction: row;
@@ -75,10 +263,10 @@ a:hover {
   justify-content: space-between;
 }
 
-.hamburger {
+#main-menu-toggle {
   margin-right: 30px;
   margin-top: 47px;
-}
+} */
 
 .text {
   display: flex;
@@ -247,12 +435,15 @@ a:hover {
   margin-right: 30px;
 }
 
+
+
+
 /* PROJECT */
 .casestudy {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   width: 90%;
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 .pictext2 {
@@ -263,25 +454,24 @@ a:hover {
 .text2 {
   display: flex;
   align-content: space-between;
-  /* align-items: flex-start; */
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .text2 h3 {
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 .text2 h1 {
   text-align: left;
-  /* margin-right: 30px; */
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
   font-weight: bold;
 }
 
+/* OVERVIEW */
 .rdt {
   display: flex;
   flex-direction: column;
@@ -293,47 +483,51 @@ a:hover {
 }
 
 .rdt.roles {
-  padding-bottom: 96px;
-  padding-top: 40px;
+  padding-bottom: 9.6rem;
+  padding-top: 4rem;
 }
 
 .rdt.deliverables {
-  padding-bottom: 96px;
+  padding-bottom: 9.6rem;
 }
 
 .rdt.tools {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 .rdt h2 {
   font-weight: bold;
-  padding-bottom: 28px;
+  padding-bottom: 2.8rem;
 }
 
+/* SUMMARY - PROBLEM - SOLUTION */
 .sps {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 96px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
 }
 
 .sps h2 {
   font-weight: bold;
-  padding-bottom: 28px;
+  padding-bottom: 2.8rem;
 }
 
 .sps.solution img {
-  padding-top: 56px;
+  padding-top: 5.6rem;
 }
 
+/* PROCESS */
+
+/* USER SURVEY */
 .user-survey {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .user-survey h2 {
@@ -341,57 +535,50 @@ a:hover {
 }
 
 .user-survey p {
-  margin-top: 28px;
-  margin-bottom: 56px;
+  margin-top: 2.8rem;
+  margin-bottom: 5.6rem;
 }
 
 .question4 {
-  /* margin-left: 30px;
-  margin-right: 30px; */
-  width: 90%;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .question6 {
-  /* margin-left: 30px;
-  margin-right: 30px; */
-  width: 90%;
-  margin-top: 28px;
+  width: 100%;
+  margin-top: 2.8rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: auto;
-  margin-right: auto;
 }
 
+/* COMPETITIVE ANALYSIS */
 .competitive-analysis {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .competitive-analysis h2 {
   font-weight: bold;
-  padding-bottom: 28px;
-  margin-top: 96px;
+  padding-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 .competitive-analysis ul {
   list-style-type: square;
   font-size: 1.8rem;
   line-height: 150%;
-  padding-top: 28px;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-top: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .competitive-analysis li {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .google-drive p {
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 #googledrive {
@@ -953,8 +1140,8 @@ a:hover {
 .conclusion {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .conclusion h2 {
