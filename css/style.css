@@ -51,19 +51,22 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 .logo img {
   height: 50px;
   margin-left: 30px;
   margin-top: 30px;
   width: 50px;
 }
+
 /* Styling the hamburger menu */
 header .row {
   display: flex;
   flex-flow: row nowrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin: 0;
 }
+
 /*
 #main-menu-toggle {
   margin-right: 30px;
@@ -80,23 +83,18 @@ header .row {
   border: 0;
 }
 
-
 .menu-toggle {
   color: #333;
-  margin-right: 1rem;
-
+  /* margin-right: 1rem; */
 }
 
-/* .hamburger {
-  margin-right: 30px;
-  margin-top: 47px;
-} */
-
-/* #main-menu {
-  margin-right: 30px;
-  margin-top: 47px;
-} */
-
+.menu { /*Preciso descobrir porque nao esta aceitando 30px margin right */
+  background-color: green;
+  /* margin-left: 190px;
+  /* margin-right: 30px; */
+  /*margin-top: 47px; */
+  align-self: flex-start;
+}
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -120,7 +118,8 @@ header .row {
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding-top: 4.5em; /*ver quanto precisa para meu projeto */
+  padding-top: 4.5em;
+  /*ver quanto precisa para meu projeto */
   min-height: 100%;
   width: 200px;
   background-color: #00758D;
@@ -132,13 +131,21 @@ header .row {
   padding: 0.75em;
   color: #fff;
   text-decoration: none;
-  border-bottom: 1px solid #383838;
+  border-bottom: 3px solid #383838;
 }
 
-.main-menu li:fist-child a {
+.menu-close {
+  border: none;
+}
+
+.main-menu li:first-child a {
   border-top: 1px solid #383838;
 }
 
+/* .main-menu .menu-close:not {
+  border-top: 1px solid #383838;
+}
+} */
 .main-menu a:hover,
 .main-menu a:focus {
   background: #333;
@@ -154,9 +161,9 @@ header .row {
 /* When something is clicked it is targeted */
 /* It was display none, but when it is targeted it is display block to show */
 .main-menu:target {
-display: block;
-right: 0;
-outline: none;
+  display: block;
+  right: 0;
+  outline: none;
 }
 
 .main-menu:target .menu-close {
@@ -168,7 +175,7 @@ outline: none;
   z-index: 1000;
 }
 
-.main-menu:target + .backdrop {
+.main-menu:target+.backdrop {
   position: fixed;
   display: block;
   right: 0;
@@ -177,7 +184,7 @@ outline: none;
   width: 100%;
   height: 100%;
   z-index: 998;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(0, 0, 0, 0.85);
   cursor: default;
 }
 
@@ -186,7 +193,6 @@ outline: none;
 .main-menu .menu-close {
   display: none;
 } */
-
 /*
 .main-menu {
   position: static;
@@ -204,10 +210,10 @@ outline: none;
 /*
 .main-menu li {
   /* i can use inline-block or flexbox */
-  display: inline-block;
+/* display: inline-block;
 
-} */*/*/
-
+} */
+/*/ */
 /* .main-menu li:first-child a {
   border-top: none;
 
@@ -227,34 +233,15 @@ outline: none;
   text-decoration: none;
 }
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* #linksnav {
   display: none;
 } */
-
 .maira {
   margin: auto;
-  padding-top: 28px;
+  padding-top: 2.8rem;
   width: 100%;
 }
+
 /*
 .navigation {
   display: flex;
@@ -267,21 +254,20 @@ outline: none;
   margin-right: 30px;
   margin-top: 47px;
 } */
-
 .text {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .text h1 {
   font-weight: bold;
-  margin-bottom: 28px;
-  margin-top: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
   text-align: left;
 }
 
@@ -291,22 +277,20 @@ outline: none;
 
 #arrow {
   /*hide this on mobile*/
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
   text-align: center;
 }
 
 .pop h4 {
   color: #00758D;
-  margin-bottom: 56px;
-  margin-left: 30px;
-  margin-top: 96px;
+  margin-bottom: 5.6rem;
+  margin-left: 3rem;
+  margin-top: 9.6rem;
   text-align: left;
 }
 
 .mairecipe {
-  /* margin-left: 30px;
-  margin-right: 30px; */
   width: 100%;
   display: flex;
   align-self: center;
@@ -314,38 +298,35 @@ outline: none;
 
 .mairecipes {
   display: flex;
-  /* align-items: center; */
   background-color: #F9F9F9;
-  /* padding-top: 40px; */
   flex-direction: column;
   justify-content: space-between;
 }
 
 .mairecipes h3 {
   font-weight: bold;
-  /* text-align: center; */
 }
 
 .mairecipes p {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-top: 28px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2.8rem;
   text-align: left;
 }
 
 .btn {
   background-color: #00758D;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   color: white;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: bold;
   /* margin-top: 28px; */
-  padding: 16px 32px;
+  padding: 1.6rem 3.2rem;
   text-align: center;
   text-decoration: none;
-  width: 184px;
+  width: 18.4rem;
 }
 
 .busy-bus1,
@@ -355,11 +336,11 @@ outline: none;
 }
 
 .busy-bus1 {
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 
 .busy-bus2 {
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .busy-bus {
@@ -372,21 +353,21 @@ outline: none;
 .bb {
   align-items: center;
   background-color: #F9F9F9;
-  margin-bottom: 28px;
-  margin-top: 28px;
-  padding-top: 56px;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+  padding-top: 5.6rem;
 }
 
 .bb h3 {
   font-weight: bold;
-  margin-top: 56px;
+  margin-top: 5.6rem;
   text-align: center;
 }
 
 .bb p {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-top: 28px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2.8rem;
   text-align: left;
 }
 
@@ -395,8 +376,8 @@ outline: none;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  margin-top: 96px;
-  margin-bottom: 96px;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
   display: flex;
   justify-content: center;
 }
@@ -405,44 +386,38 @@ outline: none;
   background-color: #00758D;
   color: white;
   /* height: 400px; */
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 .footer-link {
   display: flex;
-  color: white;
   align-items: center;
+  color: white;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 28px;
-  margin-top: 28px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 2.8rem 3rem;
 }
 
 .footer h4 {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-bottom: 28px;
-  padding-top: 28px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
 }
 
 .rights p {
   font-weight: lighter;
-  margin-top: 28px;
-  padding-bottom: 28px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2.8rem;
 }
-
-
-
 
 /* PROJECT */
 .casestudy {
   margin-left: 3rem;
   margin-right: 3rem;
-  width: 90%;
+  width: 80%;
   margin-top: 2.4rem;
 }
 
@@ -466,20 +441,20 @@ outline: none;
 
 .text2 h1 {
   text-align: left;
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
   font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
 }
 
 /* OVERVIEW */
 .rdt {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 150%;
   background-color: #F9F9F9;
+  font-size: 1.8rem;
+  justify-content: center;
+  line-height: 150%;
+  text-align: center;
 }
 
 .rdt.roles {
@@ -520,7 +495,6 @@ outline: none;
 }
 
 /* PROCESS */
-
 /* USER SURVEY */
 .user-survey {
   display: flex;
@@ -535,8 +509,8 @@ outline: none;
 }
 
 .user-survey p {
-  margin-top: 2.8rem;
   margin-bottom: 5.6rem;
+  margin-top: 2.8rem;
 }
 
 .question4 {
@@ -545,9 +519,9 @@ outline: none;
 }
 
 .question6 {
-  width: 100%;
-  margin-top: 2.8rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 2.8rem;
+  width: 100%;
 }
 
 /* COMPETITIVE ANALYSIS */
@@ -560,17 +534,17 @@ outline: none;
 
 .competitive-analysis h2 {
   font-weight: bold;
-  padding-bottom: 2.8rem;
   margin-top: 9.6rem;
+  padding-bottom: 2.8rem;
 }
 
 .competitive-analysis ul {
-  list-style-type: square;
   font-size: 1.8rem;
   line-height: 150%;
-  padding-top: 2.8rem;
+  list-style-type: square;
   margin-left: 3rem;
   margin-right: 3rem;
+  padding-top: 2.8rem;
 }
 
 .competitive-analysis li {
@@ -582,32 +556,33 @@ outline: none;
 }
 
 #googledrive {
-  width: 50%;
-  margin: auto;
-  padding-top: 56px;
-  padding-bottom: 56px;
   display: flex;
   align-self: center;
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
 }
 
 #dropbox {
-  width: 50%;
-  margin: auto;
-  padding-top: 56px;
-  padding-bottom: 56px;
   display: flex;
   align-self: center;
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
 }
 
 #onedrive {
-  width: 50%;
-  margin: auto;
-  padding-top: 56px;
-  padding-bottom: 56px;
   display: flex;
   align-self: center;
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
 }
 
+/* PERSONAS */
 .personas {
   display: flex;
   flex-direction: column;
@@ -620,156 +595,147 @@ outline: none;
 .personas .general-personas,
 .personas .quotes1,
 .personas .quotes2 {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .personas h2 {
   font-weight: bold;
-  margin-bottom: 28px;
-  margin-top: 96px;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 .personas .goals h3 {
   font-weight: bold;
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 .personas .frustrations h3 {
   font-weight: bold;
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 #emily {
   width: 100%;
-  margin-top: 56px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
 }
 
 #paula {
   width: 100%;
-  margin-top: 96px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 .quotes1 {
-  width: 30%;
   position: absolute;
-  top: 0;
   left: 0;
-  /* padding-top: 56px; */
+  top: 0;
+  width: 30%;
 }
 
 .quotes2 {
-  width: 30%;
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 30%;
 }
 
 .quote {
   position: relative;
-  margin-top: 36px;
-  /* I used 36px instead of 56px because the li above has 20px of margin-bottom */
+  margin-top: 3.6rem;
+  /* I used 3.6rem or 36px instead of 56px because the li above has 20px of margin-bottom */
 }
 
 .quote h3 {
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-weight: bold;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .personas ul {
-  list-style-type: square;
   font-size: 1.8rem;
   line-height: 150%;
-  padding-top: 20px;
-  /* margin-left: 30px;
-  margin-right: 30px; */
+  list-style-type: square;
+  padding-top: 2rem;
 }
 
 .personas .general-personas li {
-  padding-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
 }
 
 .personas .info {
   list-style-type: none;
 }
 
-/*
-.normal {
-  font-weight: normal;
-} */
+/* USER STORIES */
 .user-stories {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F9F9F9;
-  padding-top: 40px;
-  margin-top: 96px;
-  padding-bottom: 40px;
-  margin-bottom: 96px;
+  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .user-stories h2,
 .user-stories h4 {
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
-/* .user-stories h2 {
-  margin-top: 96px;
-} */
 .user-stories h2,
 .user-stories h4,
 .user-stories p,
 .user-stories ul {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .user-stories ul {
-  list-style-type: square;
   font-size: 1.8rem;
   line-height: 150%;
-  /* padding-top: 20px; */
+  list-style-type: square;
   text-align: left;
 }
 
 .user-stories li {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-bottom: 20px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
 }
 
 .user-stories h4 {
-  margin-top: 46px;
+  margin-top: 4.6rem;
+  /* I am using 4.6rem here because I am using 1rem on the border */
 }
 
 .high {
-  border-top: 10px solid #41FA00;
+  border-top: 1rem solid #67FFAD;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 28px;
-  margin-top: 56px;
+  margin-bottom: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 5.6rem;
 }
 
 .medium {
-  border-top: 10px solid #F5FA00;
+  border-top: 1rem solid #FFF067;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .low {
-  border-top: 10px solid #FA0000;
+  border-top: 1rem solid #FF6767;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .user-hml h4 {
@@ -777,44 +743,46 @@ outline: none;
 }
 
 .user-hml ul {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
+/* USER FLOWS */
 .user-flows {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .user-flows h2 {
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 .userflow {
   width: 100%;
-  margin-top: 28px;
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
+  margin-top: 2.8rem;
 }
 
+/* SKETCHES & WIREFRAMES */
 .sketches-wireframes {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 96px;
   background-color: #F9F9F9;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 9.6rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .sketches-wireframes h2,
 .sketches-wireframes h4,
 .sketches-wireframes .sw {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 #slandingpage,
@@ -825,7 +793,6 @@ outline: none;
 #wsignup {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  /* margin-bottom: 28px; */
 }
 
 #slandingpage,
@@ -834,22 +801,21 @@ outline: none;
 #wpricing,
 #ssignup,
 #wsignup {
-  margin-top: 28px;
+  margin-top: 2.8rem;
 }
 
 #wlandingpage,
 #wpricing {
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 
 .sketches-wireframes h2 {
   font-weight: bold;
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 
 .sketches-wireframes h4 {
   font-weight: 400;
-  /* margin-bottom: 28px; */
 }
 
 /* BRANDING */
@@ -867,48 +833,48 @@ outline: none;
 
 #brainstorm {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 28px;
-  margin-top: 36px;
-  /*I used 36px instead of 56px because there is already 20px on the margin-bottom p*/
+  margin-bottom: 2.8rem;
+  margin-top: 3.6rem;
+  /*I used 3.6rem or 36px instead of 56px because there is already 20px on the margin-bottom p*/
 }
 
 #sketch {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 96px;
+  margin-bottom: 9.6rem;
 }
 
 #branding {
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 .branding h2,
 .branding p,
 .branding .brain-sketch {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .branding h2 {
   font-weight: bold;
-  margin-bottom: 56px;
-  margin-top: 96px;
+  margin-bottom: 5.6rem;
+  margin-top: 9.6rem;
 }
 
 .branding p {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 /* Name (part of the branding) */
 .name {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .name h3 {
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 /* Logo (part of the branding) */
@@ -920,14 +886,14 @@ outline: none;
 
 .logo-section h3,
 .logo-section p {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .logo-section h3 {
   font-weight: bold;
-  margin-top: 96px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 #logos,
@@ -935,14 +901,14 @@ outline: none;
   width: 80%;
   margin: auto;
   display: flex;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
 }
 
 .small-background {
   background-color: #F9F9F9;
-  margin-top: 56px;
-  margin-bottom: 96px;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
 }
 
 /* Colors (part of the branding) */
@@ -955,32 +921,32 @@ outline: none;
 .colors h3,
 .colors p,
 .colors h4 {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .colors h3 {
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 .colors h4 {
-  margin-top: 56px;
   font-weight: 400;
+  margin-top: 5.6rem;
 }
 
 #palette1 {
-  width: 90%;
   margin: auto;
-  padding-top: 28px;
-  padding-bottom: 56px;
+  padding-bottom: 5.6rem;
+  padding-top: 2.8rem;
+  width: 90%;
 }
 
 #palette2 {
-  width: 60%;
   margin: auto;
-  padding-top: 28px;
   padding-bottom: 96px;
+  padding-top: 28px;
+  width: 60%;
 }
 
 /* Typography (part of the branding) */
@@ -988,20 +954,20 @@ outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 #avenirnext,
 #poppins {
   width: 100%;
   margin: auto;
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 .typography h3 {
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
 /* Icons (part of the branding) */
@@ -1009,31 +975,31 @@ outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .icons h4 {
   font-weight: 400;
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 .icons h3 {
   font-weight: bold;
-  margin-bottom: 28px;
-  margin-top: 96px;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 #icons1,
 #icons2 {
-  width: 100%;
-  margin: auto;
-  margin-top: 28px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  margin-top: 2.8rem;
+  width: 100%;
 }
 
 #icons2 {
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 
 /* HIGH FIDELITY MOCKUPS */
@@ -1041,23 +1007,23 @@ outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .hfm h2 {
   font-weight: bold;
-  margin-top: 96px;
-  margin-bottom: 28px;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
 }
 
 .hfm h4 {
-  margin-top: 56px;
   font-weight: 400;
+  margin-top: 5.6rem;
 }
 
 .p-space {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 #features1,
@@ -1070,9 +1036,9 @@ outline: none;
 #color50,
 #forgotpassword,
 #autosaves {
-  width: 100%;
-  margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  width: 100%;
 }
 
 #features1,
@@ -1083,19 +1049,19 @@ outline: none;
 #footer2,
 #color40,
 #color50 {
-  margin-top: 28px;
+  margin-top: 2.8rem;
 }
 
 #features2,
 #positionpicture2,
 #footer2,
 #color50 {
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 
 #forgotpassword {
-  margin-top: 56px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
 }
 
 /* PROTOTYPES AND TESTS */
@@ -1103,21 +1069,21 @@ outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .prototypes-tests h2,
 .prototypes-tests h3 {
   font-weight: bold;
-  margin-top: 96px;
-  margin-bottom: 28px;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
 }
 
 .prototypes-tests h4 {
-  margin-top: 56px;
   font-weight: 400;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
 }
 
 #pricing1,
@@ -1132,8 +1098,8 @@ outline: none;
 }
 
 #usability-test {
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
 }
 
 /* CONCLUSION */
@@ -1146,6 +1112,6 @@ outline: none;
 
 .conclusion h2 {
   font-weight: bold;
-  margin-top: 96px;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
