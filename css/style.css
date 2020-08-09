@@ -60,7 +60,8 @@ header .row {
 header {
   position: sticky;
   top: 0;
-  background-color: white;
+  z-index: 2;
+  background-color: #F9F9F9;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .sr-only {
@@ -103,7 +104,7 @@ header {
   min-height: 100%;
   /* width: 320px; */
   /* width: 320px; */
-  background-color: white;
+  background-color: #F9F9F9;
 }
 
 /* It is important to use display block to have a big area to click, specially on mobile devices. links are inline. */
@@ -147,8 +148,6 @@ header {
 
 .main-menu:target {
   display: block;
-  /* Teacher used left here */
-  /* left: 0; */
   top: 0;
   outline: none;
 }
@@ -250,142 +249,6 @@ header {
 }
 
 
-/* HOMEPAGE */
-.maira {
-  margin: auto;
-  padding-top: 2.8rem;
-  width: 100%;
-}
-
-.text {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.text h1 {
-  font-weight: bold;
-  margin-bottom: 2.8rem;
-  margin-top: 2.8rem;
-  text-align: left;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-#arrow {
-  /*hide this on mobile*/
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
-  text-align: center;
-}
-
-.pop h4 {
-  color: #00758D;
-  margin-bottom: 5.6rem;
-  margin-left: 3rem;
-  margin-right: 3REM;
-  margin-top: 9.6rem;
-  text-align: left;
-}
-
-
-
-
-
-
-
-
-
-
-
-.mairecipe {
-  width: 100%;
-  /* display: flex;
-  align-self: center; */
-}
-
-.mairecipes {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  text-align: center;
-}
-
-.background {
-  background-color: #F9F9F9;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.mairecipes h3 {
-  font-weight: bold;
-  /* text-align: center; */
-  margin-top: 5.6rem;
-}
-
-.mairecipes p {
-  padding-top: 2.8rem;
-  text-align: left;
-}
-
-
-.mairecipes .btn {
-  text-align: center;
-}
-
-
-/* BUSY-BUS */
-.busy-bus1,
-.busy-bus2 {
-  /* margin: auto; */
-  width: 40%;
-}
-
-.busy-bus1 {
-  margin-left: 3rem;
-}
-
-.busy-bus2 {
-  margin-right: 2rem;
-}
-
-.busy-bus {
-  display: flex;
-  align-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.bb {
-  align-items: center;
-  background-color: #F9F9F9;
-  margin-bottom: 2.8rem;
-  margin-top: 2.8rem;
-  padding-top: 5.6rem;
-}
-
-.bb h3 {
-  font-weight: bold;
-  margin-top: 5.6rem;
-  text-align: center;
-}
-
-.bb p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  padding-top: 2.8rem;
-  text-align: left;
-}
-
 .back-top {
   color: #1A1A1A;
   font-weight: bold;
@@ -428,12 +291,168 @@ header {
   padding-bottom: 2.8rem;
 }
 
+
+
+/* HOMEPAGE */
+.maira {
+  margin: auto;
+  padding-top: 2.8rem;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text h1 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#arrow {
+  /*hide this on mobile*/
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.pop h4 {
+  color: #00758D;
+  margin-bottom: 5.6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  text-align: left;
+}
+
+/* MAI RECIPES */
+.mairecipe {
+  width: 100%;
+  /* display: flex;
+  align-self: center; */
+}
+
+.mairecipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+.background {
+  background-color: #F9F9F9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pop .background {
+  margin-bottom: 2rem;
+}
+
+main .background {
+  margin-bottom: 2rem;
+}
+
+.top-size .back-top {
+  margin-top: 7.6rem;
+}
+
+
+.mairecipes h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.mairecipes p {
+  padding-top: 2.8rem;
+  text-align: left;
+  margin-bottom: 2.8rem;
+}
+
+
+.mairecipes .btn {
+  align-self: center;
+
+}
+
+/* BUSY-BUS */
+.busy-bus1,
+.busy-bus2 {
+  /* margin: auto; */
+  width: 40%;
+}
+
+.busy-bus1 {
+  margin-left: 3rem;
+}
+
+.busy-bus2 {
+  margin-right: 2rem;
+}
+
+.busy-bus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F9F9;
+  margin-top: 2.8rem;
+}
+
+.bb h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+  text-align: center;
+}
+
+.bb p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: left;
+}
+
+.busy-bus .btn {
+  align-self: center;
+
+}
+
+
+/* WORK PAGE */
+
+
+
+
+
+
+
+
 /* PROJECT */
 .casestudy {
   margin-left: 3rem;
   margin-right: 3rem;
   width: 80%;
-  margin-top: 2.4rem;
+  margin-top: 5.6rem;
 }
 
 .pictext2 {
@@ -659,6 +678,7 @@ header {
 .quote {
   position: relative;
   margin-top: 3.6rem;
+  z-index: 1;
   /* I used 3.6rem or 36px instead of 56px because the li above has 20px of margin-bottom */
 }
 
