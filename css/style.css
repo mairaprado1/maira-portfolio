@@ -41,14 +41,12 @@ small {
   line-height: 150%;
 }
 
-
 .logo img {
   height: 50px;
   margin-left: 30px;
   margin-top: 10px;
   width: 50px;
 }
-
 
 header .row {
   display: flex;
@@ -64,6 +62,7 @@ header {
   background-color: #F9F9F9;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -92,8 +91,9 @@ header {
   height: 100%;
   overflow-x: visible;
   overflow-y: auto;
-  transition: right .8s ease-in-out; /*teacher used left but I want to build on the opposite side */
-/* transition: all .5s linear; */
+  transition: right .8s ease-in-out;
+  /*teacher used left but I want to build on the opposite side */
+  /* transition: all .5s linear; */
   z-index: 999;
 }
 
@@ -110,7 +110,8 @@ header {
 /* It is important to use display block to have a big area to click, specially on mobile devices. links are inline. */
 .main-menu a {
   display: block;
-  padding: 2.5rem; /* This gives space around the links so we can click them */
+  padding: 2.5rem;
+  /* This gives space around the links so we can click them */
   color: #1A1A1A;
   text-decoration: none;
   font-size: 1.8rem;
@@ -120,7 +121,6 @@ header {
   border-bottom: 1px solid #1A1A1A;
   margin-left: 30px;
   margin-right: 30px;
-
 }
 
 .main-menu li:first-child a {
@@ -131,7 +131,6 @@ header {
 
 .main-menu a:hover,
 .main-menu a:focus {
-
   text-decoration: underline;
 }
 
@@ -143,7 +142,6 @@ header {
   font-weight: lighter;
   margin-right: 9px;
   margin-top: 6px;
-
 }
 
 .main-menu:target {
@@ -177,16 +175,13 @@ header {
   cursor: default;
 }
 
-
 .fa-bars,
 .fa-close {
   font-size: 2rem;
 }
 
-
-
 /* media query  */
- /* .menu-toggle,
+/* .menu-toggle,
 .main-menu .menu-close {
   display: none;
 }
@@ -206,8 +201,8 @@ header {
 }
 
 .main-menu li {*/
-  /* I can use inline-block or flexbox */
- /* display: inline-block;
+/* I can use inline-block or flexbox */
+/* display: inline-block;
 
 }
 
@@ -229,10 +224,6 @@ header {
   color: #7e64be;
   text-decoration: none;
 } */
-
-
-
-
 .btn {
   background-color: #00758D;
   border: none;
@@ -247,7 +238,6 @@ header {
   text-decoration: none;
   width: 18.4rem;
 }
-
 
 .back-top {
   color: #1A1A1A;
@@ -291,12 +281,10 @@ header {
   padding-bottom: 2.8rem;
 }
 
-
-
 /* HOMEPAGE */
 .maira {
   margin: auto;
-  padding-top: 2.8rem;
+  /* padding-top: 2.8rem; */
   width: 100%;
 }
 
@@ -337,6 +325,7 @@ header {
   text-align: left;
 }
 
+/* CONTACT PAGE */
 /* MAI RECIPES */
 .mairecipe {
   width: 100%;
@@ -371,7 +360,6 @@ main .background {
   margin-top: 7.6rem;
 }
 
-
 .mairecipes h3 {
   font-weight: bold;
   margin-top: 5.6rem;
@@ -383,10 +371,8 @@ main .background {
   margin-bottom: 2.8rem;
 }
 
-
 .mairecipes .btn {
   align-self: center;
-
 }
 
 /* BUSY-BUS */
@@ -434,19 +420,9 @@ main .background {
 
 .busy-bus .btn {
   align-self: center;
-
 }
 
-
 /* WORK PAGE */
-
-
-
-
-
-
-
-
 /* PROJECT */
 .casestudy {
   margin-left: 3rem;
