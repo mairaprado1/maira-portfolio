@@ -310,6 +310,11 @@ header {
   font-weight: bold;
 }
 
+#arrow {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
 .arrow {
   /*hide this on mobile*/
   margin-top: 2.8rem;
@@ -435,7 +440,7 @@ button {
   padding: 1.6rem 3.2rem;
   text-align: center;
   text-decoration: none;
-  width: 10rem;
+  /* width: 10rem; */
   display: block;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -450,12 +455,14 @@ button:hover {
 input {
   display: block;
   /* margin-bottom: 2rem; */
-  width: 26rem;
+  width: 80%;;
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 28px;
+
+
 }
 
 label {
@@ -469,13 +476,25 @@ label {
 
 textarea {
   height: 10rem;
-  width: 26rem;
+  width: 80%;
   padding: 1rem;
   font-family: 'Poppins', sans-serif;
   margin-left: 3rem;
   margin-right: 3rem;
   /* margin-bottom: 28px; */
+
 }
+
+#name,
+#email,
+#message {
+  border: 1px solid #828282;
+  /* border: 1px solid #00758D; */
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 
 .contact-tittle {
   margin-top: 5.6rem;
@@ -579,6 +598,14 @@ textarea {
   text-align: left;
 }
 
+.greeting {
+  margin-top: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-bottom: 5.6rem;
+}
+
 .about1,
 .about2,
 .about3,
@@ -589,83 +616,86 @@ textarea {
 }
 
 .about2,
-.about3,
-.about5 {
+.about3 {
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
 }
 
 .about4 {
   margin-top: 5.6rem;
-  margin-bottom: 6.8rem; /*I used 6.8 instead of 9.6 because the next tittle have already 2.8rem */
+  /* margin-bottom: 6.8rem; /*I used 6.8 instead of 9.6 because the next tittle have already 2.8rem */ */
+}
+
+.about5 {
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
 }
 
 .about6 {
   margin-top: 5.6rem;
-
 }
-.greeting {
-  margin-top: 2.8rem;
+
+.about-container h1,
+.about-container h3,
+.about-container p {
   margin-left: 3rem;
   margin-right: 3rem;
-  font-weight: bold;
+}
+
+.who h3 {
   margin-bottom: 2.8rem;
-
-}
-
-.part1 h3 {
   font-weight: bold;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 2.8rem;
-  margin-top: 9.6rem;
 }
 
-.part4 h3 {
+.chapter h3 {
+  margin-bottom: 2.8rem;
   font-weight: bold;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 2.8rem;
-  margin-top: 2.8rem;
+}
+.who {
+  background-color: #F9F9F9;
+  /* padding-bottom: 4rem; */
+  padding-top: 4rem;
 }
 
-.part1 p,
-.part2 p,
-.part3 p,
-.part4 p,
-.part5 p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-
+.chapter {
+  background-color: #F9F9F9;
+/* padding-bottom: 4rem; */
+  padding-top: 4rem;
+  margin-top: 5.6rem;
 }
+
+
+
+
+
+
+
 
 
 
 
 /* PROJECT */
-.casestudy {
+.text2 {
+  display: flex;
+  /* align-content: space-between; */
+  flex-direction: column;
+  justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
-  width: 80%;
+}
+.casestudy {
+  width: 100%;
   margin-top: 5.6rem;
 }
 
 .pictext2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.text2 {
-  display: flex;
-  align-content: space-between;
-  flex-direction: column;
-  justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 .text2 h3 {
   margin-bottom: 2.8rem;
+
 }
 
 .text2 h1 {
