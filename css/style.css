@@ -60,9 +60,8 @@ header {
   top: 0;
   z-index: 2;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
-
 
 .sr-only {
   position: absolute;
@@ -103,8 +102,6 @@ header {
   margin: 0;
   padding-top: 2.5rem;
   min-height: 100%;
-  /* width: 320px; */
-  /* width: 320px; */
   background-color: #F9F9F9;
 }
 
@@ -120,14 +117,14 @@ header {
 
 .main-menu li {
   border-bottom: 1px solid #1A1A1A;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .main-menu li:first-child a {
   border-top: 1px solid #1A1A1A;
   margin-left: 0;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .main-menu a:hover,
@@ -209,7 +206,6 @@ header {
 
 .main-menu li:first-child a {
   border-top: none;
-
 }
 
 .main-menu a {
@@ -217,7 +213,6 @@ header {
   border-bottom: none;
   display: inline;
 }
-
 
 .main-menu a:hover,
 .main-menu a:focus {
@@ -233,7 +228,6 @@ header {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: bold;
-  /* margin-top: 28px; */
   padding: 1.6rem 3.2rem;
   text-align: center;
   text-decoration: none;
@@ -254,8 +248,6 @@ header {
 .footer {
   background-color: #00758D;
   color: white;
-  /* height: 400px; */
-  /* margin-top: 5.6rem; */
 }
 
 .footer-link {
@@ -285,7 +277,6 @@ header {
 /* HOMEPAGE */
 .maira {
   margin: auto;
-  /* padding-top: 2.8rem; */
   width: 100%;
 }
 
@@ -315,6 +306,7 @@ header {
   margin-bottom: 2.8rem;
   text-align: center;
 }
+
 .arrow {
   /*hide this on mobile*/
   margin-top: 2.8rem;
@@ -334,8 +326,6 @@ header {
 /* MAI RECIPES */
 .mairecipe {
   width: 100%;
-  /* display: flex;
-  align-self: center; */
 }
 
 .mairecipes {
@@ -349,8 +339,8 @@ header {
 
 .background {
   background-color: #F9F9F9;
-  padding-top: 4rem;
   padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .pop .background {
@@ -383,7 +373,6 @@ main .background {
 /* BUSY-BUS */
 .busy-bus1,
 .busy-bus2 {
-  /* margin: auto; */
   width: 40%;
 }
 
@@ -417,9 +406,9 @@ main .background {
 
 .bb p {
   margin-left: 3rem;
+  margin-bottom: 2.8rem;
   margin-right: 3rem;
   padding-top: 2.8rem;
-  margin-bottom: 2.8rem;
   text-align: left;
 }
 
@@ -440,7 +429,6 @@ button {
   padding: 1.6rem 3.2rem;
   text-align: center;
   text-decoration: none;
-  /* width: 10rem; */
   display: block;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -448,30 +436,27 @@ button {
 }
 
 button:hover {
-  background-color: purple;
+    text-decoration: underline;
 }
-
 
 input {
   display: block;
-  /* margin-bottom: 2rem; */
-  width: 80%;;
+  width: 80%;
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 28px;
-
-
+  padding-left: 1rem;
 }
 
 label {
-  font-size: 1.4rem;
-  font-family: 'Poppins', sans-serif;
   display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 10px;
 }
 
 textarea {
@@ -481,24 +466,20 @@ textarea {
   font-family: 'Poppins', sans-serif;
   margin-left: 3rem;
   margin-right: 3rem;
-  /* margin-bottom: 28px; */
-
 }
 
 #name,
 #email,
 #message {
   border: 1px solid #828282;
-  /* border: 1px solid #00758D; */
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
-  padding-top: .5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   padding-bottom: .5rem;
+  padding-top: .5rem;
 }
 
-
 .contact-tittle {
-  margin-top: 5.6rem;
   margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
 }
 
 .contact p {
@@ -506,9 +487,6 @@ textarea {
 }
 
 .contact {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -520,17 +498,15 @@ textarea {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
 .resume h3 {
   color: #D80303;
   font-weight: 500;
-  }
-
-.resume h3 {
-  margin-top: 56px;
 }
 
 .resume h3 {
-  margin-bottom: 28px;
+  margin-top: 5.6rem;
+  margin-bottom: 2.8rem;
 }
 
 .resume ul {
@@ -542,22 +518,28 @@ textarea {
 }
 
 .resume .project-name {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.resume .busy {
+    margin-top: 5.6rem;
+}
+
+.resume .fala {
+    margin-top: 5.6rem;
 }
 
 .resume .p-space {
-  margin-bottom: 56px;
+  margin-bottom: 2.8rem;
 }
 
 .resume .experience {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
-
 
 .resume .date {
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
-
 
 .resume h4 {
   font-weight: 500;
@@ -573,23 +555,21 @@ textarea {
   margin-bottom: 1rem;
 }
 
- .edu-dpaul {
-   margin-bottom: 1rem;
- }
-
- .edu-oab,
- .edu-utp {
-   margin-top: 5.6rem;
-   margin-bottom: 1rem;
- }
-
-.resume .btn {
-  margin-top: 5.6rem;
+.edu-dpaul {
+  margin-bottom: 1rem;
 }
 
+.edu-oab,
+.edu-utp {
+  margin-top: 5.6rem;
+  margin-bottom: 1rem;
+}
+
+.margin-btn {
+  margin-bottom: 5.6rem;
+}
 
 /* ABOUT PAGE */
-
 .about h1 {
   margin-top: 2.8rem;
   margin-bottom: 2.8rem;
@@ -599,11 +579,11 @@ textarea {
 }
 
 .greeting {
-  margin-top: 2.8rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
   font-weight: bold;
   margin-bottom: 5.6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2.8rem;
 }
 
 .about1,
@@ -617,18 +597,17 @@ textarea {
 
 .about2,
 .about3 {
-  margin-top: 5.6rem;
   margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
 }
 
 .about4 {
   margin-top: 5.6rem;
-  /* margin-bottom: 6.8rem; /*I used 6.8 instead of 9.6 because the next tittle have already 2.8rem */ */
 }
 
 .about5 {
-  margin-top: 5.6rem;
   margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
 }
 
 .about6 {
@@ -643,49 +622,38 @@ textarea {
 }
 
 .who h3 {
-  margin-bottom: 2.8rem;
   font-weight: bold;
+  margin-bottom: 2.8rem;
 }
 
 .chapter h3 {
-  margin-bottom: 2.8rem;
   font-weight: bold;
+  margin-bottom: 2.8rem;
 }
+
 .who {
   background-color: #F9F9F9;
-  /* padding-bottom: 4rem; */
   padding-top: 4rem;
 }
 
 .chapter {
   background-color: #F9F9F9;
-/* padding-bottom: 4rem; */
-  padding-top: 4rem;
   margin-top: 5.6rem;
+  padding-top: 4rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* PROJECT */
 .text2 {
   display: flex;
-  /* align-content: space-between; */
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
 .casestudy {
-  width: 100%;
   margin-top: 5.6rem;
+  width: 100%;
 }
 
 .pictext2 {
@@ -695,7 +663,6 @@ textarea {
 
 .text2 h3 {
   margin-bottom: 2.8rem;
-
 }
 
 .text2 h1 {
@@ -774,11 +741,11 @@ textarea {
 
 .question4 {
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
 .question6 {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-top: 2.8rem;
   width: 100%;
 }
@@ -976,7 +943,7 @@ textarea {
 
 .high {
   border-top: 1rem solid #67FFAD;
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -985,7 +952,7 @@ textarea {
 
 .medium {
   border-top: 1rem solid #FFF067;
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -993,7 +960,7 @@ textarea {
 
 .low {
   border-top: 1rem solid #FF6767;
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -1051,7 +1018,7 @@ textarea {
 #wpricing,
 #ssignup,
 #wsignup {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   width: 100%;
 }
 
@@ -1092,14 +1059,14 @@ textarea {
 }
 
 #brainstorm {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 2.8rem;
   margin-top: 3.6rem;
   /*I used 3.6rem or 36px instead of 56px because there is already 20px on the margin-bottom p*/
 }
 
 #sketch {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 9.6rem;
 }
 
@@ -1252,7 +1219,7 @@ textarea {
 
 #icons1,
 #icons2 {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin: auto;
   margin-top: 2.8rem;
   width: 100%;
@@ -1296,7 +1263,7 @@ textarea {
 #color50,
 #forgotpassword,
 #autosaves {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin: auto;
   width: 100%;
 }
@@ -1354,7 +1321,7 @@ textarea {
 
 #pricing1,
 #pricing2 {
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
 #usability-test {
