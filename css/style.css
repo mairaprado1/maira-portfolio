@@ -42,10 +42,10 @@ small {
 }
 
 .logo img {
-  height: 50px;
-  margin-left: 30px;
-  margin-top: 10px;
-  width: 50px;
+  height: 5rem;;
+  margin-left: 3rem;;
+  margin-top: 1rem;
+  width: 5rem;
 }
 
 header .row {
@@ -180,48 +180,7 @@ header {
   font-size: 2rem;
 }
 
-/* media query  */
-/* .menu-toggle,
-.main-menu .menu-close {
-  display: none;
-}
 
-.main-menu {
-  position: static;
-  display: block;
-}
-
-.main-menu ul {
-  padding: 0;
-  height: auto;
-  width: auto;
-  background: none;
-  overflow: hidden;
-  text-align: center;
-}
-
-.main-menu li {*/
-/* I can use inline-block or flexbox */
-/* display: inline-block;
-
-}
-
-.main-menu li:first-child a {
-  border-top: none;
-}
-
-.main-menu a {
-  color: #c85028;
-  border-bottom: none;
-  display: inline;
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: none;
-  color: #7e64be;
-  text-decoration: none;
-} */
 .btn {
   background-color: #00758D;
   border: none;
@@ -248,15 +207,15 @@ header {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #00758D;
   color: white;
 }
 
 .footer-link {
   display: flex;
-  align-items: center;
   color: white;
-  flex-direction: row;
   justify-content: space-around;
   margin: 2.8rem 3rem;
 }
@@ -303,12 +262,13 @@ header {
   font-weight: bold;
 }
 
-#arrow {
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
-  text-align: center;
-}
 
+
+/*
+.about-container .center {
+  display: flex;
+  flex-direction: row;
+} */
 .arrow {
   /*hide this on mobile*/
   margin-top: 2.8rem;
@@ -413,8 +373,11 @@ main .background {
   padding-top: 2.8rem;
   text-align: left;
 }
-
-.busy-bus .btn {
+.bb-text {
+  display: flex;
+  flex-direction: column;
+}
+.bb-text .btn {
   align-self: center;
 }
 
@@ -438,7 +401,7 @@ button {
 }
 
 button:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 input {
@@ -524,11 +487,11 @@ textarea {
 }
 
 .resume .busy {
-    margin-top: 5.6rem;
+  margin-top: 5.6rem;
 }
 
 .resume .fala {
-    margin-top: 5.6rem;
+  margin-top: 5.6rem;
 }
 
 .resume .p-space {
@@ -572,28 +535,10 @@ textarea {
 }
 
 /* ABOUT PAGE */
-
 .about {
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about h1 {
   margin-top: 2.8rem;
@@ -682,7 +627,6 @@ textarea {
   margin-left: 3rem;
   margin-right: 3rem;
 }
-
 
 .text2 h3 {
   margin-bottom: 2.8rem;
@@ -1366,140 +1310,604 @@ textarea {
   margin-top: 9.6rem;
 }
 
-
-
-
-
-/* I need to put this in the about page section */
-.about-desktop {
-  display: flex;
-  /* margin: 3px solid red; */
-  /* justify-content: center; */
-  /* align-content: stretch; */
-}
-
-/* If it is smaller than 767px execute the command */
-@media (max-width: 767px) {
-  .about-container .about-desktop {
-    display: none;
-  }
-
-}
-
-/* If it is smaller than 1024px execute the command */
+/* Execute the commmand when smaller than 1024px */
 @media (max-width: 1024px) {
   .arrow {
     display: none;
+    /* text-align: center; */
   }
 }
 
-/* Execute the command when bigger than 768px */
+/* Execute the commmand when bigger than 767px */
 @media (min-width: 768px) {
-/* 1st part of the page */
-  .about {
-    flex-direction: row;
-  }
-
-  .about-container .about-mobile {
-    display: none;
-  }
-
-  .about-container  .hi {
-    /* flex: 5; */
-    background-color: pink;
-  }
-
-/* This is a picture - This picture and the text-tex below are siblings*/
-  .about1 {
-    width: 40%;
-    margin-top: 3.2rem;
-    /* margin-left: 3rem; */
-    flex: 1; /* I used 1 here and 1 in his sibling to have a 2 grid column */
-  }
-
-  .about-desktop .text-text {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-    background-color: green;
-    margin-top: 3.2rem;
-    flex: 1; /*I used 1 here and 1 in his sibling to have a 2 grid column */
-  }
-
-  .about-container .about-mobile {
-    display: none;
-  }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Execute the command when bigger than 1024px */
-@media (min-width: 1024px) {
   h1 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     line-height: 150%;
   }
 
   h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     line-height: 150%;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 150%;
   }
 
   h4 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 150%;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 150%;
   }
 
   small {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 150%;
   }
 
-  header {
-    max-width: 1140px;
+  /* This is the whole container for the main part in About Page */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
+  header .row {
+    height: 8rem;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+  }
 
+  /* NAV */
+   .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
 
-  /* .main-menu a {
+  .main-menu {
+    position: static;
+    display: block;
+  }
+
+  .main-menu ul {
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: hidden;
+    text-align: center;
+    /* border: solid 3px red; */
     display: flex;
-    padding: 2.5rem;
-    /* This gives space around the links so we can click them */
-    /*color: #1A1A1A;
-    text-decoration: none;
-    font-size: 1.8rem;
+    justify-content: flex-end;
+    /* margin-bottom: 1rem; */
+    position: absolute;
+    top: 4rem;;
+    right: 3rem;
+    left: 10rem;
+  margin-left: rem;
+  }
+
+  .logo img {
+    /* height: 5rem;; */
+    margin-left: 3rem;;
+    margin-top: 2rem;
+    /* width: 5rem; */
+  }
+
+  .main-menu li {
+  /* I can use inline-block or flexbox */
+  display: inline-block;
+  border-bottom: none;
+
+  }
+
+  .main-menu li:first-child a {
+    border-top: none;
+  }
+
+  .main-menu a {
+    color: #1A1A1A;
+    border-bottom: none;
+    display: inline;
+    padding: 0;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none;
+    /* color: #FFFFFF; */
+    /* background-color: #828282; */
+    text-decoration: underline;
+    font-weight: bold;
   } */
 
+/* This is the footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* .main-menu ul {
+.footer-link {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.footer h4 {
+  margin: auto;
+}
+
+.rights {
+  margin: auto;
+}
+
+  /* ABOUT PAGE (First picture) */
+  .intro {
     display: flex;
-    list-style: display;
-    margin: 0;
-    padding-top: 2.5rem;
-    min-height: 100%;
-    background-color: #F9F9F9;
+    flex-direction: row;
+  }
+
+  .about1 {
+    width: 40%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    order: 1;
+  }
+
+  .greeting {
+    margin-bottom: 0;
+  }
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+  }
+
+  /* ABOUT PAGE (Second Picture) */
+  .who {
+    margin-top: 5.6rem;
+  }
+
+  .who1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .who-img {
+    display: flex;
+    justify-content: center;
+
+  }
+  .about2 {
+    width: 70%;
+     margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Third Picture) */
+  .who2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .who2-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about3 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Fourth Picture) */
+  .who3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .who3-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about4 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Fifth Picture) */
+  .chapter1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .chapter1-img {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .about5 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Sixth Picture) */
+  .chapter2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .chapter-img {
+    display: flex;
+    justify-content: center;
+
+  }
+  .about6 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .back-top {
+    display: flex;
+    text-align: center;
+  }
+
+/* This is the whole container for the main part in HOMEPAGE */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+/* HOMEPAGE (First picture) */
+.pictext {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  justify-content: center;
+  /* flex: 1; */
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.maira {
+  width: 40%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  /* flex: 1; */
+}
+
+/* FEATURED PROJECTS (Mai Recipes) */
+.mairecipes {
+  display: flex;
+  justify-content: center;
+}
+
+.mai-text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mai-text h3,
+.mairecipes .btn {
+  align-self: flex-start;
+}
+.mairecipe {
+  width: 90%;
+}
+
+/* FEATURED PROJECTS (Busy-Bus) */
+.bb {
+  display: flex;
+  justify-content: center;
+}
+
+.bb-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.bb-text h3,
+.bb-text .btn {
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+.mairecipe {
+  width: 90%;
+}
+
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  /* header {
+    max-width: 1280px;
+    margin: auto;
   } */
+
+.logo {
+  padding-left: 6rem;
+}
+
+/* This is the footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1280px;
+    margin: auto; */
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40rem;
+    margin-right: 40rem;
+  }
+
+  .footer h4 {
+    margin: auto;
+  }
+
+  .rights {
+    margin: auto;
+  }
+
+  .arrow {
+    align-self: center;
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+
+  /* ABOUT PAGE (First Picture) */
+  .about1 {
+    padding-left: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* ABOUT PAGE (Second Picture */
+  .who1 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+  }
+
+  .who-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .who-img,
+  .who2-img,
+  .who3-img,
+  .chapter1-img,
+  .chapter2-img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .about2 {
+    width: 50%;
+    flex: 1;
+    padding-right: 8rem;
+    justify-content: center;
+  }
+
+/* ABOUT PAGE (Third Picture) */
+  .who2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .who2-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .about3 {
+    width: 50%;
+    flex: 1;
+    padding-left: 8rem;
+    justify-content: center;
+  }
+
+  /* ABOUT PAGE (Fourth Picture */
+  .who3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .who-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .about4 {
+    width: 50%;
+    flex: 1;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+  }
+
+/* ABOUT PAGE (Fifth Picture */
+.chapter1 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+
+.chapter-text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.about5 {
+  width: 50%;
+  flex: 1;
+  padding-left: 8rem;
+}
+
+/* ABOUT PAGE (Sixth Picture) */
+.chapter2 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+.about6 {
+  width: 50%;
+  flex: 1;
+  padding-right: 8rem;
+  padding-bottom: 4rem;
+}
+
+/* This is the whole container for the main part in HOMEPAGE */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+}
+
+
+/* HOMEPAGE (First picture) */
+.pictext {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 8rem;
+}
+
+ .maira {
+  width: 40%;
+  margin-left: 8rem;
+  margin-top: 3rem;
+
+}
+
+/* FEATURED PROJECTS (Mai Recipes) */
+.pop {
+  margin-left: 5rem;
+}
+
+.mairecipe {
+  width: 70%;
+}
+
+.mairecipes {
+  padding-left: 16rem;
+  padding-right: 16rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* FEATURED PROJECTS (Busy-Bus) */
+.busy-bus {
+width: 70%;
+}
+
+.bb {
+  padding-left: 16rem;
+  padding-right: 16rem;
+  justify-content: center;
+}
+
+.bb-text,
+.bb p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bb-text h3,
+.bb-text .btn {
+  margin-left: 0;
+}
+
+.mai-text {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+
 
 
 
