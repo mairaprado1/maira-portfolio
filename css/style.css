@@ -1437,8 +1437,8 @@ textarea {
 .footer-link {
   display: flex;
   justify-content: space-around;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
 }
 
 .footer h4 {
@@ -1566,7 +1566,7 @@ textarea {
     margin-right: 2rem;
   }
 
-  .chapter-img {
+  .chapter2-img {
     display: flex;
     justify-content: center;
 
@@ -1659,12 +1659,12 @@ textarea {
 
 
 }
-
+/* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
-  .about-container {
+  /* .about-container {
     max-width: 1140px;
     margin: auto;
-  }
+  } */
 
   /* header {
     max-width: 1280px;
@@ -1700,14 +1700,14 @@ textarea {
 
   .arrow {
     align-self: center;
-    margin-top: 2.8rem;
+    /* margin-top: 2.8rem; */
     margin-bottom: 2.8rem;
   }
 
   /* ABOUT PAGE (First Picture) */
   .about1 {
     padding-left: 6rem;
-    padding-bottom: 6rem;
+
   }
 
   .about-container {
@@ -1715,6 +1715,8 @@ textarea {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+
 
   /* ABOUT PAGE (Second Picture */
   .who1 {
@@ -1786,6 +1788,7 @@ textarea {
     flex: 1;
     padding-right: 5rem;
     padding-left: 5rem;
+    margin-bottom: 4rem;
   }
 
   .about4 {
@@ -1822,6 +1825,7 @@ textarea {
 .chapter2 {
   display: flex;
   flex-direction: row;
+  margin-bottom: 4rem;
   /* justify-content: center; */
 }
 .about6 {
@@ -1836,7 +1840,7 @@ textarea {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   margin: auto;
 }
 
@@ -1907,6 +1911,70 @@ width: 70%;
 
 
 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Execute the commmand when bigger than 1440px */
+@media (min-width: 1440px) {
+  /* ABOUT PAGE */
+
+
+
+
+
+
+
+/* HOMEPAGE AND WORK PAGE */
+.text {
+  padding-left: 6rem;
+  padding-right: 10rem;
+  flex: 2;
+}
+
+.arrow {
+  margin-top: 5.6rem;
+}
+
+
+
+
+.mairecipes {
+  padding-left: 35rem;
+  padding-right: 35rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bb {
+  padding-left: 35rem;
+  padding-right: 35rem;
+  justify-content: center;
+}
+
+.footer-link {
+  margin-left: 60rem;
+  margin-right: 60rem;
+
+}
+
+/* .maira {
+  margin-left: 0;
+  margin-left: 3rem;
+  width: 50%;
+  margin-top: 3rem;
+  flex: 1;
+} */
 
 
 
