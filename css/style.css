@@ -1310,6 +1310,7 @@ textarea {
   margin-top: 9.6rem;
 }
 
+
 /* Execute the commmand when smaller than 1024px */
 @media (max-width: 1024px) {
   .arrow {
@@ -1350,7 +1351,7 @@ textarea {
     line-height: 150%;
   }
 
-  /* This is the whole container for the main part in About Page */
+  /* This is the whole container for the main part in About Page - mq768px*/
   .about-container {
     display: flex;
     flex-direction: column;
@@ -1359,10 +1360,10 @@ textarea {
 
   header .row {
     height: 8rem;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between; */
+    justify-content: space-between;
   }
 
   /* NAV */
@@ -1388,10 +1389,10 @@ textarea {
     justify-content: flex-end;
     /* margin-bottom: 1rem; */
     position: absolute;
-    top: 4rem;;
+    top: 4rem;
     right: 3rem;
     left: 10rem;
-  margin-left: rem;
+  /* margin-left: 3rem; */
   }
 
   .logo img {
@@ -1403,13 +1404,14 @@ textarea {
 
   .main-menu li {
   /* I can use inline-block or flexbox */
-  display: inline-block;
+  display: flex;
   border-bottom: none;
 
   }
 
   .main-menu li:first-child a {
     border-top: none;
+    margin-top: 0;
   }
 
   .main-menu a {
@@ -1428,7 +1430,7 @@ textarea {
     font-weight: bold;
   } */
 
-/* This is the footer */
+/* This is the footer - mq768px */
 .footer {
   display: flex;
   flex-direction: column;
@@ -1449,7 +1451,7 @@ textarea {
   margin: auto;
 }
 
-  /* ABOUT PAGE (First picture) */
+  /* ABOUT PAGE (First picture) - mq768px */
   .intro {
     display: flex;
     flex-direction: row;
@@ -1473,7 +1475,7 @@ textarea {
     order: 2;
   }
 
-  /* ABOUT PAGE (Second Picture) */
+  /* ABOUT PAGE (Second Picture) - mq768px */
   .who {
     margin-top: 5.6rem;
   }
@@ -1497,7 +1499,7 @@ textarea {
     margin-right: auto;
   }
 
-  /* ABOUT PAGE (Third Picture) */
+  /* ABOUT PAGE (Third Picture) - mq768px  */
   .who2 {
     display: flex;
     flex-direction: column;
@@ -1516,7 +1518,7 @@ textarea {
     margin-right: auto;
   }
 
-  /* ABOUT PAGE (Fourth Picture) */
+  /* ABOUT PAGE (Fourth Picture) - mq768px */
   .who3 {
     display: flex;
     flex-direction: column;
@@ -1536,7 +1538,7 @@ textarea {
     margin-right: auto;
   }
 
-  /* ABOUT PAGE (Fifth Picture) */
+  /* ABOUT PAGE (Fifth Picture) - mq768px */
   .chapter1 {
     display: flex;
     flex-direction: column;
@@ -1557,7 +1559,7 @@ textarea {
     margin-right: auto;
   }
 
-  /* ABOUT PAGE (Sixth Picture) */
+  /* ABOUT PAGE (Sixth Picture) - mq768px */
   .chapter2 {
     display: flex;
     flex-direction: column;
@@ -1582,7 +1584,7 @@ textarea {
     text-align: center;
   }
 
-/* This is the whole container for the main part in HOMEPAGE */
+/* This is the whole container for the main part in HOMEPAGE - mq768px */
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -1590,7 +1592,7 @@ textarea {
 }
 
 
-/* HOMEPAGE (First picture) */
+/* HOMEPAGE (First picture) - mq768px */
 .pictext {
   display: flex;
   flex-direction: row;
@@ -1610,7 +1612,7 @@ textarea {
   /* flex: 1; */
 }
 
-/* FEATURED PROJECTS (Mai Recipes) */
+/* FEATURED PROJECTS (Mai Recipes) - mq768px */
 .mairecipes {
   display: flex;
   justify-content: center;
@@ -1632,7 +1634,7 @@ textarea {
   width: 90%;
 }
 
-/* FEATURED PROJECTS (Busy-Bus) */
+/* FEATURED PROJECTS (Busy-Bus) - mq768px */
 .bb {
   display: flex;
   justify-content: center;
@@ -1655,21 +1657,98 @@ textarea {
 }
 
 
+/* CASE STUDY - mq768px */
+/* This is the whole container in Case Study */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.pictext2 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text2 {
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+
+.casestudy {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-container .rdt {
+/* background-color: red; */
+
+}
+
+.margin-bigger {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+/* Competitive Analysis */
+#googledrive,
+#dropbox,
+#onedrive {
+  width: 30%
+}
+
+#emily {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.emily-img {
+  display: flex;
+}
+
+play: flex;
+}
+
+/* HOMEPAGE (First picture) - mq768px */
+/* .pictext {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  justify-content: center;
+  /* flex: 1; */
+  /* padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.maira {
+  width: 40%;
+  margin-left: 3rem;
+  margin-top: 3rem; */
+  /* flex: 1; */
+
+
+
+
+
+
 
 
 
 }
 /* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
-  /* .about-container {
-    max-width: 1140px;
-    margin: auto;
+
+  /* .about-container h1,
+  .about-container h3,
+  .about-container p {
+    margin-left: 10rem;
+    margin-right: 10rem;
   } */
 
-  /* header {
-    max-width: 1280px;
-    margin: auto;
-  } */
 
 .logo {
   padding-left: 6rem;
@@ -1704,7 +1783,7 @@ textarea {
     margin-bottom: 2.8rem;
   }
 
-  /* ABOUT PAGE (First Picture) */
+  /* ABOUT PAGE (First Picture) - mq1024px */
   .about1 {
     padding-left: 6rem;
 
@@ -1718,10 +1797,11 @@ textarea {
 
 
 
-  /* ABOUT PAGE (Second Picture */
+  /* ABOUT PAGE (Second Picture) - mq1024px */
   .who1 {
     display: flex;
     flex-direction: row;
+
     /* justify-content: center; */
   }
 
@@ -1751,7 +1831,7 @@ textarea {
     justify-content: center;
   }
 
-/* ABOUT PAGE (Third Picture) */
+/* ABOUT PAGE (Third Picture) - mq1024px */
   .who2 {
     display: flex;
     flex-direction: row-reverse;
@@ -1774,7 +1854,7 @@ textarea {
     justify-content: center;
   }
 
-  /* ABOUT PAGE (Fourth Picture */
+  /* ABOUT PAGE (Fourth Picture) - mq1024px */
   .who3 {
     display: flex;
     flex-direction: row;
@@ -1798,7 +1878,7 @@ textarea {
     padding-bottom: 4rem;
   }
 
-/* ABOUT PAGE (Fifth Picture */
+/* ABOUT PAGE (Fifth Picture) - mq1024px */
 .chapter1 {
   display: flex;
   flex-direction: row-reverse;
@@ -1821,7 +1901,7 @@ textarea {
   padding-left: 8rem;
 }
 
-/* ABOUT PAGE (Sixth Picture) */
+/* ABOUT PAGE (Sixth Picture) - mq1024px */
 .chapter2 {
   display: flex;
   flex-direction: row;
@@ -1835,7 +1915,7 @@ textarea {
   padding-bottom: 4rem;
 }
 
-/* This is the whole container for the main part in HOMEPAGE */
+/* This is the whole container for the main part in HOMEPAGE - mq1024px */
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -1845,7 +1925,7 @@ textarea {
 }
 
 
-/* HOMEPAGE (First picture) */
+/* HOMEPAGE (First picture) - mq1024px */
 .pictext {
   display: flex;
   flex-direction: row;
@@ -1865,7 +1945,7 @@ textarea {
 
 }
 
-/* FEATURED PROJECTS (Mai Recipes) */
+/* FEATURED PROJECTS (Mai Recipes) - mq1024px */
 .pop {
   margin-left: 5rem;
 }
@@ -1882,7 +1962,7 @@ textarea {
 }
 
 
-/* FEATURED PROJECTS (Busy-Bus) */
+/* FEATURED PROJECTS (Busy-Bus) - mq1024px */
 .busy-bus {
 width: 70%;
 }
@@ -1935,7 +2015,7 @@ width: 70%;
 
 
 
-/* HOMEPAGE AND WORK PAGE */
+/* HOMEPAGE AND WORK PAGE - mq1440px */
 .text {
   padding-left: 6rem;
   padding-right: 10rem;
