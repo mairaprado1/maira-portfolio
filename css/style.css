@@ -2003,32 +2003,9 @@ textarea {
   margin-right: 6rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
 /* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
 
@@ -2280,9 +2257,77 @@ width: 70%;
 }
 
 
+/* CASE STUDY - PROJECT PAGE */
 
 
+.pictext2 {
+  display: flex;
+  flex-direction: row;
+}
 
+.casestudy {
+  width: 30%;
+  /* padding-left: 6rem; */
+  /* padding-top: 6rem; */
+  /* padding-bottom: 6rem; */
+}
+.margin-bigger {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text2 {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+
+}
+
+.pop h4 {
+  margin-left: -12rem;
+}
+
+/* Design Roles, Deliverables, and Tools */
+.rdt-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.rdt {
+  /* padding-left: 10rem;
+  padding-right: 10rem; */
+}
+
+.margin-bigger {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.google-drive {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+}
+
+#googledrive {
+  /* flex: 0.3; */
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 3rem;
+  width: 25%;
+}
+
+.text-google {
+  /* flex: 1; */
+  padding-top: 0;
+
+}
+
+.dropbox
 
 
 
