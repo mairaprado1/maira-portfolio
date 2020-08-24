@@ -41,8 +41,6 @@ small {
   line-height: 150%;
 }
 
-
-
 header .row {
   display: flex;
   flex-direction: row;
@@ -57,9 +55,11 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
+
 .logo img {
   height: 70%;
-  margin-left: 3rem;;
+  margin-left: 3rem;
+  ;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 30%;
@@ -180,7 +180,6 @@ header {
   font-size: 2rem;
 }
 
-
 .btn {
   background-color: #00758D;
   border: none;
@@ -200,8 +199,8 @@ header {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  margin-top: 9.6rem;
   margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
   display: flex;
   justify-content: center;
 }
@@ -252,7 +251,6 @@ header {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 2.8rem;
-  /* text-align: left; */
 }
 
 .bold {
@@ -306,8 +304,6 @@ header {
   text-align: left;
   margin-bottom: 2.8rem;
 }
-
-
 
 /* BUSY-BUS */
 .busy-bus {
@@ -427,7 +423,6 @@ textarea {
 .resume h3 {
   color: #D80303;
   font-weight: 500;
-  /* margin-top: 5.6rem; */
   margin-bottom: 2.8rem;
 }
 
@@ -443,7 +438,7 @@ textarea {
   font-size: 1.8rem;
   line-height: 150%;
   list-style-type: square;
-  margin-left: 4rem;
+  margin-left: 5rem;
   margin-right: 4rem;
 }
 
@@ -480,8 +475,6 @@ textarea {
   margin-top: 5.6rem;
 }
 
-
-
 /* ABOUT PAGE */
 .intro {
   display: flex;
@@ -499,6 +492,7 @@ textarea {
 .about1 {
   order: 2;
 }
+
 .about-container h1,
 .about-container h3,
 .about-container p {
@@ -509,7 +503,6 @@ textarea {
 .about-container h1 {
   margin-top: 2.8rem;
   margin-bottom: 2.8rem;
-
 }
 
 .greeting {
@@ -563,85 +556,50 @@ textarea {
   padding-top: 4rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PROJECT */
-.text2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .pictext2 {
   display: flex;
   flex-direction: column;
 }
 
 .casestudy {
-  padding-top: 5.6rem;
-  width: 90%;
   align-self: center;
+  padding-top: 5.6rem;
+  width: 80%;
+}
+
+.text2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text2 h1 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
 }
 
 .text2 h3 {
   margin-bottom: 2.8rem;
 }
 
-.text2 h1 {
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 2.8rem;
-  margin-top: 2.8rem;
-}
-
-
-
 /* OVERVIEW */
 .rdt-flex {
   background-color: #F9F9F9;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .rdt {
-  display: flex;
-  flex-direction: column;
   font-size: 1.8rem;
   justify-content: center;
   line-height: 150%;
   text-align: center;
 }
 
-.rdt.roles {
-  padding-bottom: 9.6rem;
-  padding-top: 4rem;
-}
-
+.rdt.roles,
 .rdt.deliverables {
   padding-bottom: 9.6rem;
-}
-
-.rdt.tools {
-  padding-bottom: 4rem;
 }
 
 .rdt h2 {
@@ -651,9 +609,6 @@ textarea {
 
 /* SUMMARY - PROBLEM - SOLUTION */
 .sps {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 9.6rem;
@@ -661,7 +616,7 @@ textarea {
 
 .sps h2 {
   font-weight: bold;
-  padding-bottom: 2.8rem;
+  margin-bottom: 2.8rem;
 }
 
 .sps.solution img {
@@ -671,9 +626,6 @@ textarea {
 /* PROCESS */
 /* USER SURVEY */
 .user-survey {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -700,16 +652,14 @@ textarea {
 
 /* COMPETITIVE ANALYSIS */
 .competitive-analysis {
-  display: flex;
-  flex-direction: column;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 .competitive-analysis h2 {
   font-weight: bold;
+  margin-bottom: 2.8rem;
   margin-top: 9.6rem;
-  padding-bottom: 2.8rem;
 }
 
 .competitive-analysis ul {
@@ -718,10 +668,10 @@ textarea {
   list-style-type: square;
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-top: 2.8rem;
+  margin-top: 2.8rem;
 }
 
-.competitive-analysis li {
+.competitive-analysis li:not(.no-space) {
   padding-bottom: 2rem;
 }
 
@@ -729,9 +679,14 @@ textarea {
   padding-top: 2rem;
 }
 
-.googledrive-img {
+.google-drive,
+.dropbox,
+.onedrive {
   display: flex;
-  align-self: center;
+  flex-direction: column;
+}
+
+.googledrive-img {
   margin: auto;
   padding-bottom: 5.6rem;
   padding-top: 5.6rem;
@@ -739,8 +694,6 @@ textarea {
 }
 
 .dropbox-img {
-  display: flex;
-  align-self: center;
   margin: auto;
   padding-bottom: 5.6rem;
   padding-top: 5.6rem;
@@ -748,8 +701,6 @@ textarea {
 }
 
 .onedrive-img {
-  display: flex;
-  align-self: center;
   margin: auto;
   padding-bottom: 5.6rem;
   padding-top: 5.6rem;
@@ -757,11 +708,6 @@ textarea {
 }
 
 /* PERSONAS */
-.personas {
-  display: flex;
-  flex-direction: column;
-}
-
 .personas h2,
 .personas p,
 .personas h3,
@@ -817,9 +763,8 @@ textarea {
 
 .quote {
   position: relative;
-  margin-top: 3.6rem;
+  margin-top: 5.6rem;
   z-index: 1;
-  /* I used 3.6rem or 36px instead of 56px because the li above has 20px of margin-bottom */
 }
 
 .quote h3 {
@@ -847,9 +792,6 @@ textarea {
 
 /* USER STORIES */
 .user-stories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: #F9F9F9;
   margin-bottom: 9.6rem;
   margin-top: 9.6rem;
@@ -875,7 +817,6 @@ textarea {
   font-size: 1.8rem;
   line-height: 150%;
   list-style-type: square;
-  text-align: left;
 }
 
 .user-stories li {
@@ -924,9 +865,6 @@ textarea {
 
 /* USER FLOWS */
 .user-flows {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -945,18 +883,13 @@ textarea {
 /* SKETCHES & WIREFRAMES */
 .sw-background {
   background-color: #F9F9F9;
+  margin-bottom: 9.6rem;
   margin-top: 9.6rem;
-}
-.sketches-wireframes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
 
-.sketches-wireframes h2,
-.sketches-wireframes h4 {
+.sketches-wireframes {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -995,13 +928,7 @@ textarea {
 }
 
 /* BRANDING */
-.branding {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.branding,
+.branding-img,
 .brainstorm,
 .sketch {
   width: 100%;
@@ -1019,7 +946,7 @@ textarea {
   margin-bottom: 9.6rem;
 }
 
-.branding {
+.branding-img {
   margin-bottom: 2.8rem;
 }
 
@@ -1033,7 +960,6 @@ textarea {
 .branding h2 {
   font-weight: bold;
   margin-bottom: 5.6rem;
-  margin-top: 9.6rem;
 }
 
 .branding p {
@@ -1042,8 +968,6 @@ textarea {
 
 /* Name (part of the branding) */
 .name {
-  display: flex;
-  flex-direction: column;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -1054,12 +978,6 @@ textarea {
 }
 
 /* Logo (part of the branding) */
-.logo-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .logo-section h3,
 .logo-section p {
   margin-left: 3rem;
@@ -1072,31 +990,35 @@ textarea {
   margin-top: 9.6rem;
 }
 
-.logos,
-.mailogo {
+.logos {
   width: 80%;
   margin: auto;
-  display: flex;
-  padding-bottom: 5.6rem;
-  padding-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
+}
+
+.mailogo {
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  width: 80%;
+  margin: auto;
 }
 
 .small-background {
+  display: flex;
   background-color: #F9F9F9;
   margin-bottom: 9.6rem;
   margin-top: 5.6rem;
 }
 
 /* Colors (part of the branding) */
-.colors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .colors h3,
 .colors p,
-.colors h4 {
+.colors h4,
+.palette1,
+.palette2 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -1112,18 +1034,14 @@ textarea {
 }
 
 .palette1 {
-  margin-left: 3rem;
-  margin-right: 3rem;
   padding-bottom: 5.6rem;
   padding-top: 2.8rem;
   width: 80%;
 }
 
 .palette2 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  padding-bottom: 96px;
-  padding-top: 28px;
+  padding-bottom: 9.6rem;
+  padding-top: 2.8rem;
   width: 60%;
 }
 
@@ -1131,16 +1049,19 @@ textarea {
 .typography {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .avenirnext,
 .poppins {
-  width: 100%;
+  width: 70%;
   margin: auto;
   margin-top: 5.6rem;
+}
+
+.typography h3,
+.typography p {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .typography h3 {
@@ -1149,10 +1070,14 @@ textarea {
 }
 
 /* Icons (part of the branding) */
-.icons {
+.icons .picture-boxes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.icons h3,
+.icons h4,
+.icons p,
+.icons .btn {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -1173,7 +1098,8 @@ textarea {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin: auto;
   margin-top: 2.8rem;
-  width: 100%;
+  width: 80%;
+  align-self: center;
 }
 
 .icons2 {
@@ -1181,16 +1107,9 @@ textarea {
 }
 
 /* HIGH FIDELITY MOCKUPS */
-.hfm {
-  margin-top: 9.6rem;
-}
-
-.picture-boxes {
+.hfm .picture-boxes {
   display: flex;
   flex-direction: column;
-
-
-
 }
 
 .features1,
@@ -1204,51 +1123,31 @@ textarea {
 .forgotpassword,
 .autosaves {
   align-self: center;
-  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin: auto;
+  width: 80%;
 }
 
 .hfm h2,
-.hfm p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
+.hfm p,
 .hfm h4 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-
 .hfm h2 {
   font-weight: bold;
-  /* margin-top: 9.6rem; */
   margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
 }
 
 .hfm h4 {
   font-weight: 400;
   margin-top: 5.6rem;
-  margin-left:
 }
 
 .p-space {
   margin-bottom: 2rem;
-}
-
-.features1,
-.features2,
-.positionpicture1,
-.positionpicture2,
-.footer1,
-.footer2,
-.color40,
-.color50,
-.forgotpassword,
-.autosaves {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-  margin-left: 3rem;
-  margin-right: 3rem;
-  width: 84%;
 }
 
 .features1,
@@ -1275,13 +1174,18 @@ textarea {
 }
 
 /* PROTOTYPES AND TESTS */
-.prototypes-tests {
+.p-test .picture-boxes,
+.u-test {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.prototypes-tests h2,
+.prototypes-tests h3,
+.prototypes-tests h4,
+.prototypes-tests p {
   margin-left: 3rem;
   margin-right: 3rem;
-  /* background-color: #F9F9F9; */
 }
 
 .prototypes-tests h2,
@@ -1298,14 +1202,15 @@ textarea {
 }
 
 .pricing1,
-.pricing2,
-.usability-test {
-  width: 100%;
-}
-
-.pricing1,
 .pricing2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  width: 80%;
+  margin: auto;
+}
+
+.usability-test {
+  width: 100%;
+  margin: auto;
 }
 
 .usability-test {
@@ -1315,9 +1220,6 @@ textarea {
 
 /* CONCLUSION */
 .conclusion {
-  display: flex;
-  flex-direction: column;
-
   background-color: #F9F9F9;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1329,13 +1231,17 @@ textarea {
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
-
 }
 
 .conclusion p {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
+
+
+
+
 
 
 /* Execute the commmand when smaller than 1024px */
@@ -1394,7 +1300,7 @@ textarea {
   }
 
   /* NAV */
-   .menu-toggle,
+  .menu-toggle,
   .main-menu .menu-close {
     display: none;
   }
@@ -1419,21 +1325,20 @@ textarea {
     top: 4rem;
     right: 3rem;
     left: 10rem;
-  /* margin-left: 3rem; */
+    /* margin-left: 3rem; */
   }
 
   .logo img {
     /* height: 5rem;; */
-    margin-left: 3rem;;
+    margin-left: 3rem;
     margin-top: 2rem;
     /* width: 5rem; */
   }
 
   .main-menu li {
-  /* I can use inline-block or flexbox */
-  display: flex;
-  border-bottom: none;
-
+    /* I can use inline-block or flexbox */
+    display: flex;
+    border-bottom: none;
   }
 
   .main-menu li:first-child a {
@@ -1455,28 +1360,28 @@ textarea {
     /* background-color: #828282; */
     text-decoration: underline;
     font-weight: bold;
-  } */
+  }
 
-/* This is the footer - mq768px */
-.footer {
-  display: flex;
-  flex-direction: column;
-}
+  /* This is the footer - mq768px */
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-.footer-link {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 25rem;
-  margin-right: 25rem;
-}
+  .footer-link {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
 
-.footer h4 {
-  margin: auto;
-}
+  .footer h4 {
+    margin: auto;
+  }
 
-.rights {
-  margin: auto;
-}
+  .rights {
+    margin: auto;
+  }
 
   /* ABOUT PAGE (First picture) - mq768px */
   .intro {
@@ -1518,11 +1423,11 @@ textarea {
   .who-img {
     display: flex;
     justify-content: center;
-
   }
+
   .about2 {
     width: 70%;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -1534,6 +1439,7 @@ textarea {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
   .who2-img {
     display: flex;
     justify-content: center;
@@ -1577,7 +1483,6 @@ textarea {
   .chapter1-img {
     display: flex;
     justify-content: center;
-
   }
 
   .about5 {
@@ -1598,8 +1503,8 @@ textarea {
   .chapter2-img {
     display: flex;
     justify-content: center;
-
   }
+
   .about6 {
     width: 70%;
     margin-left: auto;
@@ -1611,391 +1516,359 @@ textarea {
     text-align: center;
   }
 
-/* This is the whole container for the main part in HOMEPAGE - mq768px */
-.homepage-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+  /* This is the whole container for the main part in HOMEPAGE - mq768px */
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
+  /* HOMEPAGE (First picture) - mq768px */
+  .pictext {
+    display: flex;
+    flex-direction: row;
+  }
 
-/* HOMEPAGE (First picture) - mq768px */
-.pictext {
-  display: flex;
-  flex-direction: row;
-}
+  .text {
+    justify-content: center;
+    /* flex: 1; */
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
 
-.text {
-  justify-content: center;
-  /* flex: 1; */
-  padding-left: 1rem;
-  padding-right: 3rem;
-}
+  .maira {
+    width: 40%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    /* flex: 1; */
+  }
 
-.maira {
-  width: 40%;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  /* flex: 1; */
-}
+  /* FEATURED PROJECTS (Mai Recipes) - mq768px */
+  .mairecipes {
+    display: flex;
+    justify-content: center;
+  }
 
-/* FEATURED PROJECTS (Mai Recipes) - mq768px */
-.mairecipes {
-  display: flex;
-  justify-content: center;
-}
+  .mai-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
-.mai-text {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
+  .mai-text h3,
+  .mairecipes .btn {
+    align-self: flex-start;
+  }
 
-.mai-text h3,
-.mairecipes .btn {
-  align-self: flex-start;
-}
-.mairecipe {
-  width: 90%;
-}
+  .mairecipe {
+    width: 90%;
+  }
 
-/* FEATURED PROJECTS (Busy-Bus) - mq768px */
-.bb {
-  display: flex;
-  justify-content: center;
-}
+  /* FEATURED PROJECTS (Busy-Bus) - mq768px */
+  .bb {
+    display: flex;
+    justify-content: center;
+  }
 
-.bb-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
+  .bb-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
-.bb-text h3,
-.bb-text .btn {
-  align-self: flex-start;
-  margin-left: 3rem;
-}
-.mairecipe {
-  width: 90%;
-}
+  .bb-text h3,
+  .bb-text .btn {
+    align-self: flex-start;
+    margin-left: 3rem;
+  }
 
+  .mairecipe {
+    width: 90%;
+  }
 
-/* CASE STUDY - mq768px */
-/* This is the whole container in Case Study */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* CASE STUDY - mq768px */
+  /* This is the whole container in Case Study */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
-}
+  .pictext2 {
+    display: flex;
+    flex-direction: column;
+  }
 
-.pictext2 {
-  display: flex;
-  flex-direction: column;
+  .text2 {
+    justify-content: flex-start;
+    /* align-items: center; */
+  }
 
+  .casestudy {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-}
+  .margin-bigger {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
-.text2 {
-  justify-content: flex-start;
-  /* align-items: center; */
-}
+  /* Competitive Analysis */
+  .googledrive-img,
+  .dropbox-img,
+  .onedrive-img {
+    width: 30%
+  }
 
-.casestudy {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* Personas */
+  .personas .occupation,
+  .personas .info {
+    margin-left: 10rem;
+  }
 
-.project-container .rdt {
-/* background-color: red; */
-
-}
-
-.margin-bigger {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-/* Competitive Analysis */
-.googledrive-img,
-.dropbox-img,
-.onedrive-img {
-  width: 30%
-}
-
-/* Personas */
-
-.personas .occupation,
-.personas .info {
-  margin-left: 10rem;
-}
-.emily-img {
-  width: 70%;
-  align-self: center;
-  /* margin-left: auto;
+  .emily-img {
+    width: 70%;
+    align-self: center;
+    /* margin-left: auto;
   margin-right: auto; */
+  }
+
+  .emily {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emily-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .paula-img {
+    width: 70%;
+    padding-top: 5.6rem;
+    align-self: center;
+  }
+
+  .paula {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paula-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .paula .occupation,
+  .paula .info {
+    /* padding-left: 7rem; */
+  }
+
+  /* User Stories */
+  .user-stories h2,
+  .user-stories p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .high {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .medium {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .low {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  /* Sketches & Wireframes */
+  .sketches-wireframes {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .sketches-wireframes h2,
+  .sketches-wireframes h4 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* BRANDING */
+  .branding h2,
+  .branding p,
+  .logo-section h3,
+  .logo-section p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .name h3,
+  .name p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .brain-sketch,
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #brainstorm,
+  #sketch,
+  #logos {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 90%;
+  }
+
+  .mailogo {
+    width: 50%;
+  }
+
+  .color-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .colors h3,
+  .colors p,
+  .colors h4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .palette1 {
+    width: 70%;
+    /* margin-left: 6rem; */
+    /* margin: auto; */
+  }
+
+  .palette2 {
+    width: 50%;
+    /* margin-left: 6rem; */
+  }
+
+  .typography h3,
+  .typography p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .avenirnext,
+  .poppins {
+    width: 70%;
+    margin-top: 9.6rem;
+  }
+
+  .icons h3,
+  .icons p,
+  .icons .btn {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .picture-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icons h4 {
+    margin-left: 10.5rem;
+  }
+
+  #icons1,
+  #icons2 {
+    width: 70%;
+  }
+
+  /* High Fidelity Mockups */
+  .hfm h2,
+  .hfm p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .hfm h4 {
+    margin-left: 11.5rem;
+  }
+
+  .features1,
+  .features2,
+  .positionpicture1,
+  .positionpicture2,
+  .footer1,
+  .footer2,
+  .color40,
+  .color50,
+  .forgotpassword,
+  .autosaves {
+    width: 70%;
+  }
+
+  .prototypes-tests {
+    display: flex;
+    justify-content: center;
+  }
+
+  .prototypes-tests h2,
+  .prototypes-tests p,
+  .prototypes-tests h3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .prototypes-tests h4 {
+    margin-left: 7.5rem;
+  }
+
+  .pricing1,
+  .pricing2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .u-test {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .usability-test {
+    width: 90%;
+    align-self: center;
+  }
+
+  .conclusion h2,
+  .conclusion p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
-
-.emily {
-  display: flex;
-  flex-direction: column;
-}
-/* .emily-img {
-  display: flex;
-  justify-content: center;
-
-} */
-
-
-.paula-img {
-  width: 70%;
-  padding-top: 5.6rem;
-  align-self: center;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-.paula {
-  display: flex;
-  flex-direction: column;
-}
-/* .paula-img {
-  display: flex;
-  justify-content: center;
-
-} */
-
-.paula .occupation,
-.paula .info {
-  /* padding-left: 7rem; */
-}
-
-/* User Stories */
-.user-stories h2,
-.user-stories p {
-  padding-left: 3rem;
-  padding-right: 3rem;
-
-}
-
-.high {
-  display: flex;
-  justify-content: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
-}
-
-.medium {
-  display: flex;
-  justify-content: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
-}
-
-.low {
-  display: flex;
-  justify-content: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
-}
-
-
-/* Sketches & Wireframes */
-
-.sketches-wireframes {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-/* .sketches-wireframes h2,
-.sketches-wireframes h4 {
-  padding-left: 3rem;
-  padding-right: 3rem; */
-}
-
-.sw {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slandingpage,
-.wlandingpage,
-.spricing,
-.wpricing,
-.ssignup,
-.wsignup {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  width: 90%;
-}
-
-/* BRANDING */
-.branding h2,
-.branding p,
-.logo-section h3,
-.logo-section p {
-  /* margin-left: 6rem;
-  margin-right: 6rem; */
-}
-
-/* Desliguei pois estava afetando original */
-/* .name h3,
-.name p {
-  padding-left: 3rem;
-  padding-right: 3rem;
-} */
-
-.brain-sketch,
-.logo-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* Desliguei pois estava afetando original */
-/* #brainstorm,
-#sketch,
-#logos {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  width: 90%;
-} */
-
-.mailogo {
-  width: 50%;
-}
-
-.color-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Desliguei pois estava afetando original */
-/* .colors h3,
-.colors p,
-.colors h4 {
-  margin-left: 6rem;
-  margin-right: 6rem;
-} */
-
-.palette1 {
-  width: 70%;
-  /* Desliguei pois estava afetando original */
-  /* margin-left: 6rem; */
-/* margin: auto; */
-}
-
-.palette2 {
-  width: 50%;
-  /* Desliguei pois estava afetando original */
-  /* margin-left: 6rem; */
-}
-
-/* Desliguei pois estava afetando original */
-/* .typography h3,
-.typography p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-} */
-
-.avenirnext,
-.poppins {
-  width: 70%;
-  margin-top: 9.6rem;
-}
-
-.icons h3,
-.icons p,
-.icons .btn {
-  /* Desliguei pois estava afetando original */
-  /* margin-left: 3rem;
-  margin-right: 3rem; */
-}
-
-.picture-boxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* Desliguei pois estava afetando original */
-/* .icons h4 {
-  margin-left: 10.5rem;
-} */
-/* Desliguei pois estava afetando original */
-/* #icons1,
-#icons2 {
-  width: 70%;
-} */
-
-/* High Fidelity Mockups */
-/* Desliguei pois estava afetando original */
-/* .hfm h2,
-.hfm p {
-  margin-left: 6rem;
-  margin-right: 6rem;
-} */
-
-/* Desliguei pois estava afetando original */
-/* .hfm h4 {
-  margin-left: 11.5rem;
-} */
-
-.features1,
-.features2,
-.positionpicture1,
-.positionpicture2,
-.footer1,
-.footer2,
-.color40,
-.color50,
-.forgotpassword,
-.autosaves {
-  width: 70%;
-}
-
-.prototypes-tests {
-  display: flex;
-  justify-content: center;
-}
-.prototypes-tests h2,
-.prototypes-tests p,
-.prototypes-tests h3 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.prototypes-tests h4 {
-  margin-left: 7.5rem;
-}
-
-.pricing1,
-.pricing2 {
-  width: 80%;
-  margin: auto;
-}
-
-.u-test {
-  display: flex;
-  flex-direction: column;
-}
-.usability-test {
-  width: 90%;
-  align-self: center;
-}
-
-.conclusion h2,
-.conclusion p {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
-
-}
-
 
 /* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
@@ -2006,13 +1879,11 @@ textarea {
     margin-left: 10rem;
     margin-right: 10rem;
   } */
+  .logo {
+    padding-left: 6rem;
+  }
 
-
-.logo {
-  padding-left: 6rem;
-}
-
-/* This is the footer */
+  /* This is the footer */
   .footer {
     display: flex;
     flex-direction: column;
@@ -2044,7 +1915,6 @@ textarea {
   /* ABOUT PAGE (First Picture) - mq1024px */
   .about1 {
     padding-left: 6rem;
-
   }
 
   .about-container {
@@ -2053,13 +1923,10 @@ textarea {
     flex-wrap: wrap;
   }
 
-
-
   /* ABOUT PAGE (Second Picture) - mq1024px */
   .who1 {
     display: flex;
     flex-direction: row;
-
     /* justify-content: center; */
   }
 
@@ -2090,7 +1957,7 @@ textarea {
     justify-content: center;
   }
 
-/* ABOUT PAGE (Third Picture) - mq1024px */
+  /* ABOUT PAGE (Third Picture) - mq1024px */
   .who2 {
     display: flex;
     flex-direction: row-reverse;
@@ -2137,258 +2004,228 @@ textarea {
     padding-bottom: 4rem;
   }
 
-/* ABOUT PAGE (Fifth Picture) - mq1024px */
-.chapter1 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
-}
+  /* ABOUT PAGE (Fifth Picture) - mq1024px */
+  .chapter1 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
 
-.chapter-text2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex: 1; */
-  padding-right: 5rem;
-  padding-left: 5rem;
-}
+  .chapter-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex: 1; */
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 
-.about5 {
-  width: 50%;
-  /* flex: 1; */
-  padding-left: 8rem;
-}
+  .about5 {
+    width: 50%;
+    /* flex: 1; */
+    padding-left: 8rem;
+  }
 
-/* ABOUT PAGE (Sixth Picture) - mq1024px */
-.chapter2 {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 4rem;
-  /* justify-content: center; */
-}
-.about6 {
-  width: 50%;
-  /* flex: 1; */
-  padding-right: 8rem;
-  padding-bottom: 4rem;
-}
+  /* ABOUT PAGE (Sixth Picture) - mq1024px */
+  .chapter2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    /* justify-content: center; */
+  }
 
-/* This is the whole container for the main part in HOMEPAGE - mq1024px */
-.homepage-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  /* max-width: 1140px; */
-  margin: auto;
-}
+  .about6 {
+    width: 50%;
+    /* flex: 1; */
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+  }
 
+  /* This is the whole container for the main part in HOMEPAGE - mq1024px */
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* max-width: 1140px; */
+    margin: auto;
+  }
 
-/* HOMEPAGE (First picture) - mq1024px */
-.pictext {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  /* HOMEPAGE (First picture) - mq1024px */
+  .pictext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.text {
-  display: flex;
-  padding-left: 3rem;
-  padding-right: 8rem;
-}
+  .text {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 8rem;
+  }
 
- .maira {
-  width: 40%;
-  margin-left: 8rem;
-  margin-top: 3rem;
+  .maira {
+    width: 40%;
+    margin-left: 8rem;
+    margin-top: 3rem;
+  }
 
-}
+  /* FEATURED PROJECTS (Mai Recipes) - mq1024px */
+  .pop {
+    margin-left: 5rem;
+  }
 
-/* FEATURED PROJECTS (Mai Recipes) - mq1024px */
-.pop {
-  margin-left: 5rem;
-}
+  .mairecipe {
+    width: 70%;
+  }
 
-.mairecipe {
-  width: 70%;
-}
+  .mairecipes {
+    padding-left: 16rem;
+    padding-right: 16rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.mairecipes {
-  padding-left: 16rem;
-  padding-right: 16rem;
-  margin-left: 0;
-  margin-right: 0;
-}
+  /* FEATURED PROJECTS (Busy-Bus) - mq1024px */
+  .busy-bus {
+    width: 70%;
+  }
 
+  .bb {
+    padding-left: 16rem;
+    padding-right: 16rem;
+    justify-content: center;
+  }
 
-/* FEATURED PROJECTS (Busy-Bus) - mq1024px */
-.busy-bus {
-width: 70%;
-}
+  .bb-text,
+  .bb p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.bb {
-  padding-left: 16rem;
-  padding-right: 16rem;
-  justify-content: center;
-}
+  .bb-text h3,
+  .bb-text .btn {
+    margin-left: 0;
+  }
 
-.bb-text,
-.bb p {
-  margin-left: 0;
-  margin-right: 0;
-}
+  .mai-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.bb-text h3,
-.bb-text .btn {
-  margin-left: 0;
-}
+  /* CASE STUDY - PROJECT PAGE */
+  .pictext2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-.mai-text {
-  margin-left: 0;
-  margin-right: 0;
-}
+  .casestudy {
+    width: 30%;
+    /* padding-left: 6rem; */
+    /* padding-top: 6rem; */
+    /* padding-bottom: 6rem; */
+  }
 
+  .margin-bigger {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-/* CASE STUDY - PROJECT PAGE */
+  .text2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
 
+  .pop h4 {
+    margin-left: -12rem;
+  }
 
-.pictext2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  /* Design Roles, Deliverables, and Tools */
+  .rdt-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: green;
+  }
 
-.casestudy {
-  width: 30%;
-  /* padding-left: 6rem; */
-  /* padding-top: 6rem; */
-  /* padding-bottom: 6rem; */
-}
-.margin-bigger {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.text2 {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-
-}
-
-.pop h4 {
-  margin-left: -12rem;
-}
-
-/* Design Roles, Deliverables, and Tools */
-.rdt-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: green;
-
-}
-
-.rdt {
-  /* padding-left: 10rem;
+  .rdt {
+    /* padding-left: 10rem;
   padding-right: 10rem; */
+  }
+
+  .margin-bigger {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .google-drive {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .googledrive-img {
+    /* flex: 0.3; */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 3rem;
+    width: 25%;
+  }
+
+  .text-google {
+    /* flex: 1; */
+    padding-top: 0;
+  }
+
+  .dropbox
 }
-
-.margin-bigger {
-  margin-left: 16rem;
-  margin-right: 16rem;
-}
-
-.google-drive {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  padding-top: 5.6rem;
-  padding-bottom: 5.6rem;
-}
-
-.googledrive-img {
-  /* flex: 0.3; */
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 3rem;
-  width: 25%;
-}
-
-.text-google {
-  /* flex: 1; */
-  padding-top: 0;
-
-}
-
-.dropbox
-
-
-
-}
-
-
-
-
-
-
-
 
 /* Execute the commmand when bigger than 1440px */
 @media (min-width: 1440px) {
+
   /* ABOUT PAGE */
+  /* HOMEPAGE AND WORK PAGE - mq1440px */
+  .text {
+    padding-left: 6rem;
+    padding-right: 10rem;
+    flex: 2;
+  }
 
+  .arrow {
+    margin-top: 5.6rem;
+  }
 
+  .background {
+    padding-top: 2rem;
+  }
 
+  .mairecipes {
+    padding-left: 35rem;
+    padding-right: 35rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
+  .bb {
+    padding-left: 35rem;
+    padding-right: 35rem;
+    justify-content: center;
+  }
 
+  .footer-link {
+    margin-left: 60rem;
+    margin-right: 60rem;
+  }
 
-
-/* HOMEPAGE AND WORK PAGE - mq1440px */
-.text {
-  padding-left: 6rem;
-  padding-right: 10rem;
-  flex: 2;
-}
-
-.arrow {
-  margin-top: 5.6rem;
-}
-
-.background {
-  padding-top: 2rem;
-}
-
-
-.mairecipes {
-  padding-left: 35rem;
-  padding-right: 35rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.bb {
-  padding-left: 35rem;
-  padding-right: 35rem;
-  justify-content: center;
-}
-
-.footer-link {
-  margin-left: 60rem;
-  margin-right: 60rem;
-
-}
-
-/* .maira {
+  /* .maira {
   margin-left: 0;
   margin-left: 3rem;
   width: 50%;
   margin-top: 3rem;
   flex: 1;
 } */
-
-
-
-
-
 }
