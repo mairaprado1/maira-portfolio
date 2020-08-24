@@ -41,12 +41,7 @@ small {
   line-height: 150%;
 }
 
-.logo img {
-  height: 5rem;;
-  margin-left: 3rem;;
-  margin-top: 1rem;
-  width: 5rem;
-}
+
 
 header .row {
   display: flex;
@@ -61,6 +56,13 @@ header {
   z-index: 2;
   background-color: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+.logo img {
+  height: 70%;
+  margin-left: 3rem;;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
 }
 
 .sr-only {
@@ -92,8 +94,6 @@ header {
   overflow-x: visible;
   overflow-y: auto;
   transition: right .8s ease-in-out;
-  /*teacher used left but I want to build on the opposite side */
-  /* transition: all .5s linear; */
   z-index: 999;
 }
 
@@ -161,7 +161,7 @@ header {
 }
 
 /* We write the css from left to right but we read them from right to left */
-/* when backdrop immidiatelly follows the main-menu when it is targeted */
+/* when backdrop immediately follows the main-menu when it is targeted */
 .main-menu:target+.backdrop {
   position: fixed;
   display: block;
@@ -243,10 +243,7 @@ header {
 
 .text {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -255,20 +252,13 @@ header {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 2.8rem;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .bold {
   font-weight: bold;
 }
 
-
-
-/*
-.about-container .center {
-  display: flex;
-  flex-direction: row;
-} */
 .arrow {
   /*hide this on mobile*/
   margin-top: 2.8rem;
@@ -286,6 +276,13 @@ header {
 }
 
 /* MAI RECIPES */
+.background {
+  background-color: #F9F9F9;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
 .mairecipe {
   width: 100%;
 }
@@ -299,24 +296,6 @@ header {
   text-align: center;
 }
 
-.background {
-  background-color: #F9F9F9;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-}
-
-.pop .background {
-  margin-bottom: 2rem;
-}
-
-main .background {
-  margin-bottom: 2rem;
-}
-
-.top-size .back-top {
-  margin-top: 7.6rem;
-}
-
 .mairecipes h3 {
   font-weight: bold;
   margin-top: 5.6rem;
@@ -328,57 +307,31 @@ main .background {
   margin-bottom: 2.8rem;
 }
 
-.mairecipes .btn {
-  align-self: center;
-}
+
 
 /* BUSY-BUS */
-.busy-bus1,
-.busy-bus2 {
-  width: 40%;
-}
-
-.busy-bus1 {
-  margin-left: 3rem;
-}
-
-.busy-bus2 {
-  margin-right: 2rem;
-}
-
 .busy-bus {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 100%;
 }
 
 .bb {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #F9F9F9;
-  margin-top: 2.8rem;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
 }
 
 .bb h3 {
   font-weight: bold;
   margin-top: 5.6rem;
-  text-align: center;
 }
 
 .bb p {
-  margin-left: 3rem;
-  margin-bottom: 2.8rem;
-  margin-right: 3rem;
   padding-top: 2.8rem;
   text-align: left;
-}
-.bb-text {
-  display: flex;
-  flex-direction: column;
-}
-.bb-text .btn {
-  align-self: center;
+  margin-bottom: 2.8rem;
 }
 
 /* CONTACT PAGE */
@@ -419,7 +372,7 @@ label {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -431,6 +384,7 @@ textarea {
   font-family: 'Poppins', sans-serif;
   margin-left: 3rem;
   margin-right: 3rem;
+  font-size: 1.4rem;
 }
 
 #name,
@@ -442,7 +396,7 @@ textarea {
   padding-top: .5rem;
 }
 
-.contact-tittle {
+.contact-title {
   margin-bottom: 2.8rem;
   margin-top: 5.6rem;
 }
@@ -460,6 +414,12 @@ textarea {
 .resume {
   display: flex;
   flex-direction: column;
+}
+
+.resume h3,
+.resume h4,
+.resume p,
+.resume .btn {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -467,57 +427,48 @@ textarea {
 .resume h3 {
   color: #D80303;
   font-weight: 500;
+  /* margin-top: 5.6rem; */
+  margin-bottom: 2.8rem;
 }
 
-.resume h3 {
+.summary-space {
+  margin-bottom: 5.6rem;
+}
+
+.summary {
   margin-top: 5.6rem;
-  margin-bottom: 2.8rem;
 }
 
 .resume ul {
   font-size: 1.8rem;
   line-height: 150%;
   list-style-type: square;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .resume .project-name {
   margin-bottom: 2rem;
 }
 
-.resume .busy {
-  margin-top: 5.6rem;
-}
-
-.resume .fala {
-  margin-top: 5.6rem;
+.resume h4 {
+  font-weight: 500;
 }
 
 .resume .p-space {
   margin-bottom: 2.8rem;
 }
 
-.resume .experience {
+.experience,
+.experienceEFE,
+.experience-mppr {
   margin-bottom: 1rem;
 }
 
 .resume .date {
   margin-bottom: 2.8rem;
-}
-
-.resume h4 {
-  font-weight: 500;
-}
-
-.resume .date {
   font-weight: 200;
-}
-
-.experienceEFE,
-.experience-mppr {
-  margin-top: 5.6rem;
-  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .edu-dpaul {
@@ -527,32 +478,43 @@ textarea {
 .edu-oab,
 .edu-utp {
   margin-top: 5.6rem;
-  margin-bottom: 1rem;
 }
 
-.margin-btn {
-  margin-bottom: 5.6rem;
-}
+
 
 /* ABOUT PAGE */
-.about {
+.intro {
   display: flex;
   flex-direction: column;
 }
 
-.about h1 {
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
+.hi {
+  order: 1;
+}
+
+.greeting {
+  order: 3;
+}
+
+.about1 {
+  order: 2;
+}
+.about-container h1,
+.about-container h3,
+.about-container p {
   margin-left: 3rem;
   margin-right: 3rem;
-  text-align: left;
+}
+
+.about-container h1 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+
 }
 
 .greeting {
   font-weight: bold;
   margin-bottom: 5.6rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
   margin-top: 2.8rem;
 }
 
@@ -584,18 +546,7 @@ textarea {
   margin-top: 5.6rem;
 }
 
-.about-container h1,
-.about-container h3,
-.about-container p {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.who h3 {
-  font-weight: bold;
-  margin-bottom: 2.8rem;
-}
-
+.who h3,
 .chapter h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
@@ -612,6 +563,27 @@ textarea {
   padding-top: 4rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PROJECT */
 .text2 {
   display: flex;
@@ -624,19 +596,13 @@ textarea {
 .pictext2 {
   display: flex;
   flex-direction: column;
-
 }
 
 .casestudy {
   padding-top: 5.6rem;
   width: 90%;
   align-self: center;
-  /* padding-left: 3rem;
-  padding-right: 3rem; */
-
 }
-
-
 
 .text2 h3 {
   margin-bottom: 2.8rem;
@@ -649,11 +615,16 @@ textarea {
   margin-top: 2.8rem;
 }
 
+
+
 /* OVERVIEW */
+.rdt-flex {
+  background-color: #F9F9F9;
+}
+
 .rdt {
   display: flex;
   flex-direction: column;
-  background-color: #F9F9F9;
   font-size: 1.8rem;
   justify-content: center;
   line-height: 150%;
@@ -758,7 +729,7 @@ textarea {
   padding-top: 2rem;
 }
 
-#googledrive {
+.googledrive-img {
   display: flex;
   align-self: center;
   margin: auto;
@@ -767,7 +738,7 @@ textarea {
   width: 50%;
 }
 
-#dropbox {
+.dropbox-img {
   display: flex;
   align-self: center;
   margin: auto;
@@ -776,7 +747,7 @@ textarea {
   width: 50%;
 }
 
-#onedrive {
+.onedrive-img {
   display: flex;
   align-self: center;
   margin: auto;
@@ -818,13 +789,13 @@ textarea {
   margin-top: 5.6rem;
 }
 
-#emily {
+.emily-img {
   width: 100%;
   margin-bottom: 2.8rem;
   margin-top: 5.6rem;
 }
 
-#paula {
+.paula-img {
   width: 100%;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
@@ -972,44 +943,45 @@ textarea {
 }
 
 /* SKETCHES & WIREFRAMES */
+.sw-background {
+  background-color: #F9F9F9;
+  margin-top: 9.6rem;
+}
 .sketches-wireframes {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F9F9F9;
-  margin-top: 9.6rem;
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
 
 .sketches-wireframes h2,
-.sketches-wireframes h4,
-.sketches-wireframes .sw {
+.sketches-wireframes h4 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-#slandingpage,
-#wlandingpage,
-#spricing,
-#wpricing,
-#ssignup,
-#wsignup {
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   width: 100%;
 }
 
-#slandingpage,
-#wlandingpage,
-#spricing,
-#wpricing,
-#ssignup,
-#wsignup {
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
   margin-top: 2.8rem;
 }
 
-#wlandingpage,
-#wpricing {
+.wlandingpage,
+.wpricing {
   margin-bottom: 5.6rem;
 }
 
@@ -1029,25 +1001,25 @@ textarea {
   justify-content: center;
 }
 
-#branding,
-#brainstorm,
-#sketch {
+.branding,
+.brainstorm,
+.sketch {
   width: 100%;
 }
 
-#brainstorm {
+.brainstorm {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 2.8rem;
   margin-top: 3.6rem;
   /*I used 3.6rem or 36px instead of 56px because there is already 20px on the margin-bottom p*/
 }
 
-#sketch {
+.sketch {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-bottom: 9.6rem;
 }
 
-#branding {
+.branding {
   margin-bottom: 2.8rem;
 }
 
@@ -1100,8 +1072,8 @@ textarea {
   margin-top: 9.6rem;
 }
 
-#logos,
-#mailogo {
+.logos,
+.mailogo {
   width: 80%;
   margin: auto;
   display: flex;
@@ -1139,7 +1111,7 @@ textarea {
   margin-top: 5.6rem;
 }
 
-#palette1 {
+.palette1 {
   margin-left: 3rem;
   margin-right: 3rem;
   padding-bottom: 5.6rem;
@@ -1147,7 +1119,7 @@ textarea {
   width: 80%;
 }
 
-#palette2 {
+.palette2 {
   margin-left: 3rem;
   margin-right: 3rem;
   padding-bottom: 96px;
@@ -1164,8 +1136,8 @@ textarea {
   margin-right: 3rem;
 }
 
-#avenirnext,
-#poppins {
+.avenirnext,
+.poppins {
   width: 100%;
   margin: auto;
   margin-top: 5.6rem;
@@ -1196,15 +1168,15 @@ textarea {
   margin-top: 9.6rem;
 }
 
-#icons1,
-#icons2 {
+.icons1,
+.icons2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin: auto;
   margin-top: 2.8rem;
   width: 100%;
 }
 
-#icons2 {
+.icons2 {
   margin-bottom: 5.6rem;
 }
 
@@ -1221,17 +1193,18 @@ textarea {
 
 }
 
-#features1,
-#features2,
-#positionpicture1,
-#positionpicture2,
-#footer1,
-#footer2,
-#color40,
-#color50,
-#forgotpassword,
-#autosaves {
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50,
+.forgotpassword,
+.autosaves {
   align-self: center;
+  width: 100%;
 }
 
 .hfm h2,
@@ -1262,41 +1235,41 @@ textarea {
   margin-bottom: 2rem;
 }
 
-#features1,
-#features2,
-#positionpicture1,
-#positionpicture2,
-#footer1,
-#footer2,
-#color40,
-#color50,
-#forgotpassword,
-#autosaves {
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50,
+.forgotpassword,
+.autosaves {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-left: 3rem;
   margin-right: 3rem;
   width: 84%;
 }
 
-#features1,
-#features2,
-#positionpicture1,
-#positionpicture2,
-#footer1,
-#footer2,
-#color40,
-#color50 {
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50 {
   margin-top: 2.8rem;
 }
 
-#features2,
-#positionpicture2,
-#footer2,
-#color50 {
+.features2,
+.positionpicture2,
+.footer2,
+.color50 {
   margin-bottom: 5.6rem;
 }
 
-#forgotpassword {
+.forgotpassword {
   margin-bottom: 2.8rem;
   margin-top: 5.6rem;
 }
@@ -1324,18 +1297,18 @@ textarea {
   margin-top: 5.6rem;
 }
 
-#pricing1,
-#pricing2,
-#usability-test {
+.pricing1,
+.pricing2,
+.usability-test {
   width: 100%;
 }
 
-#pricing1,
-#pricing2 {
+.pricing1,
+.pricing2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
-#usability-test {
+.usability-test {
   margin-bottom: 5.6rem;
   margin-top: 5.6rem;
 }
@@ -1724,6 +1697,7 @@ textarea {
   display: flex;
   flex-direction: column;
 
+
 }
 
 .text2 {
@@ -1747,15 +1721,21 @@ textarea {
   margin-right: 3rem;
 }
 /* Competitive Analysis */
-#googledrive,
-#dropbox,
-#onedrive {
+.googledrive-img,
+.dropbox-img,
+.onedrive-img {
   width: 30%
 }
 
 /* Personas */
-#emily {
+
+.personas .occupation,
+.personas .info {
+  margin-left: 10rem;
+}
+.emily-img {
   width: 70%;
+  align-self: center;
   /* margin-left: auto;
   margin-right: auto; */
 }
@@ -1764,20 +1744,17 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.emily-img {
+/* .emily-img {
   display: flex;
   justify-content: center;
-  /* margin-left: 3rem; */
-}
 
-.emily .occupation,
-.emily .info {
-  padding-left: 7rem;
-}
+} */
 
-#paula {
+
+.paula-img {
   width: 70%;
   padding-top: 5.6rem;
+  align-self: center;
   /* margin-left: auto;
   margin-right: auto; */
 }
@@ -1786,15 +1763,15 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.paula-img {
+/* .paula-img {
   display: flex;
   justify-content: center;
-  /* margin-left: 3rem; */
-}
+
+} */
 
 .paula .occupation,
 .paula .info {
-  padding-left: 7rem;
+  /* padding-left: 7rem; */
 }
 
 /* User Stories */
@@ -1829,24 +1806,29 @@ textarea {
 
 /* Sketches & Wireframes */
 
-.sketches-wireframes h2,
+.sketches-wireframes {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* .sketches-wireframes h2,
 .sketches-wireframes h4 {
   padding-left: 3rem;
-  padding-right: 3rem;
+  padding-right: 3rem; */
 }
 
 .sw {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-#slandingpage,
-#wlandingpage,
-#spricing,
-#wpricing,
-#ssignup,
-#wsignup {
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
   margin-left: 3rem;
   margin-right: 3rem;
   width: 90%;
@@ -1857,15 +1839,16 @@ textarea {
 .branding p,
 .logo-section h3,
 .logo-section p {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  /* margin-left: 6rem;
+  margin-right: 6rem; */
 }
 
-.name h3,
+/* Desliguei pois estava afetando original */
+/* .name h3,
 .name p {
   padding-left: 3rem;
   padding-right: 3rem;
-}
+} */
 
 .brain-sketch,
 .logo-section {
@@ -1873,16 +1856,16 @@ textarea {
   flex-direction: column;
   justify-content: center;
 }
-
-#brainstorm,
+/* Desliguei pois estava afetando original */
+/* #brainstorm,
 #sketch,
 #logos {
   margin-left: 3rem;
   margin-right: 3rem;
   width: 90%;
-}
+} */
 
-#mailogo {
+.mailogo {
   width: 50%;
 }
 
@@ -1891,41 +1874,47 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
 }
-.colors h3,
+
+/* Desliguei pois estava afetando original */
+/* .colors h3,
 .colors p,
 .colors h4 {
   margin-left: 6rem;
   margin-right: 6rem;
-}
+} */
 
-#palette1 {
+.palette1 {
   width: 70%;
-  margin-left: 6rem;
+  /* Desliguei pois estava afetando original */
+  /* margin-left: 6rem; */
 /* margin: auto; */
 }
 
-#palette2 {
+.palette2 {
   width: 50%;
-  margin-left: 6rem;
+  /* Desliguei pois estava afetando original */
+  /* margin-left: 6rem; */
 }
 
-.typography h3,
+/* Desliguei pois estava afetando original */
+/* .typography h3,
 .typography p {
   margin-left: 3rem;
   margin-right: 3rem;
-}
+} */
 
-#avenirnext,
-#poppins {
-  width: 50%;
+.avenirnext,
+.poppins {
+  width: 70%;
   margin-top: 9.6rem;
 }
 
 .icons h3,
 .icons p,
 .icons .btn {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  /* Desliguei pois estava afetando original */
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
 }
 
 .picture-boxes {
@@ -1933,37 +1922,39 @@ textarea {
   flex-direction: column;
   justify-content: center;
 }
-
-.icons h4 {
+/* Desliguei pois estava afetando original */
+/* .icons h4 {
   margin-left: 10.5rem;
-}
-
-#icons1,
+} */
+/* Desliguei pois estava afetando original */
+/* #icons1,
 #icons2 {
   width: 70%;
-}
+} */
 
 /* High Fidelity Mockups */
-.hfm h2,
+/* Desliguei pois estava afetando original */
+/* .hfm h2,
 .hfm p {
   margin-left: 6rem;
   margin-right: 6rem;
-}
+} */
 
-.hfm h4 {
+/* Desliguei pois estava afetando original */
+/* .hfm h4 {
   margin-left: 11.5rem;
-}
+} */
 
-#features1,
-#features2,
-#positionpicture1,
-#positionpicture2,
-#footer1,
-#footer2,
-#color40,
-#color50,
-#forgotpassword,
-#autosaves {
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50,
+.forgotpassword,
+.autosaves {
   width: 70%;
 }
 
@@ -1982,8 +1973,8 @@ textarea {
   margin-left: 7.5rem;
 }
 
-#pricing1,
-#pricing2 {
+.pricing1,
+.pricing2 {
   width: 80%;
   margin: auto;
 }
@@ -1992,7 +1983,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-#usability-test {
+.usability-test {
   width: 90%;
   align-self: center;
 }
@@ -2077,24 +2068,25 @@ textarea {
     flex-direction: column;
     justify-content: center;
     /* flex: 1; */
-    padding-right: 5rem;
-    padding-left: 5rem;
+    /* padding-right: 5rem;
+    padding-left: 5rem; */
   }
 
-  .who-img,
-  .who2-img,
-  .who3-img,
-  .chapter1-img,
-  .chapter2-img {
-    display: flex;
-    justify-content: center;
+  .about2,
+  .about3,
+  .about4,
+  .about5,
+  .about6 {
+    /* display: flex;
+    justify-content: center; */
     /* flex: 1; */
   }
 
   .about2 {
     width: 50%;
-    flex: 1;
-    padding-right: 8rem;
+    /* flex: 1; */
+    margin: 0;
+    /* padding-right: 8rem; */
     justify-content: center;
   }
 
@@ -2109,14 +2101,14 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    /* flex: 1; */
     padding-right: 5rem;
     padding-left: 5rem;
   }
 
   .about3 {
     width: 50%;
-    flex: 1;
+    /* flex: 1; */
     padding-left: 8rem;
     justify-content: center;
   }
@@ -2132,7 +2124,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    /* flex: 1; */
     padding-right: 5rem;
     padding-left: 5rem;
     margin-bottom: 4rem;
@@ -2140,7 +2132,7 @@ textarea {
 
   .about4 {
     width: 50%;
-    flex: 1;
+    /* flex: 1; */
     padding-right: 8rem;
     padding-bottom: 4rem;
   }
@@ -2157,14 +2149,14 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  /* flex: 1; */
   padding-right: 5rem;
   padding-left: 5rem;
 }
 
 .about5 {
   width: 50%;
-  flex: 1;
+  /* flex: 1; */
   padding-left: 8rem;
 }
 
@@ -2177,7 +2169,7 @@ textarea {
 }
 .about6 {
   width: 50%;
-  flex: 1;
+  /* flex: 1; */
   padding-right: 8rem;
   padding-bottom: 4rem;
 }
@@ -2263,6 +2255,7 @@ width: 70%;
 .pictext2 {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .casestudy {
@@ -2292,6 +2285,7 @@ width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: green;
 
 }
 
@@ -2313,7 +2307,7 @@ width: 70%;
   padding-bottom: 5.6rem;
 }
 
-#googledrive {
+.googledrive-img {
   /* flex: 0.3; */
   padding-top: 0;
   padding-bottom: 0;
