@@ -481,16 +481,9 @@ textarea {
   flex-direction: column;
 }
 
-.hi {
-  order: 1;
-}
-
-.greeting {
-  order: 3;
-}
-
-.about1 {
-  order: 2;
+.intro-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-container h1,
@@ -1074,6 +1067,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
 .icons h3,
 .icons h4,
 .icons p,
@@ -1238,22 +1232,26 @@ textarea {
   margin-right: 3rem;
 }
 
-
-
-
-
-
+/* Execute the commmand when smaller than 768px */
+@media (max-width: 767px) {
+  .intro-desktop {
+    display: none;
+  }
+}
 
 /* Execute the commmand when smaller than 1024px */
 @media (max-width: 1024px) {
   .arrow {
     display: none;
-    /* text-align: center; */
   }
 }
 
 /* Execute the commmand when bigger than 767px */
 @media (min-width: 768px) {
+  .intro-mobile {
+    display: none;
+  }
+
   h1 {
     font-size: 4.2rem;
     line-height: 150%;
@@ -1284,13 +1282,7 @@ textarea {
     line-height: 150%;
   }
 
-  /* This is the whole container for the main part in About Page - mq768px*/
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
+  /* ABOUT PAGE */
   header .row {
     height: 8rem;
     display: flex;
@@ -1317,22 +1309,17 @@ textarea {
     background: none;
     overflow: hidden;
     text-align: center;
-    /* border: solid 3px red; */
     display: flex;
     justify-content: flex-end;
-    /* margin-bottom: 1rem; */
     position: absolute;
     top: 4rem;
     right: 3rem;
     left: 10rem;
-    /* margin-left: 3rem; */
   }
 
   .logo img {
-    /* height: 5rem;; */
     margin-left: 3rem;
     margin-top: 2rem;
-    /* width: 5rem; */
   }
 
   .main-menu li {
@@ -1356,8 +1343,6 @@ textarea {
   .main-menu a:hover,
   .main-menu a:focus {
     background: none;
-    /* color: #FFFFFF; */
-    /* background-color: #828282; */
     text-decoration: underline;
     font-weight: bold;
   }
@@ -1375,36 +1360,44 @@ textarea {
     margin-right: 25rem;
   }
 
-  .footer h4 {
-    margin: auto;
-  }
-
+  .footer h4,
   .rights {
     margin: auto;
   }
 
   /* ABOUT PAGE (First picture) - mq768px */
-  .intro {
+  .intro-desktop {
     display: flex;
     flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
   }
 
   .about1 {
-    width: 40%;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    order: 1;
+    width: 45%;
+    height: 100%;
   }
 
-  .greeting {
-    margin-bottom: 0;
+  .about-container h1,
+  .about-container .greeting {
+    margin: 0;
+  }
+
+  .about-container h3,
+  .about-container p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .about-container .greeting {
+    margin-top: 2.8rem;
   }
 
   .intro-text {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    order: 2;
+    margin-left: 3rem;
   }
 
   /* ABOUT PAGE (Second Picture) - mq768px */
@@ -1415,18 +1408,10 @@ textarea {
   .who1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .who-img {
-    display: flex;
-    justify-content: center;
   }
 
   .about2 {
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1435,18 +1420,10 @@ textarea {
   .who2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .who2-img {
-    display: flex;
-    justify-content: center;
   }
 
   .about3 {
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1455,18 +1432,10 @@ textarea {
   .who3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .who3-img {
-    display: flex;
-    justify-content: center;
   }
 
   .about4 {
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1475,18 +1444,10 @@ textarea {
   .chapter1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .chapter1-img {
-    display: flex;
-    justify-content: center;
   }
 
   .about5 {
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1495,147 +1456,193 @@ textarea {
   .chapter2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .chapter2-img {
-    display: flex;
-    justify-content: center;
   }
 
   .about6 {
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .back-top {
-    display: flex;
-    text-align: center;
-  }
-
-  /* This is the whole container for the main part in HOMEPAGE - mq768px */
-  .homepage-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 
   /* HOMEPAGE (First picture) - mq768px */
   .pictext {
     display: flex;
     flex-direction: row;
-  }
-
-  .text {
-    justify-content: center;
-    /* flex: 1; */
-    padding-left: 1rem;
-    padding-right: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    margin-bottom: 9.6rem;
   }
 
   .maira {
-    width: 40%;
+    width: 45%;
+    height: 100%;
+  }
+
+  .homepage-container h1,
+  .homepage-container h4,
+  .homepage-container h2,
+  .homepage-container p {
+    margin: 0;
+  }
+
+.homepage-container .pop {
+  margin-bottom: 5.6rem;
+}
+
+  .homepage-container h4 {
+    margin-top: 2.8rem;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
     margin-left: 3rem;
-    margin-top: 3rem;
-    /* flex: 1; */
   }
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
+  .mairecipe {
+    width: 80%;
+    margin: auto;
+  }
+
   .mairecipes {
-    display: flex;
-    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .mai-text {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    margin-left: 3rem;
-    margin-right: 3rem;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
-  .mai-text h3,
-  .mairecipes .btn {
-    align-self: flex-start;
-  }
-
-  .mairecipe {
-    width: 90%;
+  .mai-text .btn {
+    margin-top: 2.8rem;
   }
 
   /* FEATURED PROJECTS (Busy-Bus) - mq768px */
+  .busy-bus {
+    width: 80%;
+    margin: auto;
+  }
+
   .bb {
-    display: flex;
-    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .bb-text {
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
-  .bb-text h3,
   .bb-text .btn {
-    align-self: flex-start;
-    margin-left: 3rem;
-  }
-
-  .mairecipe {
-    width: 90%;
+    margin-top: 2.8rem;
   }
 
   /* CASE STUDY - mq768px */
-  /* This is the whole container in Case Study */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
   .pictext2 {
     display: flex;
     flex-direction: column;
   }
 
-  .text2 {
-    justify-content: flex-start;
-    /* align-items: center; */
-  }
+.text2 {
+  margin-left: 6rem;
+}
 
-  .casestudy {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.pop h4 {
+  margin-left: 6rem;
+}
 
-  .margin-bigger {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
+.sps {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.sps .mairecipe {
+  width: 90%;
+  align-self: center;
+}
+
+.user-survey {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.user-survey h2,
+.user-survey p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.question4,
+.question6 {
+  width: 80%;
+  align-self: center;
+}
 
   /* Competitive Analysis */
+.competitive-analysis {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.google-drive,
+.onedrive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropbox {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
   .googledrive-img,
-  .dropbox-img,
-  .onedrive-img {
-    width: 30%
+  .dropbox-img {
+    width: 20%;
   }
+
+  .onedrive-img {
+    width: 25%;
+  }
+
+  .googledrive-img,
+  .onedrive-img {
+    padding-left: 3rem;
+  }
+
+.dropbox-img {
+  padding-right: 3rem;
+}
 
   /* Personas */
+.personas h2,
+.personas p,
+.personas h3,
+.personas .info,
+.personas .general-personas,
+.personas .quotes1,
+.personas .quotes2 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
   .personas .occupation,
   .personas .info {
-    margin-left: 10rem;
-  }
-
-  .emily-img {
-    width: 70%;
-    align-self: center;
-    /* margin-left: auto;
-  margin-right: auto; */
+    margin-left: 11rem;
   }
 
   .emily {
@@ -1644,13 +1651,7 @@ textarea {
   }
 
   .emily-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .paula-img {
     width: 70%;
-    padding-top: 5.6rem;
     align-self: center;
   }
 
@@ -1660,53 +1661,72 @@ textarea {
   }
 
   .paula-img {
-    display: flex;
-    justify-content: center;
+    width: 70%;
+    padding-top: 5.6rem;
+    align-self: center;
   }
 
-  .paula .occupation,
-  .paula .info {
-    /* padding-left: 7rem; */
+  .quotes1,
+  .quotes2 {
+    width: 20%;
   }
 
   /* User Stories */
+  .user-stories {
+    display: flex;
+    flex-direction: column;
+  }
   .user-stories h2,
   .user-stories p {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .high {
-    display: flex;
-    justify-content: center;
     margin-left: 20rem;
     margin-right: 20rem;
   }
 
   .medium {
-    display: flex;
-    justify-content: center;
     margin-left: 20rem;
     margin-right: 20rem;
   }
 
   .low {
-    display: flex;
-    justify-content: center;
     margin-left: 20rem;
     margin-right: 20rem;
   }
 
+  /* User Flows */
+  .user-flows {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .user-flows h2,
+  .user-flows p,
+  .user-flows .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .userflow {
+    width: 80%;
+    align-self: center;
+
+  }
+
   /* Sketches & Wireframes */
   .sketches-wireframes {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .sketches-wireframes h2,
   .sketches-wireframes h4 {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .sw {
@@ -1715,108 +1735,113 @@ textarea {
     align-items: center;
   }
 
+  .slandingpage,
+  .wlandingpage,
+  .spricing,
+  .wpricing,
+  .ssignup,
+  .wsignup {
+    width: 85%;
+  }
+
   /* BRANDING */
+.branding {
+  display: flex;
+  flex-direction: column;
+}
   .branding h2,
   .branding p,
+  .branding .brain-sketch,
+  .name,
   .logo-section h3,
-  .logo-section p {
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .palette1,
+  .palette2,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons h4,
+  .icons p,
+  .icons .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .branding h2,
+  .branding p,
+  .name h3,
+  .name p,
+  .logo-section h3,
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons p,
+  .icons h4,
+  .icons .btn {
     margin-left: 6rem;
     margin-right: 6rem;
   }
 
-  .name h3,
-  .name p {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+.logos {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-  .brain-sketch,
-  .logo-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #brainstorm,
-  #sketch,
-  #logos {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    width: 90%;
-  }
+.brain-sketch {
+  display: flex;
+  flex-direction: column;
+}
+.brainstorm,
+.sketch,
+.logos {
+  width: 85%;
+  align-self: center;
+}
 
   .mailogo {
     width: 50%;
   }
 
-  .color-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .colors h3,
-  .colors p,
-  .colors h4 {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
   .palette1 {
     width: 70%;
-    /* margin-left: 6rem; */
-    /* margin: auto; */
+    margin-left: 6rem;
   }
 
   .palette2 {
     width: 50%;
-    /* margin-left: 6rem; */
-  }
-
-  .typography h3,
-  .typography p {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 6rem;
   }
 
   .avenirnext,
   .poppins {
+    margin-left: 0;
+    margin-right: 0;
     width: 70%;
+    align-self: center;
     margin-top: 9.6rem;
   }
 
-  .icons h3,
-  .icons p,
-  .icons .btn {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  .picture-boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .icons h4 {
-    margin-left: 10.5rem;
-  }
-
-  #icons1,
-  #icons2 {
-    width: 70%;
+  .icons1,
+  .icons2 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 85%;
   }
 
   /* High Fidelity Mockups */
-  .hfm h2,
-  .hfm p {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
-  .hfm h4 {
-    margin-left: 11.5rem;
-  }
+.hfm h2,
+.hfm p,
+.hfm h4 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
 
   .features1,
   .features2,
@@ -1828,41 +1853,34 @@ textarea {
   .color50,
   .forgotpassword,
   .autosaves {
-    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 85%;
+    align-self: center;
   }
 
+/* Prototypes and Tests */
   .prototypes-tests {
-    display: flex;
-    justify-content: center;
-  }
-
-  .prototypes-tests h2,
-  .prototypes-tests p,
-  .prototypes-tests h3 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  .prototypes-tests h4 {
-    margin-left: 7.5rem;
-  }
-
-  .pricing1,
-  .pricing2 {
-    width: 80%;
-    margin: auto;
-  }
-
-  .u-test {
     display: flex;
     flex-direction: column;
   }
 
+  .prototypes-tests h2,
+  .prototypes-tests p,
+  .prototypes-tests h3,
+  .prototypes-tests h4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .pricing1,
+  .pricing2,
   .usability-test {
-    width: 90%;
+    width: 85%;
     align-self: center;
   }
 
+/* Conclusion */
   .conclusion h2,
   .conclusion p {
     margin-left: 6rem;
@@ -1870,15 +1888,10 @@ textarea {
   }
 }
 
+
+
 /* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
-
-  /* .about-container h1,
-  .about-container h3,
-  .about-container p {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  } */
   .logo {
     padding-left: 6rem;
   }
@@ -1887,8 +1900,6 @@ textarea {
   .footer {
     display: flex;
     flex-direction: column;
-    /* max-width: 1280px;
-    margin: auto; */
   }
 
   .footer-link {
@@ -1898,334 +1909,114 @@ textarea {
     margin-right: 40rem;
   }
 
-  .footer h4 {
-    margin: auto;
-  }
-
+  .footer h4,
   .rights {
     margin: auto;
   }
 
   .arrow {
     align-self: center;
-    /* margin-top: 2.8rem; */
     margin-bottom: 2.8rem;
   }
 
-  /* ABOUT PAGE (First Picture) - mq1024px */
-  .about1 {
-    padding-left: 6rem;
-  }
-
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  /* ABOUT PAGE (Second Picture) - mq1024px */
-  .who1 {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-  }
-
-  .who-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* flex: 1; */
-    /* padding-right: 5rem;
-    padding-left: 5rem; */
-  }
-
-  .about2,
-  .about3,
-  .about4,
-  .about5,
-  .about6 {
-    /* display: flex;
-    justify-content: center; */
-    /* flex: 1; */
-  }
-
-  .about2 {
-    width: 50%;
-    /* flex: 1; */
-    margin: 0;
-    /* padding-right: 8rem; */
-    justify-content: center;
-  }
-
-  /* ABOUT PAGE (Third Picture) - mq1024px */
-  .who2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .who2-p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* flex: 1; */
-    padding-right: 5rem;
-    padding-left: 5rem;
-  }
-
-  .about3 {
-    width: 50%;
-    /* flex: 1; */
-    padding-left: 8rem;
-    justify-content: center;
-  }
-
-  /* ABOUT PAGE (Fourth Picture) - mq1024px */
-  .who3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .who-text2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* flex: 1; */
-    padding-right: 5rem;
-    padding-left: 5rem;
-    margin-bottom: 4rem;
-  }
-
-  .about4 {
-    width: 50%;
-    /* flex: 1; */
-    padding-right: 8rem;
-    padding-bottom: 4rem;
-  }
-
-  /* ABOUT PAGE (Fifth Picture) - mq1024px */
-  .chapter1 {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 2.8rem;
-    margin-bottom: 2.8rem;
-  }
-
-  .chapter-text2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* flex: 1; */
-    padding-right: 5rem;
-    padding-left: 5rem;
-  }
-
-  .about5 {
-    width: 50%;
-    /* flex: 1; */
-    padding-left: 8rem;
-  }
-
-  /* ABOUT PAGE (Sixth Picture) - mq1024px */
-  .chapter2 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 4rem;
-    /* justify-content: center; */
-  }
-
-  .about6 {
-    width: 50%;
-    /* flex: 1; */
-    padding-right: 8rem;
-    padding-bottom: 4rem;
-  }
-
-  /* This is the whole container for the main part in HOMEPAGE - mq1024px */
-  .homepage-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* max-width: 1140px; */
-    margin: auto;
-  }
-
-  /* HOMEPAGE (First picture) - mq1024px */
-  .pictext {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .text {
-    display: flex;
-    padding-left: 3rem;
-    padding-right: 8rem;
-  }
-
-  .maira {
-    width: 40%;
-    margin-left: 8rem;
-    margin-top: 3rem;
-  }
-
-  /* FEATURED PROJECTS (Mai Recipes) - mq1024px */
-  .pop {
-    margin-left: 5rem;
-  }
-
-  .mairecipe {
-    width: 70%;
-  }
-
-  .mairecipes {
-    padding-left: 16rem;
-    padding-right: 16rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* FEATURED PROJECTS (Busy-Bus) - mq1024px */
-  .busy-bus {
-    width: 70%;
-  }
-
-  .bb {
-    padding-left: 16rem;
-    padding-right: 16rem;
-    justify-content: center;
-  }
-
-  .bb-text,
-  .bb p {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .bb-text h3,
-  .bb-text .btn {
-    margin-left: 0;
-  }
-
-  .mai-text {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* CASE STUDY - PROJECT PAGE */
-  .pictext2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .casestudy {
-    width: 30%;
-    /* padding-left: 6rem; */
-    /* padding-top: 6rem; */
-    /* padding-bottom: 6rem; */
-  }
-
-  .margin-bigger {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .text2 {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-  }
-
-  .pop h4 {
-    margin-left: -12rem;
-  }
-
-  /* Design Roles, Deliverables, and Tools */
-  .rdt-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: green;
-  }
-
-  .rdt {
-    /* padding-left: 10rem;
-  padding-right: 10rem; */
-  }
-
-  .margin-bigger {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-
-  .google-drive {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding-top: 5.6rem;
-    padding-bottom: 5.6rem;
-  }
-
-  .googledrive-img {
-    /* flex: 0.3; */
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: 3rem;
-    width: 25%;
-  }
-
-  .text-google {
-    /* flex: 1; */
-    padding-top: 0;
-  }
-
-  .dropbox
+.pictext2 {
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 6rem;
 }
 
-/* Execute the commmand when bigger than 1440px */
-@media (min-width: 1440px) {
-
-  /* ABOUT PAGE */
-  /* HOMEPAGE AND WORK PAGE - mq1440px */
-  .text {
-    padding-left: 6rem;
-    padding-right: 10rem;
-    flex: 2;
-  }
-
-  .arrow {
-    margin-top: 5.6rem;
-  }
-
-  .background {
-    padding-top: 2rem;
-  }
-
-  .mairecipes {
-    padding-left: 35rem;
-    padding-right: 35rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .bb {
-    padding-left: 35rem;
-    padding-right: 35rem;
-    justify-content: center;
-  }
-
-  .footer-link {
-    margin-left: 60rem;
-    margin-right: 60rem;
-  }
-
-  /* .maira {
-  margin-left: 0;
-  margin-left: 3rem;
+.casestudy {
   width: 50%;
-  margin-top: 3rem;
-  flex: 1;
+  padding-top: 0;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rdt-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rdt.roles,
+.rdt.deliverables {
+  padding-bottom: 0;
+}
+
+.sps {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.user-survey h2,
+.user-survey p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.img-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question4,
+.question6 {
+  width: 50%;
+}
+
+.competitive-analysis {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.personas h2,
+.personas p,
+.personas h3,
+.personas .info,
+.personas .general-personas,
+.personas .occupation,
+.personas .quotes1,
+.personas .quotes2 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.quotes1,
+.quotes2 {
+  width: 15%;
+}
+
+.user-stories h2,
+.user-stories p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.stories-flex {
+  display: flex;
+  
+}
+
+/* .high,
+.medium,
+.low {
+  margin-left: 0;
+  margin-right: 0;
 } */
+
+
+
+
+
+
+
+
 }
