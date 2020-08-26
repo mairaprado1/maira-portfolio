@@ -460,10 +460,15 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.resume .date {
+.date {
   margin-bottom: 2.8rem;
   font-weight: 200;
   text-decoration: none;
+}
+
+.date a {
+  text-decoration:none;
+  color: #1A1A1A;
 }
 
 .edu-dpaul {
@@ -618,6 +623,18 @@ textarea {
 
 /* PROCESS */
 /* USER SURVEY */
+/* .project-container {
+  max-width: 1440px;
+  margin: auto;
+} */
+
+
+.img-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .user-survey {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -830,6 +847,7 @@ textarea {
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 5.6rem;
+
 }
 
 .medium {
@@ -838,6 +856,7 @@ textarea {
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
+
 }
 
 .low {
@@ -845,6 +864,7 @@ textarea {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
   margin-left: 3rem;
   margin-right: 3rem;
+
 }
 
 .user-hml h4 {
@@ -971,6 +991,10 @@ textarea {
 }
 
 /* Logo (part of the branding) */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+}
 .logo-section h3,
 .logo-section p {
   margin-left: 3rem;
@@ -1245,6 +1269,63 @@ textarea {
     display: none;
   }
 }
+
+/* Execute the commmand when bigger than 500px */
+@media (min-width: 500px) {
+  /* User Stories mp500px */
+  .high {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+  }
+
+  .medium {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+  }
+
+  .low {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+  }
+
+
+
+
+
+
+}
+
+/* Execute the commmand when bigger than 600px */
+@media (min-width: 600px) {
+  /* User Stories mp600px */
+  .high {
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+  }
+
+  .medium {
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+  }
+
+  .low {
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+  }
+
+
+
+
+
+
+}
+
 
 /* Execute the commmand when bigger than 767px */
 @media (min-width: 768px) {
@@ -1591,7 +1672,7 @@ textarea {
   align-self: center;
 }
 
-  /* Competitive Analysis */
+  /* Competitive Analysis - mq768px */
 .competitive-analysis {
   margin-left: 6rem;
   margin-right: 6rem;
@@ -1628,7 +1709,7 @@ textarea {
   padding-right: 3rem;
 }
 
-  /* Personas */
+  /* Personas - mq768px */
 .personas h2,
 .personas p,
 .personas h3,
@@ -1671,7 +1752,7 @@ textarea {
     width: 20%;
   }
 
-  /* User Stories */
+  /* User Stories - mq768px */
   .user-stories {
     display: flex;
     flex-direction: column;
@@ -1685,19 +1766,22 @@ textarea {
   .high {
     margin-left: 20rem;
     margin-right: 20rem;
+
   }
 
   .medium {
     margin-left: 20rem;
     margin-right: 20rem;
+
   }
 
   .low {
     margin-left: 20rem;
     margin-right: 20rem;
+
   }
 
-  /* User Flows */
+  /* User Flows - mq768px */
   .user-flows {
     display: flex;
     flex-direction: column;
@@ -1717,7 +1801,7 @@ textarea {
 
   }
 
-  /* Sketches & Wireframes */
+  /* Sketches & Wireframes - mq768px */
   .sketches-wireframes {
     margin-left: 0;
     margin-right: 0;
@@ -1744,7 +1828,7 @@ textarea {
     width: 85%;
   }
 
-  /* BRANDING */
+  /* BRANDING - mq768px */
 .branding {
   display: flex;
   flex-direction: column;
@@ -1835,7 +1919,7 @@ textarea {
     width: 85%;
   }
 
-  /* High Fidelity Mockups */
+  /* High Fidelity Mockups - mq768px */
 .hfm h2,
 .hfm p,
 .hfm h4 {
@@ -1859,7 +1943,7 @@ textarea {
     align-self: center;
   }
 
-/* Prototypes and Tests */
+/* Prototypes and Tests - mq768px */
   .prototypes-tests {
     display: flex;
     flex-direction: column;
@@ -1890,13 +1974,42 @@ textarea {
 
 
 
+/* Execute the commmand when bigger than 850px */
+@media (min-width: 850px) {
+  /* User Stories mp850px */
+  .high {
+    margin-left: 25rem;
+    margin-right: 25rem;
+
+  }
+
+  .medium {
+    margin-left: 25rem;
+    margin-right: 25rem;
+
+  }
+
+  .low {
+    margin-left: 25rem;
+    margin-right: 25rem;
+
+  }
+
+
+
+
+
+
+}
+
+
 /* Execute the commmand when bigger than 1024px */
 @media (min-width: 1024px) {
   .logo {
     padding-left: 6rem;
   }
 
-  /* This is the footer */
+  /* This is the footer - mq1024px */
   .footer {
     display: flex;
     flex-direction: column;
@@ -1961,15 +2074,9 @@ textarea {
   margin-right: 16rem;
 }
 
-.img-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .question4,
 .question6 {
-  width: 50%;
+  width: 70%;
 }
 
 .competitive-analysis {
@@ -2002,21 +2109,334 @@ textarea {
 
 .stories-flex {
   display: flex;
-  
+  justify-content: center;
+  align-items: baseline;
 }
 
-/* .high,
+.high,
 .medium,
 .low {
   margin-left: 0;
   margin-right: 0;
-} */
+  width: 27%;
+  height: 550px;
+}
+
+.high,
+.medium {
+  margin-right: 2rem;
+}
+
+.user-stories li {
+  margin-right: 0;
+}
+
+.user-flows h2,
+.user-flows p,
+.user-flows .btn {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.userflow {
+  width: 70%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sketches-wireframes h2,
+.sketches-wireframes h4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.sketches-wireframes h2,
+.sketches-wireframes h4 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
+  width: 70%;
+}
+
+.branding h2,
+.branding p,
+.name h3,
+.name p,
+.logo-section h3,
+.logo-section p,
+.colors h3,
+.colors p,
+.colors h4,
+.typography h3,
+.typography p,
+.icons h3,
+.icons p,
+.icons h4,
+.icons .btn {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.brainstorm,
+.sketch,
+.logos {
+  width: 70%;
+  align-self: center;
+}
+
+.palette1,
+.palette2 {
+  margin-left: 16rem;
+}
+
+.avenirnext,
+.poppins {
+  width: 50%;
+}
+
+.icons1,
+.icons2 {
+  width: 70%;
+}
+
+.hfm h2,
+.hfm p,
+.hfm h4 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50,
+.forgotpassword,
+.autosaves {
+  width: 70%;
+}
+
+.prototypes-tests h2,
+.prototypes-tests p,
+.prototypes-tests h3 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+  }
+
+.prototypes-tests h4 {
+  margin-left: 8rem;
+}
+
+.conclusion h2,
+.conclusion p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
 
 
 
 
 
 
+}
 
+
+
+
+
+@media (min-width: 1440px) {
+
+  /* CASE STUDY */
+  .casestudy {
+    width: 35%;
+  }
+
+  .rdt.roles {
+    margin-left: 10rem;
+  }
+
+  .rdt.tools {
+    margin-right: 10rem;
+  }
+
+  .sps {
+    margin-left: 35rem;
+    margin-right: 35rem;
+  }
+
+.pop h4 {
+  margin-left: 20rem;
+}
+
+/* User Survey */
+
+.user-survey h2,
+.user-survey p {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+.img-flex {
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: baseline; */
+}
+
+.question4 {
+  margin-right: 3rem;
+  width: 40%;
+
+}
+
+.question6 {
+  width: 40%;
+  margin-top: 0;
+}
+
+/* Competitive Analysis - mq 1440px */
+.competitive-analysis {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+/* Personas mq 1440px */
+.personas-flex {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  /* align-items: baseline; */
+}
+
+.emily,
+.paula {
+  display: inline-block;
+}
+
+.personas h2,
+.personas p {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+.paula-img {
+  /* width: 50%; */
+/* width: 46%; */
+}
+
+.emily-img {
+  margin-top: 0;
+
+}
+
+.paula-img {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.emily {
+  /* padding-left: 30rem; */
+}
+
+.paula {
+  /* padding-right: 10rem; */
+
+}
+
+
+
+
+  /* User Stories mp1440px */
+.user-stories h2,
+.user-stories p {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+  .high,
+  .medium,
+  .low {
+    margin-left: 0;
+    margin-right: 0;
+    width: 27%;
+    height: 450px;
+  }
+
+  .high,
+  .medium {
+    margin-right: 3rem;
+  }
+
+/* User flows - mp1440px */
+.user-flows h2,
+.user-flows p,
+.user-flows .btn {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+.userflow {
+  width: 50%;
+}
+
+/* Sketches and Wireframes - mp1440px */
+.sketches-wireframes h2 {
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+.sketches-wireframes h4 {
+  margin-left: 15rem;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
+  width: 40%;
+}
+
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
+  margin: 0;
+}
+
+.slandingpage,
+.spricing,
+.ssignup {
+  margin-left: 15rem;
+  margin-right: 3rem;
+}
+
+.wlandingpage,
+.wpricing,
+.wsignup {
+  margin-right: 15rem;
+}
+
+.sw {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Branding - mp1440px */
 
 }
