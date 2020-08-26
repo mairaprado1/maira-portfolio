@@ -555,6 +555,10 @@ textarea {
 }
 
 /* PROJECT */
+.project-container {
+  max-width: 1280px;
+  margin: auto;
+}
 .pictext2 {
   display: flex;
   flex-direction: column;
@@ -2318,25 +2322,42 @@ textarea {
   /* align-items: baseline; */
 }
 
-.emily,
+/* .emily,
 .paula {
-  display: inline-block;
-}
+  display: flex;
+} */
 
 .personas h2,
 .personas p {
   margin-left: 35rem;
-  margin-right: 35rem;
+  margin-right: 35rem;;
+}
+
+.personas p {
+  margin-bottom: 5.6rem;
 }
 
 .paula-img {
+  /* margin-right: 10rem; */
+
   /* width: 50%; */
 /* width: 46%; */
 }
 
 .emily-img {
+  /* margin-left: 10rem; */
   margin-top: 0;
 
+}
+
+
+.personas h3,
+.personas .info,
+.personas .general-personas,
+.personas .occupation,
+.personas .quotes1,
+.personas .quotes2 {
+  margin-left: 10rem;
 }
 
 .paula-img {
@@ -2344,12 +2365,16 @@ textarea {
   margin-top: 0;
 }
 
+/* This is the whole container for Emily */
 .emily {
-  /* padding-left: 30rem; */
+  width: 50%;
+  padding-left: 10rem;
 }
 
+/* This is the whole container for Paula */
 .paula {
-  /* padding-right: 10rem; */
+  width: 50%;
+  padding-right: 10rem;
 
 }
 
