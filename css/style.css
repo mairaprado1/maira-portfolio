@@ -475,6 +475,14 @@ textarea {
   margin-bottom: 2.8rem;
 }
 
+.background.no-padding {
+  padding-top: 0;
+}
+
+.space56 {
+  margin-bottom: 5.6rem;
+}
+
 .experience,
 .experienceEFE,
 .experience-mppr {
@@ -490,6 +498,18 @@ textarea {
 .date a {
   text-decoration: none;
   color: #1A1A1A;
+}
+
+.tools-flex {
+  padding-top: 0;
+}
+.skills-margin {
+  padding-bottom: 0.1rem;
+  margin-bottom: 0;
+}
+
+.skills-tools {
+  margin-bottom: 0;
 }
 
 .edu-dpaul {
@@ -584,6 +604,7 @@ textarea {
 .pictext2 {
   display: flex;
   flex-direction: column;
+
 }
 
 .casestudy {
@@ -1576,6 +1597,8 @@ textarea {
     padding-right: 6rem;
     padding-top: 3rem;
     margin-bottom: 9.6rem;
+    max-width: 1280px;
+    margin: auto;
   }
 
   .maira {
@@ -2048,7 +2071,7 @@ textarea {
   .footer {
     display: flex;
     flex-direction: column;
-    margin-top: 32rem;
+
   }
 
   .footer-link {
@@ -2068,8 +2091,26 @@ textarea {
     margin-bottom: 2.8rem;
   }
 
-/* CONTACT */
+/* HOMEPAGE */
+.mairecpe {
+  width: 50%;
+}
 
+.busy-bus {
+  width: 70%;
+}
+
+.mai-text,
+.bb-text {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+
+/* CONTACT */
+.contact-page .footer {
+  margin-top: 32rem;
+}
 
 /* RESUME */
 .resume h3,
@@ -2081,22 +2122,27 @@ textarea {
 }
 
 .resume ul {
-  margin-left: 18rem;
-  margin-right: 16rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .tools-flex {
   display: flex;
+  justify-content: space-between;
   padding-top: 0;
 }
 
 ul.tools1 {
-  padding-left: 10rem;
+  margin-left: 18rem;
 }
 
-ul.tools2 {
-  margin-left: 0;
-  padding-right: 5rem;
+ul.tools3 {
+  margin-right: 16rem;
+}
+
+.experience-list {
+  margin-left: 18rem;
+  margin-right: 16rem;
 }
 
 .skills-margin {
@@ -2108,9 +2154,6 @@ ul.tools2 {
   margin-bottom: 0;
 }
 
-.resume .btn {
-  margin-top: 5.6rem;
-}
 
 /* CASE STUDY */
   .pictext2 {
@@ -2142,6 +2185,7 @@ ul.tools2 {
   .rdt.roles,
   .rdt.deliverables {
     padding-bottom: 0;
+    margin-bottom: 9.6rem;
   }
 
   .sps {
@@ -2246,7 +2290,6 @@ ul.tools2 {
     margin-right: 16rem;
   }
 
-
   .slandingpage,
   .wlandingpage,
   .spricing,
@@ -2255,8 +2298,6 @@ ul.tools2 {
   .wsignup {
     width: 70%;
   }
-
-
 
   .branding h2,
   .branding p,
@@ -2343,15 +2384,53 @@ ul.tools2 {
   }
 
 
+/* HOMEPAGE */
+.mairecipes,
+.bb,
+.pop {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.pictext {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+}
+
+.text {
+  margin-left: 6rem;
+}
+
+.mairecipe {
+  width: 45%;
+}
+
+.mai-text,
+.bb-text {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.busy-bus {
+  width: 35%;
+}
+
+.mairecipes h3,
+.bb h3 {
+  margin-top: 0;
+}
 
 /* CONTACT PAGE */
 
 
 /* RESUME */
-.resume {
+.resume-section {
   max-width: 1280px;
   margin: auto;
 }
+
 .resume h3,
 .resume h4,
 .resume p,
@@ -2360,67 +2439,18 @@ ul.tools2 {
   margin-right: 30rem;
 }
 
-.resume ul {
+.experience-list {
   margin-left: 32rem;
   margin-right: 30rem;
 }
 
 ul.tools1 {
-  padding-left: 10rem;
+  margin-left: 32rem;
 }
 
-ul.tools2 {
-  margin-left: -10rem;
-  /* padding-right: 5rem; */
+ul.tools3 {
+  margin-right: 30rem;
 }
-
-
-
-
-/* .resume h3,
-.resume h4,
-.resume p,
-.resume .btn {
-  margin-left: 16rem;
-  margin-right: 16rem;
-}
-
-.resume ul {
-  margin-left: 18rem;
-  margin-right: 16rem;
-}
-
-.tools-flex {
-  display: flex;
-  padding-top: 0;
-}
-
-ul.tools1 {
-  padding-left: 10rem;
-}
-
-ul.tools2 {
-  margin-left: 0;
-  padding-right: 5rem;
-}
-
-.skills-margin {
-  padding-bottom: 0.1rem;
-  margin-bottom: 0;
-}
-
-.skills-tools {
-  margin-bottom: 0;
-}
-
-.resume .btn {
-  margin-top: 5.6rem;
-} */
-
-
-
-
-
 
 
 
