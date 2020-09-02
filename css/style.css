@@ -2106,6 +2106,20 @@ textarea {
   margin-right: 16rem;
 }
 
+/* ABOUT PAGE */
+.about-container h3,
+.about-container p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.about2,
+.about3,
+.about4,
+.about5,
+.about6 {
+  width: 45%;
+}
 
 /* CONTACT */
 .contact-page .footer {
@@ -2421,6 +2435,47 @@ ul.tools3 {
 .bb h3 {
   margin-top: 0;
 }
+
+
+/* ABOUT PAGE */
+/* ABOUT PAGE (Second Picture) - mq1280px */
+.who1,
+.who3,
+.chapter2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.who2,
+.chapter1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+.about-container h3,
+.about-container p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.about2,
+.about4,
+.about6 {
+  margin-right: 6rem;
+  width: 40%;
+}
+
+.about3,
+.about5 {
+  margin-left: 6rem;
+  width: 40%;
+}
+
+
+
 
 /* CONTACT PAGE */
 
