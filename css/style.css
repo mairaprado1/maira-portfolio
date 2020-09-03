@@ -1455,6 +1455,8 @@ textarea {
 
   .main-menu a:hover,
   .main-menu a:focus {
+    color: #1A1A1A;
+    background-color: #FFFFFF;
     text-decoration: underline;
     font-weight: bold;
     padding: 3rem;
