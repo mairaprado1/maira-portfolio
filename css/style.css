@@ -1459,7 +1459,6 @@ textarea {
     background-color: #FFFFFF;
     text-decoration: underline;
     font-weight: bold;
-    /* padding: 3rem; */
   }
 
   /* This is the footer - mq768px */
@@ -1568,6 +1567,9 @@ textarea {
     margin-right: auto;
   }
 
+  .chapter {
+    margin-top: 2rem;
+  }
   /* ABOUT PAGE (Sixth Picture) - mq768px */
   .chapter2 {
     display: flex;
