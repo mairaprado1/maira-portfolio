@@ -1,0 +1,3017 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: auto;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 150%;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 150%;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+
+small {
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+header .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.logo a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logo img {
+  height: 70%;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.menu-toggle {
+  color: #1A1A1A;
+  margin-right: 1rem;
+  margin-top: 27px;
+  margin-right: 30px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-menu {
+  position: fixed;
+  display: none;
+  /* Teacher used left */
+  width: 100%;
+  /* right: : -320px; */
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: auto;
+  transition: right .8s ease-in-out;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 2.5rem;
+  min-height: 100%;
+  background-color: #F9F9F9;
+}
+
+/* It is important to use display block to have a big area to click, specially on mobile devices. links are inline. */
+.main-menu a {
+  display: block;
+  padding: 2.5rem;
+  /* This gives space around the links so we can click them */
+  color: #1A1A1A;
+  text-decoration: none;
+  font-size: 1.8rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-menu li {
+  border-bottom: 1px solid #1A1A1A;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #1A1A1A;
+  margin-left: 0;
+  margin-top: 5rem;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-right: 9px;
+  margin-top: 6px;
+}
+
+.main-menu:target {
+  display: block;
+  top: 0;
+  outline: none;
+}
+
+/* This selector says for anything that has class of menu-close, when the main-menu is targeted, close it. */
+.main-menu:target .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* We write the css from left to right but we read them from right to left */
+/* when backdrop immediately follows the main-menu when it is targeted */
+.main-menu:target+.backdrop {
+  position: fixed;
+  display: block;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  /* background-color: rgba(26, 26, 26, 0.55); */
+  cursor: default;
+}
+
+.fa-bars,
+.fa-close {
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: #00758D;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 18.4rem;
+}
+
+.back-top {
+  color: #1A1A1A;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #00758D;
+  color: white;
+}
+
+.footer-link {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin: 2.8rem 3rem;
+}
+
+.footer h4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+}
+
+.rights p {
+  font-weight: lighter;
+  margin-top: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2.8rem;
+}
+
+/* HOMEPAGE */
+.maira {
+  margin: auto;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text h1 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.arrow {
+  /*hide this on mobile*/
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.pop h4 {
+  color: #00758D;
+  margin-bottom: 5.6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  text-align: left;
+}
+
+/* MAI RECIPES */
+.background {
+  background-color: #F9F9F9;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.mairecipe {
+  width: 100%;
+}
+
+.mairecipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+.mairecipes h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.mairecipes p {
+  padding-top: 2.8rem;
+  text-align: left;
+  margin-bottom: 2.8rem;
+}
+
+/* BUSY-BUS */
+.busy-bus {
+  width: 100%;
+}
+
+.bb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+.bb h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.bb p {
+  padding-top: 2.8rem;
+  text-align: left;
+  margin-bottom: 2.8rem;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact h3,
+.contact p {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact h3 {
+  margin-top: 5.6rem;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+button {
+  background-color: #00758D;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 28px;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 9.6rem;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 28px;
+  padding-left: 1rem;
+}
+
+label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 10rem;
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+#name,
+#email,
+#message {
+  border: 1px solid #828282;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+.contact-title {
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.contact p {
+  margin-bottom: 5.6rem;
+}
+
+.contact {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* RESUME PAGE */
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume h3,
+.resume h4,
+.resume p,
+.resume .btn {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.resume h3 {
+  color: #D80303;
+  font-weight: 500;
+  margin-bottom: 2.8rem;
+}
+
+.summary-space {
+  margin-bottom: 5.6rem;
+}
+
+.summary {
+  margin-top: 5.6rem;
+}
+
+.resume ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+  margin-left: 5rem;
+  margin-right: 4rem;
+}
+
+.resume .project-name {
+  margin-bottom: 2rem;
+}
+
+.resume h4 {
+  font-weight: 500;
+}
+
+.resume .p-space {
+  margin-bottom: 2.8rem;
+}
+
+.background.no-padding {
+  padding-top: 0;
+}
+
+.space56 {
+  margin-bottom: 5.6rem;
+}
+
+.experience,
+.experienceEFE,
+.experience-mppr {
+  margin-bottom: 1rem;
+}
+
+.date {
+  margin-bottom: 2.8rem;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.date a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.tools-flex {
+  padding-top: 0;
+}
+
+.skills-margin {
+  padding-bottom: 0.1rem;
+  margin-bottom: 0;
+}
+
+.skills-tools {
+  margin-bottom: 0;
+}
+
+.edu-dpaul {
+  margin-bottom: 1rem;
+}
+
+.edu-oab,
+.edu-utp {
+  margin-top: 5.6rem;
+}
+
+/* ABOUT PAGE */
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container h1,
+.about-container h3,
+.about-container p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.about-container h1 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+
+.greeting {
+  font-weight: bold;
+  margin-bottom: 5.6rem;
+  margin-top: 2.8rem;
+}
+
+.about1,
+.about2,
+.about3,
+.about4,
+.about5,
+.about6 {
+  width: 100%;
+}
+
+.about2,
+.about3 {
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
+}
+
+.about4 {
+  margin-top: 5.6rem;
+}
+
+.about5 {
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
+}
+
+.about6 {
+  margin-top: 5.6rem;
+}
+
+.who h3,
+.chapter h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.who {
+  background-color: #F9F9F9;
+  padding-top: 4rem;
+}
+
+.chapter {
+  background-color: #F9F9F9;
+  margin-top: 5.6rem;
+  padding-top: 4rem;
+}
+
+/* PROJECT */
+.project-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.pictext2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.casestudy {
+  align-self: center;
+  padding-top: 5.6rem;
+  width: 76%;
+}
+
+.text2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text2 h1 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+.text2 h3 {
+  margin-bottom: 2.8rem;
+}
+
+/* OVERVIEW */
+.rdt-flex {
+  background-color: #F9F9F9;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.rdt {
+  font-size: 1.8rem;
+  justify-content: center;
+  line-height: 150%;
+  text-align: center;
+}
+
+.rdt.roles,
+.rdt.deliverables {
+  padding-bottom: 9.6rem;
+}
+
+.rdt h2 {
+  font-weight: bold;
+  padding-bottom: 2.8rem;
+}
+
+/* SUMMARY - PROBLEM - SOLUTION */
+.sps {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+}
+
+.sps h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.sps.solution img {
+  padding-top: 5.6rem;
+}
+
+/* PROCESS */
+/* USER SURVEY */
+.img-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-survey {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.user-survey h2 {
+  font-weight: bold;
+}
+
+.user-survey p {
+  margin-bottom: 5.6rem;
+  margin-top: 2.8rem;
+}
+
+.question4 {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.question6 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-top: 2.8rem;
+  width: 100%;
+}
+
+/* COMPETITIVE ANALYSIS */
+.competitive-analysis {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.competitive-analysis h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.competitive-analysis ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2.8rem;
+}
+
+.competitive-analysis li:not(.no-space) {
+  padding-bottom: 2rem;
+}
+
+.google-drive p {
+  padding-top: 2rem;
+}
+
+.google-drive,
+.dropbox,
+.onedrive {
+  display: flex;
+  flex-direction: column;
+}
+
+.googledrive-img {
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
+}
+
+.dropbox-img {
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
+}
+
+.onedrive-img {
+  margin: auto;
+  padding-bottom: 5.6rem;
+  padding-top: 5.6rem;
+  width: 50%;
+}
+
+/* PERSONAS */
+.personas h2,
+.personas p,
+.personas h3,
+.personas .info,
+.personas .general-personas,
+.personas .quotes1,
+.personas .quotes2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.personas h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.personas .goals h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.personas .frustrations h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.emily-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.paula-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.quotes1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+}
+
+.quotes2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+}
+
+.quote {
+  position: relative;
+  margin-top: 5.6rem;
+  z-index: 1;
+}
+
+.quote h3 {
+  font-weight: bold;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.personas ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+  padding-top: 2rem;
+}
+
+.personas .general-personas li {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.personas .info {
+  list-style-type: none;
+}
+
+/* USER STORIES */
+.user-stories {
+  background-color: #F9F9F9;
+  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.user-stories h2,
+.user-stories h4 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.user-stories h2,
+.user-stories h4,
+.user-stories p,
+.user-stories ul {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.user-stories ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+}
+
+.user-stories li {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.user-stories h4 {
+  margin-top: 4.6rem;
+  /* I am using 4.6rem here because I am using 1rem on the border */
+}
+
+.high {
+  border-top: 1rem solid #67FFAD;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-bottom: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 5.6rem;
+}
+
+.medium {
+  border-top: 1rem solid #FFF067;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-bottom: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.low {
+  border-top: 1rem solid #FF6767;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.user-hml h4 {
+  text-align: center;
+}
+
+.user-hml ul {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* USER FLOWS */
+.user-flows {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.user-flows h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.userflow {
+  width: 100%;
+  margin-bottom: 5.6rem;
+  margin-top: 2.8rem;
+}
+
+/* SKETCHES & WIREFRAMES */
+.sw-background {
+  background-color: #F9F9F9;
+  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.sketches-wireframes {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  width: 100%;
+}
+
+.slandingpage,
+.wlandingpage,
+.spricing,
+.wpricing,
+.ssignup,
+.wsignup {
+  margin-top: 2.8rem;
+}
+
+.wlandingpage,
+.wpricing {
+  margin-bottom: 5.6rem;
+}
+
+.sketches-wireframes h2 {
+  font-weight: bold;
+  margin-bottom: 5.6rem;
+}
+
+.sketches-wireframes h4 {
+  font-weight: 400;
+}
+
+/* BRANDING */
+.brainstorm,
+.sketch {
+  width: 100%;
+}
+
+.brainstorm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-bottom: 2.8rem;
+  margin-top: 3.6rem;
+  /*I used 3.6rem or 36px instead of 56px because there is already 20px on the margin-bottom p*/
+}
+
+.sketch {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-bottom: 9.6rem;
+}
+
+.branding-img {
+  margin-bottom: 2.8rem;
+}
+
+.branding h2,
+.branding p,
+.branding .brain-sketch {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.branding h2 {
+  font-weight: bold;
+  margin-bottom: 5.6rem;
+}
+
+.branding p {
+  margin-bottom: 2rem;
+}
+
+/* Name (part of the branding) */
+.name {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.name h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+/* Logo (part of the branding) */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-section h3,
+.logo-section p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.logo-section h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.logos {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
+}
+
+.mailogo {
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  width: 80%;
+  margin: auto;
+}
+
+.small-background {
+  display: flex;
+  background-color: #F9F9F9;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+}
+
+/* Colors (part of the branding) */
+.colors h3,
+.colors p,
+.colors h4,
+.palette1,
+.palette2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.colors h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.colors h4 {
+  font-weight: 400;
+  margin-top: 5.6rem;
+}
+
+.palette1 {
+  padding-bottom: 5.6rem;
+  padding-top: 2.8rem;
+  width: 80%;
+}
+
+.palette2 {
+  padding-bottom: 9.6rem;
+  padding-top: 2.8rem;
+  width: 60%;
+}
+
+/* Typography (part of the branding) */
+.typography {
+  display: flex;
+  flex-direction: column;
+}
+
+.typo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avenirnext,
+.poppins {
+  width: 70%;
+  margin: auto;
+  margin-top: 5.6rem;
+}
+
+.typography h3,
+.typography p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.typography h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+/* Icons (part of the branding) */
+.icons .picture-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons h3,
+.icons h4,
+.icons p,
+.icons .btn {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.icons h4 {
+  font-weight: 400;
+  margin-top: 5.6rem;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.icons1,
+.icons2 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin: auto;
+  margin-top: 2.8rem;
+  width: 80%;
+  align-self: center;
+}
+
+.icons2 {
+  margin-bottom: 5.6rem;
+}
+
+/* HIGH FIDELITY MOCKUPS */
+.hfm .picture-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50,
+.forgotpassword,
+.autosaves {
+  align-self: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin: auto;
+  width: 80%;
+}
+
+.hfm h2,
+.hfm p,
+.hfm h4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hfm h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.hfm h4 {
+  font-weight: 400;
+  margin-top: 5.6rem;
+}
+
+.p-space {
+  margin-bottom: 2rem;
+}
+
+.features1,
+.features2,
+.positionpicture1,
+.positionpicture2,
+.footer1,
+.footer2,
+.color40,
+.color50 {
+  margin-top: 2.8rem;
+}
+
+.features2,
+.positionpicture2,
+.footer2,
+.color50 {
+  margin-bottom: 5.6rem;
+}
+
+.forgotpassword {
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+/* PROTOTYPES AND TESTS */
+.p-test .picture-boxes,
+.u-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.prototypes-tests h2,
+.prototypes-tests h3,
+.prototypes-tests h4,
+.prototypes-tests p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.prototypes-tests h2,
+.prototypes-tests h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.prototypes-tests h4 {
+  font-weight: 400;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.pricing1,
+.pricing2 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  width: 80%;
+  margin: auto;
+}
+
+.usability-test {
+  width: 100%;
+  margin: auto;
+}
+
+.usability-test {
+  margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
+}
+
+/* CONCLUSION */
+.conclusion {
+  background-color: #F9F9F9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 9.6rem;
+}
+
+.conclusion h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.conclusion p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Execute the commmand when smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .intro-desktop {
+    display: none;
+  }
+
+  .contact-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+/* Execute the commmand when smaller than 1024px */
+@media only screen and (max-width: 1024px) {
+  .arrow {
+    display: none;
+  }
+}
+
+/* Execute the commmand when bigger than 500px */
+@media only screen and (min-width: 500px) {
+
+  /* User Stories mp500px */
+  .high {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .medium {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .low {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+/* Execute the commmand when bigger than 600px */
+@media only screen and (min-width: 600px) {
+
+  /* User Stories mp600px */
+  .high {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .medium {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .low {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+/* Execute the commmand when bigger than 767px */
+@media only screen and (min-width: 768px) {
+  .intro-mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    line-height: 150%;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-size: 2.7rem;
+    line-height: 150%;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  p {
+    font-size: 1.9rem;
+    line-height: 150%;
+  }
+
+  small {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  /* ABOUT PAGE */
+  header .row {
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  /* NAV */
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+
+  .main-menu {
+    position: static;
+    display: block;
+  }
+
+  .main-menu ul {
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+    left: 10rem;
+  }
+
+  .logo img {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  .main-menu li {
+    /* I can use inline-block or flexbox */
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .main-menu li:first-child a {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  .main-menu a {
+    color: #1A1A1A;
+    border-bottom: none;
+    display: inline;
+    padding: 0;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+    /* padding: 3rem; */
+  }
+
+  /* This is the footer - mq768px */
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+
+  .footer h4,
+  .rights {
+    margin: auto;
+  }
+
+  /* ABOUT PAGE (First picture) - mq768px */
+  .intro-desktop {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+  }
+
+  .about1 {
+    width: 45%;
+    height: 100%;
+  }
+
+  .about-container h1,
+  .about-container .greeting {
+    margin: 0;
+  }
+
+  .about-container h3,
+  .about-container p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .about-container .greeting {
+    margin-top: 2.8rem;
+  }
+
+  .intro-text {
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+
+  /* ABOUT PAGE (Second Picture) - mq768px */
+  .who {
+    margin-top: 5.6rem;
+  }
+
+  .who1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about2 {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Third Picture) - mq768px  */
+  .who2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about3 {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Fourth Picture) - mq768px */
+  .who3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about4 {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+  }
+
+  /* ABOUT PAGE (Fifth Picture) - mq768px */
+  .chapter1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about5 {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ABOUT PAGE (Sixth Picture) - mq768px */
+  .chapter2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about6 {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+  }
+
+  /* HOMEPAGE (First picture) - mq768px */
+  .pictext {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    margin-bottom: 9.6rem;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .maira {
+    width: 45%;
+    height: 100%;
+  }
+
+  .homepage-container h1,
+  .homepage-container h4,
+  .homepage-container h2,
+  .homepage-container p {
+    margin: 0;
+  }
+
+  .homepage-container .pop {
+    margin-bottom: 5.6rem;
+  }
+
+  .homepage-container h4 {
+    margin-top: 2.8rem;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+
+  /* FEATURED PROJECTS (Mai Recipes) - mq768px */
+  .mairecipe {
+    width: 80%;
+    margin: auto;
+  }
+
+  .mairecipes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mai-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .mai-text .btn {
+    margin-top: 2.8rem;
+  }
+
+  /* FEATURED PROJECTS (Busy-Bus) - mq768px */
+  .busy-bus {
+    width: 80%;
+    margin: auto;
+  }
+
+  .bb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bb-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .bb-text .btn {
+    margin-top: 2.8rem;
+  }
+
+  /* CONTACT PAGE */
+  /* RESUME PAGE */
+  .resume h3,
+  .resume h4,
+  .resume p,
+  .resume .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .resume ul {
+    margin-left: 8rem;
+    margin-right: 6rem;
+  }
+
+  /* CASE STUDY - mq768px */
+  .pictext2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text2 {
+    margin-left: 6rem;
+  }
+
+  .pop h4 {
+    margin-left: 6rem;
+  }
+
+  .sps {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sps .mairecipe {
+    width: 90%;
+    align-self: center;
+  }
+
+  .user-survey {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user-survey h2,
+  .user-survey p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .question4,
+  .question6 {
+    width: 80%;
+    align-self: center;
+  }
+
+  /* Competitive Analysis - mq768px */
+  .competitive-analysis {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .google-drive,
+  .onedrive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dropbox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .googledrive-img,
+  .dropbox-img {
+    width: 20%;
+  }
+
+  .onedrive-img {
+    width: 25%;
+  }
+
+  .googledrive-img,
+  .onedrive-img {
+    padding-left: 3rem;
+  }
+
+  .dropbox-img {
+    padding-right: 3rem;
+  }
+
+  /* Personas - mq768px */
+  .personas h2,
+  .personas p,
+  .personas h3,
+  .personas .info,
+  .personas .general-personas,
+  .personas .quotes1,
+  .personas .quotes2 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .personas .occupation,
+  .personas .info {
+    margin-left: 11rem;
+  }
+
+  .emily {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emily-img {
+    width: 70%;
+    align-self: center;
+  }
+
+  .paula {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paula-img {
+    width: 70%;
+    padding-top: 5.6rem;
+    align-self: center;
+  }
+
+  .quotes1,
+  .quotes2 {
+    width: 20%;
+  }
+
+  /* User Stories - mq768px */
+  .user-stories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-stories h2,
+  .user-stories p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .high {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .medium {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .low {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  /* User Flows - mq768px */
+  .user-flows {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user-flows h2,
+  .user-flows p,
+  .user-flows .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .userflow {
+    width: 80%;
+    align-self: center;
+  }
+
+  /* Sketches & Wireframes - mq768px */
+  .sketches-wireframes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sketches-wireframes h2,
+  .sketches-wireframes h4 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slandingpage,
+  .wlandingpage,
+  .spricing,
+  .wpricing,
+  .ssignup,
+  .wsignup {
+    width: 85%;
+  }
+
+  /* BRANDING - mq768px */
+  .branding {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .branding h2,
+  .branding p,
+  .branding .brain-sketch,
+  .name,
+  .logo-section h3,
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .palette1,
+  .palette2,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons h4,
+  .icons p,
+  .icons .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .branding h2,
+  .branding p,
+  .name h3,
+  .name p,
+  .logo-section h3,
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons p,
+  .icons h4,
+  .icons .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .logos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .brain-sketch {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brainstorm,
+  .sketch,
+  .logos {
+    width: 85%;
+    align-self: center;
+  }
+
+  .mailogo {
+    width: 50%;
+  }
+
+  .palette1 {
+    width: 70%;
+    margin-left: 6rem;
+  }
+
+  .palette2 {
+    width: 50%;
+    margin-left: 6rem;
+  }
+
+  .avenirnext,
+  .poppins {
+    margin-left: 0;
+    margin-right: 0;
+    width: 70%;
+    align-self: center;
+    margin-top: 9.6rem;
+  }
+
+  .icons1,
+  .icons2 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 85%;
+  }
+
+  /* High Fidelity Mockups - mq768px */
+  .hfm h2,
+  .hfm p,
+  .hfm h4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .features1,
+  .features2,
+  .positionpicture1,
+  .positionpicture2,
+  .footer1,
+  .footer2,
+  .color40,
+  .color50,
+  .forgotpassword,
+  .autosaves {
+    margin-left: 0;
+    margin-right: 0;
+    width: 85%;
+    align-self: center;
+  }
+
+  /* Prototypes and Tests - mq768px */
+  .prototypes-tests {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prototypes-tests h2,
+  .prototypes-tests p,
+  .prototypes-tests h3,
+  .prototypes-tests h4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .pricing1,
+  .pricing2,
+  .usability-test {
+    width: 85%;
+    align-self: center;
+  }
+
+  /* Conclusion */
+  .conclusion h2,
+  .conclusion p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+/* Execute the commmand when bigger than 850px */
+@media only screen and (min-width: 850px) {
+
+  /* User Stories mp850px */
+  .high {
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+
+  .medium {
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+
+  .low {
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+}
+
+/* Execute the commmand when bigger than 1024px */
+@media only screen and (min-width: 1024px) {
+  .logo {
+    padding-left: 6rem;
+  }
+
+  /* This is the footer - mq1024px */
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40rem;
+    margin-right: 40rem;
+  }
+
+  .footer h4,
+  .rights {
+    margin: auto;
+  }
+
+  .arrow {
+    align-self: center;
+    margin-bottom: 2.8rem;
+  }
+
+  /* HOMEPAGE */
+  .mairecpe {
+    width: 50%;
+  }
+
+  .busy-bus {
+    width: 70%;
+  }
+
+  .mai-text,
+  .bb-text {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  /* ABOUT PAGE */
+  .intro-desktop {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .about-container h3,
+  .about-container p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .about2,
+  .about3,
+  .about4,
+  .about5,
+  .about6 {
+    width: 45%;
+  }
+
+  /* CONTACT */
+  .contact-page .footer {
+    margin-top: 32rem;
+  }
+
+  /* RESUME */
+  .resume h3,
+  .resume h4,
+  .resume p,
+  .resume .btn {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .resume ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tools-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  ul.tools1 {
+    margin-left: 18rem;
+  }
+
+  ul.tools3 {
+    margin-right: 16rem;
+  }
+
+  .experience-list {
+    margin-left: 18rem;
+    margin-right: 16rem;
+  }
+
+  .skills-margin {
+    padding-bottom: 0.1rem;
+    margin-bottom: 0;
+  }
+
+  .skills-tools {
+    margin-bottom: 0;
+  }
+
+  /* CASE STUDY */
+  .pictext2 {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+  }
+
+  .casestudy {
+    width: 50%;
+    padding-top: 0;
+  }
+
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rdt-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .rdt.roles,
+  .rdt.deliverables {
+    padding-bottom: 0;
+    margin-bottom: 9.6rem;
+  }
+
+  .sps {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .user-survey h2,
+  .user-survey p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .question4,
+  .question6 {
+    width: 70%;
+  }
+
+  .competitive-analysis {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .personas h2,
+  .personas p,
+  .personas h3,
+  .personas .info,
+  .personas .general-personas,
+  .personas .occupation,
+  .personas .quotes1,
+  .personas .quotes2 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .quotes1,
+  .quotes2 {
+    width: 15%;
+  }
+
+  .user-stories h2,
+  .user-stories p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .stories-flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .high,
+  .medium,
+  .low {
+    margin-left: 0;
+    margin-right: 0;
+    width: 27%;
+    height: 550px;
+  }
+
+  .high,
+  .medium {
+    margin-right: 2rem;
+  }
+
+  .user-stories li {
+    margin-right: 0;
+  }
+
+  .user-flows h2,
+  .user-flows p,
+  .user-flows .btn {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .userflow {
+    width: 70%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .adjust-width {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sketches-wireframes h2,
+  .sketches-wireframes h4 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  .sketches-wireframes h2,
+  .sketches-wireframes h4 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .slandingpage,
+  .wlandingpage,
+  .spricing,
+  .wpricing,
+  .ssignup,
+  .wsignup {
+    width: 70%;
+  }
+
+  .branding h2,
+  .branding p,
+  .name h3,
+  .name p,
+  .logo-section h3,
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons p,
+  .icons h4,
+  .icons .btn {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .brainstorm,
+  .sketch,
+  .logos {
+    width: 70%;
+    align-self: center;
+  }
+
+  .palette1,
+  .palette2 {
+    margin-left: 16rem;
+  }
+
+  .avenirnext,
+  .poppins {
+    width: 50%;
+  }
+
+  .icons1,
+  .icons2 {
+    width: 70%;
+  }
+
+  .hfm h2,
+  .hfm p,
+  .hfm h4 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .features1,
+  .features2,
+  .positionpicture1,
+  .positionpicture2,
+  .footer1,
+  .footer2,
+  .color40,
+  .color50,
+  .forgotpassword,
+  .autosaves {
+    width: 70%;
+  }
+
+  .prototypes-tests h2,
+  .prototypes-tests p,
+  .prototypes-tests h3 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .prototypes-tests h4 {
+    margin-left: 8rem;
+  }
+
+  .conclusion h2,
+  .conclusion p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    margin-top: 15rem;
+  }
+
+  /* HOMEPAGE */
+  .mairecipes,
+  .bb,
+  .pop {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .pictext {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+
+  .text {
+    margin-left: 6rem;
+  }
+
+  .mairecipe {
+    width: 45%;
+  }
+
+  .mai-text,
+  .bb-text {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .busy-bus {
+    width: 35%;
+  }
+
+  .mairecipes h3,
+  .bb h3 {
+    margin-top: 0;
+  }
+
+  /* ABOUT PAGE */
+  /* ABOUT PAGE (Second Picture) - mq1280px */
+  .intro-desktop,
+  .who1,
+  .who2,
+  .who3,
+  .chapter1,
+  .chapter2 {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .who1,
+  .who3,
+  .chapter2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .who2,
+  .chapter1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .about-container h3,
+  .about-container p {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .about2,
+  .about4,
+  .about6 {
+    margin-right: 12rem;
+    width: 30%;
+  }
+
+  .about3,
+  .about5 {
+    margin-left: 12rem;
+    width: 30%;
+  }
+
+  /* CONTACT PAGE */
+  /* RESUME */
+  .resume-section {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .resume h3,
+  .resume h4,
+  .resume p,
+  .resume .btn {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .experience-list {
+    margin-left: 32rem;
+    margin-right: 30rem;
+  }
+
+  ul.tools1 {
+    margin-left: 32rem;
+  }
+
+  ul.tools3 {
+    margin-right: 30rem;
+  }
+
+  /* CASE STUDY */
+  .casestudy {
+    width: 43%;
+  }
+
+  .text2 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .text2 h1 {
+    font-weight: bold;
+    margin-top: 5.6rem;
+  }
+
+  .text2 h3 {
+    margin-bottom: 5.6rem;
+  }
+
+  .rdt.roles {
+    margin-left: 15rem;
+  }
+
+  .rdt.tools {
+    margin-right: 15rem;
+  }
+
+  .sps {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .pop h4 {
+    margin-left: 10rem;
+  }
+
+  /* User Survey */
+  .user-survey h2,
+  .user-survey p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .img-flex {
+    flex-direction: row;
+  }
+
+  .question4 {
+    margin-right: 3rem;
+    width: 40%;
+  }
+
+  .question6 {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  /* Competitive Analysis - mq 1280px */
+  .competitive-analysis {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  /* Personas mq 1280px */
+  .personas-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .personas h2,
+  .personas p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .personas p {
+    margin-bottom: 5.6rem;
+  }
+
+  .emily-img {
+    margin-top: 0;
+  }
+
+  .personas h3,
+  .personas .info,
+  .personas .general-personas,
+  .personas .occupation,
+  .personas .quotes1,
+  .personas .quotes2 {
+    margin-left: 10rem;
+  }
+
+  .paula-img {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /* This is the whole container for Emily */
+  .emily {
+    width: 50%;
+    padding-left: 10rem;
+  }
+
+  /* This is the whole container for Paula */
+  .paula {
+    width: 50%;
+    padding-right: 10rem;
+  }
+
+  /* User Stories mp1280px */
+  .adjust-rdt {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adjust-width {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .user-stories h2,
+  .user-stories p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user-stories h2,
+  .user-stories p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .high,
+  .medium,
+  .low {
+    margin-left: 0;
+    margin-right: 0;
+    width: 27%;
+    height: 450px;
+  }
+
+  .high,
+  .medium {
+    margin-right: 3rem;
+  }
+
+  /* User flows - mp1280px */
+  .user-flows h2,
+  .user-flows p,
+  .user-flows .btn {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .userflow {
+    width: 50%;
+  }
+
+  /* Sketches and Wireframes - mp1280px */
+  .sketches-wireframes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sketches-wireframes h2 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .sketches-wireframes h4 {
+    margin-left: 15rem;
+    margin-bottom: 2.8rem;
+    margin-top: 5.6rem;
+  }
+
+  .slandingpage,
+  .wlandingpage,
+  .spricing,
+  .wpricing,
+  .ssignup,
+  .wsignup {
+    width: 37%;
+  }
+
+  .slandingpage,
+  .wlandingpage,
+  .spricing,
+  .wpricing,
+  .ssignup,
+  .wsignup {
+    margin: 0;
+  }
+
+  .slandingpage,
+  .spricing,
+  .ssignup {
+    margin-left: 15rem;
+    margin-right: 3rem;
+  }
+
+  .wlandingpage,
+  .wpricing,
+  .wsignup {
+    margin-right: 15rem;
+  }
+
+  .sw {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Branding - mp1280px */
+  .branding h2,
+  .branding p,
+  .name h3,
+  .name p,
+  .logo-section h3,
+  .logo-section p,
+  .colors h3,
+  .colors p,
+  .colors h4,
+  .typography h3,
+  .typography p,
+  .icons h3,
+  .icons p,
+  .icons .btn {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .brain-sketch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5.6rem;
+    margin-bottom: 9.6rem;
+  }
+
+  .brainstorm,
+  .sketch,
+  .logos {
+    width: 37%;
+  }
+
+  .brainstorm {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 3rem;
+  }
+
+  .sketch {
+    margin-bottom: 0;
+  }
+
+  .branding p {
+    margin-bottom: 0;
+  }
+
+  .mailogo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 20%;
+  }
+
+  .palette1,
+  .palette2 {
+    margin-left: 30rem;
+  }
+
+  .palette1 {
+    width: 40%;
+  }
+
+  .palette2 {
+    width: 27%;
+  }
+
+  .avenirnext {
+    width: 20%;
+  }
+
+  .poppins {
+    width: 20%;
+  }
+
+  .typo {
+    margin-top: 5.6rem;
+  }
+
+  .avenirnext,
+  .poppins {
+    margin-top: 0;
+  }
+
+  .avenirnext {
+    margin-right: 5rem;
+  }
+
+  .typography .picture-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-boxes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* These are the images */
+  .icons1,
+  .icons2 {
+    width: 60%;
+  }
+
+  /* These are the boxes */
+  .icon1,
+  .icon2 {
+    width: 50%;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .icons1 {
+    margin-left: 23rem;
+  }
+
+  .icons2 {
+    margin-right: 23rem;
+  }
+
+  .icon1 h4 {
+    margin-left: 25rem;
+  }
+
+  .icon2 h4 {
+    margin-left: 2rem;
+  }
+
+  /* High Fidelity Mockups */
+  .hfm h2,
+  .hfm p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  /* These are the images */
+  .features1,
+  .features2 {
+    width: 100%;
+  }
+
+  /* These are the boxes */
+  .feat1,
+  .feat2 {
+    width: 50%;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .feat1 {
+    margin-left: 23rem;
+    margin-right: 3rem;
+  }
+
+  .feat2 {
+    margin-right: 23rem;
+  }
+
+  .hfm h4 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* These are the images */
+  .positionpicture1,
+  .positionpicture2 {
+    width: 100%;
+  }
+
+  /* These are the boxes */
+  .position-pic1,
+  .position-pic2 {
+    width: 50%;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .position-pic1 {
+    margin-left: 23rem;
+    margin-right: 3rem;
+  }
+
+  .position-pic2 {
+    margin-right: 23rem;
+  }
+
+  /* These are the images */
+  .footer1,
+  .footer2 {
+    width: 100%;
+  }
+
+  /* These are the boxes */
+  .foot1,
+  .foot2 {
+    width: 50%;
+    margin-bottom: 5.6rem;
+  }
+
+  .foot1 {
+    margin-left: 23rem;
+    margin-right: 3rem;
+  }
+
+  .foot2 {
+    margin-right: 23rem;
+  }
+
+  /* These are the images */
+  .color40,
+  .color50 {
+    width: 100%;
+  }
+
+  /* These are the boxes */
+  .col40,
+  .col50 {
+    width: 50%;
+    margin-bottom: 5.6rem;
+  }
+
+  .col40 {
+    margin-left: 23rem;
+    margin-right: 3rem;
+  }
+
+  .col50 {
+    margin-right: 23rem;
+  }
+
+  .picture-boxes.password-saves {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5.6rem;
+  }
+
+  .forgotpassword,
+  .autosaves {
+    width: 32%;
+  }
+
+  .forgotpassword {
+    margin: 0;
+    margin-right: 3rem;
+  }
+
+  /* Prototypes and Tests */
+  .prototypes-tests h2,
+  .prototypes-tests p,
+  .prototypes-tests h3 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  /* These are the boxes */
+  .price1 {
+    margin-left: 23rem;
+  }
+
+  .price2 {
+    margin-right: 23rem;
+  }
+
+  .pricing1,
+  .pricing2 {
+    width: 90%;
+  }
+
+  .prototypes-tests h4 {
+    margin-left: 2.5rem;
+  }
+
+  .usability-test {
+    width: 60%;
+  }
+
+  .conclusion h2,
+  .conclusion p {
+    max-width: 1280px;
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
