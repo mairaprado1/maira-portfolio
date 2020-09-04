@@ -1437,7 +1437,7 @@ textarea {
 
   .main-menu li {
     /* I can use inline-block or flexbox */
-    /* display: flex; */
+    display: inline-block;
     border-bottom: none;
   }
 
@@ -1459,7 +1459,7 @@ textarea {
     background-color: #FFFFFF;
     text-decoration: underline;
     font-weight: bold;
-    padding: 3rem;
+    /* padding: 3rem; */
   }
 
   /* This is the footer - mq768px */
