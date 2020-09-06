@@ -2085,6 +2085,7 @@ textarea {
   .arrow {
     align-self: center;
     margin-bottom: 2.8rem;
+    margin-top: 1rem;
   }
 
   /* HOMEPAGE */
@@ -2129,9 +2130,9 @@ textarea {
   }
 
   /* CONTACT */
-  .contact-page .footer {
+  /* .contact-page .footer {
     margin-top: 32rem;
-  }
+  } */
 
   /* RESUME */
   .resume h3,
