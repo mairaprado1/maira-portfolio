@@ -207,6 +207,7 @@ header {
   margin-top: 9.6rem;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .footer {
@@ -1428,7 +1429,9 @@ textarea {
     top: 4rem;
     right: 3rem;
     left: 10rem;
+    min-height: auto;
   }
+
 
   .logo img {
     margin-left: 3rem;
@@ -1449,9 +1452,16 @@ textarea {
   .main-menu a {
     color: #1A1A1A;
     border-bottom: none;
-    display: inline;
+    /* display: inline; */
     padding: 0;
+
   }
+
+  /* .main-menu a.active {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 2rem;
+  } */
 
   .main-menu a:hover,
   .main-menu a:focus {
@@ -2051,6 +2061,7 @@ textarea {
 @media only screen and (min-width: 1024px) {
   .logo {
     padding-left: 6rem;
+    z-index: 1;
   }
 
   /* This is the footer - mq1024px */
