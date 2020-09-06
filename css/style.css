@@ -1511,7 +1511,7 @@ textarea {
   .intro-text {
     display: flex;
     justify-content: center;
-    margin-left: 3rem;
+    margin-left: 8rem;
   }
 
   /* ABOUT PAGE (Second Picture) - mq768px */
