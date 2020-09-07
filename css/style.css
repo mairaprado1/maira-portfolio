@@ -370,6 +370,7 @@ button {
   text-decoration: none;
   display: block;
   margin-bottom: 9.6rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -2130,7 +2131,7 @@ textarea {
   }
 
   /* CONTACT */
-  
+
   /* RESUME */
   .resume h3,
   .resume h4,
