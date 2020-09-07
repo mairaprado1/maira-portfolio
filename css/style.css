@@ -198,6 +198,10 @@ header {
   width: 18.4rem;
 }
 
+btn:hover {
+  text-decoration: underline;
+}
+
 .back-top {
   color: #1A1A1A;
   font-weight: bold;
