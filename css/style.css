@@ -2537,6 +2537,10 @@ textarea {
     margin-bottom: 5.6rem;
   }
 
+  .rdt.roles,
+  .rdt.deliverables {
+    margin-bottom: 0;
+  }
   .rdt.roles {
     margin-left: 15rem;
   }
