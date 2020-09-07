@@ -198,7 +198,7 @@ header {
   width: 18.4rem;
 }
 
-btn:hover {
+.btn:hover {
   text-decoration: underline;
 }
 
