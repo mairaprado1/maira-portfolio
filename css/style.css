@@ -1306,6 +1306,13 @@ textarea {
   margin-right: 3rem;
 }
 
+.conclusion .btn {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 5.6rem;
+  
+}
+
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
   .intro-desktop {
@@ -2040,6 +2047,11 @@ textarea {
     margin-left: 6rem;
     margin-right: 6rem;
   }
+
+  .conclusion .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 /* Execute the commmand when bigger than 850px */
@@ -2409,6 +2421,11 @@ textarea {
 
   .conclusion h2,
   .conclusion p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .conclusion .btn {
     margin-left: 16rem;
     margin-right: 16rem;
   }
@@ -3020,11 +3037,14 @@ textarea {
   }
 
   .conclusion h2,
-  .conclusion p {
+  .conclusion p,
+  .conclusion .btn {
     max-width: 1280px;
     margin-left: 30rem;
     margin-right: 30rem;
   }
+
+
 
   .footer-link {
     display: flex;
