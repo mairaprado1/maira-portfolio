@@ -2200,7 +2200,7 @@ textarea {
     margin-right: 0;
   }
 
-  .rdt-flex {
+  .adjust-rdt {
     display: flex;
     justify-content: space-around;
   }
@@ -2208,7 +2208,14 @@ textarea {
   .rdt.roles,
   .rdt.deliverables {
     padding-bottom: 0;
-    margin-bottom: 9.6rem;
+  }
+
+  .rdt.roles {
+    margin-left: 15rem;
+  }
+
+  .rdt.tools {
+    margin-right: 15rem;
   }
 
   .sps {
@@ -2535,18 +2542,6 @@ textarea {
 
   .text2 h3 {
     margin-bottom: 5.6rem;
-  }
-
-  .rdt.roles,
-  .rdt.deliverables {
-    margin-bottom: 0;
-  }
-  .rdt.roles {
-    margin-left: 15rem;
-  }
-
-  .rdt.tools {
-    margin-right: 15rem;
   }
 
   .sps {
