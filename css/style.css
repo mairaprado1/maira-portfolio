@@ -409,7 +409,7 @@ textarea {
 #email,
 #message {
   border: 1px solid #828282;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
