@@ -2210,6 +2210,12 @@ textarea {
     padding-bottom: 0;
   }
 
+  .rdt.roles,
+  .rdt.deliverables,
+  .rdt.tools {
+    flex: 1;
+  }
+
   .rdt.roles {
     margin-left: 10rem;
   }
