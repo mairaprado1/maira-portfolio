@@ -1484,6 +1484,9 @@ textarea {
     color: #1A1A1A;
     background-color: #FFFFFF;
     text-decoration: underline;
+  }
+
+  .main-menu a:active {
     font-weight: bold;
   }
 
