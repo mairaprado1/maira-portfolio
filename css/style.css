@@ -195,7 +195,7 @@ header {
   padding: 1.6rem 3.2rem;
   text-align: center;
   text-decoration: none;
-  width: 18.4rem;
+  /* width: 18.4rem; */
 }
 
 .btn:hover {
@@ -1310,7 +1310,7 @@ textarea {
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 5.6rem;
-  
+
 }
 
 /* Execute the commmand when smaller than 768px */
@@ -1322,6 +1322,10 @@ textarea {
   .contact-container {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .btn-desktop {
+    display: none;
   }
 }
 
@@ -1857,13 +1861,6 @@ textarea {
   }
 
   /* User Flows - mq768px */
-  .user-flows {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .user-flows h2,
   .user-flows p,
   .user-flows .btn {
@@ -1872,8 +1869,9 @@ textarea {
   }
 
   .userflow {
+    display: block;
     width: 80%;
-    align-self: center;
+    margin: auto;
   }
 
   /* Sketches & Wireframes - mq768px */
@@ -2042,6 +2040,11 @@ textarea {
   }
 
   /* Conclusion */
+  .conclusion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .conclusion h2,
   .conclusion p {
     margin-left: 6rem;
@@ -2050,7 +2053,7 @@ textarea {
 
   .conclusion .btn {
     margin-left: 6rem;
-    margin-right: 6rem;
+    margin-right: 0;
   }
 }
 
@@ -2205,9 +2208,9 @@ textarea {
   }
 
   .text2 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     margin-left: 0;
     margin-right: 0;
   }
@@ -2320,9 +2323,9 @@ textarea {
   .adjust-width {
     width: 1024px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex;
+     flex-direction: column;
+    justify-content: space-between; */
   }
 
   .sketches-wireframes h2,
@@ -2425,8 +2428,14 @@ textarea {
     margin-right: 16rem;
   }
 
-  .conclusion .btn {
+
+  .conclusion .btn-mobile {
     margin-left: 16rem;
+    margin-right: 6rem;
+  }
+
+  .conclusion .btn-desktop {
+    margin-left: 0;
     margin-right: 16rem;
   }
 }
@@ -2660,8 +2669,8 @@ textarea {
   .adjust-width {
     width: 1280px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
 
   .column {
@@ -3038,13 +3047,21 @@ textarea {
 
   .conclusion h2,
   .conclusion p,
-  .conclusion .btn {
+  .conclusion.btn {
     max-width: 1280px;
     margin-left: 30rem;
     margin-right: 30rem;
   }
 
+  .conclusion .btn-mobile {
+    margin-left: 30rem;
+    margin-right: 6rem;
+  }
 
+  .conclusion .btn-desktop {
+    margin-left: 0;
+    margin-right: 30rem;
+  }
 
   .footer-link {
     display: flex;
