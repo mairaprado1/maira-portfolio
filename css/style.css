@@ -2635,21 +2635,6 @@ textarea {
     margin-top: 0;
   }
 
-  /* .personas h3,
-  .personas .info,
-  .personas .general-personas,
-  .personas .occupation,
-  .personas .quotes1,
-  .personas .quotes2 {
-    margin-right: 0;
-
-  } */
-
-  /* .personas .general-personas li {
-    margin-left: 0;
-    margin-right: 0;
-  } */
-
   .emily {
     padding-right: 3rem;
   }
@@ -2673,7 +2658,6 @@ textarea {
   .personas .emily .quotes1,
   .personas .emily .quotes2 {
     margin-left: 10rem;
-
   }
 
   .personas .paula h3,
