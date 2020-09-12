@@ -138,6 +138,8 @@ header {
   color: #FFFFFF;
 }
 
+
+
 .main-menu .menu-close {
   position: absolute;
   right: 0;
@@ -1471,6 +1473,11 @@ textarea {
     /* display: inline; */
     padding: 0;
 
+  }
+
+  .navbar-active {
+    color: #1A1A1A !important;
+    font-weight: bold;
   }
 
   /* .main-menu a.active {

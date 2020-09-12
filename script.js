@@ -1,5 +1,7 @@
 
 var backTopBtn = document.getElementById("back-top");
-backTopBtn.addEventListener("click", function(){
-  window.scrollTo(0,0);
-})
+if(backTopBtn) {
+  backTopBtn.addEventListener("click", function(){
+    window.scrollTo(0,0);
+  });
+}
