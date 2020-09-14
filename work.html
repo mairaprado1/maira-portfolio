@@ -14,7 +14,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header role="banner">
       <!-- Hamburger Menu -->
       <div class="row">
         <div class="logo">
@@ -27,7 +27,7 @@
           <span class="fa fa-bars" aria-hidden="true"></span>
         </a>
       </div>
-      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+      <nav id="main-menu" class="main-menu" aria-label="Main menu" role="navigation">
         <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
           <span class="sr-only">Close main menu</span>
           <span class="fa fa-close" aria-hidden="true"></span>
@@ -42,12 +42,12 @@
       </nav>
       <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
     </header>
-    <main>
+    <main role="main">
       <!-- I used homepage-container to use the same style I used in the homepage -->
       <div class="homepage-container">
         <!-- Mai Recipes -->
         <div class="background">
-          <article class="mairecipes">
+          <article class="mairecipes" role="article">
             <img src="assets/images/mairecipe.png" alt="Laptop and a mobile phone showing the Mai Recipes aplication." class="mairecipe" />
             <div class="homepage-container">
               <div class="mai-text">
@@ -60,7 +60,7 @@
         </div>
         <!-- Busy-Bus -->
         <div class="background">
-          <article class="bb">
+          <article class="bb" role="article">
             <img src="assets/images/updated-busy-bus.png" alt="Mobile phone showing part of the screen with the scheduled buses." class="busy-bus" />
             <div class="bb-text">
               <h3>BUSY-BUS</h3>
@@ -74,7 +74,7 @@
         </a>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <h4>Let’s <span class="bold">connect</span> and <span class="bold">make </span>something <span class="bold">great together!</span></h4>
       <ul class="footer-link">
         <li class="social-icons"><a href="https://www.linkedin.com/in/mairaprado/" target="_blank"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
