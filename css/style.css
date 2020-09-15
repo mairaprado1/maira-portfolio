@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 150%;
 }
 
@@ -38,6 +38,11 @@ p {
 
 small {
   font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.title-smaller {
+  font-size: 2rem;
   line-height: 150%;
 }
 
@@ -214,8 +219,12 @@ header {
   display: flex;
   justify-content: center;
   cursor: pointer;
+
 }
 
+.back-top:hover {
+  text-decoration: underline;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -275,7 +284,7 @@ header {
   text-align: center;
 }
 
-.pop h4 {
+.pop h2 {
   color: #00758D;
   margin-bottom: 5.6rem;
   margin-left: 3rem;
@@ -538,6 +547,7 @@ textarea {
 }
 
 .about-container h1,
+.about-container .greeting,
 .about-container h3,
 .about-container p,
 .intro-mobile .btn {
@@ -681,6 +691,11 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.bold-bigger {
+  font-weight: bold;
+  font-size: 2.2rem;
 }
 
 .user-survey {
@@ -1408,7 +1423,7 @@ flex: 1;
   }
 
   h3 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     line-height: 150%;
   }
 
@@ -1661,7 +1676,7 @@ flex: 1;
     margin-bottom: 5.6rem;
   }
 
-  .homepage-container h4 {
+  .homepage-container .title-smaller {
     margin-top: 2.8rem;
   }
 
@@ -1742,8 +1757,9 @@ flex: 1;
     margin-left: 6rem;
   }
 
-  .pop h4 {
+  .pop h2 {
     margin-left: 6rem;
+    margin-top: 9.6rem;
   }
 
   .sps {
@@ -1758,6 +1774,9 @@ flex: 1;
     align-self: center;
   }
 
+  .bold-bigger {
+    font-size: 3rem;
+  }
   .user-survey {
     display: flex;
     flex-direction: column;
@@ -2133,6 +2152,10 @@ flex: 1;
   }
 
   /* HOMEPAGE */
+  .title-smaller {
+    font-size: 3rem;
+  }
+  
   .mairecpe {
     width: 50%;
   }
@@ -2266,6 +2289,10 @@ flex: 1;
   .sps {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .bold-bigger {
+    font-size: 3.4rem;
   }
 
   .user-survey h2,
@@ -2620,7 +2647,7 @@ flex: 1;
     margin-right: 30rem;
   }
 
-  .pop h4 {
+  .pop h2 {
     margin-left: 10rem;
   }
 
