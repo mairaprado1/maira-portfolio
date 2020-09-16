@@ -684,7 +684,7 @@ textarea {
   padding-bottom: 9.6rem;
 }
 
-.rdt h2 {
+.rdt h3 {
   font-weight: bold;
   padding-bottom: 2.8rem;
 }
@@ -696,7 +696,7 @@ textarea {
   margin-top: 9.6rem;
 }
 
-.sps h2 {
+.sps h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
@@ -749,7 +749,7 @@ textarea {
   margin-right: 3rem;
 }
 
-.competitive-analysis h2 {
+.competitive-analysis h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
@@ -801,7 +801,6 @@ textarea {
 }
 
 /* PERSONAS */
-.personas h2,
 .personas p,
 .personas h3,
 .personas .info,
@@ -812,18 +811,18 @@ textarea {
   margin-right: 3rem;
 }
 
-.personas h2 {
+.personas h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
 }
 
-.personas .goals h3 {
+.personas .goals h4 {
   font-weight: bold;
   margin-top: 5.6rem;
 }
 
-.personas .frustrations h3 {
+.personas .frustrations h4 {
   font-weight: bold;
   margin-top: 5.6rem;
 }
