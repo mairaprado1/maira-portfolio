@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+/* *:focus {
+  outline: 3px dashed #1F0099;
+} */
+
 html {
   font-size: 10px;
 }
@@ -195,7 +199,7 @@ header {
   background-color: #00758D;
   border: none;
   border-radius: 0.8rem;
-  color: white;
+  color: #FFFFFF;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: bold;
@@ -203,10 +207,16 @@ header {
   text-align: center;
   text-decoration: none;
   width: fit-content;
+
 }
 
-.btn:hover {
-  text-decoration: underline;
+.btn:hover,
+button:hover {
+    background-color: #229FB9;
+    color: #1A1A1A;
+    /* border: 3px dashed #00758D; */
+
+
 }
 
 .back-top {
@@ -225,6 +235,7 @@ header {
 .back-top:hover {
   text-decoration: underline;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -236,13 +247,16 @@ header {
   display: flex;
   color: white;
   justify-content: space-around;
-  margin: 2.8rem 3rem;
+  /* margin: 2.8rem 3rem; */
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
+
 
 .footer h4 {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 2rem;
   padding-top: 2.8rem;
 }
 
@@ -252,6 +266,12 @@ header {
   margin-left: 3rem;
   margin-right: 3rem;
   padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+}
+
+.social-icons:hover {
+  outline: 3px dashed #FFFFFF;
+  padding: .5rem;
 }
 
 /* HOMEPAGE */
@@ -641,7 +661,7 @@ textarea {
   margin-top: 2.8rem;
 }
 
-.text2 h3 {
+.text2 h2 {
   margin-bottom: 2.8rem;
 }
 
@@ -1775,7 +1795,7 @@ flex: 1;
   }
 
   .bold-bigger {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .user-survey {
     display: flex;
@@ -2155,7 +2175,7 @@ flex: 1;
   .title-smaller {
     font-size: 3rem;
   }
-  
+
   .mairecpe {
     width: 50%;
   }
@@ -2289,10 +2309,6 @@ flex: 1;
   .sps {
     margin-left: 16rem;
     margin-right: 16rem;
-  }
-
-  .bold-bigger {
-    font-size: 3.4rem;
   }
 
   .user-survey h2,
