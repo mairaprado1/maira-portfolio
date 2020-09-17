@@ -760,6 +760,11 @@ textarea {
   margin-top: 9.6rem;
 }
 
+.competitive-analysis h4 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
 .competitive-analysis ul {
   font-size: 1.8rem;
   line-height: 150%;
@@ -823,6 +828,10 @@ textarea {
   margin-top: 9.6rem;
 }
 
+.personas h4 {
+  font-weight: bold;
+}
+
 .personas .goals h4 {
   font-weight: bold;
   margin-top: 5.6rem;
@@ -865,7 +874,7 @@ textarea {
   z-index: 1;
 }
 
-.quote h3 {
+.quote h4 {
   font-weight: bold;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -2711,7 +2720,7 @@ flex: 1;
     justify-content: space-around;
   }
 
-  .personas h2,
+  .personas h3,
   .personas p {
     margin-left: 30rem;
     margin-right: 30rem;
@@ -2741,7 +2750,7 @@ flex: 1;
   margin-right: 0;
 }
 
-   .personas .emily h3,
+   .personas .emily h4,
   .personas .emily .info,
   .personas .emily .general-personas,
   .personas .emily .occupation,
@@ -2750,7 +2759,7 @@ flex: 1;
     margin-left: 10rem;
   }
 
-  .personas .paula h3,
+  .personas .paula h4,
   .personas .paula .info,
   .personas .paula .general-personas,
   .personas .paula .occupation,
