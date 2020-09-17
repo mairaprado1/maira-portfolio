@@ -55,6 +55,19 @@ small {
   line-height: 150%;
 }
 
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  color: #00758D;
+  padding: .8rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 header .row {
   display: flex;
   flex-direction: row;
