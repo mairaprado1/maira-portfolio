@@ -274,7 +274,17 @@ button:hover {
   padding-top: 2.8rem;
 }
 
-.social-icons:hover {
+.linkedin:hover {
+  outline: 3px dashed #FFFFFF;
+  padding: .5rem;
+}
+
+.email:hover {
+  outline: 3px dashed #FFFFFF;
+  padding: .5rem;
+}
+
+.github:hover {
   outline: 3px dashed #FFFFFF;
   padding: .5rem;
 }
@@ -3224,7 +3234,9 @@ flex: 1;
     align-items: center;
   }
 
-  .social-icons {
+  .linkedin,
+  .email,
+  .github {
     margin-left: 5rem;
     margin-right: 5rem;
   }
