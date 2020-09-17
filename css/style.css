@@ -644,6 +644,10 @@ textarea {
   margin: auto;
 }
 
+.branding .p-space {
+  margin-bottom: 2rem;
+}
+
 .pictext2 {
   display: flex;
   flex-direction: column;
