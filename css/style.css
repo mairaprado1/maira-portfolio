@@ -718,6 +718,11 @@ textarea {
   justify-content: center;
 }
 
+.bold-smaller {
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
 .bold-bigger {
   font-weight: bold;
   font-size: 2.2rem;
@@ -1811,6 +1816,11 @@ flex: 1;
   .sps .mairecipe {
     width: 90%;
     align-self: center;
+  }
+
+  .bold-smaller {
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   .bold-bigger {
