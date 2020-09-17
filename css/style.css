@@ -35,6 +35,11 @@ h4 {
   line-height: 150%;
 }
 
+h5 {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
 p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -723,7 +728,7 @@ textarea {
   margin-right: 3rem;
 }
 
-.user-survey h2 {
+.user-survey h3 {
   font-weight: bold;
 }
 
@@ -803,6 +808,7 @@ textarea {
 /* PERSONAS */
 .personas p,
 .personas h3,
+.personas h4,
 .personas .info,
 .personas .general-personas,
 .personas .quotes1,
@@ -891,13 +897,13 @@ textarea {
   padding-top: 4rem;
 }
 
-.user-stories h2,
+.user-stories h3,
 .user-stories h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
 
-.user-stories h2,
+.user-stories h3,
 .user-stories h4,
 .user-stories p,
 .user-stories ul {
@@ -970,7 +976,7 @@ flex: 1;
   margin-right: 3rem;
 }
 
-.user-flows h2 {
+.user-flows h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
@@ -1024,7 +1030,7 @@ flex: 1;
   margin-bottom: 5.6rem;
 }
 
-.sketches-wireframes h2 {
+.sketches-wireframes h3 {
   font-weight: bold;
   margin-bottom: 5.6rem;
 }
@@ -1055,14 +1061,14 @@ flex: 1;
   margin-bottom: 2.8rem;
 }
 
-.branding h2,
+.branding h3,
 .branding p,
 .branding .brain-sketch {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.branding h2 {
+.branding h3 {
   font-weight: bold;
   margin-bottom: 5.6rem;
 }
@@ -1077,7 +1083,7 @@ flex: 1;
   margin-right: 3rem;
 }
 
-.name h3 {
+.name h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
@@ -1088,13 +1094,13 @@ flex: 1;
   flex-direction: column;
 }
 
-.logo-section h3,
+.logo-section h4,
 .logo-section p {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.logo-section h3 {
+.logo-section h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
@@ -1124,21 +1130,21 @@ flex: 1;
 }
 
 /* Colors (part of the branding) */
-.colors h3,
-.colors p,
 .colors h4,
+.colors p,
+.colors h5,
 .palette1,
 .palette2 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.colors h3 {
+.colors h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
 
-.colors h4 {
+.colors h5 {
   font-weight: 400;
   margin-top: 5.6rem;
 }
@@ -1174,13 +1180,13 @@ flex: 1;
   margin-top: 5.6rem;
 }
 
-.typography h3,
+.typography h4,
 .typography p {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.typography h3 {
+.typography h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
 }
@@ -1191,20 +1197,20 @@ flex: 1;
   flex-direction: column;
 }
 
-.icons h3,
 .icons h4,
+.icons h5,
 .icons p,
 .icons .btn {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.icons h4 {
+.icons h5 {
   font-weight: 400;
   margin-top: 5.6rem;
 }
 
-.icons h3 {
+.icons h4 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
@@ -1245,14 +1251,14 @@ flex: 1;
   width: 80%;
 }
 
-.hfm h2,
+.hfm h3,
 .hfm p,
 .hfm h4 {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.hfm h2 {
+.hfm h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-top: 9.6rem;
@@ -1297,22 +1303,22 @@ flex: 1;
   flex-direction: column;
 }
 
-.prototypes-tests h2,
 .prototypes-tests h3,
 .prototypes-tests h4,
+.prototypes-tests h5,
 .prototypes-tests p {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.prototypes-tests h2,
-.prototypes-tests h3 {
+.prototypes-tests h3,
+.prototypes-tests h4 {
   font-weight: bold;
   margin-top: 9.6rem;
   margin-bottom: 2.8rem;
 }
 
-.prototypes-tests h4 {
+.prototypes-tests h5 {
   font-weight: 400;
   margin-bottom: 2.8rem;
   margin-top: 5.6rem;
@@ -1343,7 +1349,7 @@ flex: 1;
   margin-top: 9.6rem;
 }
 
-.conclusion h2 {
+.conclusion h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
   margin-left: 3rem;
@@ -1447,6 +1453,11 @@ flex: 1;
   }
 
   h4 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  h5 {
     font-size: 2.2rem;
     line-height: 150%;
   }
@@ -1803,7 +1814,7 @@ flex: 1;
     margin-right: 0;
   }
 
-  .user-survey h2,
+  .user-survey h3,
   .user-survey p {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1856,6 +1867,7 @@ flex: 1;
   .personas h2,
   .personas p,
   .personas h3,
+  .personas h4,
   .personas .info,
   .personas .general-personas,
   .personas .quotes1,
@@ -1901,7 +1913,7 @@ flex: 1;
     flex-direction: column;
   }
 
-  .user-stories h2,
+  .user-stories h3,
   .user-stories p {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1923,7 +1935,7 @@ flex: 1;
   }
 
   /* User Flows - mq768px */
-  .user-flows h2,
+  .user-flows h3,
   .user-flows p,
   .user-flows .btn {
     margin-left: 6rem;
@@ -1942,7 +1954,7 @@ flex: 1;
     margin-right: 0;
   }
 
-  .sketches-wireframes h2,
+  .sketches-wireframes h3,
   .sketches-wireframes h4 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1969,41 +1981,41 @@ flex: 1;
     flex-direction: column;
   }
 
-  .branding h2,
+  .branding h3,
   .branding p,
   .branding .brain-sketch,
   .name,
-  .logo-section h3,
+  .logo-section h4,
   .logo-section p,
-  .colors h3,
-  .colors p,
   .colors h4,
+  .colors p,
+  .colors h5,
   .palette1,
   .palette2,
-  .typography h3,
+  .typography h4,
   .typography p,
-  .icons h3,
   .icons h4,
+  .icons h5,
   .icons p,
   .icons .btn {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .branding h2,
+  .branding h3,
   .branding p,
-  .name h3,
+  .name h4,
   .name p,
-  .logo-section h3,
+  .logo-section h4,
   .logo-section p,
-  .colors h3,
-  .colors p,
   .colors h4,
-  .typography h3,
+  .colors p,
+  .colors h5,
+  .typography h4,
   .typography p,
-  .icons h3,
-  .icons p,
   .icons h4,
+  .icons p,
+  .icons h5,
   .icons .btn {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -2057,7 +2069,7 @@ flex: 1;
   }
 
   /* High Fidelity Mockups - mq768px */
-  .hfm h2,
+  .hfm h3,
   .hfm p,
   .hfm h4 {
     margin-left: 6rem;
@@ -2086,10 +2098,10 @@ flex: 1;
     flex-direction: column;
   }
 
-  .prototypes-tests h2,
-  .prototypes-tests p,
   .prototypes-tests h3,
-  .prototypes-tests h4 {
+  .prototypes-tests p,
+  .prototypes-tests h4,
+  .prototypes-tests h5 {
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -2107,7 +2119,7 @@ flex: 1;
     flex-direction: row;
     justify-content: center;
   }
-  .conclusion h2,
+  .conclusion h3,
   .conclusion p {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -2310,7 +2322,7 @@ flex: 1;
     margin-right: 16rem;
   }
 
-  .user-survey h2,
+  .user-survey h3,
   .user-survey p {
     margin-left: 16rem;
     margin-right: 16rem;
@@ -2343,7 +2355,7 @@ flex: 1;
     width: 15%;
   }
 
-  .user-stories h2,
+  .user-stories h3,
   .user-stories p {
     margin-left: 16rem;
     margin-right: 16rem;
@@ -2388,7 +2400,7 @@ flex: 1;
     margin-right: 0;
   }
 
-  .user-flows h2,
+  .user-flows h3,
   .user-flows p,
   .user-flows .btn {
     margin-left: 16rem;
@@ -2409,14 +2421,14 @@ flex: 1;
     justify-content: space-between; */
   }
 
-  .sketches-wireframes h2,
+  .sketches-wireframes h3,
   .sketches-wireframes h4 {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
   }
 
-  .sketches-wireframes h2,
+  .sketches-wireframes h3,
   .sketches-wireframes h4 {
     margin-left: 16rem;
     margin-right: 16rem;
@@ -2431,20 +2443,20 @@ flex: 1;
     width: 70%;
   }
 
-  .branding h2,
+  .branding h3,
   .branding p,
-  .name h3,
+  .name h4,
   .name p,
-  .logo-section h3,
+  .logo-section h4,
   .logo-section p,
-  .colors h3,
-  .colors p,
   .colors h4,
-  .typography h3,
+  .colors p,
+  .colors h5,
+  .typography h4,
   .typography p,
-  .icons h3,
-  .icons p,
   .icons h4,
+  .icons p,
+  .icons h5,
   .icons .btn {
     margin-left: 16rem;
     margin-right: 16rem;
@@ -2472,7 +2484,7 @@ flex: 1;
     width: 70%;
   }
 
-  .hfm h2,
+  .hfm h3,
   .hfm p,
   .hfm h4 {
     margin-left: 16rem;
@@ -2492,18 +2504,18 @@ flex: 1;
     width: 70%;
   }
 
-  .prototypes-tests h2,
+  .prototypes-tests h3,
   .prototypes-tests p,
-  .prototypes-tests h3 {
+  .prototypes-tests h4 {
     margin-left: 16rem;
     margin-right: 16rem;
   }
 
-  .prototypes-tests h4 {
+  .prototypes-tests h5 {
     margin-left: 8rem;
   }
 
-  .conclusion h2,
+  .conclusion h3,
   .conclusion p {
     margin-left: 16rem;
     margin-right: 16rem;
@@ -2667,7 +2679,7 @@ flex: 1;
   }
 
   /* User Survey */
-  .user-survey h2,
+  .user-survey h3,
   .user-survey p {
     margin-left: 30rem;
     margin-right: 30rem;
@@ -2786,13 +2798,13 @@ flex: 1;
     flex-direction: column;
   }
 
-  .user-stories h2,
+  .user-stories h3,
   .user-stories p {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .user-stories h2,
+  .user-stories h3,
   .user-stories p {
     margin-left: 30rem;
     margin-right: 30rem;
@@ -2821,7 +2833,7 @@ flex: 1;
   }
 
   /* User flows - mp1280px */
-  .user-flows h2,
+  .user-flows h3,
   .user-flows p,
   .user-flows .btn {
     margin-left: 30rem;
@@ -2838,7 +2850,7 @@ flex: 1;
     margin-right: auto;
   }
 
-  .sketches-wireframes h2 {
+  .sketches-wireframes h3 {
     margin-left: 30rem;
     margin-right: 30rem;
   }
@@ -2886,18 +2898,18 @@ flex: 1;
   }
 
   /* Branding - mp1280px */
-  .branding h2,
+  .branding h3,
   .branding p,
-  .name h3,
+  .name h4,
   .name p,
-  .logo-section h3,
+  .logo-section h4,
   .logo-section p,
-  .colors h3,
-  .colors p,
   .colors h4,
-  .typography h3,
+  .colors p,
+  .colors h5,
+  .typography h4,
   .typography p,
-  .icons h3,
+  .icons h4,
   .icons p,
   .icons .btn {
     margin-left: 30rem;
@@ -3006,16 +3018,16 @@ flex: 1;
     margin-right: 23rem;
   }
 
-  .icon1 h4 {
+  .icon1 h5 {
     margin-left: 25rem;
   }
 
-  .icon2 h4 {
+  .icon2 h5 {
     margin-left: 2rem;
   }
 
   /* High Fidelity Mockups */
-  .hfm h2,
+  .hfm h3,
   .hfm p {
     margin-left: 30rem;
     margin-right: 30rem;
@@ -3133,9 +3145,9 @@ flex: 1;
   }
 
   /* Prototypes and Tests */
-  .prototypes-tests h2,
+  .prototypes-tests h3,
   .prototypes-tests p,
-  .prototypes-tests h3 {
+  .prototypes-tests h4 {
     margin-left: 30rem;
     margin-right: 30rem;
   }
@@ -3154,7 +3166,7 @@ flex: 1;
     width: 90%;
   }
 
-  .prototypes-tests h4 {
+  .prototypes-tests h5 {
     margin-left: 2.5rem;
   }
 
@@ -3162,7 +3174,7 @@ flex: 1;
     width: 60%;
   }
 
-  .conclusion h2,
+  .conclusion h3,
   .conclusion p,
   .conclusion.btn {
     max-width: 1280px;
