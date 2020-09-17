@@ -351,8 +351,9 @@ button:hover {
   margin-bottom: 5.6rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  /* margin-top: 9.6rem; */
   text-align: left;
+  font-size: 2.8rem;
+  line-height: 150%;
 }
 
 /* MAI RECIPES */
@@ -1786,7 +1787,7 @@ flex: 1;
     padding-bottom: 5.6rem;
     padding-left: 6rem;
     padding-right: 6rem;
-
+    font-size: 3.2rem;
   }
 
   .homepage-container .title-smaller {
