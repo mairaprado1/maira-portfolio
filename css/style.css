@@ -55,7 +55,22 @@ small {
   line-height: 150%;
 }
 
+.title-resume {
+  font-size: 2.6rem;
+  line-height: 150%;
+}
+
+.subtitle-resume {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
 .footer-smaller {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.back-smaller {
   font-size: 2rem;
   line-height: 150%;
 }
@@ -1544,6 +1559,20 @@ flex: 1;
   }
 
   .footer-smaller {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  .back-smaller {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+  .title-resume {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+
+  .subtitle-resume {
     font-size: 2.2rem;
     line-height: 150%;
   }
