@@ -342,10 +342,13 @@ button:hover,
   padding-bottom: 2.8rem;
 
 }
-
-/* svg:hover {
+.icon {
+  color: white;
+}
+.icon:hover {
   fill: black;
-} */
+
+}
 
 
 /* svg:hover {
