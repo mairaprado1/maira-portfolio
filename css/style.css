@@ -65,11 +65,6 @@ small {
   line-height: 150%;
 }
 
-.footer-smaller {
-  font-size: 2rem;
-  line-height: 150%;
-}
-
 .back-smaller {
   font-size: 2rem;
   line-height: 150%;
@@ -248,10 +243,30 @@ header {
 
 }
 
+.btn2 {
+  color: #00758D;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  margin: auto;
+  /* margin-bottom: 2rem; */
+  /* border: solid 1px #1A1A1A; */
+
+}
+
 .btn:hover,
-button:hover {
+button:hover,
+.btn2:hover {
     background-color: #229FB9;
     color: #1A1A1A;
+    border: 1px solid #1A1A1A;
     /* border: 3px dashed #00758D; */
 
 
@@ -267,6 +282,9 @@ button:hover {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -303,8 +321,17 @@ button:hover {
 .footer h4 {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.8rem;
   padding-top: 2.8rem;
+}
+
+.linkedin,
+.email,
+.github {
+  margin-top: 5.6rem;
+  margin-right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rights p {
@@ -313,12 +340,18 @@ button:hover {
   margin-left: 3rem;
   margin-right: 3rem;
   padding-bottom: 2.8rem;
-  padding-top: 2.8rem;
+
 }
 
-svg:hover {
+/* svg:hover {
   fill: black;
-}
+} */
+
+
+/* svg:hover {
+   stroke: black;
+  color: black;
+} */
 
 .email:hover {
   outline: 3px dashed #FFFFFF;
@@ -1345,6 +1378,23 @@ flex: 1;
   width: 80%;
 }
 
+.forgotpassword,
+.autosaves {
+  box-shadow: none;
+}
+
+.forgotpassword img,
+.autosaves img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.forgotpassword figcaption,
+.autosaves figcaption {
+color: purple;
+}
+
 .hfm h3,
 .hfm p,
 .hfm h4 {
@@ -1608,7 +1658,7 @@ flex: 1;
   }
 
   .main-menu ul {
-    padding: 0;
+    padding: 0.3rem;
     height: auto;
     width: auto;
     background: none;
@@ -1644,7 +1694,7 @@ flex: 1;
     color: #1A1A1A;
     border-bottom: none;
     /* display: inline; */
-    padding: 0;
+    padding: 0.2rem;
 
   }
 
@@ -1666,9 +1716,9 @@ flex: 1;
     text-decoration: underline;
   }
 
-  /* .main-menu a:active {
-    font-weight: bold;
-  } */
+  .back-top {
+    width: 20%;
+  }
 
   /* This is the footer - mq768px */
   .footer {
@@ -1684,6 +1734,7 @@ flex: 1;
   }
 
   .footer h2,
+  .footer h4,
   .rights {
     margin: auto;
   }
