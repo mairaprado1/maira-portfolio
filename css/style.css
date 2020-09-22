@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+ *:focus {
+  outline: 4px solid #4F4F4F;
+}
+
 html {
   font-size: 10px;
 }
@@ -252,9 +256,6 @@ header {
   text-decoration: none;
   width: fit-content;
   margin: auto;
-  /* margin-bottom: 2rem; */
-  /* border: solid 1px #1A1A1A; */
-
 }
 
 .btn:hover,
@@ -263,10 +264,13 @@ button:hover,
     background-color: #229FB9;
     color: #1A1A1A;
     border: 1px solid #1A1A1A;
-    /* border: 3px dashed #00758D; */
+  }
 
 
-}
+
+  /* .btn:focus {
+    outline: 1rem;
+  } */
 
 .back-top {
   color: #1A1A1A;
@@ -1680,7 +1684,7 @@ color: purple;
     color: #1A1A1A;
     border-bottom: none;
     /* display: inline; */
-    padding: 0.2rem;
+    padding: 0.4rem;
 
   }
 
