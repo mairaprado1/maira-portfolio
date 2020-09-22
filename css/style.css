@@ -102,7 +102,7 @@ header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
-.logo a {
+.logo-link  {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -2330,7 +2330,7 @@ color: purple;
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
-  .logo {
+  .logo-link {
     padding-left: 6rem;
     z-index: 1;
   }
