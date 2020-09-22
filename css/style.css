@@ -3,8 +3,11 @@
 }
 
  *:focus {
-  outline: 4px solid #4F4F4F;
+  outline: 4px solid #1A1A1A;
 }
+
+
+
 
 html {
   font-size: 10px;
