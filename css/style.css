@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-/* *:focus {
-  outline: 3px dashed #1F0099;
-} */
-
 html {
   font-size: 10px;
 }
@@ -342,28 +338,15 @@ button:hover,
   padding-bottom: 2.8rem;
 
 }
-.icon {
-  color: white;
-}
-.icon:hover {
-  fill: black;
 
+.social-icons {
+  fill: white;
 }
 
-
-/* svg:hover {
-   stroke: black;
-  color: black;
-} */
-
-.email:hover {
-  outline: 3px dashed #FFFFFF;
-  padding: .5rem;
-}
-
-.github:hover {
-  outline: 3px dashed #FFFFFF;
-  padding: .5rem;
+.social-icons:hover {
+  fill: #1A1A1A;
+  background-color: #229FB9;
+  border-radius: 3rem;
 }
 
 /* HOMEPAGE */
