@@ -77,6 +77,7 @@ small {
   color: #00758D;
   padding: .8rem;
   z-index: 100;
+  font-weight: bold;
 }
 
 .skip-link:focus {
