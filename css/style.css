@@ -1153,11 +1153,16 @@ flex: 1;
 
 .sketches-wireframes h3 {
   font-weight: bold;
-  margin-bottom: 5.6rem;
+  margin-bottom: 2.8rem;
 }
 
 .sketches-wireframes h4 {
   font-weight: 400;
+}
+
+.sketches-wireframes p {
+  margin-bottom: 5.6rem;
+
 }
 
 /* BRANDING */
@@ -1372,6 +1377,10 @@ flex: 1;
   width: 80%;
 }
 
+.autosaves {
+  margin-bottom: 5.6rem;
+}
+
 .forgotpassword,
 .autosaves {
   box-shadow: none;
@@ -1386,7 +1395,9 @@ flex: 1;
 
 .forgotpassword figcaption,
 .autosaves figcaption {
-color: purple;
+margin-top: 1rem;
+font-size: 1.4rem;
+line-height: 140%;
 }
 
 .hfm h3,
@@ -1424,8 +1435,7 @@ color: purple;
 
 .features2,
 .positionpicture2,
-.footer2,
-.color50 {
+.footer2 {
   margin-bottom: 5.6rem;
 }
 
@@ -1469,15 +1479,19 @@ color: purple;
   margin: auto;
 }
 
-.usability-test {
-  width: 100%;
-  margin: auto;
+.u-test .picture-boxes {
+  display: flex;
+  flex-direction: column;
 }
 
 .usability-test {
-  margin-bottom: 5.6rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
 }
+
 
 /* CONCLUSION */
 .conclusion {
@@ -2121,21 +2135,23 @@ color: purple;
 
   .userflow {
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Sketches & Wireframes - mq768px */
   .sketches-wireframes {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
-  .sketches-wireframes h3,
-  .sketches-wireframes h4 {
+  /* .sketches-wireframes h3,
+  .sketches-wireframes h4
+  .sketches-wireframes p {
     padding-left: 6rem;
     padding-right: 6rem;
-  }
+  } */
 
   .sw {
     display: flex;
@@ -2149,7 +2165,7 @@ color: purple;
   .wpricing,
   .ssignup,
   .wsignup {
-    width: 85%;
+    width: 100%;
   }
 
   /* BRANDING - mq768px */
@@ -2290,12 +2306,19 @@ color: purple;
     align-self: center;
   }
 
+
   /* Conclusion */
   .conclusion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
   .conclusion h3,
   .conclusion p {
     margin-left: 6rem;
@@ -2525,6 +2548,7 @@ color: purple;
   .personas h2,
   .personas p,
   .personas h3,
+  .personas h4,
   .personas .info,
   .personas .general-personas,
   .personas .occupation,
@@ -2592,7 +2616,7 @@ color: purple;
   }
 
   .userflow {
-    width: 70%;
+    width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -2605,17 +2629,20 @@ color: purple;
     justify-content: space-between; */
   }
 
-  .sketches-wireframes h3,
-  .sketches-wireframes h4 {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
+
+  .sketches-wireframes {
+    margin: auto;
   }
 
   .sketches-wireframes h3,
-  .sketches-wireframes h4 {
+  .sketches-wireframes p {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .sketches-wireframes h4 {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .slandingpage,
@@ -2624,7 +2651,7 @@ color: purple;
   .wpricing,
   .ssignup,
   .wsignup {
-    width: 70%;
+    width: 80%;
   }
 
   .branding h3,
@@ -2918,6 +2945,7 @@ color: purple;
   .paula {
     padding-left: 3rem;
   }
+
 .personas h3,
 .personas .info,
 .personas .general-personas,
@@ -2925,9 +2953,11 @@ color: purple;
 .personas .quotes1,
 .personas .quotes2 {
   margin-right: 0;
+  margin-left: 30rem;
 }
 
-   .personas .emily h4,
+
+
   .personas .emily .info,
   .personas .emily .general-personas,
   .personas .emily .occupation,
@@ -2936,7 +2966,7 @@ color: purple;
     margin-left: 10rem;
   }
 
-  .personas .paula h4,
+
   .personas .paula .info,
   .personas .paula .general-personas,
   .personas .paula .occupation,
@@ -2946,6 +2976,19 @@ color: purple;
     margin-right: 10rem;
   }
 
+  .personas .emily h4 {
+    margin-left: 10rem;
+    margin-right: 0;
+  }
+
+  .personas .paula h4 {
+    margin-left: 0;
+    margin-right: 10rem;
+  }
+
+  .personas .general-personas li {
+    margin-right: 0;
+  }
 .paula-img {
   margin-top: 0;
   padding-top: 0;
@@ -3027,7 +3070,7 @@ color: purple;
   }
 
   .userflow {
-    width: 50%;
+    width: 90%;
   }
 
   /* Sketches and Wireframes - mp1280px */
@@ -3036,13 +3079,14 @@ color: purple;
     margin-right: auto;
   }
 
-  .sketches-wireframes h3 {
+  .sketches-wireframes h3,
+  .sketches-wireframes p {
     margin-left: 30rem;
     margin-right: 30rem;
   }
 
   .sketches-wireframes h4 {
-    margin-left: 15rem;
+    margin-left: 11rem;
     margin-bottom: 2.8rem;
     margin-top: 5.6rem;
   }
@@ -3053,7 +3097,7 @@ color: purple;
   .wpricing,
   .ssignup,
   .wsignup {
-    width: 37%;
+    width: 40%;
   }
 
   .slandingpage,
@@ -3068,14 +3112,14 @@ color: purple;
   .slandingpage,
   .spricing,
   .ssignup {
-    margin-left: 15rem;
+    margin-left: auto;
     margin-right: 3rem;
   }
 
   .wlandingpage,
   .wpricing,
   .wsignup {
-    margin-right: 15rem;
+    margin-right: auto;
   }
 
   .sw {
@@ -3320,6 +3364,7 @@ color: purple;
     margin-top: 5.6rem;
   }
 
+
   .forgotpassword,
   .autosaves {
     width: 32%;
@@ -3328,6 +3373,14 @@ color: purple;
   .forgotpassword {
     margin: 0;
     margin-right: 3rem;
+  }
+
+  .autosaves {
+    margin-bottom: 0;
+  }
+
+  .password-saves {
+    margin-bottom: 5.6rem;
   }
 
   /* Prototypes and Tests */
@@ -3340,11 +3393,11 @@ color: purple;
 
   /* These are the boxes */
   .price1 {
-    margin-left: 23rem;
+    margin-left: 10rem;
   }
 
   .price2 {
-    margin-right: 23rem;
+    margin-right: 10rem;
   }
 
   .pricing1,
