@@ -100,7 +100,7 @@ header {
 }
 
 .logo-link  {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-visibility: hidden;
 }
 
 .logo img {
@@ -109,6 +109,7 @@ header {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 30%;
+
 }
 
 .sr-only {
