@@ -3,11 +3,8 @@
 }
 
  *:focus {
-  outline: 4px solid #1A1A1A;
+  outline: 4px solid #4F4F4F;
 }
-
-
-
 
 html {
   font-size: 10px;
@@ -184,7 +181,13 @@ header {
   color: #FFFFFF;
 }
 
+    /* a:focus {
+     outline: 4px solid #4F4F4F;
+    } */
 
+.footer-link a:focus {
+  outline: 4px solid #FFFFFF;
+}
 
 .main-menu .menu-close {
   position: absolute;
