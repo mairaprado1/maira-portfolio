@@ -1,37 +1,4 @@
-.teal {
-  background-color: rgb(102, 172, 187, .8);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-}
-
-.red {
-  background-color: rgb(232, 104, 104, .8);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-}
-
-.blue {
-  background-color: rgb(0, 203, 245, .5);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-}
-
-.purple {
-  background-color: rgb(179, 117, 117, .8);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-}
-
-.gray {
-  background-color: rgb(149, 149, 149, .8);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-}
+/* A11y Learning Case Study */
 
 .pictext3 {
   display: flex;
@@ -47,6 +14,7 @@
   margin-right: 3rem;
 }
 
+/* First picture */
 .a11y1 {
   align-self: center;
   padding-bottom: 2.8rem;
@@ -73,7 +41,42 @@
   margin-top: -2rem;
 }
 
-/* User Survey */
+/* USER SURVEY */
+.teal {
+  background-color: rgb(102, 172, 187, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.red {
+  background-color: rgb(232, 104, 104, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.blue {
+  background-color: rgb(0, 203, 245, .5);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.purple {
+  background-color: rgb(179, 117, 117, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.gray {
+  background-color: rgb(149, 149, 149, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
 .a11y-survey h3 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -138,7 +141,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 5.6rem;
-  margin-bottom: 5.6rem;
+  margin-bottom: 9.6rem;
 }
 
 /* This is the image for the colorful chart */
@@ -165,6 +168,77 @@
   margin-right: 0.8rem;
 }
 
+
+/* COMPETITIVE ANALYSIS */
+.competitive-analysis2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.competitive-analysis2 h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.competitive-analysis2 h4 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.competitive-analysis2 ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2.8rem;
+}
+
+.competitive-analysis2 li:not(.no-space) {
+  padding-bottom: 2rem;
+}
+
+.google-drive p {
+  padding-top: 2rem;
+}
+
+.first-competitor,
+.sec-competitor,
+.third-competitor {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.sec-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.thir-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
   /* .solution-desktop {
@@ -179,18 +253,7 @@
   }
 }
 
-/* Execute the commmand when bigger than 330px */
-/* @media only screen and (min-width: 330px) {
-  .chart-flex {
-    margin-left: 19rem;
-  }
-} */
-/* Execute the commmand when bigger than 350px */
-/* @media only screen and (min-width: 350px) {
-  .chart-flex {
-    margin-left: 20rem;
-  }
-} */
+
 /* Execute the commmand when bigger than 375px */
 @media only screen and (min-width: 375px) {
   .chart-flex {
@@ -205,15 +268,27 @@
   .sol-picmobile {
     margin-left: 1.8rem;
   }
+
+
 }
 
-/* Execute the commmand when bigger than 767px */
-@media only screen and (min-width: 768px) {
+/* Execute the commmand when bigger than 414px */
+@media only screen and (min-width: 414px) {
 
+
+
+}
+
+
+
+
+/* Execute the commmand when bigger than 768px */
+@media only screen and (min-width: 768px) {
   /* .solution-mobile {
     display: none;
   } */
 
+/* First picture */
   .a11y1 {
     padding-top: 5.6rem;
     width: 80%;
@@ -233,7 +308,9 @@
     margin-left: 14.3rem;
   }
 
+  /* USER SURVEY (mq768px) */
   .a11y-survey h3,
+  .a11y-survey h4,
   .a11y-survey p:not(.p-chart),
   .a11y-survey p:not(.p-chart1) {
     margin-left: 6rem;
@@ -250,10 +327,6 @@
     justify-content: space-around;
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-
-  .chart {
-    width: 100%;
   }
 
   .piechart {
@@ -274,6 +347,10 @@
     width: 50%;
   }
 
+  .chart-flex {
+    margin-left: 4rem;
+  }
+
   .survey-margin-top {
     margin-top: 9.6rem;
   }
@@ -288,10 +365,51 @@
     font-size: 1.6rem;
   }
 
+  .teal,
+  .red,
+  .blue,
+  .purple,
+  .gray {
+    margin-top: .5rem;
+  }
+
   .p-chart1 {
     width: 100%;
     align-self: center;
   }
+
+  /* COMPETITIVE ANALYSYS (mq768px) */
+  .competitive-analysis2 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .competitive-analysis2 h3 {
+    margin-top: 14rem;
+  }
+
+.first-comp-img {
+  margin-top: 9.6rem;
+  margin-bottom: 14rem;
+}
+
+.sec-comp-img {
+  margin-top: 9.6rem;
+  margin-bottom: 14rem;
+}
+
+.thir-comp-img {
+  margin-top: 9.6rem;
+  margin-bottom: 14rem;
+}
+
+
+
+
+
+
+
+
 }
 
 /* Execute the commmand when bigger than 1024px */
@@ -305,8 +423,6 @@
     flex-direction: column;
     margin-left: -9rem;
     width: 130%;
-    /* align-items: center;
-    justify-content: center; */
   }
 
   .sol-capdesktop {
@@ -325,7 +441,6 @@
   width: 45%;
   }
 
-
 .rdt-flex {
   display: flex;
 }
@@ -334,18 +449,18 @@
   padding-top: 9.6rem;
 }
 
+/* USER SURVEY (mq1024px) */
 .flexchart-desktop {
   display: flex;margin-left: 3rem;
   margin-right: 3rem;
-  /* justify-content: space-between; */
 }
+
 .p-chart {
   width: 100%;
 }
 
 .piechart {
   align-items:center;
-
 }
 
 .flexchart-2column {
@@ -402,11 +517,67 @@
   margin-bottom: 14rem;
 }
 
-/* .flexchart-2column {
+.teal,
+.red,
+.blue,
+.purple,
+.gray {
+  margin-top: .7rem;
+}
 
-  justify-content: center;
+.chart-flex {
+  margin-left: 6rem;
+}
 
-} */
+.casestudy2-desktop {
+  width: 110%;
+}
+
+.solution-desktop {
+  align-self: center;
+}
+
+/* COMPETITIVE ANALYSIS (mq1024px) */
+.competitive-analysis2 h3,
+.competitive-analysis2 h4,
+.competitive-analysis2 p:not(.competitor-text),
+.competitive-analysis2 ul {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.competitor-text {
+  margin-left: 6rem;
+  margin-right: 10rem;
+}
+
+.first-comp-img,
+.sec-comp-img,
+.thir-comp-img {
+  width: 30%;
+  margin-left: 10rem;
+}
+
+.sec-comp-img {
+  margin-right: 10rem;
+  margin-left: 0;
+}
+
+.first-competitor {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.sec-competitor {
+  flex-direction: row;
+  align-items: center;
+}
+
+.third-competitor {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 
 
 }
@@ -426,6 +597,8 @@
   .pictext3 {
     padding-bottom: 6rem;
   }
+
+/* USER SURVEY (mq1280px) */
   .a11y-survey h3,
   .user-survey h4,
   .a11y-survey p:not(.p-chart) {
@@ -433,16 +606,20 @@
     margin-right: 30rem;
   }
 
+  .a11y-survey h4 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
 .text3 {
   margin-left: 10rem;
 }
+
 .text3-space {
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
   margin-right: 6rem;
 }
-
-
 
 .chart {
   width: 60%;
@@ -452,5 +629,26 @@
   width: 30%;
 }
 
+/* COMPETITIVE ANALYSIS (mq1280px) */
+.competitive-analysis2 h3,
+.competitive-analysis2 h4,
+.competitive-analysis2 p:not(.competitor-text),
+.competitive-analysis2 ul {
+  margin-left: 23rem;
+  margin-right: 23rem;
+}
+
+.first-comp-img,
+.sec-comp-img,
+.thir-comp-img {
+  width: 20%;
+}
+
+.first-competitor,
+.sec-competitor,
+.third-competitor {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
 
 }
