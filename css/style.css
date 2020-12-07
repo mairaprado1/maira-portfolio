@@ -45,8 +45,13 @@ p {
   line-height: 150%;
 }
 
-small {
+.small {
   font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.extra-small {
+  font-size: 1.2rem;
   line-height: 150%;
 }
 
@@ -783,7 +788,7 @@ textarea {
 
 /* OVERVIEW */
 .rdt-flex {
-  background-color: #F9F9F9;
+  background-color: #EAF4F6;
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
@@ -1623,7 +1628,7 @@ line-height: 140%;
     line-height: 150%;
   }
 
-  small {
+  .small-desktop {
     font-size: 1.5rem;
     line-height: 150%;
   }
@@ -2357,6 +2362,42 @@ line-height: 140%;
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
+  /* h1 {
+    font-size: 4.2rem;
+    line-height: 150%;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  h5 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  } */
+
+  p {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+
+  /* .small-desktop {
+    font-size: 1.5rem;
+    line-height: 150%;
+  } */
+
+
   .logo-link {
     padding-left: 6rem;
     z-index: 1;
@@ -2391,7 +2432,7 @@ line-height: 140%;
     font-size: 3rem;
   }
 
-  .mairecpe {
+  .mairecipe {
     width: 50%;
   }
 
@@ -2504,6 +2545,10 @@ line-height: 140%;
     margin-right: 0;
   }
 
+.pop h2 {
+  margin-top: 14rem;
+}
+
   .adjust-rdt {
     display: flex;
     justify-content: space-around;
@@ -2529,6 +2574,7 @@ line-height: 140%;
   }
 
   .sps {
+    margin-top: 14rem;
     margin-left: 16rem;
     margin-right: 16rem;
   }

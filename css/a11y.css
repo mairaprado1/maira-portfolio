@@ -1,38 +1,36 @@
-
 .teal {
   background-color: rgb(102, 172, 187, .8);
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .red {
   background-color: rgb(232, 104, 104, .8);
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
-
 
 .blue {
   background-color: rgb(0, 203, 245, .5);
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .purple {
   background-color: rgb(179, 117, 117, .8);
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .gray {
   background-color: rgb(149, 149, 149, .8);
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .pictext3 {
@@ -40,10 +38,419 @@
   flex-direction: column;
 }
 
+.pictext3 h1 {
+  font-weight: bold;
+}
+
+.text3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .a11y1 {
   align-self: center;
-  padding-top: 5.6rem;
-  /* padding-left: 3rem;
-  padding-right: 3rem; */
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 90%;
+}
+
+.text3-space {
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+/* This is the image for mobile*/
+.sol-picmobile {
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+/* This is the caption for mobile*/
+.sol-capmobile {
+  margin-left: 3rem;
+  margin-top: -2rem;
+}
+
+/* User Survey */
+.a11y-survey h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.8rem
+}
+
+.a11y-survey h4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+}
+
+.a11y-survey p:not(.p-chart),
+.a11y-survey p:not(.p-chart1) {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* This is the flexbox for the img and p */
+.piechart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.piechart1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+/* This is the image */
+.chart {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* This is the text under the chart */
+.p-chart {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.p-chart1 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+/* These are the colorful charts */
+.colorchart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+/* This is the image for the colorful chart */
+.pic-chart {
+  width: 44.5%;
+}
+
+/* This is the flex for the description */
+.chart-flex {
+  width: 44.5%;
+  margin-left: 1rem;
+}
+
+.flex-description {
+  display: flex;
+  padding-top: .5rem;
+}
+
+.teal,
+.red,
+.blue,
+.purple,
+.gray {
+  margin-right: 0.8rem;
+}
+
+/* Execute the commmand when smaller than 768px */
+@media only screen and (max-width: 767px) {
+  /* .solution-desktop {
+    display: none;
+  } */
+}
+
+/* Execute the commmand when smaller than 1023px */
+@media only screen and (max-width: 1023px) {
+  .solution-desktop {
+    display: none;
+  }
+}
+
+/* Execute the commmand when bigger than 330px */
+/* @media only screen and (min-width: 330px) {
+  .chart-flex {
+    margin-left: 19rem;
+  }
+} */
+/* Execute the commmand when bigger than 350px */
+/* @media only screen and (min-width: 350px) {
+  .chart-flex {
+    margin-left: 20rem;
+  }
+} */
+/* Execute the commmand when bigger than 375px */
+@media only screen and (min-width: 375px) {
+  .chart-flex {
+    margin-left: 2rem;
+  }
+
+  .colorchart {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sol-picmobile {
+    margin-left: 1.8rem;
+  }
+}
+
+/* Execute the commmand when bigger than 767px */
+@media only screen and (min-width: 768px) {
+
+  /* .solution-mobile {
+    display: none;
+  } */
+
+  .a11y1 {
+    padding-top: 5.6rem;
+    width: 80%;
+  }
+
+  .text3 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sol-picmobile {
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  .solution-mobile {
+    margin-left: 14.3rem;
+  }
+
+  .a11y-survey h3,
+  .a11y-survey p:not(.p-chart),
+  .a11y-survey p:not(.p-chart1) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .casestudy2-desktop {
+    width: 100%;
+  }
+
+  .flexchart-2column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  .piechart {
+    width: 40%;
+    margin-top: 9.6rem;
+    margin-bottom: 0;
+  }
+
+  .piechart1 {
+    width: 40%;
+    margin-top: 9.6rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chart {
+    width: 50%;
+  }
+
+  .survey-margin-top {
+    margin-top: 9.6rem;
+  }
+
+  .colorchart {
+    width: 60%;
+    margin-top: 9.6rem;
+    margin-bottom: 9.6rem;
+  }
+
+  .extra-small {
+    font-size: 1.6rem;
+  }
+
+  .p-chart1 {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+/* Execute the commmand when bigger than 1024px */
+@media only screen and (min-width: 1024px) {
+  .solution-mobile {
+    display: none;
+  }
+
+  .solution-desktop {
+    display: flex;
+    flex-direction: column;
+    margin-left: -9rem;
+    width: 130%;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .sol-capdesktop {
+    text-align: left;
+  }
+
+  .pictext3 {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+  }
+
+  .a11y1 {
+  width: 45%;
+  }
+
+
+.rdt-flex {
+  display: flex;
+}
+
+.sps.solution img {
+  padding-top: 9.6rem;
+}
+
+.flexchart-desktop {
+  display: flex;margin-left: 3rem;
+  margin-right: 3rem;
+  /* justify-content: space-between; */
+}
+.p-chart {
+  width: 100%;
+}
+
+.piechart {
+  align-items:center;
+
+}
+
+.flexchart-2column {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.chart {
   width: 80%;
+}
+
+.size-2chart {
+  width: 20%;
+  justify-content: space-around;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.chart-bigmar {
+  width: 100%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.piechart1 {
+  width: 20%;
+}
+
+.p-chart1 {
+  min-width: 30rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.a11y-survey h3,
+.a11y-survey h4,
+.a11y-survey p:not(.p-chart) {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.extra-small {
+  font-size: 1.9rem;
+}
+
+.survey-margin-top {
+  margin-top: 14rem;
+}
+
+.colorchart {
+  /* margin-top: 14rem; */
+  margin-bottom: 14rem;
+}
+
+/* .flexchart-2column {
+
+  justify-content: center;
+
+} */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Execute the commmand when bigger than 1280px */
+@media only screen and (min-width: 1280px) {
+  .pictext3 {
+    padding-bottom: 6rem;
+  }
+  .a11y-survey h3,
+  .user-survey h4,
+  .a11y-survey p:not(.p-chart) {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+.text3 {
+  margin-left: 10rem;
+}
+.text3-space {
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  margin-right: 6rem;
+}
+
+
+
+.chart {
+  width: 60%;
+}
+
+.pic-chart {
+  width: 30%;
+}
+
+
 }
