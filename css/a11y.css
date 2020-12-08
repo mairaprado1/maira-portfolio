@@ -238,6 +238,47 @@
 }
 
 
+/* PERSONAS */
+.nicole-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.david-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.sofia-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.personas .occupation {
+  font-weight: normal;
+}
+
+.david,
+.sofia {
+  margin-top: 7.6rem;
+}
+
+.lastp-personas {
+  margin-top: 9.6rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
@@ -402,6 +443,45 @@
   margin-top: 9.6rem;
   margin-bottom: 14rem;
 }
+
+/* PERSONAS (mq768px) */
+.personas h3 {
+  margin-top: 14.4rem;
+}
+.nicole {
+  display: flex;
+  flex-direction: column;
+}
+
+.nicole-img {
+  width: 70%;
+  align-self: center;
+  margin-top: 9.6rem;
+}
+
+.david {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.david-img {
+  width: 70%;
+  align-self: center;
+  margin-top: 14.4rem;
+}
+.sofia {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.sofia-img {
+  width: 70%;
+  align-self: center;
+  margin-top: 14.4rem;
+}
+
 
 
 
@@ -580,6 +660,8 @@
 
 
 
+
+
 }
 
 
@@ -650,5 +732,63 @@
   margin-left: 12rem;
   margin-right: 12rem;
 }
+
+/* PERSONAS (mq1280px) */
+.nicole-img,
+.david-img,
+.sofia-img {
+  margin-top: 9.6rem;
+}
+
+.personas h2,
+.personas p,
+.personas h3,
+.personas h4,
+.personas .info,
+.personas .general-personas,
+.personas .occupation,
+.personas .quotes1,
+.personas .quotes2 {
+  margin-left: 6rem;
+  /* margin-right: 6rem; */
+}
+
+.personas h3,
+.personas p,
+.lastp-personas {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.nicole,
+.david,
+.sofia {
+width: 33%;
+}
+
+.li-margin {
+  margin-top: 3rem;
+}
+
+.f-margin {
+  margin-top: 2.1rem;
+}
+.personas .goals h4,
+.personas .frustrations h4 {
+  margin-top: 9.6rem;
+}
+
+.quote {
+  margin-top: 9.6rem;
+}
+.quote h4 {
+  width: 85%;
+}
+
+.q-david {
+  margin-top: 15rem;
+}
+
+
 
 }
