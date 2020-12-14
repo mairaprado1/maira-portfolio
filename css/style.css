@@ -1065,7 +1065,7 @@ textarea {
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 5.6rem;
+  margin-top: 9.6rem;
   padding-bottom: 3.6rem;
   flex: 1;
   /* height: 100%; */
@@ -2137,9 +2137,14 @@ line-height: 140%;
   }
 
   /* User Flows - mq768px */
-  .user-flows h3,
+  /* .user-flows h3,
   .user-flows p,
   .user-flows .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  } */
+
+  .user-flows {
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -2149,7 +2154,10 @@ line-height: 140%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 9.6rem;
+    margin-top: 5.6rem;
   }
+
 
   /* Sketches & Wireframes - mq768px */
   .sketches-wireframes {
@@ -2670,8 +2678,8 @@ line-height: 140%;
 
   .userflow {
     width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5.6rem;
+
   }
 
   .adjust-width {
@@ -2688,15 +2696,13 @@ line-height: 140%;
   }
 
   .sketches-wireframes h3,
+  .sketches-wireframes h4,
   .sketches-wireframes p {
     margin-left: 16rem;
     margin-right: 16rem;
   }
 
-  .sketches-wireframes h4 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
+
 
   .slandingpage,
   .wlandingpage,
@@ -3140,7 +3146,8 @@ line-height: 140%;
   }
 
   .sketches-wireframes h4 {
-    margin-left: 11rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
     margin-bottom: 2.8rem;
     margin-top: 5.6rem;
   }
