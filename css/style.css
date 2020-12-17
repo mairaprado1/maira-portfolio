@@ -45,8 +45,13 @@ p {
   line-height: 150%;
 }
 
-small {
+.small {
   font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.extra-small {
+  font-size: 1.2rem;
   line-height: 150%;
 }
 
@@ -783,7 +788,7 @@ textarea {
 
 /* OVERVIEW */
 .rdt-flex {
-  background-color: #F9F9F9;
+  background-color: #EAF4F6;
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
@@ -928,6 +933,7 @@ textarea {
 
 /* PERSONAS */
 .personas p,
+.lastp-personas,
 .personas h3,
 .personas h4,
 .personas .info,
@@ -1015,11 +1021,11 @@ textarea {
 
 /* USER STORIES */
 .user-stories {
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
   margin-bottom: 9.6rem;
-  margin-top: 9.6rem;
+  margin-top: 5.6rem;
   padding-bottom: 4rem;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 
 .user-stories h3,
@@ -1059,7 +1065,7 @@ textarea {
   margin-bottom: 2.8rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 5.6rem;
+  margin-top: 9.6rem;
   padding-bottom: 3.6rem;
   flex: 1;
   /* height: 100%; */
@@ -1623,7 +1629,7 @@ line-height: 140%;
     line-height: 150%;
   }
 
-  small {
+  .small-desktop {
     font-size: 1.5rem;
     line-height: 150%;
   }
@@ -2061,6 +2067,7 @@ line-height: 140%;
   /* Personas - mq768px */
   .personas h2,
   .personas p,
+  .lastp-personas,
   .personas h3,
   .personas h4,
   .personas .info,
@@ -2130,9 +2137,14 @@ line-height: 140%;
   }
 
   /* User Flows - mq768px */
-  .user-flows h3,
+  /* .user-flows h3,
   .user-flows p,
   .user-flows .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  } */
+
+  .user-flows {
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -2142,7 +2154,10 @@ line-height: 140%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 9.6rem;
+    margin-top: 5.6rem;
   }
+
 
   /* Sketches & Wireframes - mq768px */
   .sketches-wireframes {
@@ -2357,6 +2372,42 @@ line-height: 140%;
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
+  /* h1 {
+    font-size: 4.2rem;
+    line-height: 150%;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  }
+
+  h5 {
+    font-size: 2.2rem;
+    line-height: 150%;
+  } */
+
+  p {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+
+  /* .small-desktop {
+    font-size: 1.5rem;
+    line-height: 150%;
+  } */
+
+
   .logo-link {
     padding-left: 6rem;
     z-index: 1;
@@ -2391,7 +2442,7 @@ line-height: 140%;
     font-size: 3rem;
   }
 
-  .mairecpe {
+  .mairecipe {
     width: 50%;
   }
 
@@ -2504,6 +2555,10 @@ line-height: 140%;
     margin-right: 0;
   }
 
+.pop h2 {
+  margin-top: 14rem;
+}
+
   .adjust-rdt {
     display: flex;
     justify-content: space-around;
@@ -2529,6 +2584,7 @@ line-height: 140%;
   }
 
   .sps {
+    margin-top: 14rem;
     margin-left: 16rem;
     margin-right: 16rem;
   }
@@ -2551,6 +2607,7 @@ line-height: 140%;
 
   .personas h2,
   .personas p,
+  .lastp-personas,
   .personas h3,
   .personas h4,
   .personas .info,
@@ -2587,7 +2644,7 @@ line-height: 140%;
     margin-left: 0;
     margin-right: 0;
     width: 27%;
-    height: 530px;
+    height: 600px;
   }
 
   .high,
@@ -2621,8 +2678,8 @@ line-height: 140%;
 
   .userflow {
     width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5.6rem;
+
   }
 
   .adjust-width {
@@ -2639,15 +2696,13 @@ line-height: 140%;
   }
 
   .sketches-wireframes h3,
+  .sketches-wireframes h4,
   .sketches-wireframes p {
     margin-left: 16rem;
     margin-right: 16rem;
   }
 
-  .sketches-wireframes h4 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
+
 
   .slandingpage,
   .wlandingpage,
@@ -2929,7 +2984,8 @@ line-height: 140%;
   }
 
   .personas h3,
-  .personas p {
+  .personas p,
+  .lastp-personas, {
     margin-left: 30rem;
     margin-right: 30rem;
   }
@@ -3055,7 +3111,7 @@ line-height: 140%;
     margin-left: 0;
     margin-right: 0;
     width: 27%;
-    height: 490px;
+    height: 520px;
     /* min-height: 480px; */
   }
 
@@ -3074,7 +3130,7 @@ line-height: 140%;
   }
 
   .userflow {
-    width: 90%;
+    width: 70%;
   }
 
   /* Sketches and Wireframes - mp1280px */
@@ -3090,7 +3146,8 @@ line-height: 140%;
   }
 
   .sketches-wireframes h4 {
-    margin-left: 11rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
     margin-bottom: 2.8rem;
     margin-top: 5.6rem;
   }

@@ -1,0 +1,1841 @@
+/* A11y Learning Case Study */
+.pictext3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictext3 h1 {
+  font-weight: bold;
+}
+
+.text3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* First picture */
+.a11y1 {
+  align-self: center;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 90%;
+}
+
+.text3-space {
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+/* This is the image for mobile*/
+.sol-picmobile {
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+/* This is the caption for mobile*/
+.sol-capmobile {
+  margin-left: 3rem;
+  margin-top: -2rem;
+}
+
+/* USER SURVEY */
+.teal {
+  background-color: rgb(102, 172, 187, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.red {
+  background-color: rgb(232, 104, 104, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.blue {
+  background-color: rgb(0, 203, 245, .5);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.purple {
+  background-color: rgb(179, 117, 117, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.gray {
+  background-color: rgb(149, 149, 149, .8);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.a11y-survey h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.8rem
+}
+
+.a11y-survey h4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+}
+
+.a11y-survey p:not(.p-chart),
+.a11y-survey p:not(.p-chart1) {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* This is the flexbox for the img and p */
+.piechart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.piechart1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+/* This is the image */
+.chart {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* This is the text under the chart */
+.p-chart {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.p-chart1 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+/* These are the colorful charts */
+.colorchart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.6rem;
+  margin-bottom: 9.6rem;
+}
+
+/* This is the image for the colorful chart */
+.pic-chart {
+  width: 44.5%;
+}
+
+/* This is the flex for the description */
+.chart-flex {
+  width: 44.5%;
+  margin-left: 1rem;
+}
+
+.flex-description {
+  display: flex;
+  padding-top: .5rem;
+}
+
+.teal,
+.red,
+.blue,
+.purple,
+.gray {
+  margin-right: 0.8rem;
+}
+
+/* COMPETITIVE ANALYSIS */
+.competitive-analysis2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.competitive-analysis2 h3 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.competitive-analysis2 h4 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.competitive-analysis2 ul {
+  font-size: 1.8rem;
+  line-height: 150%;
+  list-style-type: square;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2.8rem;
+}
+
+.competitive-analysis2 li:not(.no-space) {
+  padding-bottom: 2rem;
+}
+
+.google-drive p {
+  padding-top: 2rem;
+}
+
+.first-competitor,
+.sec-competitor,
+.third-competitor {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.sec-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.thir-comp-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+  margin-top: 5.6rem;
+  width: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+/* PERSONAS */
+.nicole-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.david-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 5.6rem;
+}
+
+.sofia-img {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  margin-top: 9.6rem;
+}
+
+.personas .occupation {
+  font-weight: normal;
+}
+
+.david,
+.sofia {
+  margin-top: 7.6rem;
+}
+
+.lastp-personas {
+  margin-top: 9.6rem;
+}
+
+/* SKETCHES & WIREFRAMES */
+.flex-sw2 {
+  display: flex;
+}
+
+.figure-container {
+  display: flex;
+  margin: auto;
+}
+
+.figure-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.slandingpage2,
+.wlandingpage2,
+.shomepage2,
+.whomepage2,
+.sprofile2,
+.wprofile2 {
+  width: 80%;
+align-self: center;
+
+
+}
+
+.slandingpage2,
+.shomepage2,
+.sprofile2 {
+  margin-left: 2rem;
+
+}
+
+.wlandingpage2,
+.whomepage2,
+.wprofile2 {
+  margin-right: 2rem;
+}
+
+.sw2-caption1 {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+.sw2-caption2 {
+margin-left: 2rem;
+margin-top: 1rem;
+}
+
+.sketches-wireframes2 h3,
+.sketches-wireframes2 h4,
+.sketches-wireframes2 p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.sketches-wireframes2 h3,
+.sketches-wireframes2 h4 {
+  font-weight: bold;
+}
+
+.sketches-wireframes2 h3 {
+  margin-bottom: 2.8rem;
+}
+
+.sketches-wireframes2 h4 {
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+
+/* BRANDING */
+.branding2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.branding2 h3,
+.branding2 h4,
+.branding2 h5 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+}
+
+.branding2 p,
+.branding2 .mulish-small {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.branding2 h3,
+.branding2 h4,
+.branding2 h5 {
+  margin-bottom: 2.8rem;
+}
+
+.branding2 h4,
+.branding2 h5 {
+  margin-top: 9.6rem;
+}
+
+/* NAME */
+.brain-sketch2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.brain-sketch2 .small {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.brainstorm2,
+.sketch2 {
+  width: 90%;
+  align-self: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+
+}
+
+
+
+.brain-sketch2 {
+  margin-top: 5.6rem;
+  /* margin-bottom: 5.6rem; */
+}
+
+.bk2-caption {
+  margin-top: 1rem;
+
+}
+
+.al-name {
+  font-weight: 600;
+  margin-top: 5.6rem;
+
+}
+
+/* COLOR */
+.c-palette-flex {
+  display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-left: 1.5rem;
+margin-right: 1.5rem;
+}
+.primary-10 {
+  background-color: #E8EBFD;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.primary-20 {
+background-color: #B9C3F8;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.primary-30 {
+background-color: #7C88F3;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.primary-40 {
+background-color: #2D4AEB;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.primary-50 {
+background-color: #1430D2;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.primary-60 {
+background-color: #0F25A3;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-10 {
+background-color: #FDE8F1;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-20 {
+background-color: #F8B9D4;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-30 {
+background-color: #F37CAF;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-40 {
+background-color: #EB2D7F;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-50 {
+background-color: #D21465;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.secondary-60 {
+background-color: #D21465;
+width: 9rem;
+height: 9rem;
+position: relative;
+}
+
+.w-black {
+  color: #000000;
+  font-size: 1.4rem;
+  /* position: relative; */
+  /* align-self: center; */
+
+}
+
+.w-white {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.color-number {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.color-hex {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+
+}
+
+.palette-space {
+  margin-bottom: 1rem;
+}
+
+/* TYPOGRAPHY */
+.typography2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.typography2 h4 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.mulish {
+  font-family: 'Mulish';
+}
+
+.mulish h5 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+  margin-bottom: 1rem;
+}
+
+.mulish-small {
+  margin-bottom: 2.8rem;
+}
+.med-weight {
+  font-weight: 500;
+}
+
+.branding2 .mulish-small {
+  margin-bottom: 2.8rem;
+}
+
+.al-logo-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* LOGO */
+.logo-section2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+}
+
+.logo-section2 h4 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+.al-logo-flex {
+  margin-top: 5.6rem;
+}
+.al-logo {
+  width: 50%;
+  align-self: center;
+}
+
+.cap-al-logo {
+  margin-left: 6rem;
+  margin-top: 0.5rem;
+}
+
+
+/* HIGH FIDELITY MOCKUPS */
+.hfm2 h3 {
+  font-weight: bold;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2.8rem;
+
+
+}
+
+.hfm2 p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /* margin-bottom: 5.6rem; */
+}
+
+.hfm-images-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hfm2-flex {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  align-self: center;
+}
+
+
+
+.hfm2-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.6rem;
+}
+
+.two-home,
+.two-home2 {
+  width: 90%;
+}
+
+.one-home {
+  width: 45%;
+  align-self: center;
+}
+
+.hfm2-cap2 {
+  margin-left: 1rem;
+  margin-top: 0.8rem;
+}
+
+
+.hfm2-cap2-1 {
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-top: 0.8rem;
+}
+
+.w-m-tutorial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.w-tutorial-1,
+.w-tutorial-2,
+.m-tutorial-1,
+.m-tutorial-2 {
+  width: 90%;
+  align-self: center;
+}
+
+.tutorial-cap {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.w-m-tutorial {
+  margin-top: 5.6rem;
+}
+
+
+/* PROTOTYPES AND USABILITY TESTING */
+.prot-test {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.prot-test h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.t-wir-cap,
+.m-wir-cap {
+  margin-top: 0.8rem;
+}
+
+/* ITERATIONS */
+.iterations h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+  font-weight: bold;
+}
+
+.iterations p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.iter-p-space {
+  margin-bottom: 5.6rem;
+}
+
+.spec-space {
+  font-weight: 500;
+}
+.figure-iter2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  /* width: 100%; */
+}
+
+.iterate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iter-login,
+.iter-create,
+.iter-signup,
+.iter-signin,
+.iter-tut1,
+.iter-tut2,
+.quiz1,
+.quiz2,
+.quiz3,
+.quiz4 {
+  width: 90%;
+}
+
+.iterate-cap {
+  margin-left: -2rem;
+  margin-top: 0.8rem;
+}
+
+.iterate2-cap {
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.conclusion2 h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+  font-weight: bold;
+}
+
+.conclusion2 p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.a11y2 {
+  width: 100%;
+  margin-top: 5.6rem;
+}
+
+
+/* Execute the commmand when smaller than 768px */
+@media only screen and (max-width: 767px) {
+  /* .solution-desktop {
+    display: none;
+  } */
+}
+
+/* Execute the commmand when smaller than 1023px */
+@media only screen and (max-width: 1023px) {
+  .solution-desktop {
+    display: none;
+  }
+
+  .t-wir-desktop {
+    display: none;
+  }
+
+  .t-mock-desktop {
+    display: none;
+  }
+
+}
+
+/* Execute the commmand when bigger than 375px */
+@media only screen and (min-width: 375px) {
+  .chart-flex {
+    margin-left: 2rem;
+  }
+
+  .colorchart {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sol-picmobile {
+    margin-left: 1.8rem;
+  }
+
+.hfm2-cap2-1 {
+  margin-left: 11rem;
+}
+
+.cap-al-logo {
+  margin-left: 7rem;
+}
+
+}
+
+/* Execute the commmand when bigger than 414px */
+@media only screen and (min-width: 414px) {
+/* USERFLOW */
+.userflow {
+  margin-bottom: 9.6rem;
+}
+
+/* NAME */
+.al-name {
+  margin-left: 2rem!important;
+  margin-right: 2rem!important;
+}
+
+/* COLOR */
+.c-palette-flex {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hfm2-cap2 {
+  margin-left: 2rem;
+}
+
+/* LOGO */
+.cap-al-logo {
+  margin-left: 8rem;
+}
+
+}
+
+
+/* Execute the commmand when bigger than 420px */
+@media only screen and (min-width: 420px) {
+/* COLOR */
+.c-palette-flex {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+}
+
+/* Execute the commmand when bigger than 460px */
+@media only screen and (min-width: 460px) {
+/* COLOR */
+.c-palette-flex {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+}
+
+/* Execute the commmand when bigger than 480px */
+@media only screen and (min-width: 480px) {
+/* COLOR */
+.c-palette-flex {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+}
+
+/* Execute the commmand when bigger than 500px */
+@media only screen and (min-width: 500px) {
+/* COLOR */
+.c-palette-flex {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+}
+
+
+/* Execute the commmand when bigger than 768px */
+@media only screen and (min-width: 768px) {
+
+  /* .solution-mobile {
+    display: none;
+  } */
+
+  /* First picture */
+  .a11y1 {
+    padding-top: 5.6rem;
+    width: 80%;
+  }
+
+  .text3 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sol-picmobile {
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  .solution-mobile {
+    margin-left: 14.3rem;
+  }
+
+  /* USER SURVEY (mq768px) */
+  .a11y-survey h3,
+  .a11y-survey h4,
+  .a11y-survey p:not(.p-chart),
+  .a11y-survey p:not(.p-chart1) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .casestudy2-desktop {
+    width: 100%;
+  }
+
+  .flexchart-2column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .piechart {
+    width: 40%;
+    margin-top: 9.6rem;
+    margin-bottom: 0;
+  }
+
+  .piechart1 {
+    width: 40%;
+    margin-top: 9.6rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chart {
+    width: 50%;
+  }
+
+  .chart-flex {
+    margin-left: 4rem;
+  }
+
+  .survey-margin-top {
+    margin-top: 9.6rem;
+  }
+
+  .colorchart {
+    width: 60%;
+    margin-top: 9.6rem;
+    margin-bottom: 9.6rem;
+  }
+
+  .extra-small {
+    font-size: 1.6rem;
+  }
+
+  .teal,
+  .red,
+  .blue,
+  .purple,
+  .gray {
+    margin-top: .5rem;
+  }
+
+  .p-chart1 {
+    width: 100%;
+    align-self: center;
+  }
+
+  /* COMPETITIVE ANALYSYS (mq768px) */
+  .competitive-analysis2 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .competitive-analysis2 h3 {
+    margin-top: 14rem;
+  }
+
+  .first-comp-img {
+    margin-top: 9.6rem;
+    margin-bottom: 14rem;
+  }
+
+  .sec-comp-img {
+    margin-top: 9.6rem;
+    margin-bottom: 14rem;
+  }
+
+  .thir-comp-img {
+    margin-top: 9.6rem;
+    margin-bottom: 14rem;
+  }
+
+  /* PERSONAS (mq768px) */
+  .personas h3 {
+    margin-top: 14.4rem;
+  }
+
+  .nicole {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nicole-img {
+    width: 70%;
+    align-self: center;
+    margin-top: 9.6rem;
+  }
+
+  .david {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .david-img {
+    width: 70%;
+    align-self: center;
+    margin-top: 14.4rem;
+  }
+
+  .sofia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .sofia-img {
+    width: 70%;
+    align-self: center;
+    margin-top: 14.4rem;
+  }
+
+/* SKETCHES & WIREFRAMES (mq768px)*/
+.sketches-wireframes2 h3,
+.sketches-wireframes2 h4,
+.sketches-wireframes2 p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.small {
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+ .sw2-caption1 {
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+.sw2-caption2 {
+margin-left: 5rem;
+margin-top: 2rem;
+}
+
+/* BRANDING */
+.branding2 h3,
+.branding2 h4,
+.branding2 h5,
+.branding2 p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.brainstorm2, .sketch2 {
+  width: 80%;
+}
+
+.brain-sketch2 .small {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.mulish {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.branding2 .mulish-small {
+  margin-left: 6rem;
+}
+.al-name {
+  text-align: center;
+}
+
+.cap-al-logo {
+  margin-left: 15rem;
+}
+
+.hfm2-cap2 {
+  margin-left: 0;
+}
+
+.hfm2-cap2-1 {
+  margin-left: 8rem;
+}
+/* .branding2 p,
+.branding2 .mulish-small {
+  margin-left: 6rem;
+  margin-right: 6rem;
+} */
+
+/* TYPOGRAPHY  */
+.typography2 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+/* LOGO */
+.logo-section2 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+/* HFM */
+.hfm2 h3 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.hfm2 p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.two-home,
+.two-home2 {
+  width: 80%;
+}
+
+.hfm-images-flex {
+  /* justify-content: center; */
+}
+
+.hfm2-0 {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.hfm2-flex {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.one-home {
+  width: 40%;
+}
+
+.w-tutorial-1,
+.w-tutorial-2,
+.m-tutorial-1,
+.m-tutorial-2 {
+  width: 80%;
+}
+
+.w-m-tutorial {
+  margin-top: 9.6rem;
+}
+
+/* PROTOTYPES AND USABILITY TESTING */
+.prot-test {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+/* ITERATIONS */
+.iterations h3,
+.iterations p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.figure-iter2 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.iterate-cap {
+  margin-left: -14rem;
+}
+
+.iterate2-cap {
+  margin-left: 4rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+
+
+
+
+}
+
+/* Execute the commmand when bigger than 1024px */
+@media only screen and (min-width: 1024px) {
+  .solution-mobile {
+    display: none;
+  }
+
+  .w-m-tutorial {
+    display: none;
+  }
+
+  .solution-desktop {
+    display: flex;
+    flex-direction: column;
+    margin-left: -9rem;
+    width: 130%;
+  }
+
+  .sol-capdesktop {
+    text-align: left;
+  }
+
+  .pictext3 {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+  }
+
+  .a11y1 {
+    width: 45%;
+  }
+
+  /* .rdt-flex {
+    display: flex;
+  } */
+
+  .sps.solution img {
+    padding-top: 9.6rem;
+  }
+
+  /* USER SURVEY (mq1024px) */
+  .flexchart-desktop {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .p-chart {
+    width: 100%;
+  }
+
+  .piechart {
+    align-items: center;
+  }
+
+  .flexchart-2column {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .chart {
+    width: 80%;
+  }
+
+  .size-2chart {
+    width: 20%;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .chart-bigmar {
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .piechart1 {
+    width: 20%;
+  }
+
+  .p-chart1 {
+    min-width: 30rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .a11y-survey h3,
+  .a11y-survey h4,
+  .a11y-survey p:not(.p-chart) {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .extra-small {
+    font-size: 1.9rem;
+  }
+
+  .survey-margin-top {
+    margin-top: 14rem;
+  }
+
+  .colorchart {
+    /* margin-top: 14rem; */
+    margin-bottom: 14rem;
+  }
+
+  .teal,
+  .red,
+  .blue,
+  .purple,
+  .gray {
+    margin-top: .7rem;
+  }
+
+  .chart-flex {
+    margin-left: 6rem;
+  }
+
+  .casestudy2-desktop {
+    width: 110%;
+  }
+
+  .solution-desktop {
+    align-self: center;
+  }
+
+  /* COMPETITIVE ANALYSIS (mq1024px) */
+  .competitive-analysis2 h3,
+  .competitive-analysis2 h4,
+  .competitive-analysis2 p:not(.competitor-text),
+  .competitive-analysis2 ul {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .competitor-text {
+    margin-left: 6rem;
+    margin-right: 10rem;
+  }
+
+  .first-comp-img,
+  .sec-comp-img,
+  .thir-comp-img {
+    width: 30%;
+    margin-left: 10rem;
+  }
+
+  .sec-comp-img {
+    margin-right: 10rem;
+    margin-left: 0;
+  }
+
+  .first-competitor {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .sec-competitor {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .third-competitor {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  /* SKETCHES & WIREFRAMES */
+  .small {
+    font-size: 1.9rem;
+    line-height: 150%;
+  }
+
+   .sw2-caption1 {
+    margin-left: 20rem;
+    margin-top: 1rem;
+  }
+
+  .sw2-caption2 {
+  margin-left: 5rem;
+  margin-top: 1rem;
+  }
+
+  .slandingpage2,
+  .wlandingpage2,
+  .shomepage2,
+  .whomepage2,
+  .sprofile2,
+  .wprofile2 {
+    width: 60%;
+  }
+
+  .slandingpage2,
+  .shomepage2,
+  .sprofile2 {
+    margin-left: 15rem;
+  }
+
+.wlandingpage2,
+.whomepage2,
+.wprofile2 {
+margin-right: 15rem;
+}
+
+.sketches-wireframes2 h3,
+.sketches-wireframes2 h4,
+.sketches-wireframes2 p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+/* BRANDING */
+.branding2 h3, .branding2 h4, .branding2 h5, .branding2 p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+.brainstorm2, .sketch2 {
+  width: 60%;
+}
+
+.brain-sketch2 .small {
+  margin-left: 20rem;
+}
+
+ .branding2 h4,
+ .branding2 h5,
+ .typography2 h4 {
+   margin-top: 14.4rem;
+ }
+
+.c-palette-flex {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.branding2 .mulish-small {
+  margin-left: 16rem;
+}
+
+.al-logo {
+  width: 20%;
+}
+.cap-al-logo {
+  margin-left: 27rem;
+}
+
+.hfm2-flex {
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.hfm2-1 {
+  margin-bottom: 9.6rem;
+}
+
+.typography2 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.logo-section2 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.hfm2 h3,
+.hfm2 p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.t-wir-desktop {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+
+  /* width: 100%; */
+}
+
+.w-tutorial-page1,
+.w-tutorial-page2,
+.w-tutorial-page3,
+.w-tutorial-page4 {
+  width: 95%;
+}
+
+.t-wir-cap {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.t-mock-desktop {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+
+  /* width: 100%; */
+}
+
+.m-tutorial-page1,
+.m-tutorial-page2,
+.m-tutorial-page3,
+.m-tutorial-page4 {
+  width: 95%;
+}
+
+.m-wir-cap {
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+
+.prot-test {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+/* ITERATIONS */
+.iterations h3 {
+  margin-top: 14.4rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.iterations p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.figure-iter2 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+
+}
+
+/* Execute the commmand when bigger than 1280px */
+@media only screen and (min-width: 1280px) {
+  .pictext3 {
+    padding-bottom: 6rem;
+  }
+
+  /* USER SURVEY (mq1280px) */
+  .a11y-survey h3,
+  .user-survey h4,
+  .a11y-survey p:not(.p-chart) {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .a11y-survey h4 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .text3 {
+    margin-left: 10rem;
+  }
+
+  .text3-space {
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+    margin-right: 6rem;
+  }
+
+  .chart {
+    width: 60%;
+  }
+
+  .pic-chart {
+    width: 30%;
+  }
+
+  /* COMPETITIVE ANALYSIS (mq1280px) */
+  .competitive-analysis2 h3,
+  .competitive-analysis2 h4,
+  .competitive-analysis2 p:not(.competitor-text),
+  .competitive-analysis2 ul {
+    margin-left: 23rem;
+    margin-right: 23rem;
+  }
+
+  .first-comp-img,
+  .sec-comp-img,
+  .thir-comp-img {
+    width: 20%;
+  }
+
+  .first-competitor,
+  .sec-competitor,
+  .third-competitor {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  /* PERSONAS (mq1280px) */
+  .nicole-img,
+  .david-img,
+  .sofia-img {
+    margin-top: 9.6rem;
+  }
+
+  .personas h2,
+  .personas p,
+  .personas h3,
+  .personas h4,
+  .personas .info,
+  .personas .general-personas,
+  .personas .occupation,
+  .personas .quotes1,
+  .personas .quotes2 {
+    margin-left: 6rem;
+    /* margin-right: 6rem; */
+  }
+
+  .personas h3,
+  .personas p,
+  .lastp-personas {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .nicole,
+  .david,
+  .sofia {
+    width: 33%;
+  }
+
+  .li-margin {
+    margin-top: 3rem;
+  }
+
+  .f-margin {
+    margin-top: 2.1rem;
+  }
+
+  .personas .goals h4,
+  .personas .frustrations h4 {
+    margin-top: 9.6rem;
+  }
+
+  .quote {
+    margin-top: 9.6rem;
+  }
+
+  .quote h4 {
+    width: 85%;
+  }
+
+  .q-david {
+    margin-top: 15rem;
+  }
+
+
+/* SKETCHES & WIREFRAMES (mq1280px) */
+.slandingpage2,
+.shomepage2,
+.sprofile2 {
+  margin-left: 25rem;
+}
+
+.wlandingpage2,
+.whomepage2,
+.wprofile2 {
+  margin-right: 25rem;
+}
+.sw2-caption1 {
+  margin-left: 30rem;
+}
+
+.sw2-caption2 {
+  margin-left: 6rem;
+}
+
+.slandingpage2,
+.wlandingpage2,
+.shomepage2,
+.whomepage2,
+.sprofile2,
+.wprofile2 {
+  width: 50%;
+}
+
+.sketches-wireframes2 h3,
+.sketches-wireframes2 h4,
+.sketches-wireframes2 p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+/* BRANDING */
+.branding2 h3,
+.branding2 h4,
+.branding2 h5,
+.branding2 p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.brain-sketch2-flex {
+  display: flex;
+
+
+}
+
+.brain-sketch2 {
+  margin-top: 9.6rem;
+}
+
+.brainstorm2,
+.sketch2 {
+  width: 90%;
+}
+
+.brain-sketch2 .small {
+  margin-left: 3rem;
+}
+.c-palette-flex {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.branding2 .mulish-small {
+  margin-left: 30rem;
+}
+
+.branding2 h4,
+.branding2 h5 {
+  margin-top: 14.4rem;
+}
+
+.cap-al-logo {
+  margin-left: 50rem;
+}
+.al-logo {
+  margin-top: 5.6rem;
+}
+
+.typography2 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.logo-section2 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.cap-al-logo {
+  margin-left: 27rem;
+}
+
+.hfm2 h3,
+.hfm2 p,
+.hfm2-1 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.prot-test {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+/* .two-home,
+.two-home2 {
+  width: 70%;
+} */
+
+.hfm2-flex {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.prot-test h3 {
+  margin-top: 14.4rem;
+}
+
+/* ITERATIONS */
+
+.iterations h3,
+.iterations p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.figure-iter2 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+
+}

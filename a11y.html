@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="LTR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
+  <title>A11y Learning Case Study | Maira Prado</title>
+  <meta name="description" content="Maira is a high energy, and motivated designer, passionate about accessibility.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/a11y.css">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Hotjar Tracking Code for www.mairaprado.com -->
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1977693,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="#maincontent" class="skip-link">Skip to main content</a>
+      <!-- Hamburger Menu -->
+      <div class="row">
+        <a class="logo-link" aria-label="Maira Prado logo, click to return to the homepage" href="index.html">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Maira Prado logo with a butterfly and the letters m and p" />
+          </div>
+        </a>
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+      </div>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close" aria-hidden="true"></span>
+        </a>
+        <!-- Navigation Links -->
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a> -->
+    </header>
+    <main id="maincontent" tabindex="-1">
+      <div class="project-container">
+        <div class="pictext3">
+          <img src="assets/images/a11y1.png" alt="Many mobile screens are showing the a11y learning application." class="a11y1" />
+          <article class="text3">
+            <h1>A11y Learning</h1>
+            <h2 class="title-smaller text3-space">Let’s make the <span class="bold">web accessible to everyone!</span></h2>
+            <a href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=531%3A2934&viewport=4193%2C-1987%2C0.544297993183136&scaling=scale-down" target="_blank" class="btn">View Prototype</a>
+          </article>
+        </div>
+        <div class="arrow">
+          <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.29 0.0429688L14 10.7296L24.71 0.0429688L28 3.33297L14 17.333L0 3.33297L3.29 0.0429688Z" fill="#1A1A1A" />
+          </svg>
+        </div>
+        <div class="pop">
+          <h2>Part I: Overview</h2>
+        </div>
+      </div>
+      <div class="rdt-flex">
+        <div class="adjust-rdt">
+          <!-- Roles -->
+          <article class="rdt roles">
+            <h3>Design Roles</h3>
+            <ul>
+              <li>Researcher</li>
+              <li>UX/UI Designer</li>
+              <li>Visual Designer</li>
+            </ul>
+          </article>
+          <!-- Deliverables -->
+          <article class=" rdt deliverables">
+            <h3>Deliverables</h3>
+            <ul>
+              <li>User Survey</li>
+              <li>Competitive Analysis</li>
+              <li>Personas</li>
+              <li>User Stories</li>
+              <li>User Flows</li>
+              <li>Sketches</li>
+              <li>Wireframes</li>
+              <li>Usability Tests</li>
+              <li>Preference Test</li>
+              <li>Branding</li>
+              <li>High Fidelity Mockups</li>
+              <li>Prototype</li>
+            </ul>
+          </article>
+          <!-- Tools -->
+          <article class="rdt tools">
+            <h3>Tools</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Draw.io</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div class="project-container">
+        <!-- Summary -->
+        <article class="sps summary">
+          <h3>Summary</h3>
+          <p class="p-space">A11y Learning is aimed to help students of design and web development to learn about accessibility so they can create accessible products for everyone.</p>
+          <p class="p-space">A11y learning provides quick quizzes and links about accessibility, and an option to create notes about what you have learned.</p>
+          <p>The outcome of this project highlights the importance of creating web pages and apps that everyone can use. </p>
+        </article>
+        <!-- Problem -->
+        <article class="sps problem">
+          <h3>Problem</h3>
+          <p class="p-space">Unfortunately, there are still many designers and developers that do not apply accessibility guidelines to their projects for many reasons, such as the many rules they have to learn or a lack of time to study the subject.
+          </p>
+          <p>On the other hand, everyone has to have the same right to use websites or applications. Something needs to be done to create knowledge and conscious awareness so we can make disabled people’s lives easier when using websites or
+            applications. </p>
+        </article>
+        <!-- Solution -->
+        <article class="sps solution">
+          <h3>Solution</h3>
+          <p>After the research process, I got a clear picture of the target market and understood some student’s reasons for not applying the accessibility guidelines in their projects. From this, A11y Learning was born to help students to learn
+            accessibility consistently using just 10 to 30 minutes per day. </p>
+          <figure class="solution-mobile">
+            <img src="assets/images/a11y2mobile.png" alt="Mobile phone showing the a11y learning landing page." class="sol-picmobile" />
+            <figcaption class="small sol-capmobile">A11y Learning Landing Page</figcaption>
+          </figure>
+          <figure class="solution-desktop">
+            <img src="assets/images/a11y2desktop.png" alt="Screens are showing the a11y learning landing page and tutorial." class="casestudy2-desktop" />
+            <figcaption class="small sol-capdesktop">A11y Learning Landing Page and Tutorial</figcaption>
+          </figure>
+        </article>
+        <div class="pop">
+          <h2>Part II: Research and Discovery</h2>
+        </div>
+        <!-- User Survey -->
+        <section class="a11y-survey">
+          <h3>User Survey</h3>
+          <p class="p-space">I conducted a <a href="https://docs.google.com/forms/d/1nM6-XosJs7yrqb8LuQb38DrIBBViE864gyptZBFDaxw/edit" target="_blank">User Survey,</a> where I obtained 33 responses, to understand the student’s reasons for not
+            applying accessibility guidelines to the design and development of their projects, and whether an application to help
+            them learn accessibility would be successful in the current market. </p>
+          <p>From this survey, I discovered that 100% of the respondents are in some way familiar and interested in web accessibility, but 21.2% do not apply any accessibility rules to their projects.</p>
+          <div class="flexchart-2column chart-bigmar">
+            <!-- This is the flexbox for the img and p  -->
+            <div class="piechart size-2chart">
+              <img src="assets/images/a-survey1.png" alt="Pie chart showing 100%." class="chart">
+              <p class="p-chart">are familiar and interested in web accessibility</p>
+            </div>
+            <div class="piechart size-2chart">
+              <img src="assets/images/a-survey2.png" alt="Pie chart showing 21.2%." class="chart">
+              <p class="p-chart">do not apply any accessibility rules</p>
+            </div>
+          </div>
+          <p class="survey-margin-top">In a question that accepted more than one answer, <span class="bold">I asked why they do not apply the guidelines.</span> </p>
+          <!-- This is the flexbox for the Desktop  -->
+          <div class="flexchart-desktop">
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey3.png" alt="Pie chart showing 71.4%." class="chart">
+                <p class="p-chart">do not have the knowledge</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey4.png" alt="Pie chart showing 57.1%." class="chart">
+                <p class="p-chart">intent to apply it after graduation</p>
+              </div>
+            </div>
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey5.png" alt="Pie chart showing 42.9%." class="chart">
+                <p class="p-chart">do not have time to study the subject</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey6.png" alt="Pie chart showing 42.9%." class="chart">
+                <p class="p-chart">do not have time to apply it</p>
+              </div>
+            </div>
+          </div>
+          <p class="survey-margin-top">In a question with more than one answer, 68.8% of those that said they <span class="bold">apply the accessibility guidelines</span> to their projects <span class="bold">cited the following problems.</span></p>
+
+          <!-- This is the flexbox for the Desktop  -->
+          <div class="flexchart-desktop">
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey7.png" alt="Pie chart showing 44%." class="chart">
+                <p class="p-chart">do not have the knowledge of the rules</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey8.png" alt="Pie chart showing 32%." class="chart">
+                <p class="p-chart">do not have time to study the subject</p>
+              </div>
+            </div>
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey9.png" alt="Pie chart showing 32%." class="chart">
+                <p class="p-chart">do not have time to apply it</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey10.png" alt="Pie chart showing 32%." class="chart">
+                <p class="p-chart">the school does not require accessibility</p>
+              </div>
+            </div>
+          </div>
+          <p class="survey-margin-top"> I also asked those respondents that apply the guidelines, again in a question that accepted more than one answer, <span class="bold">their biggest frustration about accessibility guidelines. </span></p>
+          <!-- This is the flexbox for the Desktop  -->
+          <div class="flexchart-desktop">
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey11.png" alt="Pie chart showing 69.2%." class="chart">
+                <p class="p-chart">it is hard to learn all the rules</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey12.png" alt="Pie chart showing 46.2%." class="chart">
+                <p class="p-chart">there are so many rules</p>
+              </div>
+            </div>
+            <div class="flexchart-2column">
+              <!-- This is the flexbox for the img and p  -->
+              <div class="piechart">
+                <img src="assets/images/a-survey13.png" alt="Pie chart showing 42.3%." class="chart">
+                <p class="p-chart">do not know what resources would be helpful for learning</p>
+              </div>
+              <div class="piechart">
+                <img src="assets/images/a-survey14.png" alt="Pie chart showing 26.9%." class="chart">
+                <p class="p-chart">it is time-consuming to apply</p>
+              </div>
+            </div>
+          </div>
+          <p class="survey-margin-top">I also asked those respondents <span class="bold">how much time per week they spent </span>last semester <span class="bold">trying to learn about accessibility,</span> and 30.8% said between 0 and 1 hour per
+            week, 38.5% said between 1
+            and 2 hours per week, 7.7% said between 2 and 3 hours per week, 15.4% said 3 to 4 hours or more per week, and 7.7% said that they did not spend any time per week. </p>
+          <div class="colorchart">
+            <img src="assets/images/a-survey15.png" alt="Pie chart showing how much time per week they spent trying to learn web accessibility." class="pic-chart" />
+            <div class="chart-flex">
+              <div class="flex-description">
+                <div class="teal" aria-hidden="true"></div>
+                <div class="extra-small">0-1 hour (30.8%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="red" aria-hidden="true"></div>
+                <div class="extra-small">1-2 hours (38.5%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="blue" aria-hidden="true"></div>
+                <div class="extra-small">2-3 hours (7.7%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="purple" aria-hidden="true"></div>
+                <div class="extra-small">3-4 hours (15.4%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="gray" aria-hidden="true"></div>
+                <div class="extra-small">None (7.6%)</div>
+              </div>
+            </div>
+          </div>
+          <p>Besides, I asked <span class="bold">how much time would be reasonable</span> for the respondents <span class="bold">to study </span>web accessibility <span class="bold">every day</span>, and 45.4% said 15 minutes, 36.3% said 30 minutes,
+            and 12.1% said 1 hour.</p>
+          <div class="colorchart">
+            <img src="assets/images/a-survey16.png" alt="Pie chart showing how much time per day would be reasonable for them to learn web accessibility." class="pic-chart" />
+            <div class="chart-flex">
+              <div class="flex-description">
+                <div class="red" aria-hidden="true"></div>
+                <div class="extra-small">15 min (45.5%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="teal" aria-hidden="true"></div>
+                <div class="extra-small">30 min (36.3%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="purple" aria-hidden="true"></div>
+                <div class="extra-small">1 hour (12.1%)</div>
+              </div>
+              <div class="flex-description">
+                <div class="gray" aria-hidden="true"></div>
+                <div class="extra-small">None (6.2%)</div>
+              </div>
+            </div>
+          </div>
+          <h4>Another important takeaway</h4>
+          <div class="piechart1">
+            <img src="assets/images/a-survey17.png" alt="Pie chart showing 87.9%." class="chart">
+            <p class=p-chart1>of the respondents <span class="bold">would like to work for a company that cares about accessibility</span></p>
+          </div>
+          <p class="survey-margin-top"><span class="bold">What I learned from this survey</span> is that <span class="bold">students who apply or do not apply</span> the accessibility guidelines <span class="bold">have the same problems: lack of
+              knowledge, lack of time to
+              study the subject, and lack of time to apply the rules.</span> It is worth noting that 87.9% of survey participants want to work for a company that cares about accessibility, so it is essential to alleviate these problems. </p>
+        </section>
+        <!-- Competitive Analysis -->
+        <section class="competitive-analysis2">
+          <h3>Competitive Analysis</h3>
+          <p class="p-space">I did a competitive analysis of the competitors: <a href="https://www.deque.com/android-accessibility/" target="_blank">AXE,</a> <a href="https://www.wcagchecklist.com/" target="_blank">WCAG Accessibility Checklist,</a>
+            and <a href="https://apps.apple.com/us/app/color-contrast/id1095478187" target="_blank">Contrast Color,</a> to better understand the current market.</p>
+          <div class="first-competitor">
+            <p class="competitor-text">AXE for Android is an accessibility analysis tool aimed to help designers and developers to analyze the accessibility issues on Android.</p>
+            <img src="assets/images/first-comp.jpg" alt="Mobile screen showing the AXE for Android app." class="first-comp-img" />
+          </div>
+          <div class="sec-competitor">
+            <p class="competitor-text">WCAG Accessibility Checklist App is a tool to help developers and designers manage their accessibility checklists. It offers a to-do list with reminders and checklists to help the professionals comply with the
+              three standards of
+              accessibility compliance: Levels A, AA, and AAA.</p>
+            <img src="assets/images/sec-comp.jpg" alt="Mobile screen showing the WCAG Accessibility Checklist app." class="sec-comp-img" />
+          </div>
+          <div class="third-competitor">
+            <p class="competitor-text">Color Contrast allows the users to analyze the contrast between a screenshot or a mobile page to see if it is complying with the accessibility guidelines.</p>
+            <img src="assets/images/thir-comp.jpg" alt="Mobile screen showing the Color Contrast app." class="thir-comp-img" />
+          </div>
+          <h4>Takeaways</h4>
+          <p><span class="bold">What I learned from the Competitive Analyses</span> is that a new competitor could enter into this marketplace by creating a new app about accessibility, but some requirements have to be observed:</p>
+          <ul>
+            <li>Clean design</li>
+            <li>Free app</li>
+            <li>Accessible app</li>
+            <li>Tutorial to teach how to use the product</li>
+            <li>Engaging, to have more positive reviews</li>
+            <li>Good marketing campaign to show people how important it is to create accessible products</li>
+            <li>Illustrative of the importance of accessibility to Designers and Developers</li>
+            <li class="no-space">Application for iOS and Android</li>
+          </ul>
+        </section>
+
+        <!-- Personas -->
+        <section class="personas">
+          <h3>User Personas</h3>
+          <p>Based on the research process, I created three personas to represent potential users: <a
+              href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=759%3A111&viewport=249%2C312%2C0.21118012070655823&scaling=min-zoom" target="_blank">Nicole,</a> <a
+              href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=1387%3A1&viewport=249%2C312%2C0.21118012070655823&scaling=min-zoom" target="_blank">David,</a> and <a
+              href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=1387%3A90&viewport=249%2C312%2C0.21118012070655823&scaling=min-zoom" target="_blank">Sofia.</a> </p>
+          <!-- Nicole -->
+          <div class="personas-flex">
+            <article class="nicole">
+              <img src="assets/images/nicole.jpg" alt="Nicole, a blond girl, is smiling and holding a flower in her mouth." class="nicole-img" />
+              <h4 class="occupation"><span class="bold">Nicole</span>- UX Design Student</h4>
+              <ul class="info">
+                <li class="li-margin">Age: 25</li>
+                <li>Location: Santa Monica-CA</li>
+              </ul>
+              <div class="goals">
+                <h4>Goals</h4>
+                <ul class="general-personas">
+                  <li>Study web accessibility for 15 minutes per day</li>
+                  <li>Use her commute time to study</li>
+                  <li>Make a difference in the lives of many people</li>
+                </ul>
+              </div>
+              <div class="frustrations">
+                <h4>Frustrations</h4>
+                <ul class="general-personas">
+                  <li>She thinks there are so many rules about web accessibility</li>
+                  <li>She does not know which resource could help learn web accessibility</li>
+                  <li>She does not have a lot of time to study</li>
+                </ul>
+              </div>
+              <div class="quote">
+                <img src="assets/images/quotes1.png" alt="" class="quotes1" />
+                <h4><q>I would love to learn more about web accessibility, but I think it is really complicated. It’s time-consuming.</q></h4>
+                <img src="assets/images/quotes2.png" alt="" class="quotes2" />
+              </div>
+            </article>
+            <!-- David -->
+            <article class="david">
+              <img src="assets/images/david.jpg" alt="David is smiling and wearing a black t-shirt." class="david-img" />
+              <h4 class="occupation"><span class="bold">David</span>- UX Design Student</h4>
+              <ul class="info">
+                <li class="li-margin">Age: 33</li>
+                <li>Location: Chicago-IL</li>
+              </ul>
+              <div class="goals">
+                <h4>Goals</h4>
+                <ul class="general-personas">
+                  <li>Learn about color contrast</li>
+                  <li>Use at maximum 30 minutes per day to learn about web accessibility </li>
+                  <li>Create products that are accessible to everyone</li>
+                </ul>
+              </div>
+              <div class="frustrations">
+                <h4>Frustrations</h4>
+                <ul class="general-personas">
+                  <li>He wishes his school taught web accessibility guidelines</li>
+                  <li>There are so many rules to learn</li>
+                  <li>He has a very busy life</li>
+                </ul>
+              </div>
+              <div class="quote q-david">
+                <img src="assets/images/quotes1.png" alt="" class="quotes1" />
+                <h4><q>I need to start applying web accessibility guidelines to my projects because everyone has the right to use the internet.</q></h4>
+                <img src="assets/images/quotes2.png" alt="" class="quotes2" />
+              </div>
+            </article>
+            <!-- Sofia -->
+            <article class="sofia">
+              <img src="assets/images/sofia.jpg" alt="Sofia is smiling and wearing a black vest and red shirt." class="sofia-img" />
+              <h4 class="occupation"><span class="bold">Sofia</span>- Computer Science Student</h4>
+              <ul class="info">
+                <li>Age: 22</li>
+                <li>Location: Sao Paulo-SP-Brazil</li>
+              </ul>
+              <div class="goals">
+                <h4>Goals</h4>
+                <ul class="general-personas">
+                  <li>Study web accessibility every day</li>
+                  <li>Use her lunchtime to learn </li>
+                  <li>Start applying the guidelines in her projects</li>
+                </ul>
+              </div>
+              <div class="frustrations f-margin">
+                <h4>Frustrations</h4>
+                <ul class="general-personas">
+                  <li>She does not have the knowledge about the web accessibility rules</li>
+                  <li>She cannot spend too much time learning it</li>
+                  <li>The school is not going to teach it until the third year</li>
+                </ul>
+              </div>
+              <div class="quote">
+                <img src="assets/images/quotes1.png" alt="" class="quotes1" />
+                <h4><q>I would love to apply the accessibility guidelines in my projects as soon as possible.</q></h4>
+                <img src="assets/images/quotes2.png" alt="" class="quotes2" />
+              </div>
+            </article>
+          </div>
+        </section>
+        <p class="lastp-personas">After analyzing the data collected during the research process and analyzing the competitors, I concluded that an application to help users learn accessibility would be successful in the current market. The users do
+          not have a lot of time to study, but they can consistently learn for 10 to 30 minutes a day in whatever free time they have, for example, their commute to work.</p>
+
+        <div class="pop">
+          <h2>Part III: Information Architecture</h2>
+        </div>
+        <!-- User Stories -->
+        <section class="user-stories">
+          <div class="adjust-width column">
+            <h3>User Stories</h3>
+            <p>I created many <a href="https://docs.google.com/spreadsheets/d/1O-RxtxM9eUi9XcSd01QfJzK0rafvPMEI-1WiWZBcm-o/edit?usp=sharing" target="_blank">user stories</a> for the product with low, medium, and high importance. I discovered what a
+              minimum viable product or MVP would be for this project. I learned that something <span class="bold">essential</span> for users is <span class="bold">creating an account, starting the quiz, setting goals, and seeing their
+                achievement.</span> In addition, other necessary features will be <span class="bold">daily links</span> to teach the user more about accessibility and <span class="bold">note-taking function.</span> At this part of the study, I
+              realized that an MVP would be compounded with at least the features listed below as high importance.</p>
+          </div>
+          <div class="adjust-width">
+            <div class="stories-flex">
+              <article class="high">
+                <div class="user-hml hp">
+                  <h4>High Priority</h4>
+                  <ul>
+                    <li>I want to sign up for an account</li>
+                    <li>I want to sign into my account</li>
+                    <li>I want to start the Quiz</li>
+                    <li>I want to read links about accessibility</li>
+                    <li>I want to create notes to remember what I learned</li>
+                    <li>I want to update my goals</li>
+                    <li>I want to see my achievement</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="medium">
+                <div class="user-hml mp">
+                  <h4>Medium Priority</h4>
+                  <ul>
+                    <li> I want to read the tutorial</li>
+                    <li>I want to choose the quiz level</li>
+                    <li>I want to recover my password</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="low">
+                <div class="user-hml lp">
+                  <h4>Low Priority</h4>
+                  <ul>
+                    <li>I want to update my personal information</li>
+                    <li>I want to turn on/off my notifications</li>
+                    <li>I want to receive notifications to remember me to learn</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- User Flows -->
+        <section class="user-flows">
+          <h3>User Flows</h3>
+          <p>I created many User Flows for this project, such as <a
+              href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=sign%20in%20-%20sign%20up%20User%20Flow#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1FjOvc2DBiEu3QwwUoPdQayQ-DbxrZuKm%26export%3Ddownload"
+              target="_blank">how to sign in or sign up</a> for an account, how to <a
+              href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Quiz.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1GfEldQOQuDVxrM4iGfVToAZS-O3PuH2h%26export%3Ddownload" target="_blank">start the quiz,</a> how
+            to <a href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Read%20Links%20of%20the%20Day.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1XjQ5eEkFunblYUai6jTXFHWZ89ZqjaGg%26export%3Ddownload"
+              target="_blank">view the links of the day,</a> how to <a
+              href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Create%20Notes.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1XDKj44aL2PdYWSrGiKDSTt9aoacB2rI7%26export%3Ddownload" target="_blank">create
+              notes,</a> how to <a href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Set%20Goals#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D19bL8sYTYlhoqPcLqn4bM4H5I84Mr5WYi%26export%3Ddownload" target="_blank">set
+              goals,</a> and how to <a href="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=See%20Achievement.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1JC_fW8Qy1WlhKqQFofRg2WtMIS0dIFh5%26export%3Ddownload"
+              target="_blank">see achievements.</a> Here is the user flow for the quiz:</p>
+          <img src="assets/images/quiz.svg" alt="Diagram showing the steps to answer the questions." class="userflow" />
+        </section>
+        <!-- Sketches and Wireframes -->
+        <section class="sketches-wireframes2">
+          <h3>Sketches & Wireframes</h3>
+          <p>The next step was doing some sketches and creating the wireframes. Here are some screenshots of the main pages.</p>
+          <h4>Landing Page:</h4>
+          <div class="flex-sw2">
+            <div class="figure-container">
+              <figure class="figure-group">
+                <img src="assets/images/slandingpage2.png" alt="A mobile phone is showing a sketch of the landing page." class="slandingpage2" />
+                <figcaption class="small sw2-caption1">Sketch</figcaption>
+              </figure>
+              <figure class="figure-group">
+                <img src="assets/images/wlandingpage2.png" alt="A mobile phone is showing a wireframe of the landing page." class="wlandingpage2" />
+                <figcaption class="small sw2-caption2">Wireframe</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h4>Homepage:</h4>
+          <div class="flex-sw2">
+            <div class="figure-container">
+              <figure class="figure-group">
+                <img src="assets/images/shomepage2.png" alt="A mobile phone is showing a sketch of the homepage." class="shomepage2" />
+                <figcaption class="small sw2-caption1">Sketch</figcaption>
+              </figure>
+              <figure class="figure-group">
+                <img src="assets/images/whomepage2.png" alt="A mobile phone is showing a wireframe of the homepage." class="whomepage2" />
+                <figcaption class="small sw2-caption2">Wireframe</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h4>Profile:</h4>
+          <div class="flex-sw2">
+            <div class="figure-container">
+              <figure class="figure-group">
+                <img src="assets/images/sprofile2.png" alt="A mobile phone is showing a sketch of the profile page." class="sprofile2" />
+                <figcaption class="small sw2-caption1">Sketch</figcaption>
+              </figure>
+              <figure class="figure-group">
+                <img src="assets/images/wprofile2.png" alt="A mobile phone is showing a wireframe of the profile page." class="wprofile2" />
+                <figcaption class="small sw2-caption2">Wireframe</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <div class="pop">
+          <h2>Part IV: Branding and Identity</h2>
+        </div>
+        <!--Branding -->
+        <section class="branding2">
+          <h3>Branding</h3>
+          <p class="p-space">The next step was the creation of the brand. Analyzing the data collected during the research process, I concluded that an app to help users study accessibility would be an exciting product. It would give users an
+            enjoyable way to make the most of their free time by learning accessibility. It is always good to learn something new, especially if this new skill can help people. </p>
+          <p>I started the branding process with a brainstorming and sketching session to come up with some ideas for the name and logo.</p>
+          <div class="brain-sketch2-flex">
+            <figure class="brain-sketch2">
+              <img src="assets/images/brainstorm2.jpg" alt="Brainstorming showing ideas for the branding." class="brainstorm2" />
+              <figcaption class="small bk2-caption">Brainstorming</figcaption>
+            </figure>
+            <figure class="brain-sketch2">
+              <img src="assets/images/sketch2.jpg" alt="Sketch showing different concepts for the logo." class="sketch2" />
+              <figcaption class="small bk2-caption">Logo sketches</figcaption>
+            </figure>
+          </div>
+          <!-- Name (part of the branding) -->
+          <section class="name2">
+            <h4>Name</h4>
+            <p class="p-space">At that moment, I understood that a name that could be good to represent my brand would be A11y Learning.</p>
+            <p class="p-space">I wanted the name of my product to include the word accessibility and also something that explains what the application is about.</p>
+            <p>First, I considered Accessibility Learning, but this name is too long, so I found a shorter way to express accessibility: A11y, which is divided into A + 11 letters (C-C-E-S-S-I-B-I-L-I-T) + Y. </p>
+            <p class="al-name">A + 11 letters (C-C-E-S-S-I-B-I-L-I-T) + Y</p>
+          </section>
+          <!-- Colors (part of the branding) -->
+          <section class="colors2">
+            <h4>Colors</h4>
+            <p class="p-space">After that, I created a <a href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=764%3A624&viewport=121%2C43%2C0.29693594574928284&scaling=min-zoom" target="_blank">mood board</a> to show the
+              brand’s characteristics and a <a href="https://www.figma.com/proto/TuNKNAoxTrcQ9HoTyF6ut0/Capstone-Project?node-id=144%3A1&viewport=-412%2C-441%2C0.7708344459533691&scaling=min-zoom" target="_blank">style guide</a> to document the
+              typography and the color palette that I have chosen for this project.</p>
+            <p class="p-space">As a primary color for this project, I have chosen shades of blue with shades of pink as a secondary color. According to the psychology of colors, blue is a color that reflects calm, relaxation, stability, trust, and
+              loyalty. Additionally, pink is a color that is associated with love, kindness, and compassion. </p>
+            <p><span class="bold">A11y Learning wants users to see the platform as a source of trustworthy support where they can learn a new skill that will transform people’s lives for the better.</span></p>
+
+            <h5>Primary Color </h5>
+
+            <ul class=c-palette-flex>
+              <li class="primary-10 palette-space">
+                <p class="w-black color-number">10</p>
+                <p class="w-black color-hex">#E8EBFD</p>
+              </li>
+              <li class="primary-20 palette-space">
+                <p class="w-black color-number">20</p>
+                <p class="w-black color-hex">#B9C3F8</p>
+              </li>
+              <li class="primary-30 palette-space">
+                <p class="w-black color-number">30</p>
+                <p class="w-black color-hex">#7C88F3</p>
+              </li>
+
+              <li class="primary-40">
+                <p class="w-white color-number">40</p>
+                <p class="w-white color-hex">#2D4AEB</p>
+              </li>
+              <li class="primary-50">
+                <p class="w-white color-number">50</p>
+                <p class="w-white color-hex">#1430D2</p>
+              </li>
+              <li class="primary-60">
+                <p class="w-white color-number">60</p>
+                <p class="w-white color-hex">#0F25A3</p>
+              </li>
+            </ul>
+
+            <h5>Secondary Color </h5>
+            <ul class=c-palette-flex>
+              <li class="secondary-10 palette-space">
+                <p class="w-black color-number">10</p>
+                <p class="w-black color-hex">#FDE8F1</p>
+              </li>
+              <li class="secondary-20 palette-space">
+                <p class="w-black color-number">20</p>
+                <p class="w-black color-hex">#F8B9D4</p>
+              </li>
+              <li class="secondary-30 palette-space">
+                <p class="w-black color-number">30</p>
+                <p class="w-black color-hex">#F37CAF</p>
+              </li>
+
+
+              <li class="secondary-40">
+                <p class="w-white color-number">40</p>
+                <p class="w-white color-hex">#EB2D7F</p>
+              </li>
+              <li class="secondary-50">
+                <p class="w-white color-number">50</p>
+                <p class="w-white color-hex">#D21465</p>
+              </li>
+              <li class="secondary-60">
+                <p class="w-white color-number">60</p>
+                <p class="w-white color-hex">#D21465</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!--Typography (part of the branding) -->
+        <section class="typography2">
+          <h4>Typography</h4>
+          <p>Also, in this stage of the process, I have chosen the typography. I have chosen Mulish because it is a sans serif minimalist typeface that conveys the brand identity, trustworthy and joyful. </p>
+          <article class="mulish">
+            <h5>Mulish</h5>
+            <p class="small mulish-small">Regular <span class="med-weight">| SemiBold</span> <span class="bold">| Bold </span></p>
+            <p>Some may believe that they do not need to make their website accessible <span class="med-weight">because they do not have disabled clients,</span> <span class="bold">but maybe they do not have disabled clients because their website
+                is not accessible.</span> </p>
+          </article>
+        </section>
+        <!-- Logo (part of the branding) -->
+        <section class="logo-section2">
+          <h4>Logo</h4>
+          <p>In sequence, I created a logo for my brand, which consists of an A and L, plus a heart icon. A stands for A11y and L stands for Learning. The heart symbolizes that through love we can change people's lives and have an accessible web
+            for everyone.</p>
+          <figure class="al-logo-flex">
+            <img src="assets/images/al-logo.png" alt="A11y Learning Logo." class="al-logo" />
+            <figcaption class="small cap-al-logo">A11y Learning Logo</figcaption>
+          </figure>
+        </section>
+
+        <div class="pop">
+          <h2>Part V: Visual Design</h2>
+        </div>
+        <!--High Fidelity Mockups -->
+        <section class="hfm2">
+          <h3>High Fidelity Mockups</h3>
+          <p>The next step in the process was the creation of the high fidelity mockups. After receiving useful feedback on the wireframes, I made some changes to improve usability. For example, I removed one page from the quiz start-up process by
+            adding the course progress to the same page where I display the course levels. </p>
+          <div class="hfm-images-flex">
+
+            <div class="hfm2-flex">
+              <figure class="hfm2-0">
+                <img src="assets/images/two-home.png" alt="Page number one of the first version of the homepage." class="two-home" />
+                <figcaption class="small hfm2-cap2">First screen of homepage</figcaption>
+              </figure>
+              <figure class="hfm2-0">
+                <img src="assets/images/two-home2.png" alt="Page number two of the first version of the homepage." class="two-home2" />
+                <figcaption class="small hfm2-cap2">Second screen of homepage</figcaption>
+              </figure>
+            </div>
+            <figure class="hfm2-1">
+              <img src="assets/images/one-home.png" alt="I am using just one page to represent the homepage on the final version. " class="one-home" />
+              <figcaption class="small hfm2-cap2-1">Only one screen on the homepage</figcaption>
+            </figure>
+          </div>
+          <p>I added some illustrations to the tutorial pages to eliminate the awkward ample white space. In addition, I moved all the buttons to the bottom of the page to show consistency.</p>
+          <!-- This is the mobile screens for hfm -->
+          <figure class=w-m-tutorial>
+            <img src="assets/images/w-tutorial-1.png" alt="Wireframes are showing pages 1 and 2 of the tutorial." class="w-tutorial-1" />
+            <figcaption class="small tutorial-cap">Wireframes tutorial - Pages 1 and 2</figcaption>
+          </figure>
+          <figure class=w-m-tutorial>
+            <img src="assets/images/w-tutorial-2.png" alt="Wireframes are showing pages 3 and 4 of the tutorial." class="w-tutorial-2" />
+            <figcaption class="small tutorial-cap">Wireframes tutorial - Pages 3 and 4</figcaption>
+          </figure>
+          <figure class=w-m-tutorial>
+            <img src="assets/images/m-tutorial-1.png" alt="Mockups are showing pages 1 and 2 of the tutorial." class="m-tutorial-1" />
+            <figcaption class="small tutorial-cap">Mockups tutorial - Pages 1 and 2</figcaption>
+          </figure>
+          <figure class=w-m-tutorial>
+            <img src="assets/images/m-tutorial-2.png" alt="Mockups are showing pages 3 and 4 of the tutorial." class="m-tutorial-2" />
+            <figcaption class="small tutorial-cap">Mockups tutorial - Pages 3 and 4</figcaption>
+          </figure>
+          <!-- This is the desktop screens for hfm -->
+          <div class="t-wir-desktop">
+            <figure>
+              <img src="assets/images/w-tutorial-page1.png" alt="Wireframe showing page 1 of the tutorial with general information about the app." class="w-tutorial-page1" />
+              <figcaption class="small t-wir-cap">Wireframe tutorial - Page 1</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/w-tutorial-page2.png" alt="Wireframe showing page 2 of the tutorial with information about the courses." class="w-tutorial-page2" />
+              <figcaption class="small t-wir-cap">Wireframe tutorial - Page 2</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/w-tutorial-page3.png" alt="Wireframe showing page 3 of the tutorial with information about the notes." class="w-tutorial-page3" />
+              <figcaption class="small t-wir-cap">Wireframe tutorial - Page 3</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/w-tutorial-page4.png" alt="Wireframe showing page 4 of the tutorial with information about the links of the day." class="w-tutorial-page4" />
+              <figcaption class="small t-wir-cap">Wireframe tutorial - Page 4</figcaption>
+            </figure>
+          </div>
+          <div class="t-mock-desktop">
+            <figure>
+              <img src="assets/images/m-tutorial-page1.png" alt="Mockup showing page 1 of the tutorial with general information about the app." class="m-tutorial-page1" />
+              <figcaption class="small m-wir-cap">Mockup tutorial - Page 1</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/m-tutorial-page2.png" alt="Mockup showing page 2 of the tutorial with information about the courses." class="m-tutorial-page2" />
+              <figcaption class="small m-wir-cap">Mockup tutorial - Page 2</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/m-tutorial-page3.png" alt="Mockup showing page 3 of the tutorial with information about the notes." class="m-tutorial-page3" />
+              <figcaption class="small m-wir-cap">Mockup tutorial - Page 3</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/m-tutorial-page4.png" alt="Mockup showing page 4 of the tutorial with information about the links of the day." class="m-tutorial-page4" />
+              <figcaption class="small m-wir-cap">Mockup tutorial - Page 4</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!--Prototypes and Usability Testing -->
+        <section class="prot-test">
+          <h3>Prototypes and Usability Testing</h3>
+          <p class="p-space">After that, I did the prototypes and <span class="bold">conducted usability tests with 3 users: Anuka, Dan, and Erit.</span> I asked them to complete the <span class="bold">sign in process using their email, find the
+              tutorial, start the quiz, write a note, use the
+              links feature, change their goals, and view their achievements on the course.</span> They all have experience using applications on a daily basis and gave me very useful feedback. </p>
+          <p class="p-space">Anuka was a little confused about the sign in process because I started the test showing the tutorial instead of the landing page. She also said that it would be good to add information about the goals and achievements
+            in the tutorial.</p>
+          <p class="p-space">Dan said that the sign in process was a little confusing because I alternated too freely between the phrases “sign in” and “log in”. Also, he suggested that I explain a little more why the questions on the quiz are
+            right or wrong. In addition, he said that maybe it would be better to use the homepage icon in the middle of the menu bar and to have a bigger plus sign to create a note. He said that the homepage was a little unbalanced because I have
+            three items, and it is hard to make three items appear symmetrical.</p>
+          <p class="p-space">Erit said it was a little confusing how I presented the tutorial first and the landing page second. She also said that it would be good if I added the ability to choose different goals while testing.</p>
+          <p class="p-space">In addition to the critical feedback, they gave me positive feedback on many points. All three users said that the app was a great idea and that I should bring it to life. They also all told me that they loved my
+            design. </p>
+          <p>I am very grateful to my testers for their encouragement and for helping me find some flaws to iterate the product in the early stages. </p>
+        </section>
+
+
+        <!--Iterations -->
+        <section class="iterations">
+          <h3>Iterations</h3>
+          <p class="iter-p-space">According to the feedback I received on the usability tests, I iterated some critical and impactful parts of the product to better fulfill the users’ needs. Here are some changes I made according to the usability
+            test feedback above:</p>
+
+
+          <p class="spec-space">1. I changed “Log In” from the landing page by “Use Existing Account” to be more clear to users. Besides that, on the other pages, I am using the expressions “Sign in” and “Sign up” to have more consistency and not to
+            create confusion.</p>
+
+          <div class="iter2">
+
+            <div class="figure-iter2">
+              <figure class="iterate">
+                <img src="assets/images/iter-login.png" alt="A mobile phone is showing that I was using the sentence log in on the landing page." class="iter-login" />
+                <figcaption class="small iterate-cap">First Version</figcaption>
+              </figure>
+              <figure class="iterate">
+                <img src="assets/images/iter-create.png" alt="A mobile phone is showing that I am using the sentence create an account on the landing page." class="iter-create" />
+                <figcaption class="small iterate-cap">Final Version</figcaption>
+              </figure>
+            </div>
+
+            <div class="figure-iter2">
+              <figure class="iterate">
+                <img src="assets/images/iter-signup.png" alt="A mobile phone is showing the sign up page with iterations." class="iter-signup" />
+                <figcaption class="small iterate2-cap">Screen showing that I am using “Sign up”</figcaption>
+              </figure>
+              <figure class="iterate">
+                <img src="assets/images/iter-signin.png" alt="A mobile phone is showing the sign in page with iterations." class="iter-signin" />
+                <figcaption class="small iterate2-cap">Screen showing that I am using “Sign in”</figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+          <p class="spec-space">2. I added the information about goals and achievements in the tutorial.</p>
+          <div class="figure-iter2">
+            <figure class="iterate">
+              <img src="assets/images/iter-tut1.png" alt="A Mobile phone shows the first version of the tutorial, with no mention of goals and achievements." class="iter-tut1" />
+              <figcaption class="small iterate-cap">First Version</figcaption>
+            </figure>
+            <figure class="iterate">
+              <img src="assets/images/iter-tut2.png" alt="A mobile phone shows the final version of the tutorial, with a mention of goals and achievements." class="iter-tut2" />
+              <figcaption class="small iterate-cap">Final Version</figcaption>
+            </figure>
+          </div>
+
+
+          <p class="spec-space">3. I added the explanation of why the quiz answer is right or wrong.</p>
+
+          <div class="iter2">
+
+            <div class="figure-iter2">
+              <figure class="iterate">
+                <img src="assets/images/quiz1.png" alt="A mobile phone shows the first version of a right answer example." class="quiz1" />
+                <figcaption class="small iterate-cap">First Version</figcaption>
+              </figure>
+              <figure class="iterate">
+                <img src="assets/images/quiz2.png" alt="A mobile phone shows the final version of a right answer example." class="quiz2" />
+                <figcaption class="small iterate-cap">Final Version</figcaption>
+              </figure>
+            </div>
+
+            <div class="figure-iter2">
+              <figure class="iterate">
+                <img src="assets/images/quiz3.png" alt="A mobile phone shows the first version of a wrong answer example." class="quiz3" />
+                <figcaption class="small iterate-cap">First Version”</figcaption>
+              </figure>
+              <figure class="iterate">
+                <img src="assets/images/quiz4.png" alt="A mobile phone shows the final version of a wrong answer example." class="quiz4" />
+                <figcaption class="small iterate-cap">Final Version</figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+        </section>
+        <!--Conclusion -->
+        <section class="conclusion2">
+          <h3>Conclusion</h3>
+          <p class="p-space">A11y Learning can help students of design and web development learn about accessibility through quizzes, links, and a convenient integrated note-taking system. A11y Learning helps them keep everything related to
+            accessibility organized on the same application. </p>
+          <p class="p-space">Before I started the project, I feared that many people did not care about accessibility, but after doing the research process, I have learned that the majority of people do care about it, but they do not have the
+            knowledge or time to apply it.</p>
+          <p class="p-space">Web accessibility is an area with a lot of room for growth. Making it possible for disabled people to access one’s website is beneficial for everybody. Some may believe that they do not need to make their website
+            accessible because they do not have disabled clients, but maybe they do not have disabled clients because their website is not accessible. </p>
+          <p>I believe A11y Learning meets its purpose. In helping students learn about accessibility and create accessible websites, it can help support diversity.</p>
+
+          <img src="assets/images/a11y2.png" alt="Many mobile screens are showing the a11y learning application." class="a11y2">
+
+        </section>
+
+      </div>
+
+
+      <a href class="back-top" id="back-top" title="Go back to the top">
+        <h3 class="back-smaller">Back to Top</h3>
+      </a>
+    </main>
+    <div hidden>
+      <span id="new-window-0">Opens Mai Recipes Mobile Prototype, in an external site in a new window</span>
+      <span id="new-window-1">Opens Mai Recipes Desktop Prototype, in an external site in a new window</span>
+      <span id="new-window-2">Opens Busy-Bus mockup in an external site and in a new window</span>
+      <span id="new-window-3">Opens Fala aí prototype in an external site and in a new window</span>
+      <span id="new-window-4">Opens Maira's resume in pdf in a new window</span>
+      <span id="new-window-5">Opens user flow showing how to share content, in an external site in a new window</span>
+      <span id="new-window-6">Opens style guide in an external site in a new window</span>
+      <span id="new-window-7">Opens Linkedin, an external site, in a new window</span>
+      <span id="new-window-8">Opens contact page</span>
+      <span id="new-window-9">Opens GitHub, an external site, in a new window</span>
+    </div>
+    <footer class="footer">
+      <h4>Let’s <span class="bold">connect</span> and <span class="bold">make </span>something <span class="bold">great together!</span></h4>
+      <a href="/contact.html" aria-label="Contact page" rel="noopener" aria-describedby="new-window-8" role="button" class="btn2">Message Me</a>
+      <ul class="footer-link">
+        <li class="linkedin"><a href="https://www.linkedin.com/in/mairaprado/" target="_blank" aria-label="Linkedin" rel="noopener" aria-describedby="new-window-7">
+            <svg aria-hidden="true" title="Linkedin" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" class="social-icons">
+              <path
+                d="M21.9772 20.312H26.8077V22.7873H26.8827C27.5578 21.5722 29.2079 20.312 31.6532 20.312C36.7537 20.312 37.6988 23.4924 37.6988 27.6328V36.0486H32.6583V28.5779C32.6583 26.7927 32.6283 24.5125 30.033 24.5125C27.4077 24.5125 27.0027 26.4476 27.0027 28.4578V36.0486H21.9622V20.312H21.9772ZM25.0075 0C31.9082 0 38.1638 2.80528 42.6943 7.32073C47.2247 11.8512 50.015 18.0918 50.015 25.0075C50.015 31.9082 47.2097 38.1638 42.6943 42.6943C38.1638 47.2247 31.9232 50.015 25.0075 50.015C18.1068 50.015 11.8512 47.2097 7.32073 42.6943C2.79028 38.1638 0 31.9232 0 25.0075C0 18.1068 2.80528 11.8512 7.32073 7.32073C11.8512 2.79028 18.0918 0 25.0075 0ZM41.4041 8.59586C37.2037 4.39544 31.4131 1.80018 25.0075 1.80018C18.6019 1.80018 12.7963 4.39544 8.61086 8.59586C4.41044 12.7963 1.81518 18.5869 1.81518 24.9925C1.81518 31.3981 4.41044 37.2037 8.61086 41.3891C12.8113 45.5896 18.6019 48.1848 25.0075 48.1848C31.4131 48.1848 37.2187 45.5896 41.4041 41.3891C45.6046 37.1887 48.1998 31.3981 48.1998 24.9925C48.1998 18.5869 45.6046 12.7813 41.4041 8.59586ZM18.4818 15.9466C18.4818 17.4017 17.3117 18.5719 15.8566 18.5719C14.4014 18.5719 13.2313 17.4017 13.2313 15.9466C13.2313 14.4914 14.4014 13.3213 15.8566 13.3213C17.3117 13.3213 18.4818 14.4914 18.4818 15.9466ZM13.2313 20.312H18.4818V36.0486H13.2313V20.312Z" />
+            </svg>
+          </a></li>
+        <li class="email"><a href="/contact.html" aria-label="Contact page" rel="noopener" aria-describedby="new-window-8">
+            <svg aria-hidden="true" title="Contact page" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" class="social-icons">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M25.0075 0C31.9082 0 38.1638 2.80528 42.6943 7.32073C47.2247 11.8512 50.015 18.0918 50.015 25.0075C50.015 31.9082 47.2097 38.1638 42.6943 42.6943C38.1638 47.2247 31.9232 50.015 25.0075 50.015C18.1068 50.015 11.8512 47.2097 7.32073 42.6943C2.79028 38.1638 0 31.9232 0 25.0075C0 18.1068 2.80528 11.8512 7.32073 7.32073C11.8512 2.79028 18.0918 0 25.0075 0ZM41.4041 8.59586C37.2037 4.39544 31.4131 1.80018 25.0075 1.80018C18.6019 1.80018 12.7963 4.39544 8.61086 8.59586C4.41044 12.7963 1.81518 18.5869 1.81518 24.9925C1.81518 31.3981 4.41044 37.2037 8.61086 41.3891C12.8113 45.5896 18.6019 48.1848 25.0075 48.1848C31.4131 48.1848 37.2187 45.5896 41.4041 41.3891C45.6046 37.1887 48.1998 31.3981 48.1998 24.9925C48.1998 18.5869 45.6046 12.7813 41.4041 8.59586Z" />
+              <path
+                d="M13.4208 16C12.0949 16 11 17.0949 11 18.4208V32.2359C11 33.5618 12.0949 34.6665 13.4208 34.6665H36.5792C37.905 34.6665 39 33.5618 39 32.2359V18.4208C39 17.0949 37.905 16 36.5792 16H13.4208ZM13.4208 17.8667H36.5792C36.9037 17.8667 37.1333 18.0963 37.1333 18.4208V18.5958L25 26.4028L12.8668 18.5958V18.4208C12.8668 18.0963 13.0963 17.8667 13.4208 17.8667ZM12.8667 20.8125L24.4944 28.2888C24.8018 28.4869 25.198 28.4869 25.5055 28.2888L37.1332 20.8125V32.2361C37.1332 32.5606 36.9035 32.8 36.579 32.8H13.4207C13.0962 32.8 12.8665 32.5606 12.8665 32.2361L12.8667 20.8125Z" />
+            </svg></a></li>
+        <li class="github"><a href="https://www.github.com/mairaprado1" target="_blank" aria-label="GitHub page" rel="noopener" aria-describedby="new-window-9">
+            <svg aria-hidden="true" title="GitHub page" width="50" height="50" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-icons">
+              <path
+                d="M23 0C10.3113 0 0 10.3113 0 23C0 35.6887 10.3113 46 23 46C35.6887 46 46 35.6887 46 23C46 10.3113 35.6887 0 23 0ZM23 2C34.6073 2 44 11.3927 44 23C44 23.0714 43.9949 23.1417 43.9941 23.2129C43.3545 23.1539 42.6155 23.0978 41.6758 23.0645C40.3471 23.0173 38.6723 23.031 36.7734 23.125C36.8439 22.6347 36.8932 22.1374 36.8945 21.627C36.9914 19.7543 36.3625 18.0025 35.3398 16.4551C35.5869 15.6014 35.8767 14.5152 35.9492 13.2832C36.0318 11.8789 35.9106 10.3218 34.7832 9.26953L34.4941 9H34.0996C31.4165 9 29.58 10.1232 28.457 11.0137C26.8355 10.386 25.0122 10 23 10C20.9764 10 19.1355 10.3914 17.4473 11.0176C16.3249 10.1267 14.4868 9 11.8008 9H11.4082L11.1191 9.26758C10.021 10.2873 9.91978 11.8018 9.98828 13.1992C10.0487 14.4315 10.3217 15.5521 10.5645 16.4473C9.52449 18.0249 8.90039 19.822 8.90039 21.5996C8.90039 22.1112 8.94797 22.6101 9.01758 23.1016C7.21182 23.0178 5.6021 23.0017 4.32422 23.0469C3.38451 23.0801 2.64544 23.1357 2.00586 23.1953C2.00526 23.13 2 23.0655 2 23C2 11.3927 11.3927 2 23 2ZM12.3965 11.1309C14.4141 11.322 15.932 12.223 16.6348 12.8477L17.1035 13.2617L17.6816 13.0254C19.2631 12.3742 21.027 12 23 12C24.973 12 26.7374 12.3761 28.1992 13.0156L28.7852 13.2734L29.2637 12.8477C29.9667 12.2228 31.4872 11.3216 33.5059 11.1309C33.7743 11.5758 34.0075 12.2087 33.9512 13.166C33.8838 14.3117 33.5773 15.5597 33.3457 16.3008L33.1953 16.7832L33.4941 17.1914C34.4836 18.5407 34.9881 20.0009 34.9023 21.5449L34.9004 21.5723V21.5996C34.9004 24.0951 34.0018 26.0923 32.0879 27.5723C30.174 29.0522 27.1527 30 22.9004 30C18.6481 30 15.6248 29.0522 13.7109 27.5723C11.797 26.0923 10.9004 24.0951 10.9004 21.5996C10.9004 20.1349 11.4293 18.5236 12.4062 17.1914L12.6992 16.793L12.5586 16.3184C12.3269 15.5305 12.0428 14.2541 11.9863 13.1016C11.9393 12.1429 12.1662 11.537 12.3965 11.1309ZM6.88477 24.0215C7.59146 24.0305 8.40146 24.0687 9.21289 24.1094C9.29042 24.4212 9.37882 24.7279 9.48633 25.0273C6.17897 25.0971 3.70473 25.4297 2.17969 25.7148C2.11521 25.2145 2.06385 24.71 2.03516 24.1992C3.16221 24.0923 4.751 23.9942 6.88477 24.0215ZM39.1152 24.0371C41.2475 24.01 42.8357 24.1082 43.9629 24.2148C43.9342 24.7183 43.8838 25.2157 43.8203 25.709C42.2408 25.4192 39.6997 25.0867 36.3066 25.0332C36.4119 24.7397 36.4996 24.4382 36.5762 24.1328C37.4713 24.0848 38.3446 24.0469 39.1152 24.0371ZM9.91211 26.0195C10.5088 27.2153 11.3615 28.283 12.4883 29.1543C14.0288 30.3455 16.0316 31.1778 18.4766 31.623C18.1567 31.9517 17.8658 32.3126 17.6074 32.6934L17.5469 32.6406C17.5524 32.6343 17.0497 32.8859 16.2988 32.9531C15.5479 33.0204 14.6216 33 13.8008 33C12.5758 33 12.0362 32.4212 11.1738 31.3672C10.6963 30.7236 10.1141 30.2023 9.54883 29.8066C8.97002 29.4015 8.47626 29.1155 7.86523 29.0137L7.7832 29H7.69922C7.23255 29 6.78098 29.0338 6.35938 29.5156C6.14857 29.7565 6.00328 30.2026 6.09766 30.5801C6.19204 30.9576 6.43086 31.1896 6.64453 31.332C8.01125 32.2432 8.2528 34.0465 9.10938 35.6504C9.9093 37.2443 11.6357 38 13.4004 38H16V42.8027C8.96781 40.3205 3.66468 34.2046 2.33203 26.7031C3.86293 26.4148 6.42654 26.0681 9.91211 26.0195ZM35.8828 26.0273C39.4455 26.0578 42.0811 26.4041 43.6699 26.6973C42.339 34.2015 37.0341 40.3199 30 42.8027V37.5996C30 36.015 29.4796 34.2677 28.5742 32.8105C28.2993 32.3681 27.9759 31.9497 27.6152 31.5742C29.9305 31.1168 31.8324 30.2988 33.3125 29.1543C34.4368 28.2849 35.2876 27.2204 35.8828 26.0273ZM21.6992 32.0996H24.5C25.3128 32.0996 26.1804 32.7474 26.875 33.8652C27.5696 34.9831 28 36.4842 28 37.5996V43.3984C26.3974 43.7892 24.7238 44 23 44C21.2762 44 19.6026 43.7892 18 43.3984V37.5996C18 36.5089 18.4678 35.0113 19.209 33.8887C19.9501 32.766 20.8864 32.0996 21.6992 32.0996ZM10.3086 33.2812C11.1744 34.1793 12.2225 35 13.8008 35C14.5799 35 15.5525 35.0281 16.4766 34.9453C16.4798 34.945 16.483 34.9437 16.4863 34.9434C16.3646 35.2934 16.2737 35.6455 16.1973 36H13.4004C12.1671 36 11.2958 35.5544 10.8945 34.752L10.8867 34.7383L10.8809 34.7266C10.7165 34.4212 10.5006 33.8106 10.3086 33.2812Z" />
+            </svg></a></li>
+      </ul>
+      <div class="rights" aria-hidden="true">
+        <p>© 2020 Maira Prado | Designed and coded with <span>
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.2987 0.0078125C9.64752 0.0078125 8.60496 0.811557 8 1.53844C7.39501 0.811557 6.35248 0.0078125 4.70064 0.0078125C1.8888 0.0078125 0 2.61277 0 5.04525C0 8.58717 6.8032 13.3334 7.57872 13.8627C7.7056 13.9489 7.85309 13.9927 7.99997 13.9927C8.14747 13.9927 8.29434 13.9496 8.42122 13.8627C9.19685 13.3333 15.9999 8.58701 15.9999 5.04525C15.9999 2.61277 14.1105 0.0078125 11.2987 0.0078125H11.2987ZM7.99936 12.3347C5.32064 10.4291 1.49504 7.01901 1.49504 5.04525C1.49504 3.56026 2.60941 1.50269 4.70064 1.50269C6.6032 1.50269 7.27504 3.14589 7.30128 3.21085C7.41065 3.4996 7.68691 3.68836 7.99565 3.69085H8.00065C8.30753 3.69085 8.58377 3.50085 8.6969 3.21584C8.72441 3.14584 9.39628 1.50272 11.2988 1.50272C13.3907 1.50272 14.5051 3.56016 14.5051 5.04528C14.5051 7.01648 10.6788 10.4278 7.99946 12.3347L7.99936 12.3347Z"
+                fill="white" />
+            </svg>
+          </span>by Maira Prado</p>
+      </div>
+      <div class="sr-only">Copyright 2020 Maira Prado, designed and coded with love by Maira Prado</div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177328090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177328090-1');
+  </script>
+
+</body>
+
+</html>
