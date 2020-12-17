@@ -1,4 +1,13 @@
 /* A11y Learning Case Study */
+.hover-links {
+  color: #1A1A1A;
+}
+.hover-links:hover {
+  /* color: #006175; */
+  color: #FFFFFF;
+  background-color: #006175;
+}
+
 .pictext3 {
   display: flex;
   flex-direction: column;
