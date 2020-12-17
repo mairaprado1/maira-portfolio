@@ -415,7 +415,7 @@ button:hover,
   line-height: 150%;
 }
 
-/* MAI RECIPES */
+
 .background {
   background-color: #F9F9F9;
   margin-bottom: 2rem;
@@ -423,6 +423,37 @@ button:hover,
   padding-top: 4rem;
 }
 
+/* A11Y LEARNING */
+.a11y2-1 {
+  width: 100%;
+}
+
+.a11ylearning {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+.a11ylearning h3 {
+  font-weight: bold;
+  margin-top: 5.6rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.a11y-text {
+  display: flex;
+  flex-direction: column;
+
+}
+.a11y-button {
+  margin-top: 2.8rem;
+  align-self: center;
+}
+
+/* MAI RECIPES */
 .mairecipe {
   width: 100%;
 }
