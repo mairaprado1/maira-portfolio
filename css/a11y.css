@@ -697,10 +697,86 @@ position: relative;
   margin-bottom: 2.8rem;
 }
 
+.t-wir-cap,
+.m-wir-cap {
+  margin-top: 0.8rem;
+}
 
+/* ITERATIONS */
+.iterations h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+  font-weight: bold;
+}
 
+.iterations p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 
+.iter-p-space {
+  margin-bottom: 5.6rem;
+}
 
+.spec-space {
+  font-weight: 500;
+}
+.figure-iter2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  /* width: 100%; */
+}
+
+.iterate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iter-login,
+.iter-create,
+.iter-signup,
+.iter-signin,
+.iter-tut1,
+.iter-tut2,
+.quiz1,
+.quiz2,
+.quiz3,
+.quiz4 {
+  width: 90%;
+}
+
+.iterate-cap {
+  margin-left: -2rem;
+  margin-top: 0.8rem;
+}
+
+.iterate2-cap {
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.conclusion2 h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+  font-weight: bold;
+}
+
+.conclusion2 p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.a11y2 {
+  width: 100%;
+  margin-top: 5.6rem;
+}
 
 
 /* Execute the commmand when smaller than 768px */
@@ -1113,6 +1189,35 @@ align-items: center;
   margin-right: 6rem;
 }
 
+/* ITERATIONS */
+.iterations h3,
+.iterations p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.figure-iter2 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.iterate-cap {
+  margin-left: -14rem;
+}
+
+.iterate2-cap {
+  margin-left: 4rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+
+
 
 
 }
@@ -1364,7 +1469,7 @@ margin-right: 15rem;
   width: 20%;
 }
 .cap-al-logo {
-  margin-left: 40rem;
+  margin-left: 27rem;
 }
 
 .hfm2-flex {
@@ -1437,6 +1542,32 @@ margin-right: 15rem;
 }
 
 .prot-test {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+/* ITERATIONS */
+.iterations h3 {
+  margin-top: 14.4rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.iterations p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+.figure-iter2 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
   margin-left: 16rem;
   margin-right: 16rem;
 }
@@ -1685,5 +1816,26 @@ margin-right: 15rem;
 .prot-test h3 {
   margin-top: 14.4rem;
 }
+
+/* ITERATIONS */
+
+.iterations h3,
+.iterations p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.figure-iter2 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+/* CONCLUSION */
+.conclusion2 h3,
+.conclusion2 p {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
 
 }
