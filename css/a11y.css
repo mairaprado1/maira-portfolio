@@ -1,6 +1,7 @@
 /* A11y Learning Case Study */
 .hover-links {
-  color: #1A1A1A;
+  /* color: #1A1A1A; */
+  color: #006175;
 }
 .hover-links:hover {
   /* color: #006175; */
