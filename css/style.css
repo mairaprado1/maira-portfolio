@@ -101,7 +101,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: #FFFFFF;
+  background-color: #F9F9F9;
+  /* background-color: #FFFFFF; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
@@ -167,7 +168,6 @@ header {
   text-decoration: none;
   font-size: 1.8rem;
   -webkit-tap-highlight-color: transparent;
-
 }
 
 .main-menu li {
@@ -311,7 +311,6 @@ button:hover,
   display: flex;
   color: white;
   justify-content: space-around;
-
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -328,9 +327,7 @@ button:hover,
 .footer h4 {
   margin-left: 3rem;
   margin-right: 3rem;
-  /* padding-bottom: 2.8rem; */
   padding-top: 2.8rem;
-  /* color: white; */
   align-self: center;
 }
 
@@ -413,7 +410,6 @@ button:hover,
 
 .background {
   background-color: #EAF4F6;
-  margin-bottom: 2rem;
   padding-bottom: 4rem;
   padding-top: 5.6rem;
 }
@@ -423,6 +419,7 @@ button:hover,
   display: flex;
   justify-content: center;
 }
+
 .a11y2-1 {
   width: 100%;
   align-self: center;
@@ -577,7 +574,6 @@ textarea {
 #email,
 #message {
   border: 1px solid #828282;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
@@ -641,10 +637,6 @@ textarea {
   margin-top: 5.6rem;
 }
 
-/* .margin-button {
-  margin-top: 5.6rem;
-} */
-
 .resume ul {
   font-size: 1.8rem;
   line-height: 150%;
@@ -655,12 +647,12 @@ textarea {
 
 .resume .project-name {
   margin-bottom: 2rem;
-
 }
 
 .res-dif-marg {
-    margin-top: 9.6rem;
+  margin-top: 9.6rem;
 }
+
 .resume h3 {
   font-weight: 500;
 }
@@ -672,8 +664,6 @@ textarea {
 .background.no-padding {
   padding-top: 0;
 }
-
-
 
 .experience,
 .experienceEFE,
@@ -708,11 +698,6 @@ textarea {
 .edu-dpaul {
   margin-bottom: 1rem;
 }
-
-/* .edu-oab,
-.edu-utp {
-  margin-top: 5.6rem;
-} */
 
 /* ABOUT PAGE */
 .intro {
@@ -1062,11 +1047,9 @@ textarea {
 
 /* USER STORIES */
 .user-stories {
-  /* background-color: #F9F9F9; */
   margin-bottom: 9.6rem;
   margin-top: 5.6rem;
   padding-bottom: 4rem;
-  /* padding-top: 4rem; */
 }
 
 .user-stories h3,
@@ -1568,9 +1551,7 @@ textarea {
   margin-top: 5.6rem;
 }
 
-
 /* UPDATES */
-
 .display-cases {
   display: flex;
   margin-bottom: 5.6rem;
@@ -1589,16 +1570,14 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
 }
 
 .d-cases1 {
   margin-left: 2rem;
   margin-right: 1rem;
-background-color: #EAF4F6;
-/* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
-padding: 1rem;
+  background-color: #EAF4F6;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+  padding: 1rem;
 }
 
 .d-cases2 {
@@ -1631,15 +1610,26 @@ padding: 1rem;
 }
 
 .hover-links-3:hover {
-color: #1A1A1A;
+  color: #1A1A1A;
 }
-/*
--webkit-tap-highlight-color: transparent;
--webkit-tap-highlight-color: transparent;
-.logo-link {
-  -webkit-tap-highlight-visibility: hidden;
-} */
 
+.recom-flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.recommendation2 {
+  margin-top: 9.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.rec-name {
+  font-weight: bold;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+}
 
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
@@ -1655,8 +1645,6 @@ color: #1A1A1A;
   .btn-desktop {
     display: none;
   }
-
-
 }
 
 /* Execute the commmand when smaller than 1024px */
@@ -1764,9 +1752,7 @@ color: #1A1A1A;
   .title-resume {
     font-size: 3rem;
     line-height: 150%;
-
   }
-
 
   .subtitle-resume {
     font-size: 2.2rem;
@@ -1871,10 +1857,10 @@ color: #1A1A1A;
     margin: auto;
   }
 
-    .footer h4 {
-      margin-left: 7rem;
-      margin-right: 7rem;
-    }
+  .footer h4 {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
 
   /* ABOUT PAGE (First picture) - mq768px */
   .intro-desktop {
@@ -2047,8 +2033,6 @@ color: #1A1A1A;
     align-self: flex-start;
     margin-bottom: 14.4rem;
   }
-
-
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe {
@@ -2283,12 +2267,6 @@ color: #1A1A1A;
   }
 
   /* User Flows - mq768px */
-  /* .user-flows h3,
-  .user-flows p,
-  .user-flows .btn {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  } */
   .user-flows {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -2309,12 +2287,6 @@ color: #1A1A1A;
     margin-right: 6rem;
   }
 
-  /* .sketches-wireframes h3,
-  .sketches-wireframes h4
-  .sketches-wireframes p {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  } */
   .sw {
     display: flex;
     flex-direction: column;
@@ -2491,30 +2463,29 @@ color: #1A1A1A;
     margin-right: 0;
   }
 
-/* UPDATES - Added case study display */
+  /* UPDATES - Added case study display */
+  .d-cases1 {
+    margin-left: 6rem;
+  }
 
-.d-cases1 {
-  margin-left: 6rem;
+  .d-cases2 {
+    margin-right: 6rem;
+  }
 
-}
+  .d-cases1 a,
+  .d-cases2 a {
+    width: 70%;
+  }
 
-.d-cases2 {
-  margin-right: 6rem;
-}
+  .hover-links-2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 
-.d-cases1 a,
-.d-cases2 a {
-  width: 70%;
-}
-
-.hover-links-2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-}
-
-
-
-
+  .recom-flex {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 /* Execute the commmand when bigger than 850px */
@@ -2539,7 +2510,6 @@ color: #1A1A1A;
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
-
 
   /* h1 {
     font-size: 4.2rem;
@@ -2645,10 +2615,9 @@ color: #1A1A1A;
     align-self: center;
   }
 
-.a11ylearning {
-  width: 100%;
-}
-
+  .a11ylearning {
+    width: 100%;
+  }
 
   /* ABOUT PAGE */
   .intro-desktop {
@@ -2705,10 +2674,6 @@ color: #1A1A1A;
   ul.tools4 {
     margin-right: 6rem;
   }
-
-  /* ul.tools3 {
-    margin-right: 16rem;
-  } */
 
   .experience-list {
     margin-left: 18rem;
@@ -2848,13 +2813,6 @@ color: #1A1A1A;
     padding-bottom: 2.8rem;
   }
 
-  /* .high {
-    margin-left: 6rem;
-  }
-
-  .low {
-    margin-right: 6rem;
-  } */
   .user-stories li {
     margin-right: 0;
   }
@@ -2874,9 +2832,6 @@ color: #1A1A1A;
   .adjust-width {
     width: 1024px;
     margin: auto;
-    /* display: flex;
-     flex-direction: column;
-    justify-content: space-between; */
   }
 
   .sketches-wireframes {
@@ -2988,15 +2943,27 @@ color: #1A1A1A;
   }
 
   /* UPDATES - Added case study display */
+  .d-cases1 {
+    margin-left: 10rem;
+  }
 
-.d-cases1 {
-  margin-left: 10rem;
+  .d-cases2 {
+    margin-right: 10rem;
+  }
 
-}
+  .recom-flex {
+    flex-direction: row;
+  }
 
-.d-cases2 {
-  margin-right: 10rem;
-}
+  .recommendation2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3rem;
+  }
+
+  .recommendation1 {
+    margin-right: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -3706,18 +3673,28 @@ color: #1A1A1A;
   }
 
   /* UPDATES - Added case study display */
+  .d-cases1 {
+    margin-left: 20rem;
+  }
 
-.d-cases1 {
-  margin-left: 20rem;
+  .d-cases2 {
+    margin-right: 20rem;
+  }
 
-}
+  .a11y2-1 {
+    width: 30%;
+  }
 
-.d-cases2 {
-  margin-right: 20rem;
-}
+  .recom-flex {
+    max-width: 1280px;
+    margin: auto;
+  }
 
-.a11y2-1 {
-  width: 30%;
-}
+  .recommendation1 {
+    margin-left: 10rem;
+  }
 
+  .recommendation2 {
+    margin-right: 10rem;
+  }
 }
