@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  background-color: #F9F9F9;
 }
 
 body {
@@ -166,6 +167,7 @@ header {
   text-decoration: none;
   font-size: 1.8rem;
   -webkit-tap-highlight-color: transparent;
+
 }
 
 .main-menu li {
@@ -309,7 +311,7 @@ button:hover,
   display: flex;
   color: white;
   justify-content: space-around;
-  /* margin: 2.8rem 3rem; */
+
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -326,14 +328,16 @@ button:hover,
 .footer h4 {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-bottom: 2.8rem;
+  /* padding-bottom: 2.8rem; */
   padding-top: 2.8rem;
+  /* color: white; */
+  align-self: center;
 }
 
 .linkedin,
 .email,
 .github {
-  margin-top: 5.6rem;
+  margin-top: 2.8rem;
   margin-right: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -399,6 +403,7 @@ button:hover,
 .projects-title {
   color: #00758D;
   margin-bottom: 5.6rem;
+  margin-top: 5.6rem;
   margin-left: 3rem;
   margin-right: 3rem;
   text-align: left;
@@ -407,15 +412,20 @@ button:hover,
 }
 
 .background {
-  background-color: #F9F9F9;
+  background-color: #EAF4F6;
   margin-bottom: 2rem;
   padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-top: 5.6rem;
 }
 
 /* A11Y LEARNING */
+.a11ylearning {
+  display: flex;
+  justify-content: center;
+}
 .a11y2-1 {
   width: 100%;
+  align-self: center;
 }
 
 .a11ylearning {
@@ -427,7 +437,7 @@ button:hover,
 
 .a11ylearning h3 {
   font-weight: bold;
-  margin-top: 5.6rem;
+  margin-top: 2.8rem;
   margin-bottom: 2.8rem;
   text-align: center;
 }
@@ -439,6 +449,7 @@ button:hover,
 
 .a11y-button {
   margin-top: 2.8rem;
+  margin-bottom: 9.6rem;
   align-self: center;
 }
 
@@ -453,6 +464,7 @@ button:hover,
   justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
+  margin-bottom: 9.6rem;
   text-align: center;
 }
 
@@ -604,9 +616,13 @@ textarea {
 
 .resume h1,
 .resume h2 {
-  color: #D80303;
+  color: #006175;
   font-weight: 500;
   margin-bottom: 2.8rem;
+}
+
+.resume h2 {
+  margin-top: 9.6rem;
 }
 
 .summary-space {
@@ -617,13 +633,17 @@ textarea {
   margin-bottom: 2rem;
 }
 
+.school-space {
+  margin-bottom: 5.6rem;
+}
+
 .summary {
   margin-top: 5.6rem;
 }
 
-.margin-button {
+/* .margin-button {
   margin-top: 5.6rem;
-}
+} */
 
 .resume ul {
   font-size: 1.8rem;
@@ -635,8 +655,12 @@ textarea {
 
 .resume .project-name {
   margin-bottom: 2rem;
+
 }
 
+.res-dif-marg {
+    margin-top: 9.6rem;
+}
 .resume h3 {
   font-weight: 500;
 }
@@ -649,9 +673,7 @@ textarea {
   padding-top: 0;
 }
 
-.space56 {
-  margin-bottom: 5.6rem;
-}
+
 
 .experience,
 .experienceEFE,
@@ -687,10 +709,10 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.edu-oab,
+/* .edu-oab,
 .edu-utp {
   margin-top: 5.6rem;
-}
+} */
 
 /* ABOUT PAGE */
 .intro {
@@ -1546,6 +1568,79 @@ textarea {
   margin-top: 5.6rem;
 }
 
+
+/* UPDATES */
+
+.display-cases {
+  display: flex;
+  margin-bottom: 5.6rem;
+}
+
+.mai-display,
+.bb-display,
+.a11y-display {
+  width: 100%;
+}
+
+.d-cases1,
+.d-cases2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+}
+
+.d-cases1 {
+  margin-left: 2rem;
+  margin-right: 1rem;
+background-color: #EAF4F6;
+/* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+padding: 1rem;
+}
+
+.d-cases2 {
+  margin-left: 1rem;
+  margin-right: 2rem;
+  background-color: #EAF4F6;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+  padding: 1rem;
+}
+
+.d-cases1:hover,
+.d-cases2:hover {
+  background-color: white;
+}
+
+.hover-links-2 {
+  color: #006175;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hover-links-2:hover {
+  /* color: #FFFFFF;
+  background-color: #006175; */
+}
+
+.hover-links-3 {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.hover-links-3:hover {
+color: #1A1A1A;
+}
+/*
+-webkit-tap-highlight-color: transparent;
+-webkit-tap-highlight-color: transparent;
+.logo-link {
+  -webkit-tap-highlight-visibility: hidden;
+} */
+
+
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
   .intro-desktop {
@@ -1560,11 +1655,17 @@ textarea {
   .btn-desktop {
     display: none;
   }
+
+
 }
 
 /* Execute the commmand when smaller than 1024px */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .arrow {
+    display: none;
+  }
+
+  .a11y2-2 {
     display: none;
   }
 }
@@ -1663,7 +1764,9 @@ textarea {
   .title-resume {
     font-size: 3rem;
     line-height: 150%;
+
   }
+
 
   .subtitle-resume {
     font-size: 2.2rem;
@@ -1764,10 +1867,14 @@ textarea {
   }
 
   .footer h2,
-  .footer h4,
   .rights {
     margin: auto;
   }
+
+    .footer h4 {
+      margin-left: 7rem;
+      margin-right: 7rem;
+    }
 
   /* ABOUT PAGE (First picture) - mq768px */
   .intro-desktop {
@@ -1905,6 +2012,7 @@ textarea {
 
   .projects-title {
     padding-bottom: 5.6rem;
+    padding-top: 5.6rem;
     padding-left: 6rem;
     padding-right: 6rem;
     font-size: 3.2rem;
@@ -1937,7 +2045,10 @@ textarea {
 
   .a11y-button {
     align-self: flex-start;
+    margin-bottom: 14.4rem;
   }
+
+
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe {
@@ -1948,6 +2059,7 @@ textarea {
   .mairecipes {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 14.4rem;
   }
 
   .mai-text {
@@ -1971,6 +2083,7 @@ textarea {
   .bb {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 4.8rem;
   }
 
   .bb-text {
@@ -2377,6 +2490,31 @@ textarea {
     margin-left: 6rem;
     margin-right: 0;
   }
+
+/* UPDATES - Added case study display */
+
+.d-cases1 {
+  margin-left: 6rem;
+
+}
+
+.d-cases2 {
+  margin-right: 6rem;
+}
+
+.d-cases1 a,
+.d-cases2 a {
+  width: 70%;
+}
+
+.hover-links-2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+
+
 }
 
 /* Execute the commmand when bigger than 850px */
@@ -2401,6 +2539,7 @@ textarea {
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
+
 
   /* h1 {
     font-size: 4.2rem;
@@ -2470,7 +2609,7 @@ textarea {
   }
 
   .a11y2-1 {
-    width: 60%;
+    width: 40%;
   }
 
   .a11y-text {
@@ -2496,6 +2635,20 @@ textarea {
     padding-left: 16rem;
     padding-right: 16rem;
   }
+
+  .a11y2-1 {
+    display: none;
+  }
+
+  .a11y2-2 {
+    width: 50%;
+    align-self: center;
+  }
+
+.a11ylearning {
+  width: 100%;
+}
+
 
   /* ABOUT PAGE */
   .intro-desktop {
@@ -2546,12 +2699,16 @@ textarea {
   }
 
   ul.tools1 {
-    margin-left: 18rem;
+    margin-left: 6rem;
   }
 
-  ul.tools3 {
-    margin-right: 16rem;
+  ul.tools4 {
+    margin-right: 6rem;
   }
+
+  /* ul.tools3 {
+    margin-right: 16rem;
+  } */
 
   .experience-list {
     margin-left: 18rem;
@@ -2829,11 +2986,22 @@ textarea {
     margin-left: 0;
     margin-right: 16rem;
   }
+
+  /* UPDATES - Added case study display */
+
+.d-cases1 {
+  margin-left: 10rem;
+
+}
+
+.d-cases2 {
+  margin-right: 10rem;
+}
 }
 
 @media only screen and (min-width: 1280px) {
   .footer {
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
   }
 
   /* HOMEPAGE */
@@ -2865,6 +3033,10 @@ textarea {
   .bb-text {
     margin-left: 30rem;
     margin-right: 30rem;
+  }
+
+  .mai-text {
+    margin-bottom: 14.4rem;
   }
 
   .busy-bus {
@@ -2945,11 +3117,11 @@ textarea {
   }
 
   ul.tools1 {
-    margin-left: 32rem;
+    margin-left: 16rem;
   }
 
-  ul.tools3 {
-    margin-right: 30rem;
+  ul.tools4 {
+    margin-right: 16rem;
   }
 
   /* CASE STUDY */
@@ -3532,4 +3704,20 @@ textarea {
     margin-left: 5rem;
     margin-right: 5rem;
   }
+
+  /* UPDATES - Added case study display */
+
+.d-cases1 {
+  margin-left: 20rem;
+
+}
+
+.d-cases2 {
+  margin-right: 20rem;
+}
+
+.a11y2-1 {
+  width: 30%;
+}
+
 }
