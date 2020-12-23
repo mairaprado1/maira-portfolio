@@ -819,6 +819,10 @@ textarea {
   padding-top: 4rem;
 }
 
+.margin-rdt {
+  margin-top: 5.6rem;
+}
+
 .rdt {
   font-size: 1.8rem;
   justify-content: center;
@@ -840,13 +844,21 @@ textarea {
 .sps {
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 9.6rem;
+
+}
+
+.sps-margin {
+margin-top: 9.6rem;
+
 }
 
 .sps h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
+
 }
+
+
 
 .sps.solution img {
   padding-top: 5.6rem;
@@ -2569,7 +2581,7 @@ textarea {
 
   .arrow {
     align-self: center;
-    margin-bottom: 2.8rem;
+    margin-bottom: 5.6rem;
     margin-top: -3rem;
   }
 
@@ -2740,7 +2752,7 @@ textarea {
   }
 
   .sps {
-    margin-top: 14rem;
+    margin-top: 5.6rem;
     margin-left: 16rem;
     margin-right: 16rem;
   }
