@@ -1,0 +1,169 @@
+/* Hackathon case Study */
+/* .hover-links {
+  color: #006175;
+}
+
+.hover-links:hover {
+  color: #FFFFFF;
+  background-color: #006175;
+} */
+
+.pictext4 {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
+}
+
+.pictext4 h1 {
+  font-weight: bold;
+}
+
+/* First picture */
+.hackathon1 {
+  width: 100%;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.text4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+
+}
+
+.text4-space {
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+/* This is the image for mobile*/
+.sol-picmobile2 {
+  width: 100%;
+}
+
+/* This is the caption for mobile*/
+.sol-capmobile2 {
+  margin-left: 3rem;
+  /* margin-top: -2rem; */
+}
+
+.pop p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hackathon-survey h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+
+}
+
+.hackathon-survey p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Execute the commmand when smaller than 1024px */
+@media only screen and (max-width: 1023px) {
+  .solution-desktop2 {
+    display: none;
+  }
+}
+
+/* Execute the commmand when bigger than 375px */
+@media only screen and (min-width: 375px) {
+
+  .sol-picmobile2{
+    margin-left: 1.8rem;
+  }
+}
+
+/* Execute the commmand when bigger than 768px */
+@media only screen and (min-width: 768px) {
+
+  .text4 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sol-picdesktop2 {
+    width: 100%;
+  }
+
+  .sol-picmobile2 {
+    width: 70%;
+    margin-top: 4rem;
+  }
+  .solution-mobile2 {
+    margin-left: 14.3rem;
+  }
+  .hackathon-survey h3,
+  .hackathon-survey p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+
+}
+
+
+
+/* Execute the commmand when bigger than 1024px */
+@media only screen and (min-width: 1024px) {
+  .pictext4 {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+  }
+
+  .solution-mobile2 {
+    display: none;
+  }
+
+  .solution-desktop2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -9rem;
+    width: 130%;
+  }
+
+  .solution-desktop2 {
+    align-self: center;
+  }
+
+  .hackathon-survey h3,
+  .hackathon-survey p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+
+}
+
+
+/* Execute the commmand when bigger than 1280px */
+@media only screen and (min-width: 1280px) {
+  .pictext4 {
+    padding-bottom: 6rem;
+  }
+
+   .text4 {
+    margin-left: 10rem;
+  }
+
+  .hackathon-survey h3,
+  .hackathon-survey p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+}
