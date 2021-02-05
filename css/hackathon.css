@@ -26,6 +26,7 @@
   padding-top: 2.8rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  align-self: center;
 }
 
 .text4 {
@@ -40,6 +41,10 @@
   margin-top: 2.8rem;
 }
 
+.solution-mobile2 {
+  display: flex;
+  flex-direction: column;
+}
 /* This is the image for mobile*/
 .sol-picmobile2 {
   width: 100%;
@@ -47,8 +52,7 @@
 
 /* This is the caption for mobile*/
 .sol-capmobile2 {
-  margin-left: 3rem;
-  /* margin-top: -2rem; */
+  text-align: center;
 }
 
 .pop p {
@@ -65,9 +69,66 @@
 
 }
 
-.hackathon-survey p {
+.hackathon-survey p:not(.p-chart) {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+/* This is the flexbox for the img and p */
+.piechart2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+/* This is the image */
+.chart2 {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* This is the text under the chart */
+.p-chart2 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+
+.h-sketch h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+
+}
+
+.h-sketch p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-sketch-fig {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.h-sketch1,
+.h-sketch2,
+.h-sketch3 {
+  width: 90%;
+  align-self: center;
+}
+
+.caption-mobile {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* Execute the commmand when smaller than 1024px */
@@ -80,14 +141,15 @@
 /* Execute the commmand when bigger than 375px */
 @media only screen and (min-width: 375px) {
 
-  .sol-picmobile2{
-    margin-left: 1.8rem;
-  }
+
 }
 
 /* Execute the commmand when bigger than 768px */
 @media only screen and (min-width: 768px) {
 
+.hackathon1 {
+  width: 80%;
+}
   .text4 {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -100,16 +162,56 @@
   .sol-picmobile2 {
     width: 70%;
     margin-top: 4rem;
+    align-self: center;
   }
-  .solution-mobile2 {
+
+  .small {
+    font-size: 1.5rem;
+line-height: 150%;
+  }
+  /* .solution-mobile2 {
     margin-left: 14.3rem;
-  }
+  } */
+
+
   .hackathon-survey h3,
-  .hackathon-survey p {
+  .hackathon-survey p:not(.p-chart) {
     margin-left: 6rem;
     margin-right: 6rem;
   }
 
+
+  .pop p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .survey-margintop2 {
+    margin-top: 9.6rem;
+  }
+
+  .flexchart2-2column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .piechart2 {
+    width: 40%;
+    margin-top: 9.6rem;
+    margin-bottom: 0;
+  }
+
+  .chart2 {
+    width: 50%;
+  }
+
+  .h-sketch h3,
+  .h-sketch p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 
 }
 
@@ -117,12 +219,18 @@
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
+
   .pictext4 {
     flex-direction: row;
     align-items: center;
-    padding-left: 6rem;
+    padding-left: 3rem;
     padding-right: 6rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
+  }
+
+  .hackathon1 {
+    width: 45%;
+    padding-top: 0;
   }
 
   .solution-mobile2 {
@@ -132,20 +240,93 @@
   .solution-desktop2 {
     display: flex;
     flex-direction: column;
-    margin-left: -9rem;
-    width: 130%;
+    /* margin-left: -9rem;
+    width: 130%; */
   }
 
-  .solution-desktop2 {
-    align-self: center;
-  }
+
+
+.sol-picdesktop2 {
+  width: 80%;
+  align-self: center;
+
+}
+
+.sol-capdesktop2 {
+  margin-left: 8rem;
+}
+
+.pop p {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
+
 
   .hackathon-survey h3,
-  .hackathon-survey p {
+  .hackathon-survey p:not(.p-chart2) {
     margin-left: 16rem;
     margin-right: 16rem;
   }
 
+  .survey-margintop2 {
+    margin-top: 14rem;
+  }
+
+  .flexchart2-desktop {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .p-chart2 {
+    width: 100%;
+  }
+
+  .piechart2 {
+    align-items: center;
+  }
+
+  .flexchart2-2column {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .chart2 {
+    width: 80%;
+  }
+
+  .size2-2chart {
+    width: 20%;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .chart-bigmar2 {
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h-sketch h3,
+  .h-sketch p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .h-sketch1,
+  .h-sketch2,
+  .h-sketch3 {
+    width: 80%;
+    align-self: center;
+  }
+
+  .caption-mobile {
+    text-align: left;
+    margin-left: 12rem;
+  }
 
 }
 
@@ -160,10 +341,43 @@
     margin-left: 10rem;
   }
 
-  .hackathon-survey h3,
-  .hackathon-survey p {
+  .pop p {
     margin-left: 30rem;
     margin-right: 30rem;
   }
+
+.hackathon-survey h3,
+.hackathon-survey p:not(.p-chart2) {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+  /* .hackathon-survey h3,
+  .hackathon-survey p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  } */
+  .chart2 {
+    width: 60%;
+  }
+
+  .h-sketch h3,
+  .h-sketch p {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+.h-flex-desktop {
+  display: flex;
+
+}
+
+.h-sketch1,
+.h-sketch2,
+.h-sketch3 {
+  width: 90%;
+}
+
+.caption-mobile {
+  margin-left: 3rem;
+}
 
 }
