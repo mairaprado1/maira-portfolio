@@ -407,9 +407,85 @@
   margin-top: 5.6rem;
 }
 
+.h-plexsans {
+  font-family: 'IBM Plex Sans';
+  margin-top: 5.6rem;
+  text-align: left;
+  margin-bottom: 5.6rem;
+}
+
+.h-plexsans h5 {
+  font-weight: 700;
+  margin-left: 6rem;
+
+}
+
+.h-plexsans p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /* margin-top: 2rem; */
+
+}
+.ibm-bold {
+  font-weight: 700;
+}
+
+.plexsans-small {
+  margin-bottom: 2.8rem;
+}
+
+.h-usa-test {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-usa-test h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+
+.pres-con-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is the image for mobile*/
+.pc-img-mobile,
+.pc-img-mobile1,
+.pc-img-mobile2 {
+  width: 100%;
+  margin-top: 5.6rem;
+}
+
+/* This is the caption for mobile*/
+.pc-cap-mobile {
+  text-align: center;
+}
+
+.pres-conclusion {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.pres-conclusion h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.con-margin {
+  margin-top: 5.6rem;
+}
+
+
 /* Execute the commmand when smaller than 1024px */
 @media only screen and (max-width: 1023px) {
   .solution-desktop2 {
+    display: none;
+  }
+  .pres-con-desktop {
     display: none;
   }
 }
@@ -604,6 +680,34 @@
       align-items: center;
     }
 
+    .h-plexsans {
+      margin-left: 16rem;
+margin-right: 16rem;
+    }
+
+    .h-usa-test {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .pc-img-mobile,
+    .pc-img-mobile1,
+    .pc-img-mobile2 {
+      width: 70%;
+      margin-top: 4rem;
+      align-self: center;
+    }
+
+    .pc-img-desktop {
+      width: 100%;
+    }
+
+    .pres-conclusion {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+  }
+
     /* Execute the commmand when bigger than 1024px */
     @media only screen and (min-width: 1024px) {
       .pictext4 {
@@ -729,6 +833,39 @@
         margin-left: 22rem;
         margin-right: 22rem;
       }
+
+      .h-plexsans h5 {
+        margin-left: 16rem;
+      }
+
+      .h-usa-test {
+        margin-left: 16rem;
+        margin-right: 16rem;
+      }
+
+      .pres-con-mobile {
+        display: none;
+      }
+
+      .pres-con-desktop {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pc-img-desktop {
+        width: 80%;
+        align-self: center;
+        margin-top: 5.6rem;
+      }
+
+      .pc-cap-desktop {
+        margin-left: 12rem;
+      }
+
+      .pres-conclusion {
+        margin-left: 16rem;
+        margin-right: 16rem;
+      }
     }
 
     /* Execute the commmand when bigger than 1280px */
@@ -798,11 +935,16 @@
         margin-right: 34rem;
       }
 
-      .h-access-flex {
+
+      /* .h-access-flex {
         display: flex;
         justify-content: space-around;
-      }
-
+      } */
+.flex-accessibility {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 9.6rem;
+}
       .accessibility1 {
         width: 10rem;
         height: 10rem;
@@ -831,7 +973,30 @@
         margin-top: 0;
       }
 
-      .h-palette-margin2 {
+      /* .h-palette-margin2 {
         margin-top: 9.6rem;
+      } */
+
+      .h-plexsans h5 {
+        margin-left: 30rem;
       }
+
+      .h-usa-test{
+        margin-left: 30rem;
+        margin-right: 30rem;
+      }
+
+      .h-usa-test h3 {
+        margin-top: 14.4rem;
+      }
+
+      .pres-conclusion {
+        margin-left: 30rem;
+        margin-right: 30rem;
+      }
+
+      .pres-conclusion h3 {
+        margin-top: 14.4rem;
+      }
+
     }
