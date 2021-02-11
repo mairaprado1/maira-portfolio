@@ -1,0 +1,1035 @@
+/* Hackathon case Study */
+.hover-links {
+  /* color: #1A1A1A; */
+  color: #006175;
+}
+
+.hover-links:hover {
+  /* color: #006175; */
+  color: #FFFFFF;
+  background-color: #006175;
+}
+
+.pictext4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictext4 h1 {
+  font-weight: bold;
+}
+
+/* First picture */
+.hackathon1 {
+  width: 90%;
+  padding-bottom: 2.8rem;
+  padding-top: 2.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-self: center;
+
+}
+
+.text4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text4-space {
+  margin-bottom: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+.solution-mobile2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is the image for mobile*/
+.sol-picmobile2 {
+  width: 100%;
+}
+
+/* This is the caption for mobile*/
+.sol-capmobile2 {
+  text-align: center;
+}
+
+.pop p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hackathon-survey h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+}
+
+.hackathon-survey p:not(.p-chart) {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* This is the flexbox for the img and p */
+.piechart2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+/* This is the image */
+.chart2 {
+  width: 30%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+/* This is the text under the chart */
+.p-chart2 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.h-sketch h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+}
+
+.h-sketch p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-sketch-fig {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.h-sketch1,
+.h-sketch2,
+.h-sketch3 {
+  width: 90%;
+  align-self: center;
+}
+
+.caption-mobile {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Style Guide */
+.h-styleguide h3,
+.h-styleguide h4 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+}
+
+.h-styleguide p {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-colors h5 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem
+}
+
+.h-palette-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.h-palette-flex2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.primary1 {
+  background-color: #21533F;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.primary2 {
+  background-color: #005331;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.primary3 {
+  background-color: #002E1B;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.secondary1 {
+  background-color: #F9BEA5;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.secondary2 {
+  background-color: #F97433;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.secondary3 {
+  background-color: #D45B20;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.dark1 {
+  background-color: #754F44;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.dark2 {
+  background-color: #4F322A;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.dark3 {
+  background-color: #30302E;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.light1 {
+  background-color: #F4F4F4;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.light2 {
+  background-color: #F4F4D4;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.light3 {
+  background-color: #CFCFA9;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+}
+
+.success {
+  background-color: #71E57D;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.attention {
+  background-color: #F0ADAD;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.warning {
+  background-color: #FFDF82;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.info {
+  background-color: #B2EFFF;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.h-black {
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.h-white {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.color-number2 {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.color-hex2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.palette-space2 {
+  margin-bottom: 1rem;
+}
+
+/* This is the small rectangle */
+.accessibility1 {
+  background-color: #F4F4D4;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This is the small rectangle */
+.accessibility1-1 {
+  background-color: #F9BEA5;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessibility2,
+.accessibility3,
+.accessibility4,
+.accessibility5,
+.accessibility6,
+.accessibility7,
+.accessibility8,
+.accessibility9,
+.accessibility10 {
+  width: 11rem;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessibility2 {
+  background-color: #005331;
+}
+
+.accessibility3 {
+  background-color: #F97433;
+}
+
+.accessibility4 {
+  background-color: #F9BEA5;
+}
+
+.accessibility5 {
+  background-color: #4F322A;
+}
+
+.accessibility6 {
+  background-color: #30302E;
+}
+
+.accessibility7 {
+  background-color: #F4F4F4;
+}
+
+.accessibility8 {
+  background-color: #F4F4F4;
+}
+
+.accessibility9 {
+  background-color: #F4F4D4;
+}
+
+.accessibility10 {
+  background-color: #F4F4D4;
+}
+
+.h-light-1 {
+  color: #F4F4F4;
+  font-size: 1.4rem;
+}
+
+.h-dark {
+  color: #4F322A;
+  font-size: 1.4rem;
+}
+
+.h-dark1 {
+  color: #30302E;
+  font-size: 1.4rem;
+}
+
+.h-black1 {
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.h-white1 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.h-palette-flex3 {
+  display: flex;
+  justify-content: center;
+}
+
+.h-palette-margin {
+  margin-top: 5.6rem;
+}
+
+.h-plexsans {
+  font-family: 'IBM Plex Sans';
+  margin-top: 5.6rem;
+  text-align: left;
+  margin-bottom: 5.6rem;
+}
+
+.h-plexsans h5 {
+  font-weight: 700;
+  margin-left: 6rem;
+}
+
+.h-plexsans p {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.ibm-bold {
+  font-weight: 700;
+}
+
+.plexsans-small {
+  margin-bottom: 2.8rem;
+}
+
+.h-usa-test {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-usa-test h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.pres-con-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is the image for mobile*/
+.pc-img-mobile,
+.pc-img-mobile1,
+.pc-img-mobile2 {
+  width: 100%;
+  margin-top: 5.6rem;
+}
+
+/* This is the caption for mobile*/
+.pc-cap-mobile {
+  text-align: center;
+}
+
+.pres-conclusion {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.pres-conclusion h3 {
+  font-weight: bold;
+  margin-top: 9.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.con-margin {
+  margin-top: 5.6rem;
+}
+
+.prototype-btn {
+  margin-top: 5.6rem;
+}
+
+/* Execute the commmand when smaller than 1024px */
+@media only screen and (max-width: 1023px) {
+  .solution-desktop2 {
+    display: none;
+  }
+
+  .pres-con-desktop {
+    display: none;
+  }
+}
+
+/* Execute the commmand when bigger than 375px */
+@media only screen and (min-width: 375px) {
+
+  /* This is the small rectangle */
+  .accessibility1 {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  /* This is the small rectangle */
+  .accessibility1-1 {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .accessibility2,
+  .accessibility3,
+  .accessibility4,
+  .accessibility5,
+  .accessibility6,
+  .accessibility7,
+  .accessibility8,
+  .accessibility9,
+  .accessibility10 {
+    width: 14rem;
+    height: 11rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Execute the commmand when bigger than 390px */
+@media only screen and (min-width: 390px) {
+.h-palette-flex {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-palette-flex2 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+}
+
+/* Execute the commmand when bigger than 414px */
+@media only screen and (min-width: 414px) {
+  .h-palette-flex {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .h-palette-flex2 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  /* This is the small rectangle */
+  .accessibility1 {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* This is the small rectangle */
+  .accessibility1-1 {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .accessibility2,
+  .accessibility3,
+  .accessibility4,
+  .accessibility5,
+  .accessibility6,
+  .accessibility7,
+  .accessibility8,
+  .accessibility9,
+  .accessibility10 {
+    width: 15rem;
+    height: 12rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Execute the commmand when bigger than 440px */
+  @media only screen and (min-width: 440px) {
+    .h-palette-flex {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-palette-flex2 {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+  }
+
+  /* Execute the commmand when bigger than 768px */
+  @media only screen and (min-width: 768px) {
+    .hackathon1 {
+      width: 80%;
+    }
+
+    .text4 {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .sol-picdesktop2 {
+      width: 100%;
+    }
+
+    .sol-picmobile2 {
+      width: 70%;
+      margin-top: 4rem;
+      align-self: center;
+    }
+
+    .small {
+      font-size: 1.5rem;
+      line-height: 150%;
+    }
+
+    .hackathon-survey h3,
+    .hackathon-survey p:not(.p-chart) {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .pop p {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .survey-margintop2 {
+      margin-top: 9.6rem;
+    }
+
+    .flexchart2-2column {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    .piechart2 {
+      width: 40%;
+      margin-top: 9.6rem;
+      margin-bottom: 0;
+    }
+
+    .chart2 {
+      width: 50%;
+    }
+
+    .h-sketch h3,
+    .h-sketch p {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-styleguide h3,
+    .h-styleguide h4,
+    .h-styleguide p {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-colors h5 {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-palette-flex {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-palette-flex2 {
+      margin-left: 13rem;
+      margin-right: 13rem;
+    }
+
+    /* This is the small rectangle */
+    .accessibility1 {
+      width: 14rem;
+      height: 12rem;
+    }
+
+    /* This is the small rectangle */
+    .accessibility1-1 {
+      width: 14rem;
+      height: 12rem;
+    }
+
+    .accessibility2,
+    .accessibility3,
+    .accessibility4,
+    .accessibility5,
+    .accessibility6,
+    .accessibility7,
+    .accessibility8,
+    .accessibility9,
+    .accessibility10 {
+      width: 18rem;
+      height: 12rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .h-plexsans {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .h-usa-test {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .pc-img-mobile,
+    .pc-img-mobile1,
+    .pc-img-mobile2 {
+      width: 70%;
+      margin-top: 4rem;
+      align-self: center;
+    }
+
+    .pc-img-desktop {
+      width: 100%;
+    }
+
+    .pres-conclusion {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+  }
+
+  /* Execute the commmand when bigger than 1024px */
+  @media only screen and (min-width: 1024px) {
+    .pictext4 {
+      flex-direction: row;
+      align-items: center;
+      padding-left: 3rem;
+      padding-right: 6rem;
+      padding-top: 3rem;
+    }
+
+    .hackathon1 {
+      width: 45%;
+      padding-top: 0;
+    }
+
+    .solution-mobile2 {
+      display: none;
+    }
+
+    .solution-desktop2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sol-picdesktop2 {
+      width: 80%;
+      align-self: center;
+    }
+
+    .sol-capdesktop2 {
+      margin-left: 8rem;
+    }
+
+    .pop p {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .hackathon-survey h3,
+    .hackathon-survey p:not(.p-chart2) {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .survey-margintop2 {
+      margin-top: 14rem;
+    }
+
+    .flexchart2-desktop {
+      display: flex;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    .p-chart2 {
+      width: 100%;
+    }
+
+    .piechart2 {
+      align-items: center;
+    }
+
+    .flexchart2-2column {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .chart2 {
+      width: 80%;
+    }
+
+    .size2-2chart {
+      width: 20%;
+      justify-content: space-around;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    .chart-bigmar2 {
+      width: 100%;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .h-sketch h3,
+    .h-sketch p {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .h-sketch1,
+    .h-sketch2,
+    .h-sketch3 {
+      width: 80%;
+      align-self: center;
+    }
+
+    .caption-mobile {
+      text-align: left;
+      margin-left: 12rem;
+    }
+
+    .h-colors h5 {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .h-styleguide h3,
+    .h-styleguide h4,
+    .h-styleguide p {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .h-palette-flex {
+      margin-left: 18rem;
+      margin-right: 18rem;
+    }
+
+    .h-palette-flex2 {
+      margin-left: 22rem;
+      margin-right: 22rem;
+    }
+
+    .h-plexsans h5 {
+      margin-left: 16rem;
+    }
+
+    .h-usa-test {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+
+    .pres-con-mobile {
+      display: none;
+    }
+
+    .pres-con-desktop {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pc-img-desktop {
+      width: 80%;
+      align-self: center;
+      margin-top: 5.6rem;
+    }
+
+    .pc-cap-desktop {
+      margin-left: 12rem;
+    }
+
+    .pres-conclusion {
+      margin-left: 16rem;
+      margin-right: 16rem;
+    }
+  }
+
+  /* Execute the commmand when bigger than 1280px */
+  @media only screen and (min-width: 1280px) {
+    .pictext4 {
+      padding-bottom: 6rem;
+    }
+
+    .text4 {
+      margin-left: 10rem;
+    }
+
+    .pop p {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .hackathon-survey h3,
+    .hackathon-survey p:not(.p-chart2) {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .chart2 {
+      width: 60%;
+    }
+
+    .h-sketch h3,
+    .h-sketch p {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .h-flex-desktop {
+      display: flex;
+    }
+
+    .h-sketch1,
+    .h-sketch2,
+    .h-sketch3 {
+      width: 90%;
+    }
+
+    .caption-mobile {
+      margin-left: 3rem;
+    }
+
+    .h-colors h5 {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .h-styleguide h3,
+    .h-styleguide h4,
+    .h-styleguide p {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .h-palette-flex {
+      margin-left: 28rem;
+      margin-right: 28rem;
+    }
+
+    .h-palette-flex2 {
+      margin-left: 34rem;
+      margin-right: 34rem;
+    }
+
+    .flex-accessibility {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 9.6rem;
+    }
+
+    .accessibility1 {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    /* This is the small rectangle */
+    .accessibility1-1 {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .accessibility2,
+    .accessibility3,
+    .accessibility4,
+    .accessibility5,
+    .accessibility6,
+    .accessibility7,
+    .accessibility8,
+    .accessibility9,
+    .accessibility10 {
+      width: 11rem;
+      height: 10rem;
+    }
+
+    .h-palette-margin {
+      margin-top: 0;
+    }
+
+    .h-plexsans h5 {
+      margin-left: 30rem;
+    }
+
+    .h-usa-test {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .h-usa-test h3 {
+      margin-top: 14.4rem;
+    }
+
+    .pres-conclusion {
+      margin-left: 30rem;
+      margin-right: 30rem;
+    }
+
+    .pres-conclusion h3 {
+      margin-top: 14.4rem;
+    }
+
+  }
