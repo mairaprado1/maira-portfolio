@@ -446,9 +446,36 @@ button:hover,
 
 .a11y-button {
   margin-top: 2.8rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 14.4rem;
   align-self: center;
 }
+
+/* A11Y LEARNING */
+.h-falaai {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hackathon {
+  width: 100%;
+  align-self: center;
+}
+
+.h-falaai h3 {
+  font-weight: bold;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.falaai-text {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* MAI RECIPES */
 .mairecipe {
@@ -461,7 +488,7 @@ button:hover,
   justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 14.4rem;
   text-align: center;
 }
 
@@ -1675,7 +1702,8 @@ textarea {
     display: none;
   }
 
-  .a11y2-2 {
+  .a11y2-2,
+  .hackathon1-1 {
     display: none;
   }
 }
@@ -2055,6 +2083,30 @@ textarea {
     align-self: flex-start;
     margin-bottom: 14.4rem;
   }
+
+
+
+  /* FALA AI */
+  .falaai-text {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .hackathon {
+    width: 70%;
+    align-self: center;
+  }
+
+  .h-falaai h3 {
+    text-align: left;
+  }
+
+  .a11y-button {
+    align-self: flex-start;
+    margin-bottom: 14.4rem;
+  }
+
+
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe {
@@ -2620,6 +2672,15 @@ textarea {
     margin-right: 16rem;
   }
 
+  .hackathon {
+    width: 40%;
+  }
+
+  .falaai-text {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
   .mairecipe {
     width: 50%;
   }
@@ -2639,12 +2700,18 @@ textarea {
     padding-right: 16rem;
   }
 
-  .a11y2-1 {
+  .a11y2-1,
+  .hackathon {
     display: none;
   }
 
   .a11y2-2 {
     width: 50%;
+    align-self: center;
+  }
+
+  .hackathon1 {
+    width: 40%;
     align-self: center;
   }
 
@@ -2995,6 +3062,7 @@ textarea {
 
   /* HOMEPAGE */
   .a11ylearning,
+  .h-falaai,
   .mairecipes,
   .bb,
   .pop {
@@ -3013,11 +3081,16 @@ textarea {
     margin-left: 6rem;
   }
 
+  .hackathon {
+    width: 30%;
+  }
+
   .mairecipe {
     width: 45%;
   }
 
   .a11y-text,
+  .falaai-text,
   .mai-text,
   .bb-text {
     margin-left: 30rem;

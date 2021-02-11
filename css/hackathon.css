@@ -1,4 +1,15 @@
 /* Hackathon case Study */
+.hover-links {
+  /* color: #1A1A1A; */
+  color: #006175;
+}
+
+.hover-links:hover {
+  /* color: #006175; */
+  color: #FFFFFF;
+  background-color: #006175;
+}
+
 .pictext4 {
   display: flex;
   flex-direction: column;
@@ -10,12 +21,13 @@
 
 /* First picture */
 .hackathon1 {
-  width: 100%;
+  width: 90%;
   padding-bottom: 2.8rem;
   padding-top: 2.8rem;
   padding-left: 3rem;
   padding-right: 3rem;
   align-self: center;
+
 }
 
 .text4 {
@@ -524,16 +536,29 @@
   }
 }
 
+/* Execute the commmand when bigger than 390px */
+@media only screen and (min-width: 390px) {
+.h-palette-flex {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.h-palette-flex2 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+}
+
 /* Execute the commmand when bigger than 414px */
 @media only screen and (min-width: 414px) {
   .h-palette-flex {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .h-palette-flex2 {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   /* This is the small rectangle */
@@ -563,6 +588,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+
+  /* Execute the commmand when bigger than 440px */
+  @media only screen and (min-width: 440px) {
+    .h-palette-flex {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .h-palette-flex2 {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
   }
 
   /* Execute the commmand when bigger than 768px */
