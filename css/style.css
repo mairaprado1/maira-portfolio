@@ -446,9 +446,36 @@ button:hover,
 
 .a11y-button {
   margin-top: 2.8rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 14.4rem;
   align-self: center;
 }
+
+/* A11Y LEARNING */
+.h-falaai {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hackathon {
+  width: 100%;
+  align-self: center;
+}
+
+.h-falaai h3 {
+  font-weight: bold;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.falaai-text {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* MAI RECIPES */
 .mairecipe {
@@ -461,7 +488,7 @@ button:hover,
   justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 14.4rem;
   text-align: center;
 }
 
@@ -844,21 +871,16 @@ textarea {
 .sps {
   margin-left: 3rem;
   margin-right: 3rem;
-
 }
 
 .sps-margin {
-margin-top: 9.6rem;
-
+  margin-top: 9.6rem;
 }
 
 .sps h3 {
   font-weight: bold;
   margin-bottom: 2.8rem;
-
 }
-
-
 
 .sps.solution img {
   padding-top: 5.6rem;
@@ -1566,42 +1588,57 @@ margin-top: 9.6rem;
 /* UPDATES */
 .display-cases {
   display: flex;
-  margin-bottom: 5.6rem;
+  flex-direction: column;
+}
+
+.display-cases a {
+  display: flex;
+  flex: 1;
 }
 
 .mai-display,
+.hackathon-display,
 .bb-display,
 .a11y-display {
-  width: 100%;
+  width: 50%;
+  padding-top: 5.6rem;
 }
 
 .d-cases1,
-.d-cases2 {
+.d-cases2,
+.d-cases3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin-top: 2.8rem;
 }
 
 .d-cases1 {
-  margin-left: 2rem;
-  margin-right: 1rem;
+  padding-top: 2rem;
   background-color: #EAF4F6;
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
   padding: 1rem;
+  padding-bottom: 5.6rem;
 }
 
 .d-cases2 {
-  margin-left: 1rem;
-  margin-right: 2rem;
   background-color: #EAF4F6;
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
   padding: 1rem;
+  padding-bottom: 5.6rem;
+}
+
+.d-cases3 {
+  background-color: #EAF4F6;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3); */
+  padding: 1rem;
+  padding-bottom: 5.6rem;
 }
 
 .d-cases1:hover,
-.d-cases2:hover {
+.d-cases2:hover,
+.d-cases3:hover {
   background-color: white;
 }
 
@@ -1665,7 +1702,8 @@ margin-top: 9.6rem;
     display: none;
   }
 
-  .a11y2-2 {
+  .a11y2-2,
+  .hackathon1-1 {
     display: none;
   }
 }
@@ -2045,6 +2083,30 @@ margin-top: 9.6rem;
     align-self: flex-start;
     margin-bottom: 14.4rem;
   }
+
+
+
+  /* FALA AI */
+  .falaai-text {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .hackathon {
+    width: 70%;
+    align-self: center;
+  }
+
+  .h-falaai h3 {
+    text-align: left;
+  }
+
+  .a11y-button {
+    align-self: flex-start;
+    margin-bottom: 14.4rem;
+  }
+
+
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe {
@@ -2436,7 +2498,7 @@ margin-top: 9.6rem;
     display: flex;
     flex-direction: column;
   }
-
+ /* I love Sophie */
   .prototypes-tests h3,
   .prototypes-tests p,
   .prototypes-tests h4,
@@ -2476,19 +2538,6 @@ margin-top: 9.6rem;
   }
 
   /* UPDATES - Added case study display */
-  .d-cases1 {
-    margin-left: 6rem;
-  }
-
-  .d-cases2 {
-    margin-right: 6rem;
-  }
-
-  .d-cases1 a,
-  .d-cases2 a {
-    width: 70%;
-  }
-
   .hover-links-2 {
     font-size: 2rem;
     margin-top: 1rem;
@@ -2497,6 +2546,30 @@ margin-top: 9.6rem;
   .recom-flex {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .display-cases {
+    flex-direction: row;
+  }
+
+  .mai-display,
+  .hackathon-display,
+  .bb-display,
+  .a11y-display {
+    width: 30%;
+  }
+
+  .d-cases1,
+  .d-cases2,
+  .d-cases3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .mai-display, .hackathon-display, .bb-display, .a11y-display {
+    padding-top: 0;
   }
 }
 
@@ -2599,6 +2672,15 @@ margin-top: 9.6rem;
     margin-right: 16rem;
   }
 
+  .hackathon {
+    width: 40%;
+  }
+
+  .falaai-text {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
   .mairecipe {
     width: 50%;
   }
@@ -2618,7 +2700,8 @@ margin-top: 9.6rem;
     padding-right: 16rem;
   }
 
-  .a11y2-1 {
+  .a11y2-1,
+  .hackathon {
     display: none;
   }
 
@@ -2721,9 +2804,6 @@ margin-top: 9.6rem;
   }
 
   .text2 {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     margin-left: 0;
     margin-right: 0;
   }
@@ -2960,14 +3040,6 @@ margin-top: 9.6rem;
   }
 
   /* UPDATES - Added case study display */
-  .d-cases1 {
-    margin-left: 10rem;
-  }
-
-  .d-cases2 {
-    margin-right: 10rem;
-  }
-
   .recom-flex {
     flex-direction: row;
   }
@@ -2990,6 +3062,7 @@ margin-top: 9.6rem;
 
   /* HOMEPAGE */
   .a11ylearning,
+  .h-falaai,
   .mairecipes,
   .bb,
   .pop {
@@ -3008,11 +3081,16 @@ margin-top: 9.6rem;
     margin-left: 6rem;
   }
 
+  .hackathon {
+    width: 30%;
+  }
+
   .mairecipe {
     width: 45%;
   }
 
   .a11y-text,
+  .falaai-text,
   .mai-text,
   .bb-text {
     margin-left: 30rem;
@@ -3690,14 +3768,6 @@ margin-top: 9.6rem;
   }
 
   /* UPDATES - Added case study display */
-  .d-cases1 {
-    margin-left: 20rem;
-  }
-
-  .d-cases2 {
-    margin-right: 20rem;
-  }
-
   .a11y2-1 {
     width: 30%;
   }
