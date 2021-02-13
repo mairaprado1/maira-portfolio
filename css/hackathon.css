@@ -608,7 +608,7 @@
   /* Execute the commmand when bigger than 768px */
   @media only screen and (min-width: 768px) {
     .hackathon1 {
-      width: 80%;
+      width: 60%;
     }
 
     .text4 {
