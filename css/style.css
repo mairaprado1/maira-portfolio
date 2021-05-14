@@ -867,6 +867,10 @@ textarea {
   padding-bottom: 2.8rem;
 }
 
+.fix-margin {
+  margin-top: 9.6rem;
+}
+
 /* SUMMARY - PROBLEM - SOLUTION */
 .sps {
   margin-left: 3rem;
@@ -2897,7 +2901,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     width: 27%;
-    height: 600px;
+    height: 770px;
   }
 
   .high,
@@ -2914,11 +2918,16 @@ textarea {
     margin-right: 0;
   }
 
-  .user-flows h3,
-  .user-flows p,
+
   .user-flows .btn {
     margin-left: 16rem;
     margin-right: 16rem;
+  }
+
+  .user-flows h3,
+  .user-flows p{
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .userflow {
@@ -3372,7 +3381,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     width: 27%;
-    height: 520px;
+    height: 670px;
     /* min-height: 480px; */
   }
 
@@ -3382,11 +3391,16 @@ textarea {
   }
 
   /* User flows - mp1280px */
-  .user-flows h3,
-  .user-flows p,
+
   .user-flows .btn {
     margin-left: 30rem;
     margin-right: 30rem;
+  }
+
+  .user-flows h3,
+  .user-flows p {
+    margin-left: 24rem;
+    margin-right: 24rem;
   }
 
   .userflow {
