@@ -476,7 +476,6 @@ button:hover,
   flex-direction: column;
 }
 
-
 /* MAI RECIPES */
 .mairecipe {
   width: 100%;
@@ -1327,6 +1326,10 @@ textarea {
 }
 
 /* Colors (part of the branding) */
+.color-flex {
+  display: flex;
+}
+
 .colors h4,
 .colors p,
 .colors h5,
@@ -1355,7 +1358,9 @@ textarea {
 .palette2 {
   padding-bottom: 9.6rem;
   padding-top: 2.8rem;
-  width: 60%;
+  width: 90%;
+  align-self: center;
+  margin: auto;
 }
 
 /* Typography (part of the branding) */
@@ -1388,42 +1393,9 @@ textarea {
   margin-bottom: 2.8rem;
 }
 
-/* Icons (part of the branding) */
-.icons .picture-boxes {
-  display: flex;
-  flex-direction: column;
-}
-
-.icons h4,
-.icons h5,
-.icons p,
-.icons .btn {
+.typography .btn {
   margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.icons h5 {
-  font-weight: 400;
   margin-top: 5.6rem;
-}
-
-.icons h4 {
-  font-weight: bold;
-  margin-bottom: 2.8rem;
-  margin-top: 9.6rem;
-}
-
-.icons1,
-.icons2 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-  margin: auto;
-  margin-top: 2.8rem;
-  width: 80%;
-  align-self: center;
-}
-
-.icons2 {
-  margin-bottom: 5.6rem;
 }
 
 /* HIGH FIDELITY MOCKUPS */
@@ -1568,7 +1540,6 @@ textarea {
   background-color: #F9F9F9;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 9.6rem;
 }
 
 .conclusion h3 {
@@ -2088,8 +2059,6 @@ textarea {
     margin-bottom: 14.4rem;
   }
 
-
-
   /* FALA AI */
   .falaai-text {
     margin-left: 6rem;
@@ -2109,8 +2078,6 @@ textarea {
     align-self: flex-start;
     margin-bottom: 14.4rem;
   }
-
-
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe {
@@ -2158,6 +2125,10 @@ textarea {
 
   .bb-text .btn {
     margin-top: 2.8rem;
+  }
+
+  .rec-occupation {
+    margin-right: 40rem;
   }
 
   /* CONTACT PAGE */
@@ -2369,6 +2340,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .slandingpage,
@@ -2454,7 +2427,7 @@ textarea {
 
   .palette2 {
     width: 50%;
-    margin-left: 6rem;
+    margin: auto;
   }
 
   .avenirnext,
@@ -2466,11 +2439,8 @@ textarea {
     margin-top: 9.6rem;
   }
 
-  .icons1,
-  .icons2 {
-    margin-left: 0;
-    margin-right: 0;
-    width: 85%;
+  .typography .btn {
+    margin-left: 6rem;
   }
 
   /* High Fidelity Mockups - mq768px */
@@ -2488,9 +2458,7 @@ textarea {
   .footer1,
   .footer2,
   .color40,
-  .color50,
-  .forgotpassword,
-  .autosaves {
+  .color50 {
     margin-left: 0;
     margin-right: 0;
     width: 85%;
@@ -2502,7 +2470,8 @@ textarea {
     display: flex;
     flex-direction: column;
   }
- /* I love Sophie */
+
+  /* I love Sophie */
   .prototypes-tests h3,
   .prototypes-tests p,
   .prototypes-tests h4,
@@ -2793,6 +2762,10 @@ textarea {
     margin-bottom: 0;
   }
 
+  .rec-occupation {
+    margin-right: 14rem;
+  }
+
   /* CASE STUDY */
   .pictext2 {
     flex-direction: row;
@@ -2904,6 +2877,14 @@ textarea {
     height: 770px;
   }
 
+  .adjust-hml {
+    height: 700px;
+  }
+
+  .typography .btn {
+    margin-left: 16rem;
+  }
+
   .high,
   .medium {
     margin-right: 2rem;
@@ -2918,14 +2899,13 @@ textarea {
     margin-right: 0;
   }
 
-
   .user-flows .btn {
-    margin-left: 16rem;
-    margin-right: 16rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .user-flows h3,
-  .user-flows p{
+  .user-flows p {
     margin-left: 10rem;
     margin-right: 10rem;
   }
@@ -2986,19 +2966,9 @@ textarea {
     align-self: center;
   }
 
-  .palette1,
-  .palette2 {
-    margin-left: 16rem;
-  }
-
   .avenirnext,
   .poppins {
     width: 50%;
-  }
-
-  .icons1,
-  .icons2 {
-    width: 70%;
   }
 
   .hfm h3,
@@ -3044,7 +3014,7 @@ textarea {
   }
 
   .conclusion .btn-desktop {
-    margin-left: 0;
+    margin-left: 16rem;
     margin-right: 16rem;
   }
 
@@ -3258,7 +3228,7 @@ textarea {
 
   .personas h3,
   .personas p,
-  .lastp-personas, {
+  .lastp-personas {
     margin-left: 30rem;
     margin-right: 30rem;
   }
@@ -3385,15 +3355,18 @@ textarea {
     /* min-height: 480px; */
   }
 
+  .adjust-hml {
+    height: 620px;
+  }
+
   .high,
   .medium {
     margin-right: 3rem;
   }
 
   /* User flows - mp1280px */
-
   .user-flows .btn {
-    margin-left: 30rem;
+    margin-left: 24rem;
     margin-right: 30rem;
   }
 
@@ -3420,8 +3393,8 @@ textarea {
   }
 
   .sketches-wireframes h4 {
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
     margin-bottom: 2.8rem;
     margin-top: 5.6rem;
   }
@@ -3515,11 +3488,6 @@ textarea {
     width: 20%;
   }
 
-  .palette1,
-  .palette2 {
-    margin-left: 30rem;
-  }
-
   .palette1 {
     width: 40%;
   }
@@ -3559,6 +3527,10 @@ textarea {
   .flex-boxes {
     display: flex;
     flex-direction: row;
+  }
+
+  .typography .btn {
+    margin-left: 30rem;
   }
 
   /* These are the images */
@@ -3677,6 +3649,11 @@ textarea {
     width: 100%;
   }
 
+  .small-background {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
   /* These are the boxes */
   .col40,
   .col50 {
@@ -3696,25 +3673,34 @@ textarea {
   .picture-boxes.password-saves {
     flex-direction: row;
     justify-content: center;
-    margin-top: 5.6rem;
+    /* margin-top: 5.6rem; */
+  }
+
+  .flex-passauto {
+    display: flex;
+    /* justify-content: baseline;
+    align-items: center; */
   }
 
   .forgotpassword,
   .autosaves {
-    width: 32%;
+    width: 40%;
+    margin: 0;
+  }
+
+  .flex-passauto {
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
   }
 
   .forgotpassword {
-    margin: 0;
-    margin-right: 3rem;
+    margin-left: 10rem;
+    margin-right: 1rem;
   }
 
   .autosaves {
-    margin-bottom: 0;
-  }
-
-  .password-saves {
-    margin-bottom: 5.6rem;
+    margin-right: 10rem;
+    margin-left: 1rem;
   }
 
   /* Prototypes and Tests */
@@ -3761,7 +3747,7 @@ textarea {
   }
 
   .conclusion .btn-desktop {
-    margin-left: 0;
+    margin-left: 30rem;
     margin-right: 30rem;
   }
 
