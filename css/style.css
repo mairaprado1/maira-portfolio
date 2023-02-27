@@ -9,6 +9,7 @@
 html {
   font-size: 10px;
   background-color: #F9F9F9;
+  color: #494949;
 }
 
 body {
@@ -25,6 +26,7 @@ h1 {
   font-size: 3rem;
   line-height: 150%;
 }
+
 h2 {
   font-size: 2.8rem;
   line-height: 150%;
@@ -634,6 +636,7 @@ textarea {
 .resume h1,
 .resume h2,
 .resume h3,
+.resume h4,
 .resume p,
 .resume .btn {
   margin-left: 3rem;
@@ -649,6 +652,12 @@ textarea {
 
 .resume h2 {
   margin-top: 9.6rem;
+}
+
+.resume h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .summary-space {
@@ -670,9 +679,13 @@ textarea {
 .resume ul {
   font-size: 1.8rem;
   line-height: 150%;
-  list-style-type: square;
+  list-style-type: disc;
   margin-left: 5rem;
   margin-right: 4rem;
+}
+
+.no-bullet {
+  list-style-type: none;
 }
 
 .resume .project-name {
@@ -698,13 +711,21 @@ textarea {
 .experience,
 .experienceEFE,
 .experience-mppr {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .date {
   margin-bottom: 2.8rem;
   font-weight: 200;
   text-decoration: none;
+}
+
+.p-space-edu {
+  margin-bottom: 1rem;
+}
+
+.edu-space {
+  margin-bottom: 3.2rem;
 }
 
 .date a {
@@ -747,7 +768,6 @@ textarea {
 .intro-mobile .btn {
   margin-left: 3rem;
   margin-right: 3rem;
-
 }
 
 .about-container h1 {
@@ -1670,8 +1690,6 @@ textarea {
     display: none;
   }
 
-
-
   .contact-container {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1714,44 +1732,43 @@ textarea {
   }
 }
 
-
-
 /* Execute the commmand when bigger than 600px */
 @media only screen and (min-width: 600px) {
 
-.about1,
-.about2,
-.about3,
-.about4 {
-  width: 70%;
-}
+  .about1,
+  .about2,
+  .about3,
+  .about4 {
+    width: 70%;
+  }
 
-.who1,
-.who2,
-.who3 {
-  display: flex;
-  flex-direction: column;
-}
+  .who1,
+  .who2,
+  .who3 {
+    display: flex;
+    flex-direction: column;
+  }
 
-.about2,
-.about3,
-.about4 {
-  align-self: center;
-}
+  .about2,
+  .about3,
+  .about4 {
+    align-self: center;
+  }
 
-.intro-mobile {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .intro-mobile {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.about-container h3,
-.about-container p {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
+  .about-container h3,
+  .about-container p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   /* User Stories mp600px */
   .high {
     margin-left: 15rem;
@@ -1771,6 +1788,22 @@ textarea {
   .footer-link {
     margin-left: 20rem;
     margin-right: 20rem;
+  }
+
+  /* RESUME PAGE */
+  .resume h1,
+  .resume h2,
+  .resume h3,
+  .resume h4,
+  .resume p,
+  .resume .btn {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .resume ul {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 
@@ -1935,16 +1968,17 @@ textarea {
 
   .footer h2,
   .rights {
-    margin: auto;
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 
   .footer h4 {
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 
   /* ABOUT PAGE (First picture) - mq768px  */
-   .intro-desktop {
+  .intro-desktop {
     display: flex;
     flex-direction: row;
     padding-left: 6rem;
@@ -1961,8 +1995,7 @@ textarea {
   .about-container .greeting {
     margin: 0;
   } */
-
-   .about-container h3,
+  .about-container h3,
   .about-container p {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1972,11 +2005,9 @@ textarea {
     margin-top: 2.8rem;
     margin-bottom: 2.8rem;
   } */
-
   .intro-text {
     display: flex;
     justify-content: center;
-
   }
 
   .about1,
@@ -1985,7 +2016,6 @@ textarea {
   .about4 {
     width: 50%;
   }
-
 
   /* HOMEPAGE (First picture) - mq768px */
   .pictext {
@@ -2128,21 +2158,6 @@ textarea {
   /* CONTACT PAGE */
   .contact-title {
     font-size: 3rem;
-  }
-
-  /* RESUME PAGE */
-  .resume h1,
-  .resume h2,
-  .resume h3,
-  .resume p,
-  .resume .btn {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
-  .resume ul {
-    margin-left: 8rem;
-    margin-right: 6rem;
   }
 
   /* CASE STUDY - mq768px */
@@ -2713,6 +2728,7 @@ textarea {
   .resume h1,
   .resume h2,
   .resume h3,
+  .resume h4,
   .resume p,
   .resume .btn {
     margin-left: 16rem;
@@ -2722,6 +2738,11 @@ textarea {
   .resume ul {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .special-ul {
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
 
   .tools-flex {
@@ -3092,21 +3113,21 @@ textarea {
     margin: auto;
   }
 
-.about1 {
-  width: 40%;
-}
+  .about1 {
+    width: 40%;
+  }
 
-.about2, .about4, .about6 {
-  width: 40%;
-}
-/* .about3 {
+  .about2, .about4, .about6 {
+    width: 40%;
+  }
+
+  /* .about3 {
   width: 60%;
 } */
+  .intro-text {
+    margin-left: 6rem;
+  }
 
-
-.intro-text {
-  margin-left: 6rem;
-}
   .who1,
   .who3,
   .chapter2 {
@@ -3127,7 +3148,6 @@ textarea {
     margin-left: 12rem;
     margin-right: 12rem;
   }
-
 
   .about4,
   .about6 {
@@ -3156,7 +3176,9 @@ textarea {
   .resume h1,
   .resume h2,
   .resume h3,
+  .resume h4,
   .resume p,
+  .special-ul,
   .resume .btn {
     margin-left: 30rem;
     margin-right: 30rem;
