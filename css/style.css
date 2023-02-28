@@ -2553,6 +2553,18 @@ textarea {
   .mai-display, .hackathon-display, .bb-display, .a11y-display {
     padding-top: 0;
   }
+/* RESUME */
+
+.experience-list {
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+
+.tools-flex {
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+
 }
 
 /* Execute the commmand when bigger than 850px */
