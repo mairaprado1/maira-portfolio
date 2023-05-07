@@ -279,9 +279,11 @@ header {
 .btn:hover,
 button:hover,
 .btn2:hover {
-  background-color: #229FB9;
-  color: #494949;
-  border: 1px solid #494949;
+  /* background-color: #004958; */
+  /* background-color: #A60202; */
+  background-color: #740202;
+  color: #FFFFFF;
+  /* border: 1px solid #494949; */
 }
 
 /* .btn:focus {
@@ -483,7 +485,8 @@ button:hover,
 }
 
 /* MAI RECIPES */
-.mairecipe {
+.mairecipe,
+.taea-img {
   width: 100%;
 }
 
@@ -2104,7 +2107,8 @@ textarea {
   }
 
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
-  .mairecipe {
+  .mairecipe,
+  .taea-img {
     width: 80%;
     margin: auto;
   }
@@ -2675,7 +2679,8 @@ textarea {
     margin-right: 16rem;
   }
 
-  .mairecipe {
+  .mairecipe,
+  .taea-img {
     width: 50%;
   }
 
@@ -3087,7 +3092,8 @@ textarea {
     width: 30%;
   }
 
-  .mairecipe {
+  .mairecipe,
+  .taea-img {
     width: 45%;
   }
 
