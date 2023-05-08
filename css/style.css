@@ -1715,9 +1715,6 @@ textarea {
     display: none;
   }
 
-  .btn:hover {
-    display: none;
-  }
 }
 
 /* Execute the commmand when bigger than 500px */
