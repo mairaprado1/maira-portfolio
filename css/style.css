@@ -281,7 +281,8 @@ button:hover,
 .btn2:hover {
   /* background-color: #004958; */
   /* background-color: #A60202; */
-  background-color: #740202;
+  /* background-color: #740202; */
+  background-color: #006175;
   color: #FFFFFF;
   /* border: 1px solid #494949; */
 }
@@ -1711,6 +1712,10 @@ textarea {
 
   .a11y2-2,
   .hackathon1-1 {
+    display: none;
+  }
+
+  .btn:hover {
     display: none;
   }
 }
