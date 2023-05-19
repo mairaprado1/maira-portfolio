@@ -287,6 +287,11 @@ button:hover,
   /* border: 1px solid #494949; */
 }
 
+.feature-margin {
+  margin-bottom: 14.4rem;
+}
+
+
 /* .btn:focus {
     outline: 1rem;
   } */
@@ -487,7 +492,8 @@ button:hover,
 
 /* MAI RECIPES */
 .mairecipe,
-.taea-img {
+.taea-img,
+.new-feature {
   width: 100%;
 }
 
@@ -2108,9 +2114,13 @@ textarea {
     margin-bottom: 14.4rem;
   }
 
+
+
+
   /* FEATURED PROJECTS (Mai Recipes) - mq768px */
   .mairecipe,
-  .taea-img {
+  .taea-img,
+  .new-feature {
     width: 80%;
     margin: auto;
   }
@@ -2134,6 +2144,11 @@ textarea {
   }
 
   /* FEATURED PROJECTS (Busy-Bus) - mq768px */
+
+  .feature-margin {
+    margin-bottom: 14.4rem;
+  }
+
   .busy-bus {
     width: 80%;
     margin: auto;
@@ -2682,7 +2697,8 @@ textarea {
   }
 
   .mairecipe,
-  .taea-img {
+  .taea-img,
+  .new-feature {
     width: 50%;
   }
 
@@ -3095,7 +3111,8 @@ textarea {
   }
 
   .mairecipe,
-  .taea-img {
+  .taea-img,
+  .new-feature {
     width: 45%;
   }
 
