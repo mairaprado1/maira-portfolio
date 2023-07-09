@@ -1,0 +1,65 @@
+
+/* Small steps towards an accessible world */
+
+
+
+
+.hover-links {
+  /* color: #494949; */
+  color: #006175;
+}
+
+.hover-links:hover {
+  /* color: #006175; */
+  color: #FFFFFF;
+  background-color: #006175;
+}
+
+.article-img {
+  width: 100%;
+  margin: auto;
+}
+
+.w-care-a11y {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.background-text1 {
+    background-color: #A1BEC4;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .background-text2 {
+    background-color: #A1BEC4;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+.background-text3 {
+    background-color: #A1BEC4;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.background-text1 p,
+.background-text2 p,
+.background-text3 p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
