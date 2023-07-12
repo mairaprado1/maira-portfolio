@@ -1,9 +1,6 @@
 
 /* Small steps towards an accessible world */
 
-
-
-
 .hover-links {
   /* color: #494949; */
   color: #006175;
@@ -14,7 +11,14 @@
   color: #FFFFFF;
   background-color: #006175;
 }
+ li {
+  font-size: 1.8rem;
+  line-height: 3rem;
+ }
 
+ .indent-child {
+   margin-left: 4rem;
+ }
 .article-img {
   width: 100%;
   margin: auto;
@@ -62,4 +66,98 @@ align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
 
+}
+
+h1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /* margin-bottom: 9.6rem; */
+}
+.section-specs {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.section-specs h2 {
+font-weight: bold;
+margin-bottom: 3.2rem;
+margin-top: 9.6rem;
+}
+
+.section-specs h3 {
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  margin-top: 9.6rem;
+}
+
+
+.chart-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.d-chart {
+  width: 50%;
+  margin-bottom: 1rem;
+align-self: center;
+}
+
+.caption-margin {
+  margin-bottom: 5.6rem;
+}
+
+.lawsuits-comparison {
+  width: 100%;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+}
+
+.card {
+
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+  padding-bottom: 3.6rem;
+  flex: 1; */
+}
+
+.d-cards {
+  background-color:#006175;
+color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* padding-left: 10rem; */
+
+}
+
+.card h4 {
+  font-size: 3rem;
+  align-self: center;
+}
+
+.visual,
+.auditory,
+.speech,
+.motor,
+.cognitive {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 20%;
+
+}
+
+.ul-cards {
+  margin-left: 4rem;
+  list-style-type: circle;
+  margin-top: 2rem;
 }
