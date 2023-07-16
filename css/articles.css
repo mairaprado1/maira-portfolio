@@ -1,4 +1,9 @@
 /* Small steps towards an accessible world */
+.s-steps-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
 ol,
 ul {
   list-style: display;
@@ -249,6 +254,10 @@ h1 {
 /* Execute the commmand when bigger than 600px */
 @media only screen and (min-width: 600px) {
 
+h1 {
+  font-size: 4.2rem;
+}
+
 .info-caption {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -403,6 +412,10 @@ margin-right: 12rem;
 
 /* Execute the commmand when bigger than 1024px */
 @media only screen and (min-width: 1024px) {
+
+  h1 {
+    font-size: 4.8rem;
+  }
 
   h1 {
     margin-left: 16rem;
@@ -680,6 +693,51 @@ align-self: center;
   justify-content: center;
 }
 
+
+
+
+}
+
+
+
+
+
+/* Execute the commmand when bigger than 1280px */
+@media only screen and (min-width: 1280px) {
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+
+  h1 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .section-specs {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .fig-con1 {
+    margin-right: 3rem;
+  }
+
+.fig-con2 {
+  margin-left: 3rem;
+}
+
+  .b-link,
+  .b-label {
+    margin-right: 2rem;
+  }
+
+
+  .g-link,
+  .g-label {
+    margin-left: 2rem;
+  }
 
 
 
