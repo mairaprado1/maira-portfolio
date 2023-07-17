@@ -6,8 +6,14 @@
 
 ol,
 ul {
-  list-style: display;
+  list-style-type: none;
 }
+
+ol li,
+ul li {
+  list-style-type: display;
+}
+
 
 .list-dif {
   list-style: circle;
@@ -170,11 +176,26 @@ h1 {
   width: 15%;
 }
 
-.ul-cards {
-  margin-left: 4rem;
-  list-style-type: circle;
+/* .list-number {
+  list-style-type: numbers;
+} */
+
+.list-numbers {
+  list-style-type: decimal;
+}
+
+.ul-cards-2 {
+  margin-left: 1rem;
   margin-top: 2rem;
 }
+
+.ul-cards {
+  /* margin-left: 4rem; */
+  list-style-type: circle;
+  /* margin-top: 2rem; */
+}
+
+
 
 .visible,
 .invisible,
