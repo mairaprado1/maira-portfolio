@@ -52,6 +52,7 @@ p {
   line-height: 150%;
 }
 
+
 .small {
   font-size: 1.4rem;
   line-height: 150%;
@@ -2174,8 +2175,16 @@ textarea {
 
   .rec-occupation {
     margin-right: 40rem;
+    margin-bottom: 3.2rem;
   }
 
+  .m-occupation {
+    margin-top: 5.6rem;
+  }
+
+.font-list {
+  font-weight: 1.9rem;
+}
   /* CONTACT PAGE */
   .contact-title {
     font-size: 3rem;

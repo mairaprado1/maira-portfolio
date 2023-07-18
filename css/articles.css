@@ -14,13 +14,8 @@ ul li {
   list-style-type: display;
 }
 
-
-.list-dif {
-  list-style: circle;
-}
-
 .list-none {
-  list-style: none;
+  list-style-type: none;
 }
 
 .hover-links {
