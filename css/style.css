@@ -739,6 +739,10 @@ textarea {
   margin-bottom: 3.2rem;
 }
 
+.m-occupation {
+  margin-top: 5.6rem;
+}
+
 .date a {
   text-decoration: none;
   color: #494949;
@@ -2178,13 +2182,8 @@ textarea {
     margin-bottom: 3.2rem;
   }
 
-  .m-occupation {
-    margin-top: 5.6rem;
-  }
 
-.font-list {
-  font-weight: 1.9rem;
-}
+
   /* CONTACT PAGE */
   .contact-title {
     font-size: 3rem;
