@@ -589,6 +589,10 @@ button:hover {
   text-decoration: underline;
 }
 
+.btn-s-steps {
+  margin-top: 5.6rem;
+}
+
 input {
   display: block;
   width: 100%;
