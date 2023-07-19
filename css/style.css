@@ -454,6 +454,13 @@ button:hover,
   /* text-align: center; */
 }
 
+.a11ylearning h2 {
+  font-weight: bold;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  /* text-align: center; */
+}
+
 .a11y-text {
   display: flex;
   flex-direction: column;
@@ -2067,6 +2074,11 @@ textarea {
   .homepage-container h2,
   .homepage-container p {
     margin: 0;
+  }
+
+  .a11ylearning h2 {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
   }
 
   .homepage-container .pop {
