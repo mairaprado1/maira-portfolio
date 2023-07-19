@@ -1714,6 +1714,11 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.falaai-text h2 {
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
 /* Execute the commmand when smaller than 768px */
 @media only screen and (max-width: 767px) {
   .intro-desktop {
@@ -2739,7 +2744,7 @@ textarea {
   }
 
   .busy-bus {
-    width: 70%;
+    width: 40%;
   }
 
   .mai-text,
