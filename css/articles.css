@@ -315,6 +315,14 @@ margin-right: 12rem;
 
 }
 
+.shapes-img,
+.comparison-link,
+.comparison-label {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .regular-chart,
 .shapes-chart,
 .b-link,
@@ -590,6 +598,7 @@ margin-right: 0;
 
   display: flex;
   justify-content: center;
+  flex-direction: row;
 
 }
 
@@ -658,6 +667,7 @@ align-self: center;
 .comparison-link {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   /* width: 40%; */
 }
 
@@ -677,13 +687,14 @@ align-self: center;
 .comparison-label {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   /* align-items: baseline; */
 }
 
 .b-label,
 .g-label {
   width: 40%;
-  margin-top: 0;
+  margin-top: 5.6rem;
 }
 
 .b-label {
