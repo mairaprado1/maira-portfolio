@@ -237,3 +237,9 @@ transition: transform .3s ease-in-out;
     }
   }
 }
+
+.active {
+      font-weight: bold;
+      text-decoration: underline;
+      color: #4C5D80 !important;
+    }
