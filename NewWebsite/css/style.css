@@ -243,3 +243,37 @@ transition: transform .3s ease-in-out;
       text-decoration: underline;
       color: #4C5D80 !important;
     }
+
+    
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .hover-text:hover {
+     background-color: #f8f9fa; /* Light background color */
+     transition: background-color 0.3s ease; /* Smooth transition */
+   }
+
+   .hover-image:hover {
+     opacity: 0.8; /* Slightly transparent */
+     transition: opacity 0.3s ease; /* Smooth transition */
+   }
+
+   .custom-underline {
+     text-decoration: underline;
+            text-decoration-color: #676767;
+   }
