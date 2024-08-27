@@ -1,0 +1,109 @@
+.c-special {
+    /* color: var(--bs-card-title-color); */
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+        .accordion-button.high-priority {
+     background-color: #d4edda; /* Light green */
+     color: black;
+   }
+   .accordion-button.medium-priority {
+     background-color: #fff3cd; /* Yellow */
+     color: black;
+   }
+   .accordion-button.low-priority {
+     background-color: #f8d7da; /* Red */
+     color: black;
+
+
+
+     /* COLOR */
+      /* .c-palette-flex {
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       margin-left: 1.5rem;
+       margin-right: 1.5rem;
+     }
+
+     .palette-space {
+  margin-bottom: 1rem;
+}
+
+.w-black {
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.w-white {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.color-number {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+.color-hex {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+     .primary-10 {
+       background-color: #E8EBFD;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     }
+
+
+
+     .primary-20 {
+       background-color: #B9C3F8;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     }
+
+     .primary-30 {
+       background-color: #7C88F3;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     }
+
+     .primary-40 {
+       background-color: #2D4AEB;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     }
+
+     .primary-50 {
+       background-color: #1430D2;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     }
+
+     .primary-60 {
+       background-color: #0F25A3;
+       width: 9rem;
+       height: 9rem;
+       position: relative;
+     } */
