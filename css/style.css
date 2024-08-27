@@ -6,11 +6,16 @@
     --card-text-color: #676767 !important;
 }
 
+
 body {
   margin: auto;
   font-family: var(--bs-font-sans-serif);
   color: var(--bs-color);
 
+}
+
+.h1-lcases {
+  color: var(--bs-card-title-color);
 }
 
 .navbar-nav {
@@ -105,7 +110,7 @@ max-width: 1000px;
 
 .bg-primary {
     /* background-color: #D1CECC !important; */
-    background-color: #E4E4E4 !important;
+    background-color: #F2F2F2 !important;
 
 }
 
