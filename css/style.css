@@ -166,6 +166,11 @@ h1 {
   }
 }
 
+
+.rotate-icon {
+  transform: rotate(330deg); 
+}
+
 @media (min-width: 992px) {
   .col-max-width {
     max-width: 700px;
